@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Аутентификация</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<SaveWindowSettings>false</SaveWindowSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoURL>false</AutoURL>
+	<Group>Vertical</Group>
+	<ShowTitle>false</ShowTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ОК" id="51">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ОК</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ОК</v8:content>
+					</v8:item>
+				</Title>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ОКРасширеннаяПодсказка" id="52"/>
+			</Button>
+			<Button name="Отмена" id="53">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Отмена</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отмена</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="54"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ВыполнениеПроверкиПодключения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнение проверки подключения</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ВыполнениеПроверкиПодключенияРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="ЗапросПароляПользователя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрос пароля пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ЗапросПароляПользователяExtendedTooltip" id="4"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗаголовок" id="5">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заголовок</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="6"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияКартинка" id="79">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Font ref="style:TextLevel2" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>StdPicture.Information</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ДекорацияКартинкаКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="ДекорацияКартинкаРасширеннаяПодсказка" id="81"/>
+								</PictureDecoration>
+								<LabelDecoration name="ДекорацияТекст" id="7">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Font ref="style:TextLevel2" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Введите пароль для подключению к приложению</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияТекстКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ДекорацияТекстРасширеннаяПодсказка" id="9"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="АутентификацияОперационнойСистемы" id="73">
+							<DataPath>Объект.АутентификацияОперационнойСистемы</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="АутентификацияОперационнойСистемыКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="АутентификацияОперационнойСистемыРасширеннаяПодсказка" id="75"/>
+							<Events>
+								<Event name="OnChange">АутентификацияОперационнойСистемыПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ИмяПользователя" id="67">
+							<DataPath>Объект.ИмяПользователя</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ИмяПользователяКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ИмяПользователяРасширеннаяПодсказка" id="69"/>
+						</InputField>
+						<InputField name="ПарольПользователя" id="70">
+							<DataPath>Объект.ПарольПользователя</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="ПарольПользователяКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ПарольПользователяРасширеннаяПодсказка" id="72"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ОжиданиеПроверкиПодключения" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ожидание проверки подключения</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ОжиданиеПроверкиПодключенияРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияОтступ" id="61">
+							<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="63"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаДлительнаяОперация" id="43">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Длительная операция</v8:content>
+								</v8:item>
+							</Title>
+							<Group>HorizontalIfPossible</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДлительнаяОперацияРасширеннаяПодсказка" id="44"/>
+							<ChildItems>
+								<PictureDecoration name="ДлительнаяОперацияКартинка" id="45">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Длительная операция</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ДлительнаяОперацияКартинкаКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ДлительнаяОперацияКартинкаРасширеннаяПодсказка" id="47"/>
+								</PictureDecoration>
+								<LabelDecoration name="СтатусОжиданияЗапускаСинхронизации" id="48">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>3</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполняется проверка подключения.
+Пожалуйста, подождите...</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="СтатусОжиданияЗапускаСинхронизацииКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="СтатусОжиданияЗапускаСинхронизацииРасширеннаяПодсказка" id="50"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТранспортСообщенийОбменаCOM</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Корреспондент" id="6">
+			<Type>
+				<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторТранспорта" id="7">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеАутентификации" id="8">
+			<Type/>
+		</Attribute>
+		<Attribute name="ИмяПланаОбмена" id="9">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкиТранспорта" id="10">
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+		<Command name="Отмена" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отмена</Action>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+	</Commands>
+</Form>

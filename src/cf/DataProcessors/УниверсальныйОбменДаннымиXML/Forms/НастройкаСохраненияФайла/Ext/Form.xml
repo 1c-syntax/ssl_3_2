@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Укажите файл выгрузки </v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаГотово" id="24">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Готово</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Готово</v8:content>
+					</v8:item>
+				</Title>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаГотовоРасширеннаяПодсказка" id="25"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ВыгрузкаВФайл" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка в файл</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ВыгрузкаВФайлExtendedTooltip" id="11"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияПредупреждениеНаКлиенте" id="26">
+					<Visible>false</Visible>
+					<TextColor>pal:Yellow</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В режиме &lt;На клиенте&gt; файл указываем в диалоге, при окончании выгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияПредупреждениеНаКлиентеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДекорацияПредупреждениеНаКлиентеРасширеннаяПодсказка" id="28"/>
+				</LabelDecoration>
+				<InputField name="ИмяФайлаДанных" id="12">
+					<DataPath>ИмяФайлаДанных</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя файла данных на сервере</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ChoiceButton>true</ChoiceButton>
+					<OpenButton>true</OpenButton>
+					<ContextMenu name="ИмяФайлаДанныхКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ИмяФайлаДанныхExtendedTooltip" id="14"/>
+					<Events>
+						<Event name="OnChange">ИмяФайлаДанныхПриИзменении</Event>
+						<Event name="StartChoice">ИмяФайлаДанныхНачалоВыбора</Event>
+						<Event name="Opening">ИмяФайлаДанныхОткрытие</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="АрхивироватьФайл" id="16">
+					<DataPath>Объект.АрхивироватьФайл</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сжимать исходящий файл обмена</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="АрхивироватьФайлКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="АрхивироватьФайлExtendedTooltip" id="18"/>
+					<Events>
+						<Event name="OnChange">АрхивироватьФайлПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ПарольДляСжатияФайлаОбмена" id="20">
+					<DataPath>Объект.ПарольДляСжатияФайлаОбмена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>27</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<PasswordMode>true</PasswordMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonPicture>
+						<xr:Ref>StdPicture.ShowPassword</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ChoiceButtonPicture>
+					<ContextMenu name="ПарольДляСжатияФайлаОбменаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПарольДляСжатияФайлаОбменаExtendedTooltip" id="22"/>
+					<Events>
+						<Event name="StartChoice">ПарольДляСжатияФайлаОбменаНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УниверсальныйОбменДаннымиXML</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИмяФайлаДанных" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИмяФайлаДанных</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИмяФайлаПравил" id="3">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыгрузкаДанныхВФайл" id="4">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ВыгрузкаДанныхВФайл</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ЭтоКлиент" id="5">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Готово" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Готово</Action>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+	</Commands>
+</Form>

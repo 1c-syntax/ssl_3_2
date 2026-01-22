@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ТаблицаОбъектовИсправления" id="1">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<SelectionMode>SingleRow</SelectionMode>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаОбъектовИсправления</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица объектов исправления</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаОбъектовИсправленияКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ТаблицаОбъектовИсправленияКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ТаблицаОбъектовИсправленияИзменитьРезультат" id="47">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПересмотретьРезультат</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Пересмотреть</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ТаблицаОбъектовИсправленияИзменитьРезультатРасширеннаяПодсказка" id="48"/>
+					</Button>
+					<Button name="ТаблицаОбъектовИсправленияПоказатьОтличия" id="45">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПоказатьОтличия</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Показать отличия</v8:content>
+							</v8:item>
+						</Title>
+						<RepresentationInContextMenu>AdditionalInContextMenu</RepresentationInContextMenu>
+						<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+						<ExtendedTooltip name="ТаблицаОбъектовИсправленияПоказатьОтличияРасширеннаяПодсказка" id="46"/>
+					</Button>
+					<Button name="ТаблицаОбъектовИсправленияОткрытьВерсиюДоКонфликта" id="49">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьВерсиюЭтойПрограммы</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Показать версию, созданную в этой информационной базе</v8:content>
+							</v8:item>
+						</Title>
+						<RepresentationInContextMenu>AdditionalInContextMenu</RepresentationInContextMenu>
+						<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+						<ExtendedTooltip name="ТаблицаОбъектовИсправленияОткрытьВерсиюДоКонфликтаРасширеннаяПодсказка" id="50"/>
+					</Button>
+					<Button name="ТаблицаОбъектовИсправленияОткрытьВерсиюКонфликта" id="51">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьВерсиюДругойПрограммы</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Показать версию, полученную из другой информационной базы</v8:content>
+							</v8:item>
+						</Title>
+						<RepresentationInContextMenu>AdditionalInContextMenu</RepresentationInContextMenu>
+						<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+						<ExtendedTooltip name="ТаблицаОбъектовИсправленияОткрытьВерсиюКонфликтаРасширеннаяПодсказка" id="52"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаОбъектовИсправленияРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ТаблицаОбъектовИсправленияСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ТаблицаОбъектовИсправления</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОбъектовИсправленияСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ТаблицаОбъектовИсправленияСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаОбъектовИсправленияСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТаблицаОбъектовИсправления</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОбъектовИсправленияСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаОбъектовИсправленияСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаОбъектовИсправленияУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ТаблицаОбъектовИсправления</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОбъектовИсправленияУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаОбъектовИсправленияУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ТаблицаОбъектовИсправленияВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ТаблицаОбъектовИсправленияПроблемныйОбъект" id="17">
+					<DataPath>ТаблицаОбъектовИсправления.ПроблемныйОбъект</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проблемный объект</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаОбъектовИсправленияПроблемныйОбъектКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТаблицаОбъектовИсправленияПроблемныйОбъектРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ТаблицаОбъектовИсправленияВерсияИзДругойПрограммы" id="69">
+					<DataPath>ТаблицаОбъектовИсправления.ВерсияИзДругойПрограммы</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия из другого приложения</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаОбъектовИсправленияВерсияИзДругойПрограммыКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ТаблицаОбъектовИсправленияВерсияИзДругойПрограммыРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<InputField name="ТаблицаОбъектовИсправленияВерсияЭтойПрограммы" id="73">
+					<DataPath>ТаблицаОбъектовИсправления.ВерсияЭтойПрограммы</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия этого приложения</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаОбъектовИсправленияВерсияЭтойПрограммыКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="ТаблицаОбъектовИсправленияВерсияЭтойПрограммыРасширеннаяПодсказка" id="75"/>
+				</InputField>
+				<InputField name="ТаблицаОбъектовИсправленияОписаниеОшибки" id="77">
+					<DataPath>ТаблицаОбъектовИсправления.ОписаниеОшибки</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<CellHyperlink>true</CellHyperlink>
+					<AutoEditMode>true</AutoEditMode>
+					<CellHyperlinkRepresentation>Show</CellHyperlinkRepresentation>
+					<CellHyperlinkDisplayVariant>Always</CellHyperlinkDisplayVariant>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаОбъектовИсправленияОписаниеОшибкиКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ТаблицаОбъектовИсправленияОписаниеОшибкиРасширеннаяПодсказка" id="79"/>
+				</InputField>
+				<CheckBoxField name="ТаблицаОбъектовИсправленияНеудачнаяПопытка" id="81">
+					<DataPath>ТаблицаОбъектовИсправления.НеудачнаяПопытка</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Неудачная попытка</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderPicture>
+						<xr:Ref>StdPicture.Stop</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаОбъектовИсправленияНеудачнаяПопыткаКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ТаблицаОбъектовИсправленияНеудачнаяПопыткаРасширеннаяПодсказка" id="83"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаОбъектовИсправления" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты исправления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ПроблемныйОбъект" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проблемный объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:BusinessProcessRef</v8:TypeSet>
+						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+						<v8:TypeSet>cfg:ChartOfCalculationTypesRef</v8:TypeSet>
+						<v8:TypeSet>cfg:TaskRef</v8:TypeSet>
+						<v8:TypeSet>cfg:ChartOfCharacteristicTypesRef</v8:TypeSet>
+						<v8:TypeSet>cfg:ChartOfAccountsRef</v8:TypeSet>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ОписаниеОшибки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1000</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НеудачнаяПопытка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Неудачная попытка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВерсияИзДругойПрограммы" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия из другого приложения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВерсияЭтойПрограммы" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия этого приложения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПоказатьОтличия" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать отличия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать отличия между версиями в этом и в другом приложении</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ShowData</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоказатьОтличия</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">ТаблицаОбъектовИсправления</AssociatedTableElementId>
+		</Command>
+		<Command name="ПересмотретьРезультат" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пересмотреть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассмотреть и изменить результат разрешения конфликта на противоположный</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СинхронизацияДанныхКоллизия</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ПересмотретьРезультат</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьВерсиюЭтойПрограммы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать версию, созданную в этой информационной базе</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть версию, созданную в этой информационной базе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.InputFieldOpen</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьВерсиюЭтойПрограммы</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">ТаблицаОбъектовИсправления</AssociatedTableElementId>
+		</Command>
+		<Command name="ОткрытьВерсиюДругойПрограммы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать версию, полученную из другой информационной базы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть версию, полученную из другой информационной базы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GotoExternalURL</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьВерсиюДругойПрограммы</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">ТаблицаОбъектовИсправления</AssociatedTableElementId>
+		</Command>
+	</Commands>
+</Form>

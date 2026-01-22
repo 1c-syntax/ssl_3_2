@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
+	<CommandSet>
+		<ExcludedCommand>Create</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="Создать" id="13">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьСценарийОбменаДанными</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="СоздатьExtendedTooltip" id="40"/>
+			</Button>
+			<Button name="ФормаВыполнитьСценарийВФоне" id="93">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыполнитьСценарийВФоне</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выполнить</v8:content>
+					</v8:item>
+				</Title>
+				<RepresentationInContextMenu>AdditionalInContextMenu</RepresentationInContextMenu>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаВыполнитьСценарийВФонеРасширеннаяПодсказка" id="94"/>
+			</Button>
+			<Button name="ВключитьОтключитьРегламентноеЗадание" id="15">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ИзменитьРегламентноеЗадание</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Включить/отключить расписание</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+				<ExtendedTooltip name="ВключитьОтключитьРегламентноеЗаданиеРасширеннаяПодсказка" id="43"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<DefaultItem>true</DefaultItem>
+			<SelectionMode>SingleRow</SelectionMode>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<VerticalLinesBWA>false</VerticalLinesBWA>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+			</CommandSet>
+			<ShowCommandBar>auto</ShowCommandBar>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2">
+				<ChildItems>
+					<Button name="СписокКонтекстноеМенюВыполнитьСценарийВФоне" id="97">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыполнитьСценарийВФоне</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выполнить</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="СписокКонтекстноеМенюВыполнитьСценарийВФонеРасширеннаяПодсказка" id="98"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюВыполнитьСценарийРежимОтладки" id="95">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыполнитьСценарийРежимОтладки</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выполнить сценарий (режим отладки)</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СписокКонтекстноеМенюВыполнитьСценарийРежимОтладкиРасширеннаяПодсказка" id="96"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюВыполнитьСценарийДляТакси" id="90">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<CommandName>Form.Command.ВыполнитьСценарийРежимОтладки</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выполнить сценарий (режим отладки)</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="СписокКонтекстноеМенюВыполнитьСценарийДляТаксиРасширеннаяПодсказка" id="91"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюИзменитьРегламентноеЗадание" id="99">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ИзменитьРегламентноеЗадание</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Включить/отключить расписание</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="СписокКонтекстноеМенюИзменитьРегламентноеЗаданиеРасширеннаяПодсказка" id="100"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="52"/>
+			<SearchStringAddition name="СписокSearchString" id="57">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокSearchStringContextMenu" id="58"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="59"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="60">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокViewStatusContextMenu" id="61"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="62"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="63">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокSearchControlContextMenu" id="64"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="65"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Наименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="55"/>
+				</LabelField>
+				<CheckBoxField name="ИспользоватьРегламентноеЗадание" id="69">
+					<DataPath>Список.ИспользоватьРегламентноеЗадание</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включить/отключить синхронизацию по расписанию</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderPicture>
+						<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoWidthInTable>None</AutoWidthInTable>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ИспользоватьРегламентноеЗаданиеКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ИспользоватьРегламентноеЗаданиеРасширеннаяПодсказка" id="71"/>
+				</CheckBoxField>
+				<CheckBoxField name="ФлагИспользованияЗагрузки" id="23">
+					<DataPath>Список.ФлагИспользованияЗагрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получение</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включить/отключить получение данных (загрузка)</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ФлагИспользованияЗагрузкиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ФлагИспользованияЗагрузкиExtendedTooltip" id="53"/>
+				</CheckBoxField>
+				<CheckBoxField name="ФлагИспользованияВыгрузки" id="21">
+					<DataPath>Список.ФлагИспользованияВыгрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включить/отключить отправку данных (выгрузка)</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ФлагИспользованияВыгрузкиКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ФлагИспользованияВыгрузкиExtendedTooltip" id="54"/>
+				</CheckBoxField>
+				<LabelField name="Комментарий" id="83">
+					<DataPath>Список.Комментарий</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="85"/>
+				</LabelField>
+				<LabelField name="Ссылка" id="66">
+					<DataPath>Список.Ссылка</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="68"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.ИспользоватьРегламентноеЗадание</Field>
+				<Field>Список.Комментарий</Field>
+				<Field>Список.Ссылка</Field>
+				<Field>Список.ФлагИспользования</Field>
+				<Field>Список.ФлагИспользованияВыгрузки</Field>
+				<Field>Список.ФлагИспользованияЗагрузки</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СценарииОбменовДаннымиНастройкиОбмена.Ссылка КАК Ссылка,
+	СценарииОбменовДаннымиНастройкиОбмена.Ссылка.ИспользоватьРегламентноеЗадание КАК ИспользоватьРегламентноеЗадание,
+	СценарииОбменовДаннымиНастройкиОбмена.Ссылка.Наименование КАК Наименование,
+	МАКСИМУМ(ВЫБОР
+			КОГДА СценарииОбменовДаннымиНастройкиОбмена.УзелИнформационнойБазы = &amp;УзелИнформационнойБазы
+				ТОГДА ИСТИНА
+			ИНАЧЕ ЛОЖЬ
+		КОНЕЦ) КАК ФлагИспользования,
+	МАКСИМУМ(ВЫБОР
+			КОГДА СценарииОбменовДаннымиНастройкиОбмена.УзелИнформационнойБазы = &amp;УзелИнформационнойБазы
+					И СценарииОбменовДаннымиНастройкиОбмена.ВыполняемоеДействие = ЗНАЧЕНИЕ(Перечисление.ДействияПриОбмене.ЗагрузкаДанных)
+				ТОГДА ИСТИНА
+			ИНАЧЕ ЛОЖЬ
+		КОНЕЦ) КАК ФлагИспользованияЗагрузки,
+	МАКСИМУМ(ВЫБОР
+			КОГДА СценарииОбменовДаннымиНастройкиОбмена.УзелИнформационнойБазы = &amp;УзелИнформационнойБазы
+					И СценарииОбменовДаннымиНастройкиОбмена.ВыполняемоеДействие = ЗНАЧЕНИЕ(Перечисление.ДействияПриОбмене.ВыгрузкаДанных)
+				ТОГДА ИСТИНА
+			ИНАЧЕ ЛОЖЬ
+		КОНЕЦ) КАК ФлагИспользованияВыгрузки
+ПОМЕСТИТЬ ВложенныйЗапрос
+ИЗ
+	Справочник.СценарииОбменовДанными.НастройкиОбмена КАК СценарииОбменовДаннымиНастройкиОбмена
+ГДЕ
+	НЕ СценарииОбменовДаннымиНастройкиОбмена.Ссылка.ПометкаУдаления
+
+СГРУППИРОВАТЬ ПО
+	СценарииОбменовДаннымиНастройкиОбмена.Ссылка,
+	СценарииОбменовДаннымиНастройкиОбмена.Ссылка.ИспользоватьРегламентноеЗадание,
+	СценарииОбменовДаннымиНастройкиОбмена.Ссылка.Наименование
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СценарииОбменовДанными.Ссылка КАК Ссылка,
+	СценарииОбменовДанными.ИспользоватьРегламентноеЗадание КАК ИспользоватьРегламентноеЗадание,
+	СценарииОбменовДанными.Наименование КАК Наименование,
+	ЕСТЬNULL(ВложенныйЗапрос.ФлагИспользования, ЛОЖЬ) КАК ФлагИспользования,
+	ЕСТЬNULL(ВложенныйЗапрос.ФлагИспользованияЗагрузки, ЛОЖЬ) КАК ФлагИспользованияЗагрузки,
+	ЕСТЬNULL(ВложенныйЗапрос.ФлагИспользованияВыгрузки, ЛОЖЬ) КАК ФлагИспользованияВыгрузки,
+	СценарииОбменовДанными.Комментарий КАК Комментарий
+ИЗ
+	Справочник.СценарииОбменовДанными КАК СценарииОбменовДанными
+		ЛЕВОЕ СОЕДИНЕНИЕ ВложенныйЗапрос КАК ВложенныйЗапрос
+		ПО (ВложенныйЗапрос.Ссылка = СценарииОбменовДанными.Ссылка)
+ГДЕ
+	НЕ СценарииОбменовДанными.ПометкаУдаления</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Код</dcssch:dataPath>
+					<dcssch:field>Код</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РегламентноеЗаданиеGUID</dcssch:dataPath>
+					<dcssch:field>РегламентноеЗаданиеGUID</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтключенАвтоматически</dcssch:dataPath>
+					<dcssch:field>ОтключенАвтоматически</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НастройкиОбмена</dcssch:dataPath>
+					<dcssch:field>НастройкиОбмена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьРегламентноеЗадание</dcssch:dataPath>
+					<dcssch:field>ИспользоватьРегламентноеЗадание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ФлагИспользованияВыгрузки</dcssch:dataPath>
+					<dcssch:field>ФлагИспользованияВыгрузки</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флаг использования выгрузки</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ФлагИспользования</dcssch:dataPath>
+					<dcssch:field>ФлагИспользования</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флаг использования</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ФлагИспользованияЗагрузки</dcssch:dataPath>
+					<dcssch:field>ФлагИспользованияЗагрузки</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флаг использования загрузки</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>УзелИнформационнойБазы</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Узел информационной базы</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Catalog.СценарииОбменовДанными</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:dataParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>УзелИнформационнойБазы</dcscor:parameter>
+							<dcscor:value xsi:nil="true"/>
+							<dcsset:userSettingID>d02cd8a2-019b-4f18-8b6f-4061464e120d</dcsset:userSettingID>
+						</dcscor:item>
+					</dcsset:dataParameters>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ФлагИспользования</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьСценарийОбменаДанными" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новое расписание синхронизации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Создать</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+			<ActionPurpose>Create</ActionPurpose>
+		</Command>
+		<Command name="ИзменитьРегламентноеЗадание" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/отключить расписание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/отключить расписание синхронизации данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИзменитьРегламентноеЗадание</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
+			<SelectedRowsUse>Use</SelectedRowsUse>
+		</Command>
+		<Command name="ВыполнитьСценарийРежимОтладки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить сценарий (режим отладки)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить синхронизацию данных по сценарию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СинхронизацияДанныхВыполнение</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьСценарийРежимОтладки</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьСинхронизациюДанныхВЛокальномРежиме</Item>
+			</FunctionalOptions>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
+			<SelectedRowsUse>DontUse</SelectedRowsUse>
+		</Command>
+		<Command name="ВыполнитьСценарийВФоне" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить синхронизацию данных по сценарию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СинхронизацияДанныхВыполнение</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьСценарийВФоне</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
+			<SelectedRowsUse>DontUse</SelectedRowsUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="УзелИнформационнойБазы">
+			<Type>
+				<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

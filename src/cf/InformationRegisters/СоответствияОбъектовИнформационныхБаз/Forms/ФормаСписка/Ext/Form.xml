@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<Representation>WeakSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<SearchOnInput>DontUse</SearchOnInput>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<CommandSet>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="8">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="11">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="14">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="УникальныйИдентификаторПриемника" id="17">
+					<DataPath>Список.УникальныйИдентификаторПриемника</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="УникальныйИдентификаторПриемникаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="УникальныйИдентификаторПриемникаРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<LabelField name="УникальныйИдентификаторИсточника" id="41">
+					<DataPath>Список.УникальныйИдентификаторИсточника</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="УникальныйИдентификаторИсточникаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="УникальныйИдентификаторИсточникаРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<LabelField name="ТипПриемника" id="21">
+					<DataPath>Список.ТипПриемника</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТипПриемникаКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ТипПриемникаРасширеннаяПодсказка" id="23"/>
+				</LabelField>
+				<LabelField name="ТипИсточника" id="25">
+					<DataPath>Список.ТипИсточника</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТипИсточникаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ТипИсточникаРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+				<LabelField name="УзелИнформационнойБазы" id="29">
+					<DataPath>Список.УзелИнформационнойБазы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<LabelField name="УникальныйИдентификаторИсточникаСтрокой" id="33">
+					<DataPath>Список.УникальныйИдентификаторИсточникаСтрокой</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="УникальныйИдентификаторИсточникаСтрокойКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="УникальныйИдентификаторИсточникаСтрокойРасширеннаяПодсказка" id="35"/>
+				</LabelField>
+				<CheckBoxField name="ОбъектВыгруженПоСсылке" id="37">
+					<DataPath>Список.ОбъектВыгруженПоСсылке</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ОбъектВыгруженПоСсылкеКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ОбъектВыгруженПоСсылкеРасширеннаяПодсказка" id="39"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ 
+       СоответствияОбъектовИнформационныхБаз.УникальныйИдентификаторПриемника, 
+       СоответствияОбъектовИнформационныхБаз.УникальныйИдентификаторИсточника, 
+       СоответствияОбъектовИнформационныхБаз.ТипПриемника, 
+       СоответствияОбъектовИнформационныхБаз.ТипИсточника, 
+       СоответствияОбъектовИнформационныхБаз.УзелИнформационнойБазы, 
+       СоответствияОбъектовИнформационныхБаз.УникальныйИдентификаторИсточникаСтрокой, 
+       СоответствияОбъектовИнформационныхБаз.ОбъектВыгруженПоСсылке
+ ИЗ 
+       РегистрСведений.СоответствияОбъектовИнформационныхБаз
+ КАК 
+       СоответствияОбъектовИнформационныхБаз</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УникальныйИдентификаторПриемника</dcssch:dataPath>
+					<dcssch:field>УникальныйИдентификаторПриемника</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УникальныйИдентификаторИсточника</dcssch:dataPath>
+					<dcssch:field>УникальныйИдентификаторИсточника</dcssch:field>
+					<dcssch:attributeUseRestriction>
+						<dcssch:field>true</dcssch:field>
+						<dcssch:condition>true</dcssch:condition>
+					</dcssch:attributeUseRestriction>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипПриемника</dcssch:dataPath>
+					<dcssch:field>ТипПриемника</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипИсточника</dcssch:dataPath>
+					<dcssch:field>ТипИсточника</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УзелИнформационнойБазы</dcssch:dataPath>
+					<dcssch:field>УзелИнформационнойБазы</dcssch:field>
+					<dcssch:attributeUseRestriction>
+						<dcssch:field>true</dcssch:field>
+						<dcssch:condition>true</dcssch:condition>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:attributeUseRestriction>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УникальныйИдентификаторИсточникаСтрокой</dcssch:dataPath>
+					<dcssch:field>УникальныйИдентификаторИсточникаСтрокой</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъектВыгруженПоСсылке</dcssch:dataPath>
+					<dcssch:field>ОбъектВыгруженПоСсылке</dcssch:field>
+				</Field>
+				<MainTable>InformationRegister.СоответствияОбъектовИнформационныхБаз</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

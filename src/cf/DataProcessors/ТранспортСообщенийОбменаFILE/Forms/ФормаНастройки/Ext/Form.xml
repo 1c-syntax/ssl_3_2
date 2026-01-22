@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<SaveWindowSettings>false</SaveWindowSettings>
+	<Group>Vertical</Group>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<ShowCommandBar>true</ShowCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаГотово" id="20">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Готово</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Готово</v8:content>
+					</v8:item>
+				</Title>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаГотовоРасширеннаяПодсказка" id="21"/>
+			</Button>
+			<Button name="ФормаПроверитьПодключение" id="22">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьПодключение</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Проверить подключение</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаПроверитьПодключениеРасширеннаяПодсказка" id="23"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="КаталогОбменаИнформацией" id="12">
+			<DataPath>Объект.КаталогОбменаИнформацией</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<Width>40</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ChoiceButton>true</ChoiceButton>
+			<OpenButton>true</OpenButton>
+			<ContextMenu name="КаталогОбменаИнформациейКонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="КаталогОбменаИнформациейРасширеннаяПодсказка" id="14">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Укажите локальный или сетевой каталог, который будет использоваться для передачи сообщений обмена.</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+			<Events>
+				<Event name="StartChoice">КаталогОбменаИнформациейНачалоВыбора</Event>
+				<Event name="Opening">КаталогОбменаИнформациейОткрытие</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="НастройкаФайлаСообщения" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка файла сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Button</ControlRepresentation>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НастройкаФайлаСообщенияРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<UsualGroup name="Архив" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Архив</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="АрхивРасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<CheckBoxField name="СжиматьФайлИсходящегоСообщения" id="39">
+							<DataPath>Объект.СжиматьФайлИсходящегоСообщения</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="СжиматьФайлИсходящегоСообщенияКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="СжиматьФайлИсходящегоСообщенияРасширеннаяПодсказка" id="41"/>
+							<Events>
+								<Event name="OnChange">СжиматьФайлИсходящегоСообщенияПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ПарольАрхиваСообщенияОбмена" id="43">
+							<DataPath>Объект.ПарольАрхиваСообщенияОбмена</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<Width>20</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<PasswordMode>true</PasswordMode>
+							<ChoiceButton>true</ChoiceButton>
+							<ChoiceButtonPicture>
+								<xr:Ref>StdPicture.ShowPassword</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</ChoiceButtonPicture>
+							<ContextMenu name="ПарольАрхиваСообщенияОбменаКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ПарольАрхиваСообщенияОбменаРасширеннаяПодсказка" id="45"/>
+							<Events>
+								<Event name="EditTextChange">ПарольАрхиваСообщенияОбменаИзменениеТекстаРедактирования</Event>
+								<Event name="StartChoice">ПарольАрхиваСообщенияОбменаНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="Транслитерация" id="47">
+					<DataPath>Объект.Транслитерация</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Транслитерация имени</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Транслитерация имён файлов — это преобразование кириллических символов в латинские. Обычно транслитерацию применяют, чтобы улучшить читаемость постоянных ссылок и избежать проблем с отображением и чтением файлов, так как всё в сети заточено под кириллицу.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТранслитерацияКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ТранслитерацияРасширеннаяПодсказка" id="49"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТранспортСообщенийОбменаFILE</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Готово" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Готово</Action>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+		<Command name="ПроверитьПодключение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьПодключение</Action>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="НастройкиТранспорта">
+			<Type/>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

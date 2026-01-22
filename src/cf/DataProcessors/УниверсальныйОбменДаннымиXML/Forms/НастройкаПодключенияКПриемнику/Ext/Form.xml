@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка подключения</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаГотово" id="55">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Готово</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Готово</v8:content>
+					</v8:item>
+				</Title>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаГотовоРасширеннаяПодсказка" id="56"/>
+			</Button>
+			<Button name="ТестПодключения" id="43">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ТестПодключения</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Проверить подключение</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ТестПодключенияExtendedTooltip" id="44"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ПараметрыВыгрузки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры выгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ПараметрыВыгрузкиExtendedTooltip" id="2"/>
+			<ChildItems>
+				<Page name="ВыгрузкаВИБПриемник" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка в информационную базу-приемник</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ВыгрузкаВИБПриемникExtendedTooltip" id="4"/>
+					<ChildItems>
+						<Pages name="ГруппаОС" id="5">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ОС</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ГруппаОСРасширеннаяПодсказка" id="6"/>
+							<ChildItems>
+								<Page name="ГруппаWindows" id="7">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Windows</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="ГруппаWindowsРасширеннаяПодсказка" id="8"/>
+									<ChildItems>
+										<UsualGroup name="ТипПлатформа" id="9">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тип платформа</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ТипПлатформаExtendedTooltip" id="10"/>
+											<ChildItems>
+												<InputField name="ВерсияПлатформыИнформационнойБазыДляПодключения" id="15">
+													<DataPath>Объект.ВерсияПлатформыИнформационнойБазыДляПодключения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Платформа</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<ListChoiceMode>true</ListChoiceMode>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>8.2</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">V82</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>8.3</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">V83</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>8.5</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">V85</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ВерсияПлатформыИнформационнойБазыДляПодключенияКонтекстноеМеню" id="16"/>
+													<ExtendedTooltip name="ВерсияПлатформыИнформационнойБазыДляПодключенияExtendedTooltip" id="17"/>
+													<Events>
+														<Event name="OnChange">ВерсияПлатформыИнформационнойБазыДляПодключенияПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="ТипИнформационнойБазыДляПодключения" id="11">
+													<DataPath>Объект.ТипИнформационнойБазыДляПодключения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Тип информационной базы</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<ListChoiceMode>true</ListChoiceMode>
+													<EditFormat>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>БЛ='На сервере 1С:Предприятия'; БИ='На данном компьютере или на компьютере в локальной сети'</v8:content>
+														</v8:item>
+													</EditFormat>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>На сервере 1С:Предприятия</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:boolean">false</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>На данном компьютере или на компьютере в локальной сети</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:boolean">true</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ТипИнформационнойБазыДляПодключенияКонтекстноеМеню" id="12"/>
+													<ExtendedTooltip name="ТипИнформационнойБазыДляПодключенияExtendedTooltip" id="13"/>
+													<Events>
+														<Event name="OnChange">ТипИнформационнойБазыДляПодключенияПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<Pages name="ТипБазы" id="19">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тип базы</v8:content>
+												</v8:item>
+											</Title>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="ТипБазыExtendedTooltip" id="20"/>
+											<ChildItems>
+												<Page name="ФайловаяБаза" id="21">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Файловая база</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<ScrollOnCompress>false</ScrollOnCompress>
+													<ExtendedTooltip name="ФайловаяБазаExtendedTooltip" id="22"/>
+													<ChildItems>
+														<InputField name="КаталогИнформационнойБазыДляПодключения" id="23">
+															<DataPath>Объект.КаталогИнформационнойБазыДляПодключения</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<AutoEditMode>true</AutoEditMode>
+															<ChoiceButton>true</ChoiceButton>
+															<OpenButton>true</OpenButton>
+															<ContextMenu name="КаталогИнформационнойБазыДляПодключенияКонтекстноеМеню" id="24"/>
+															<ExtendedTooltip name="КаталогИнформационнойБазыДляПодключенияExtendedTooltip" id="25"/>
+															<Events>
+																<Event name="StartChoice">КаталогИнформационнойБазыДляПодключенияНачалоВыбора</Event>
+																<Event name="Opening">КаталогИнформационнойБазыДляПодключенияОткрытие</Event>
+															</Events>
+														</InputField>
+													</ChildItems>
+												</Page>
+												<Page name="БазаНаСервере" id="27">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>База на сервере</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<ScrollOnCompress>false</ScrollOnCompress>
+													<ExtendedTooltip name="БазаНаСервереExtendedTooltip" id="28"/>
+													<ChildItems>
+														<InputField name="ИмяСервераИнформационнойБазыДляПодключения" id="29">
+															<DataPath>Объект.ИмяСервераИнформационнойБазыДляПодключения</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Имя сервера 1С:Предприятия</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<AutoEditMode>true</AutoEditMode>
+															<ContextMenu name="ИмяСервераИнформационнойБазыДляПодключенияКонтекстноеМеню" id="30"/>
+															<ExtendedTooltip name="ИмяСервераИнформационнойБазыДляПодключенияExtendedTooltip" id="31"/>
+														</InputField>
+														<InputField name="ИмяИнформационнойБазыНаСервереДляПодключения" id="33">
+															<DataPath>Объект.ИмяИнформационнойБазыНаСервереДляПодключения</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Информационная база</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<AutoEditMode>true</AutoEditMode>
+															<ContextMenu name="ИмяИнформационнойБазыНаСервереДляПодключенияКонтекстноеМеню" id="34"/>
+															<ExtendedTooltip name="ИмяИнформационнойБазыНаСервереДляПодключенияExtendedTooltip" id="35"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+										<UsualGroup name="АутентификацияТест" id="37">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Аутентификация тест</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="АутентификацияТестExtendedTooltip" id="38"/>
+											<ChildItems>
+												<CheckBoxField name="АутентификацияWindowsИнформационнойБазыДляПодключения" id="39">
+													<DataPath>Объект.АутентификацияWindowsИнформационнойБазыДляПодключения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Аутентификация Windows</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Right</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<ContextMenu name="АутентификацияWindowsИнформационнойБазыДляПодключенияКонтекстноеМеню" id="40"/>
+													<ExtendedTooltip name="АутентификацияWindowsИнформационнойБазыДляПодключенияExtendedTooltip" id="41"/>
+													<Events>
+														<Event name="OnChange">АутентификацияWindowsИнформационнойБазыДляПодключенияПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ПользовательПароль" id="45">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пользователь пароль</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ПользовательПарольExtendedTooltip" id="46"/>
+											<ChildItems>
+												<InputField name="ПользовательИнформационнойБазыДляПодключения" id="47">
+													<DataPath>Объект.ПользовательИнформационнойБазыДляПодключения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Пользователь</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<ContextMenu name="ПользовательИнформационнойБазыДляПодключенияКонтекстноеМеню" id="48"/>
+													<ExtendedTooltip name="ПользовательИнформационнойБазыДляПодключенияExtendedTooltip" id="49"/>
+												</InputField>
+												<InputField name="ПарольИнформационнойБазыДляПодключения" id="51">
+													<DataPath>Объект.ПарольИнформационнойБазыДляПодключения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Пароль</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<PasswordMode>true</PasswordMode>
+													<ContextMenu name="ПарольИнформационнойБазыДляПодключенияКонтекстноеМеню" id="52"/>
+													<ExtendedTooltip name="ПарольИнформационнойБазыДляПодключенияExtendedTooltip" id="53"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УниверсальныйОбменДаннымиXML</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ТестПодключения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест подключения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестПодключения</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+		<Command name="Готово" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Готово</Action>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ТипИнформационнойБазыДляПодключения">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ВерсияПлатформыИнформационнойБазыДляПодключения">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>5</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="КаталогИнформационнойБазыДляПодключения">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ИмяСервераИнформационнойБазыДляПодключения">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ИмяИнформационнойБазыНаСервереДляПодключения">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="АутентификацияWindowsИнформационнойБазыДляПодключения">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ПользовательИнформационнойБазыДляПодключения">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ПарольИнформационнойБазыДляПодключения">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

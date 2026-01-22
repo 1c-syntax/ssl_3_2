@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<SaveWindowSettings>false</SaveWindowSettings>
+	<Group>Vertical</Group>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<ShowCommandBar>true</ShowCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаГотово" id="20">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Готово</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Готово</v8:content>
+					</v8:item>
+				</Title>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаГотовоРасширеннаяПодсказка" id="21"/>
+			</Button>
+			<Button name="ФормаПроверитьПодключение" id="22">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьПодключение</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Проверить подключение</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаПроверитьПодключениеРасширеннаяПодсказка" id="23"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="АдресВебСервиса" id="24">
+			<DataPath>Объект.АдресВебСервиса</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="АдресВебСервисаКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="АдресВебСервисаРасширеннаяПодсказка" id="26"/>
+		</InputField>
+		<Button name="ПараметрыДоступаВИнтернет" id="38">
+			<Type>Hyperlink</Type>
+			<CommandName>Form.Command.ПараметрыДоступаВИнтернет</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры доступа в Интернет</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ПараметрыДоступаВИнтернетРасширеннаяПодсказка" id="39"/>
+		</Button>
+		<UsualGroup name="ГруппаПредупреждениеОДвухфакторнойАутентификации" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предупреждение о двухфакторной аутентификации</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>pal:FirstBrand</BackColor>
+			<ExtendedTooltip name="ГруппаПредупреждениеОДвухфакторнойАутентификацииРасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаПредупреждениеОДвухфакторнойАутентификации" id="47">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предупреждение о двухфакторной аутентификации</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>StdPicture.DialogExclamation</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="КартинкаПредупреждениеОДвухфакторнойАутентификацииКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="КартинкаПредупреждениеОДвухфакторнойАутентификацииРасширеннаяПодсказка" id="49"/>
+				</PictureDecoration>
+				<LabelDecoration name="НадписьПредупреждениеОДвухфакторнойАутентификации" id="50">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синхронизация не сможет выполняться, если у пользователя установлена двухфакторная аутентификация.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьПредупреждениеОДвухфакторнойАутентификацииКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="НадписьПредупреждениеОДвухфакторнойАутентификацииРасширеннаяПодсказка" id="52"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ИмяПользователь" id="27">
+			<DataPath>Объект.ИмяПользователя</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="ИмяПользовательКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ИмяПользовательРасширеннаяПодсказка" id="29"/>
+		</InputField>
+		<UsualGroup name="ГруппаПароль" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПарольРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<InputField name="Пароль" id="30">
+					<DataPath>Объект.Пароль</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<PasswordMode>true</PasswordMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonPicture>
+						<xr:Ref>StdPicture.ShowPassword</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ChoiceButtonPicture>
+					<ContextMenu name="ПарольКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="32"/>
+					<Events>
+						<Event name="EditTextChange">ПарольИзменениеТекстаРедактирования</Event>
+						<Event name="StartChoice">ПарольНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="ЗапомнитьПароль" id="35">
+					<DataPath>Объект.ЗапомнитьПароль</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ЗапомнитьПарольКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ЗапомнитьПарольРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТранспортСообщенийОбменаWS</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Готово" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Готово</Action>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+		<Command name="ПроверитьПодключение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьПодключение</Action>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+		<Command name="ПараметрыДоступаВИнтернет" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры доступа в Интернет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры доступа в Интернет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПараметрыДоступаВИнтернет</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="НастройкиТранспорта">
+			<Type/>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

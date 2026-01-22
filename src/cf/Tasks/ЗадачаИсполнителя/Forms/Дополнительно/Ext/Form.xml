@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Дополнительно</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Group>HorizontalIfPossible</Group>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<ShowCommandBar>true</ShowCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="117">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="118"/>
+			<ChildItems>
+				<UsualGroup name="Группа3" id="119">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</Title>
+					<Width>50</Width>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="120"/>
+					<ChildItems>
+						<LabelField name="Наименование" id="41">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<UseCopy>true</UseCopy>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="76"/>
+						</LabelField>
+						<LabelField name="СрокИсполнения" id="71">
+							<DataPath>Объект.СрокИсполнения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<UseCopy>true</UseCopy>
+							<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="СрокИсполненияРасширеннаяПодсказка" id="80"/>
+						</LabelField>
+						<UsualGroup name="ГруппаБизнесПроцесс" id="51">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Бизнес-процесс</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаБизнесПроцессРасширеннаяПодсказка" id="86"/>
+							<ChildItems>
+								<LabelField name="БизнесПроцесс" id="52">
+									<DataPath>Объект.BusinessProcess</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<UseCopy>true</UseCopy>
+									<ContextMenu name="БизнесПроцессКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="БизнесПроцессРасширеннаяПодсказка" id="87"/>
+								</LabelField>
+								<LabelField name="ТочкаМаршрута" id="54">
+									<DataPath>Объект.RoutePoint</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<UseCopy>true</UseCopy>
+									<ContextMenu name="ТочкаМаршрутаКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ТочкаМаршрутаРасширеннаяПодсказка" id="88"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРезультат" id="63">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Результат выполнения задачи</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AutoScreenTypeSensitive</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаРезультатРасширеннаяПодсказка" id="89"/>
+							<ChildItems>
+								<CheckBoxField name="Выполнена" id="64">
+									<DataPath>Объект.Executed</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>CheckBox</CheckBoxType>
+									<ContextMenu name="ВыполненаКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ВыполненаРасширеннаяПодсказка" id="90"/>
+								</CheckBoxField>
+								<LabelField name="ДатаИсполнения" id="66">
+									<DataPath>Объект.ДатаИсполнения</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<UseCopy>true</UseCopy>
+									<ContextMenu name="ДатаИсполненияКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ДатаИсполненияРасширеннаяПодсказка" id="91"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа4" id="121">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</Title>
+					<Width>50</Width>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="122"/>
+					<ChildItems>
+						<LabelField name="Номер" id="43">
+							<DataPath>Объект.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<UseCopy>true</UseCopy>
+							<ContextMenu name="НомерКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="77"/>
+						</LabelField>
+						<LabelField name="Дата" id="57">
+							<DataPath>Объект.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<UseCopy>true</UseCopy>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="79"/>
+						</LabelField>
+						<UsualGroup name="ГруппаАдресация" id="69">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задача адресована</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="ГруппаАдресацияРасширеннаяПодсказка" id="81"/>
+							<ChildItems>
+								<LabelField name="Исполнитель" id="27">
+									<DataPath>Объект.Исполнитель</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<UseCopy>true</UseCopy>
+									<ContextMenu name="ИсполнительКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="82"/>
+								</LabelField>
+								<UsualGroup name="ГруппаУточнение" id="92">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Уточнение</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУточнениеРасширеннаяПодсказка" id="93"/>
+									<ChildItems>
+										<LabelField name="РольИсполнителя" id="29">
+											<DataPath>Объект.РольИсполнителя</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<UseCopy>true</UseCopy>
+											<ContextMenu name="РольИсполнителяКонтекстноеМеню" id="30"/>
+											<ExtendedTooltip name="РольИсполнителяРасширеннаяПодсказка" id="83"/>
+										</LabelField>
+										<UsualGroup name="ГруппаОбъектАдресации" id="113">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Объект адресации</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОбъектАдресацииРасширеннаяПодсказка" id="114"/>
+											<ChildItems>
+												<LabelField name="ОсновнойОбъектАдресации" id="31">
+													<DataPath>Объект.ОсновнойОбъектАдресации</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<UseCopy>true</UseCopy>
+													<ContextMenu name="ОсновнойОбъектАдресацииКонтекстноеМеню" id="32"/>
+													<ExtendedTooltip name="ОсновнойОбъектАдресацииРасширеннаяПодсказка" id="84"/>
+												</LabelField>
+												<LabelField name="ДополнительныйОбъектАдресации" id="33">
+													<DataPath>Объект.ДополнительныйОбъектАдресации</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<UseCopy>true</UseCopy>
+													<ContextMenu name="ДополнительныйОбъектАдресацииКонтекстноеМеню" id="34"/>
+													<ExtendedTooltip name="ДополнительныйОбъектАдресацииРасширеннаяПодсказка" id="85"/>
+												</LabelField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСправа" id="45">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справа</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AutoScreenTypeSensitive</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСправаРасширеннаяПодсказка" id="75"/>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДаты" id="56">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Даты</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AutoScreenTypeSensitive</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>DontUse</ThroughAlign>
+			<ExtendedTooltip name="ГруппаДатыРасширеннаяПодсказка" id="78"/>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="115">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="116"/>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:TaskObject.ЗадачаИсполнителя</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Parameters>
+		<Parameter name="Ключ">
+			<Type>
+				<v8:Type>cfg:TaskRef.ЗадачаИсполнителя</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

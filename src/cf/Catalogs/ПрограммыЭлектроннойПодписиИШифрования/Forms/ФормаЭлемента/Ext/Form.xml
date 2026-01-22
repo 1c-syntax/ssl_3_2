@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<CommandSet>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+	</CommandSet>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаУстановитьПометкуУдаления" id="53">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.УстановитьПометкуУдаления</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Пометить на удаление / Снять пометку</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаУстановитьПометкуУдаленияРасширеннаяПодсказка" id="54"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="РежимИспользования" id="78">
+			<DataPath>Объект.РежимИспользования</DataPath>
+			<SkipOnInput>true</SkipOnInput>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="РежимИспользованияКонтекстноеМеню" id="79"/>
+			<ExtendedTooltip name="РежимИспользованияРасширеннаяПодсказка" id="80"/>
+			<Events>
+				<Event name="OnChange">РежимИспользованияПриИзменении</Event>
+				<Event name="ChoiceProcessing">РежимИспользованияОбработкаВыбора</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаОсновная" id="99">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AutoScreenTypeSensitive</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="100"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПрограмма" id="101">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Программа</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПрограммаРасширеннаяПодсказка" id="102"/>
+					<ChildItems>
+						<InputField name="Наименование" id="50">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<DropListButton>true</DropListButton>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="52"/>
+							<Events>
+								<Event name="OnChange">НаименованиеПриИзменении</Event>
+								<Event name="ChoiceProcessing">НаименованиеОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ИмяПрограммы" id="1">
+							<DataPath>Объект.ИмяПрограммы</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ChoiceListButton>true</ChoiceListButton>
+							<BackColor>style:ФонУправляющегоПоля</BackColor>
+							<ContextMenu name="ИмяПрограммыКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ИмяПрограммыРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">ИмяПрограммыПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ТипПрограммы" id="4">
+							<DataPath>Объект.ТипПрограммы</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<BackColor>style:ФонУправляющегоПоля</BackColor>
+							<ContextMenu name="ТипПрограммыКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ТипПрограммыРасширеннаяПодсказка" id="6"/>
+							<Events>
+								<Event name="OnChange">ТипПрограммыПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНастройки" id="97">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="98"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаАлгоритмы" id="95">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Алгоритмы</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАлгоритмыРасширеннаяПодсказка" id="96"/>
+							<ChildItems>
+								<InputField name="АлгоритмПодписи" id="7">
+									<DataPath>Объект.АлгоритмПодписи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<DropListButton>true</DropListButton>
+									<ContextMenu name="АлгоритмПодписиКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="АлгоритмПодписиРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="АлгоритмХеширования" id="10">
+									<DataPath>Объект.АлгоритмХеширования</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<DropListButton>true</DropListButton>
+									<ContextMenu name="АлгоритмХешированияКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="АлгоритмХешированияРасширеннаяПодсказка" id="12"/>
+								</InputField>
+								<InputField name="АлгоритмШифрования" id="13">
+									<DataPath>Объект.АлгоритмШифрования</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<DropListButton>true</DropListButton>
+									<ContextMenu name="АлгоритмШифрованияКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="АлгоритмШифрованияРасширеннаяПодсказка" id="15"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаАвтоматическиеАлгоритмы" id="115">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автоматические алгоритмы</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАвтоматическиеАлгоритмыРасширеннаяПодсказка" id="116"/>
+							<ChildItems>
+								<InputField name="АлгоритмПодписи1" id="103">
+									<DataPath>АлгоритмПодписи</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Алгоритм подписи</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="АлгоритмПодписи1КонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="АлгоритмПодписи1РасширеннаяПодсказка" id="105"/>
+								</InputField>
+								<InputField name="АлгоритмХеширования1" id="107">
+									<DataPath>АлгоритмХеширования</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Алгоритм хеширования</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="АлгоритмХеширования1КонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="АлгоритмХеширования1РасширеннаяПодсказка" id="109"/>
+								</InputField>
+								<InputField name="АлгоритмШифрования1" id="111">
+									<DataPath>АлгоритмШифрования</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Алгоритм шифрования</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="АлгоритмШифрования1КонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="АлгоритмШифрования1РасширеннаяПодсказка" id="113"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПрограммыЭлектроннойПодписиИШифрования</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СпискиАлгоритмовУспешноЗаполнены" id="4">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АлгоритмыПодписиПоставляемые" id="2">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="АлгоритмыХешированияПоставляемые" id="3">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="АлгоритмыШифрованияПоставляемые" id="6">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="АлгоритмПодписи" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм подписи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АлгоритмХеширования" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм хеширования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АлгоритмШифрования" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм шифрования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УстановитьПометкуУдаления" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление / Снять пометку</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.MarkToDelete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьПометкуУдаления</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ИдентификаторПоставляемойНастройки">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Программа">
+			<Type/>
+		</Parameter>
+		<Parameter name="РежимИспользования">
+			<Type>
+				<v8:Type>cfg:EnumRef.РежимыИспользованияПрограммыЭлектроннойПодписи</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

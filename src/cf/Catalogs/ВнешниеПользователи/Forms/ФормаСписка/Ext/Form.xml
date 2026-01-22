@@ -1,0 +1,1918 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВыбратьИЗакрыть" id="98">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.ФормаВыбратьИЗакрыть</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выбрать и закрыть</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаВыбратьИЗакрытьРасширеннаяПодсказка" id="99"/>
+			</Button>
+			<Button name="ФормаВыбратьВыделенные" id="628" DisplayImportance="High">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.ФормаВыбратьВыделенные</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выбрать</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаВыбратьВыделенныеРасширеннаяПодсказка" id="629"/>
+			</Button>
+			<Button name="ФормаСоздать" id="602">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Create</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьРасширеннаяПодсказка" id="603"/>
+			</Button>
+			<Button name="ФормаВставитьИзБуфераОбмена" id="444">
+				<Type>CommandBarButton</Type>
+				<Width>3</Width>
+				<CommandName>Form.Command.ФормаВставитьИзБуфераОбмена</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вставить из буфера обмена...</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаВставитьИзБуфераОбменаРасширеннаяПодсказка" id="445"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГоризонтальнаяГруппаТакси" id="622">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Горизонтальная группа</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AutoScreenTypeSensitive</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГоризонтальнаяГруппаТаксиРасширеннаяПодсказка" id="623"/>
+			<ChildItems>
+				<RadioButtonField name="ПоказыватьЭлементыСписков" id="624">
+					<DataPath>ПоказыватьЭлементыСписков</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показывать элементы списков</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<RadioButtonType>Tumbler</RadioButtonType>
+					<Orientation>HorizontalIfPossible</Orientation>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Показать все</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string"/>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Выбранные</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Выбранные</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Добавленные</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Добавленные</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Удаленные</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Удаленные</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Без изменений</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">БезИзменений</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ПоказыватьЭлементыСписковКонтекстноеМеню" id="625"/>
+					<ExtendedTooltip name="ПоказыватьЭлементыСписковРасширеннаяПодсказка" id="626"/>
+					<Events>
+						<Event name="OnChange">ПоказыватьЭлементыСписковПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ВидПользователей" id="221">
+			<DataPath>ВидПользователей</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>None</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<ClearButton>true</ClearButton>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды пользователей</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ВидПользователейКонтекстноеМеню" id="222"/>
+			<ExtendedTooltip name="ВидПользователейРасширеннаяПодсказка" id="223"/>
+			<Events>
+				<Event name="StartChoice">ВидПользователейНачалоВыбора</Event>
+				<Event name="Clearing">ВидПользователейОчистка</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="Колонки" id="367">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонки</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AutoScreenTypeSensitive</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КолонкиРасширеннаяПодсказка" id="368"/>
+			<ChildItems>
+				<UsualGroup name="ЛеваяКолонка" id="369">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Левая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Width>50</Width>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ScrollOnCompress>true</ScrollOnCompress>
+					<ExtendedTooltip name="ЛеваяКолонкаРасширеннаяПодсказка" id="370"/>
+					<ChildItems>
+						<UsualGroup name="ЛеваяГруппаПользовательскихНастроек" id="371">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группы внешних пользователей (пользовательские настройки)</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ЛеваяГруппаПользовательскихНастроекРасширеннаяПодсказка" id="372"/>
+						</UsualGroup>
+						<Table name="Группы" id="25">
+							<Representation>Tree</Representation>
+							<SkipOnInput>false</SkipOnInput>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<VerticalLinesBWA>false</VerticalLinesBWA>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Группы</DataPath>
+							<RowPictureDataPath>Группы.НомерКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.СостоянияПользователей</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группы внешних пользователей</v8:content>
+								</v8:item>
+							</Title>
+							<CommandSet>
+								<ExcludedCommand>Delete</ExcludedCommand>
+							</CommandSet>
+							<CurrentRowUse>SelectionPresentation</CurrentRowUse>
+							<ShowCommandBar>auto</ShowCommandBar>
+							<CellHyperlinksRepresentation>DontShow</CellHyperlinksRepresentation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>false</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>ЛеваяГруппаПользовательскихНастроек</UserSettingsGroup>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ГруппыКонтекстноеМеню" id="26"/>
+							<AutoCommandBar name="ГруппыКоманднаяПанель" id="27">
+								<ChildItems>
+									<Button name="ГруппыВыбратьТакси" id="630" DisplayImportance="VeryHigh">
+										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
+										<Enabled>false</Enabled>
+										<CommandName>Form.Command.ГруппыВыбратьТакси</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Выбрать</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ГруппыВыбратьТаксиРасширеннаяПодсказка" id="631"/>
+									</Button>
+									<Button name="ГруппыВключитьВВыбранные" id="517" DisplayImportance="VeryHigh">
+										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.ГруппыВключитьВВыбранные</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Включить</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ГруппыВключитьВВыбранныеРасширеннаяПодсказка" id="518"/>
+									</Button>
+									<Button name="ГруппыИсключитьИзВыбранных" id="519" DisplayImportance="VeryHigh">
+										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.ГруппыИсключитьИзВыбранных</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Исключить</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ГруппыИсключитьИзВыбранныхРасширеннаяПодсказка" id="520"/>
+									</Button>
+									<Button name="ГруппыСоздать" id="638" DisplayImportance="High">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Группы.StandardCommand.Create</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Создать группу</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ГруппыСоздатьРасширеннаяПодсказка" id="639"/>
+									</Button>
+									<Button name="ГруппыСкопировать" id="640" DisplayImportance="High">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Группы.StandardCommand.Copy</CommandName>
+										<ExtendedTooltip name="ГруппыСкопироватьРасширеннаяПодсказка" id="641"/>
+									</Button>
+									<Button name="ГруппыИзменить" id="642" DisplayImportance="High">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Группы.StandardCommand.Change</CommandName>
+										<ExtendedTooltip name="ГруппыИзменитьРасширеннаяПодсказка" id="643"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ГруппыРасширеннаяПодсказка" id="112"/>
+							<SearchStringAddition name="ГруппыСтрокаПоиска" id="170">
+								<AdditionSource>
+									<Item>Группы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ГруппыСтрокаПоискаКонтекстноеМеню" id="171"/>
+								<ExtendedTooltip name="ГруппыСтрокаПоискаРасширеннаяПодсказка" id="172"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ГруппыСостояниеПросмотра" id="173">
+								<AdditionSource>
+									<Item>Группы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ГруппыСостояниеПросмотраКонтекстноеМеню" id="174"/>
+								<ExtendedTooltip name="ГруппыСостояниеПросмотраРасширеннаяПодсказка" id="175"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ГруппыУправлениеПоиском" id="176">
+								<AdditionSource>
+									<Item>Группы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ГруппыУправлениеПоискомКонтекстноеМеню" id="177"/>
+								<ExtendedTooltip name="ГруппыУправлениеПоискомРасширеннаяПодсказка" id="178"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="DragCheck">ГруппыПроверкаПеретаскивания</Event>
+								<Event name="ValueChoice">ГруппыВыборЗначения</Event>
+								<Event name="Selection">ГруппыВыбор</Event>
+								<Event name="OnSelectedRowsSetChange">ГруппыПриИзмененииСоставаВыделенныхСтрок</Event>
+								<Event name="BeforeAddRow">ГруппыПередНачаломДобавления</Event>
+								<Event name="OnActivateRow">ГруппыПриАктивизацииСтроки</Event>
+								<Event name="Drag">ГруппыПеретаскивание</Event>
+								<Event name="OnHover">ГруппыПриНаведении</Event>
+								<Event name="OnChange">ГруппыПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<ColumnGroup name="ГруппыВыбранИНаименование" id="606">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группы выбран и наименование</v8:content>
+										</v8:item>
+									</Title>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="ГруппыВыбранИНаименованиеРасширеннаяПодсказка" id="607"/>
+									<ChildItems>
+										<CheckBoxField name="ГруппыВыбран" id="608">
+											<DataPath>Группы.Выбран</DataPath>
+											<Visible>false</Visible>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выбран</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<CheckBoxType>CheckBox</CheckBoxType>
+											<ContextMenu name="ГруппыВыбранКонтекстноеМеню" id="609"/>
+											<ExtendedTooltip name="ГруппыВыбранРасширеннаяПодсказка" id="610"/>
+										</CheckBoxField>
+										<LabelField name="ГруппыНаименование" id="30">
+											<DataPath>Группы.Наименование</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа внешних пользователей</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ГруппыНаименованиеКонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="ГруппыНаименованиеРасширеннаяПодсказка" id="113"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<LabelField name="ГруппыСсылка" id="158">
+									<DataPath>Группы.Ссылка</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ГруппыСсылкаКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="ГруппыСсылкаРасширеннаяПодсказка" id="160"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПраваяКолонка" id="373">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Width>50</Width>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ScrollOnCompress>true</ScrollOnCompress>
+					<ExtendedTooltip name="ПраваяКолонкаРасширеннаяПодсказка" id="374"/>
+					<ChildItems>
+						<UsualGroup name="ПраваяГруппаПользовательскихНастроек" id="375">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Внешние пользователи (пользовательские настройки)</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПраваяГруппаПользовательскихНастроекРасширеннаяПодсказка" id="376"/>
+						</UsualGroup>
+						<Table name="Список" id="48">
+							<Representation>List</Representation>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<VerticalLinesBWA>false</VerticalLinesBWA>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Список</DataPath>
+							<RowPictureDataPath>Список.НомерКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.СостоянияПользователей</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Внешние пользователи</v8:content>
+								</v8:item>
+							</Title>
+							<CommandSet>
+								<ExcludedCommand>Delete</ExcludedCommand>
+							</CommandSet>
+							<CurrentRowUse>SelectionPresentationAndChoice</CurrentRowUse>
+							<ShowCommandBar>auto</ShowCommandBar>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>ПраваяГруппаПользовательскихНастроек</UserSettingsGroup>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокКонтекстноеМеню" id="49">
+								<ChildItems>
+									<Button name="СписокКонтекстноеМенюУстановитьПароль" id="644">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СписокУстановитьПароль</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Установить пароль...</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="СписокКонтекстноеМенюУстановитьПарольРасширеннаяПодсказка" id="645"/>
+									</Button>
+									<Button name="СписокКонтекстноеМенюНазначитьГруппы" id="646">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СписокНазначитьГруппы</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Назначить группы</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="СписокКонтекстноеМенюНазначитьГруппыРасширеннаяПодсказка" id="647"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="СписокКоманднаяПанель" id="50">
+								<ChildItems>
+									<Button name="СписокВыбратьТакси" id="524" DisplayImportance="VeryHigh">
+										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
+										<Enabled>false</Enabled>
+										<CommandName>Form.Command.СписокВыбратьТакси</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Выбрать</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокВыбратьТаксиРасширеннаяПодсказка" id="525"/>
+									</Button>
+									<Button name="СписокВключитьВВыбранные" id="530" DisplayImportance="VeryHigh">
+										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.СписокВключитьВВыбранные</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Включить</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокВключитьВВыбранныеРасширеннаяПодсказка" id="531"/>
+									</Button>
+									<Button name="СписокИсключитьИзВыбранных" id="532" DisplayImportance="VeryHigh">
+										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.СписокИсключитьИзВыбранных</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Исключить</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокИсключитьИзВыбранныхРасширеннаяПодсказка" id="533"/>
+									</Button>
+									<Button name="СписокПоказатьПользователейНижестоящихГрупп" id="526" DisplayImportance="VeryHigh">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.СписокПоказатьПользователейНижестоящихГрупп</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Показать пользователей нижестоящих групп</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокПоказатьПользователейНижестоящихГруппРасширеннаяПодсказка" id="527"/>
+									</Button>
+									<Button name="СписокПоказатьНедействительныхПользователей" id="528" DisplayImportance="VeryHigh">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.СписокПоказатьНедействительныхПользователей</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Показать недействительных пользователей</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокПоказатьНедействительныхПользователейРасширеннаяПодсказка" id="529"/>
+									</Button>
+									<Button name="СписокСоздать" id="604" DisplayImportance="High">
+										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
+										<CommandName>Form.StandardCommand.Create</CommandName>
+										<ExtendedTooltip name="СписокСоздатьРасширеннаяПодсказка" id="605"/>
+									</Button>
+									<Button name="СписокСкопировать" id="534" DisplayImportance="High">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Список.StandardCommand.Copy</CommandName>
+										<ExtendedTooltip name="СписокСкопироватьРасширеннаяПодсказка" id="535"/>
+									</Button>
+									<Button name="СписокИзменить" id="536" DisplayImportance="High">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Список.StandardCommand.Change</CommandName>
+										<ExtendedTooltip name="СписокИзменитьРасширеннаяПодсказка" id="537"/>
+									</Button>
+									<Button name="СписокУстановитьПароль" id="538" DisplayImportance="High">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СписокУстановитьПароль</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Установить пароль...</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="СписокУстановитьПарольРасширеннаяПодсказка" id="539"/>
+									</Button>
+									<Button name="СписокНазначитьГруппы" id="540" DisplayImportance="High">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СписокНазначитьГруппы</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Назначить группы</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="СписокНазначитьГруппыРасширеннаяПодсказка" id="541"/>
+									</Button>
+									<Button name="СписокПользователиИнформационнойБазы" id="542">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СписокПользователиИнформационнойБазы</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Пользователи информационной базы</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокПользователиИнформационнойБазыРасширеннаяПодсказка" id="543"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="121"/>
+							<SearchStringAddition name="СписокСтрокаПоиска" id="179">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="180"/>
+								<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="181"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокСостояниеПросмотра" id="182">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="183"/>
+								<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="184"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокУправлениеПоиском" id="185">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="186"/>
+								<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="187"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="DragCheck">СписокПроверкаПеретаскивания</Event>
+								<Event name="ValueChoice">СписокВыборЗначения</Event>
+								<Event name="Selection">СписокВыбор</Event>
+								<Event name="OnSelectedRowsSetChange">СписокПриИзмененииСоставаВыделенныхСтрок</Event>
+								<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+								<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+								<Event name="OnGetDataAtServer">СписокПриПолученииДанныхНаСервере</Event>
+								<Event name="BeforeRowChange">СписокПередНачаломИзменения</Event>
+								<Event name="OnHover">СписокПриНаведении</Event>
+								<Event name="OnChange">СписокПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<ColumnGroup name="СписокВыбранИНаименование" id="612">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбран и наименование</v8:content>
+										</v8:item>
+									</Title>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="СписокВыбранИНаименованиеРасширеннаяПодсказка" id="613"/>
+									<ChildItems>
+										<CheckBoxField name="СписокВыбран" id="614">
+											<DataPath>Список.Выбран</DataPath>
+											<Visible>false</Visible>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выбран</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<CheckBoxType>CheckBox</CheckBoxType>
+											<ContextMenu name="СписокВыбранКонтекстноеМеню" id="615"/>
+											<ExtendedTooltip name="СписокВыбранРасширеннаяПодсказка" id="616"/>
+										</CheckBoxField>
+										<LabelField name="СписокНаименование" id="51">
+											<DataPath>Список.Наименование</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Внешний пользователь</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="СписокНаименованиеКонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="СписокНаименованиеРасширеннаяПодсказка" id="122"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<LabelField name="СписокСсылка" id="135">
+									<DataPath>Список.Ссылка</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="СписокСсылкаКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="СписокСсылкаРасширеннаяПодсказка" id="137"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Легенда" id="255">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Легенда</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AutoScreenTypeSensitive</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ЛегендаРасширеннаяПодсказка" id="256"/>
+			<ChildItems>
+				<LabelDecoration name="ЛегендаНадпись" id="291">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Легенда:</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЛегендаНадписьКонтекстноеМеню" id="292"/>
+					<ExtendedTooltip name="ЛегендаНадписьРасширеннаяПодсказка" id="293"/>
+				</LabelDecoration>
+				<UsualGroup name="ВходОграничен" id="257">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вход ограничен</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ВходОграниченРасширеннаяПодсказка" id="258"/>
+					<ChildItems>
+						<PictureDecoration name="ВходОграниченКартинка" id="259">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вход ограничен картинка</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.СостояниеПользователя17</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ВходОграниченКартинкаКонтекстноеМеню" id="260"/>
+							<ExtendedTooltip name="ВходОграниченКартинкаРасширеннаяПодсказка" id="261"/>
+						</PictureDecoration>
+						<LabelDecoration name="ВходОграниченНадпись" id="262">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вход ограничен</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установлено ограничение входа до даты или
+установлен срок максимальной неактивности</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ContextMenu name="ВходОграниченНадписьКонтекстноеМеню" id="263"/>
+							<ExtendedTooltip name="ВходОграниченНадписьРасширеннаяПодсказка" id="264"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="НетВхода" id="268">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нет входа</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="НетВходаРасширеннаяПодсказка" id="269"/>
+					<ChildItems>
+						<PictureDecoration name="НетВходаКартинка" id="270">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Нет входа картинка</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.СостояниеПользователя16</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="НетВходаКартинкаКонтекстноеМеню" id="271"/>
+							<ExtendedTooltip name="НетВходаКартинкаРасширеннаяПодсказка" id="272"/>
+						</PictureDecoration>
+						<LabelDecoration name="НетВходаНадпись" id="273">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Нет входа</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не включен вход в приложение, нет прав для входа или
+нет ни одного права запуска (тонкий клиент, веб-клиент)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ContextMenu name="НетВходаНадписьКонтекстноеМеню" id="274"/>
+							<ExtendedTooltip name="НетВходаНадписьРасширеннаяПодсказка" id="275"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="БезНастройки" id="279">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Без настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="БезНастройкиРасширеннаяПодсказка" id="280"/>
+					<ChildItems>
+						<PictureDecoration name="БезНастройкиКартинка" id="281">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Без настройки картинка</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.СостояниеПользователя18</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="БезНастройкиКартинкаКонтекстноеМеню" id="282"/>
+							<ExtendedTooltip name="БезНастройкиКартинкаРасширеннаяПодсказка" id="283"/>
+						</PictureDecoration>
+						<LabelDecoration name="БезНастройкиНадпись" id="284">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Без настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Нет пользователя информационной базы
+(пустое имя для входа)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ContextMenu name="БезНастройкиНадписьКонтекстноеМеню" id="285"/>
+							<ExtendedTooltip name="БезНастройкиНадписьРасширеннаяПодсказка" id="286"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.ВозможноСменитьПароль</Field>
+				<Field>Список.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ВнешниеПользователи.Ссылка КАК Ссылка,
+	ВнешниеПользователи.Подготовлен КАК Подготовлен,
+	ВнешниеПользователи.ПометкаУдаления КАК ПометкаУдаления,
+	ВнешниеПользователи.Недействителен КАК Недействителен,
+	ВнешниеПользователи.Предопределенный КАК Предопределенный,
+	ВнешниеПользователи.Ссылка В (&amp;Выбранные) КАК Выбран,
+	ВнешниеПользователи.Наименование КАК Наименование,
+	ВнешниеПользователи.Комментарий КАК Комментарий,
+	ТИПЗНАЧЕНИЯ(ВнешниеПользователи.ОбъектАвторизации) КАК ТипОбъектаАвторизации,
+	-1 КАК НомерКартинки,
+	ВЫБОР
+		КОГДА ВнешниеПользователи.Недействителен
+			ТОГДА ЛОЖЬ
+		КОГДА ВнешниеПользователи.ИдентификаторПользователяИБ = &amp;ИдентификаторТекущегоПользователяИБ
+			ТОГДА ИСТИНА
+		КОГДА &amp;ВозможноСменитьТолькоСвойПароль
+			ТОГДА ЛОЖЬ
+		КОГДА ВнешниеПользователи.ИдентификаторПользователяИБ = &amp;ПустойУникальныйИдентификатор
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ КАК ВозможноСменитьПароль,
+	ВнешниеПользователи.ИдентификаторПользователяИБ КАК ИдентификаторПользователяИБ,
+	СведенияОПользователях.*
+ИЗ
+	Справочник.ВнешниеПользователи КАК ВнешниеПользователи
+		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СведенияОПользователях КАК СведенияОПользователях
+		ПО (СведенияОПользователях.Пользователь = ВнешниеПользователи.Ссылка)}
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ВсеВнешниеПользователи
+				ТОГДА ИСТИНА
+			КОГДА &amp;ВыбиратьИерархически
+				ТОГДА ИСТИНА В
+						(ВЫБРАТЬ
+							ИСТИНА
+						ИЗ
+							РегистрСведений.СоставыГруппПользователей КАК СоставыГруппПользователей
+						ГДЕ
+							СоставыГруппПользователей.Пользователь = ВнешниеПользователи.Ссылка
+							И СоставыГруппПользователей.ГруппаПользователей = &amp;ГруппаВнешнихПользователей)
+			ИНАЧЕ ИСТИНА В
+					(ВЫБРАТЬ
+						ИСТИНА
+					ИЗ
+						Справочник.ГруппыВнешнихПользователей.Состав КАК ГруппыВнешнихПользователейСостав
+					ГДЕ
+						ГруппыВнешнихПользователейСостав.ВнешнийПользователь = ВнешниеПользователи.Ссылка
+						И ГруппыВнешнихПользователейСостав.Ссылка = &amp;ГруппаВнешнихПользователей)
+		КОНЕЦ
+{ГДЕ
+	ВнешниеПользователи.Ссылка В (&amp;СсылкиДляПросмотра)}</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подготовлен</dcssch:dataPath>
+					<dcssch:field>Подготовлен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование (Внешний пользователь)</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Недействителен</dcssch:dataPath>
+					<dcssch:field>Недействителен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИдентификаторПользователяИБ</dcssch:dataPath>
+					<dcssch:field>ИдентификаторПользователяИБ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъектАвторизации</dcssch:dataPath>
+					<dcssch:field>ОбъектАвторизации</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УстановитьРолиНепосредственно</dcssch:dataPath>
+					<dcssch:field>УстановитьРолиНепосредственно</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДополнительныеРеквизиты</dcssch:dataPath>
+					<dcssch:field>ДополнительныеРеквизиты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИдентификаторПользователяСервиса</dcssch:dataPath>
+					<dcssch:field>ИдентификаторПользователяСервиса</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УдалитьСвойстваПользователяИБ</dcssch:dataPath>
+					<dcssch:field>УдалитьСвойстваПользователяИБ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АутентификацияOpenIDConnect</dcssch:dataPath>
+					<dcssch:field>АутентификацияOpenIDConnect</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НетПрав</dcssch:dataPath>
+					<dcssch:field>НетПрав</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АдресЭлектроннойПочты</dcssch:dataPath>
+					<dcssch:field>АдресЭлектроннойПочты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПотребоватьСменуПароляПриВходе</dcssch:dataPath>
+					<dcssch:field>ПотребоватьСменуПароляПриВходе</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЗащитаОтОпасныхДействий</dcssch:dataPath>
+					<dcssch:field>ЗащитаОтОпасныхДействий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипОбъектаАвторизации</dcssch:dataPath>
+					<dcssch:field>ТипОбъектаАвторизации</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип объекта авторизации</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Язык</dcssch:dataPath>
+					<dcssch:field>Язык</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НомерКартинки</dcssch:dataPath>
+					<dcssch:field>НомерКартинки</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер картинки</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СрокДействия</dcssch:dataPath>
+					<dcssch:field>СрокДействия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВозможноСменитьПароль</dcssch:dataPath>
+					<dcssch:field>ВозможноСменитьПароль</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возможно сменить пароль</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВходВПрограммуОграничен</dcssch:dataPath>
+					<dcssch:field>ВходВПрограммуОграничен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Пользователь</dcssch:dataPath>
+					<dcssch:field>Пользователь</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка на пользователя в регистре</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>
+						<dcssch:field>true</dcssch:field>
+						<dcssch:condition>true</dcssch:condition>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:useRestriction>
+					<dcssch:attributeUseRestriction>
+						<dcssch:field>true</dcssch:field>
+						<dcssch:condition>true</dcssch:condition>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:attributeUseRestriction>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПользовательОС</dcssch:dataPath>
+					<dcssch:field>ПользовательОС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СрокДействияНеОграничен</dcssch:dataPath>
+					<dcssch:field>СрокДействияНеОграничен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УдалитьДатаНачалаИспользованияПароля</dcssch:dataPath>
+					<dcssch:field>УдалитьДатаНачалаИспользованияПароля</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПросрочкаРаботыВПрограммеДоЗапрещенияВхода</dcssch:dataPath>
+					<dcssch:field>ПросрочкаРаботыВПрограммеДоЗапрещенияВхода</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаРазрешенияВходаВПрограмму</dcssch:dataPath>
+					<dcssch:field>ДатаРазрешенияВходаВПрограмму</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаПоследнейАктивности</dcssch:dataPath>
+					<dcssch:field>ДатаПоследнейАктивности</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаАвтоматическогоЗапрещенияВхода</dcssch:dataPath>
+					<dcssch:field>ДатаАвтоматическогоЗапрещенияВхода</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УдалитьИспользованныеПароли</dcssch:dataPath>
+					<dcssch:field>УдалитьИспользованныеПароли</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПоследнийИспользуемыйКлиент</dcssch:dataPath>
+					<dcssch:field>ПоследнийИспользуемыйКлиент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АутентификацияСтандартная</dcssch:dataPath>
+					<dcssch:field>АутентификацияСтандартная</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НомерКартинкиСостояния</dcssch:dataPath>
+					<dcssch:field>НомерКартинкиСостояния</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВходВПрограммуРазрешен</dcssch:dataPath>
+					<dcssch:field>ВходВПрограммуРазрешен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НедостаточноПравДляВхода</dcssch:dataPath>
+					<dcssch:field>НедостаточноПравДляВхода</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Имя</dcssch:dataPath>
+					<dcssch:field>Имя</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЗапрещеноИзменятьПароль</dcssch:dataPath>
+					<dcssch:field>ЗапрещеноИзменятьПароль</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЗапрещеноВосстанавливатьПароль</dcssch:dataPath>
+					<dcssch:field>ЗапрещеноВосстанавливатьПароль</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПоказыватьВСпискеВыбора</dcssch:dataPath>
+					<dcssch:field>ПоказыватьВСпискеВыбора</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АутентификацияOpenID</dcssch:dataPath>
+					<dcssch:field>АутентификацияOpenID</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АутентификацияТокеномДоступа</dcssch:dataPath>
+					<dcssch:field>АутентификацияТокеномДоступа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АутентификацияОС</dcssch:dataPath>
+					<dcssch:field>АутентификацияОС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Выбран</dcssch:dataPath>
+					<dcssch:field>Выбран</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбран</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Parameter>
+					<dcssch:name>ВозможноСменитьТолькоСвойПароль</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возможно сменить только свой пароль</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:boolean</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:boolean">false</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ВсеВнешниеПользователи</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Все внешние пользователи</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:boolean</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:boolean">false</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ВыбиратьИерархически</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбирать иерархически</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:boolean</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:boolean">false</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ГруппаВнешнихПользователей</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа внешних пользователей</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ВнешниеПользователи</v8:Type>
+						<v8:Type>cfg:CatalogRef.ГруппыВнешнихПользователей</v8:Type>
+						<v8:Type>cfg:CatalogRef.ГруппыПользователей</v8:Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ИдентификаторТекущегоПользователяИБ</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор текущего пользователя ИБ</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>v8:UUID</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="v8:UUID">00000000-0000-0000-0000-000000000000</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ПустойУникальныйИдентификатор</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пустой уникальный идентификатор</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>v8:UUID</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="v8:UUID">00000000-0000-0000-0000-000000000000</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Выбранные</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбранные</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ВнешниеПользователи</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+					<dcssch:valueListAllowed>true</dcssch:valueListAllowed>
+					<dcssch:availableAsField>false</dcssch:availableAsField>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>СсылкиДляПросмотра</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылки для просмотра</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ВнешниеПользователи</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+					<dcssch:valueListAllowed>true</dcssch:valueListAllowed>
+					<dcssch:availableAsField>false</dcssch:availableAsField>
+				</Parameter>
+				<MainTable>Catalog.ВнешниеПользователи</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Группы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>Группы.ВсеОбъектыАвторизации</Field>
+				<Field>Группы.ПометкаУдаления</Field>
+				<Field>Группы.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ГруппыВнешнихПользователей.Ссылка,
+	ГруппыВнешнихПользователей.ПометкаУдаления,
+	ГруппыВнешнихПользователей.Предопределенный,
+	ГруппыВнешнихПользователей.Родитель,
+	ГруппыВнешнихПользователей.Ссылка В (&amp;Выбранные) КАК Выбран,
+	ГруппыВнешнихПользователей.Наименование,
+	ВЫБОР
+		КОГДА ГруппыВнешнихПользователей.ПометкаУдаления
+			ТОГДА 8
+		ИНАЧЕ 9
+	КОНЕЦ КАК НомерКартинки,
+	ГруппыВнешнихПользователей.ВсеОбъектыАвторизации,
+	ГруппыВнешнихПользователей.Комментарий
+ИЗ
+	Справочник.ГруппыВнешнихПользователей КАК ГруппыВнешнихПользователей
+{ГДЕ
+	ГруппыВнешнихПользователей.Ссылка В (&amp;СсылкиДляПросмотра)}</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Родитель</dcssch:dataPath>
+					<dcssch:field>Родитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВсеОбъектыАвторизации</dcssch:dataPath>
+					<dcssch:field>ВсеОбъектыАвторизации</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование (Группа внешних пользователей)</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтредактированныеПредопределенныеРеквизиты</dcssch:dataPath>
+					<dcssch:field>ОтредактированныеПредопределенныеРеквизиты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Состав</dcssch:dataPath>
+					<dcssch:field>Состав</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Роли</dcssch:dataPath>
+					<dcssch:field>Роли</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Назначение</dcssch:dataPath>
+					<dcssch:field>Назначение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НомерКартинки</dcssch:dataPath>
+					<dcssch:field>НомерКартинки</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер картинки</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Выбран</dcssch:dataPath>
+					<dcssch:field>Выбран</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбран</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Parameter>
+					<dcssch:name>Выбранные</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбранные</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ГруппыВнешнихПользователей</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+					<dcssch:valueListAllowed>true</dcssch:valueListAllowed>
+					<dcssch:availableAsField>false</dcssch:availableAsField>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>СсылкиДляПросмотра</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылки для просмотра</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ГруппыВнешнихПользователей</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+					<dcssch:valueListAllowed>true</dcssch:valueListAllowed>
+					<dcssch:availableAsField>false</dcssch:availableAsField>
+				</Parameter>
+				<MainTable>Catalog.ГруппыВнешнихПользователей</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Предопределенный</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПоказыватьПользователейНижестоящихГрупп" id="3">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПоказыватьПользователейНижестоящихГрупп</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ХранимыеПараметры" id="11">
+			<Type/>
+		</Attribute>
+		<Attribute name="Выбранные" id="4">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Пользователь" id="1">
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВнешниеПользователи</v8:Type>
+						<v8:Type>cfg:CatalogRef.ГруппыВнешнихПользователей</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Изменение" id="3">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>2</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоГруппа" id="11">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВидПользователей" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьВнешнихПользователей</Item>
+			</FunctionalOptions>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ПоказыватьЭлементыСписков" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать элементы списков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПропуститьПредупреждениеОВыделенныхПриРасширенномПодборе" id="5">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПропуститьПредупреждениеОВыделенныхПриРасширенномПодборе</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СписокНазначитьГруппы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Shift+M</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.MoveItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СписокНазначитьГруппы</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
+			<SelectedRowsUse>Use</SelectedRowsUse>
+		</Command>
+		<Command name="ФормаВыбратьИЗакрыть" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ФормаВыбратьИЗакрыть</Action>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+		<Command name="СписокУстановитьПароль" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить пароль...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить пароль...</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СписокУстановитьПароль</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
+			<SelectedRowsUse>DontUse</SelectedRowsUse>
+		</Command>
+		<Command name="СписокПользователиИнформационнойБазы" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователи информационной базы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователи информационной базы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СписокПользователиИнформационнойБазы</Action>
+		</Command>
+		<Command name="ГруппыВключитьВВыбранные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить в выбранные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceCheckBox</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ГруппыВключитьВВыбранные</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Группы</AssociatedTableElementId>
+			<SelectedRowsUse>Use</SelectedRowsUse>
+		</Command>
+		<Command name="ГруппыИсключитьИзВыбранных" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключить из выбранных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceCross</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ГруппыИсключитьИзВыбранных</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Группы</AssociatedTableElementId>
+			<SelectedRowsUse>Use</SelectedRowsUse>
+		</Command>
+		<Command name="СписокВыбратьТакси" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать внешнего пользователя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ChooseValue</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СписокВыбратьТакси</Action>
+			<Representation>Text</Representation>
+		</Command>
+		<Command name="СписокВключитьВВыбранные" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить в выбранные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceCheckBox</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СписокВключитьВВыбранные</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
+			<SelectedRowsUse>Use</SelectedRowsUse>
+		</Command>
+		<Command name="СписокИсключитьИзВыбранных" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключить из выбранных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceCross</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СписокИсключитьИзВыбранных</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
+			<SelectedRowsUse>Use</SelectedRowsUse>
+		</Command>
+		<Command name="СписокПоказатьНедействительныхПользователей" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать недействительных пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать недействительных пользователей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПоказатьНедействительныхПользователей</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>СписокПоказатьНедействительныхПользователей</Action>
+		</Command>
+		<Command name="СписокПоказатьПользователейНижестоящихГрупп" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пользователей нижестоящих групп</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пользователей нижестоящих групп</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПоказатьПользователейНижестоящихГрупп</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ГруппыПоказатьПользователейНижестоящихГрупп</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьГруппыВнешнихПользователей</Item>
+			</FunctionalOptions>
+		</Command>
+		<Command name="ФормаВставитьИзБуфераОбмена" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить из буфера обмена...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить из буфера обмена...</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВставитьИзБуфераОбмена</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ФормаВставитьИзБуфераОбмена</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ФормаВыбратьВыделенные" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ФормаВыбратьВыделенные</Action>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+		<Command name="ГруппыВыбратьТакси" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать группу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ChooseValue</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ГруппыВыбратьТакси</Action>
+			<Representation>Text</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ВыборГруппВнешнихПользователей">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ЗакрыватьПриВыборе">
+			<Type/>
+		</Parameter>
+		<Parameter name="СкрытьПользователейБезПользователяИБ">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="РасширенныйПодбор">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ПараметрыРасширеннойФормыПодбора">
+			<Type/>
+		</Parameter>
+		<Parameter name="СкрываемыеПользователи">
+			<Type/>
+		</Parameter>
+		<Parameter name="Назначение">
+			<Type/>
+		</Parameter>
+		<Parameter name="ИдентификаторыНесуществующихПользователейИБ">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ТекущаяСтрока">
+			<Type/>
+		</Parameter>
+	</Parameters>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.ДополнительныеСведенияКоманднаяПанель</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

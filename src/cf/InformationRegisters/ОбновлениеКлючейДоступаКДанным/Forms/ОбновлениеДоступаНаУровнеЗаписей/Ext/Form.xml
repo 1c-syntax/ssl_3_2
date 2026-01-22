@@ -1,0 +1,1637 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Width>80</Width>
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoURL>false</AutoURL>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаРучноеУправление" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ФормаРучноеУправление</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Ручное управление ...</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаРучноеУправлениеРасширеннаяПодсказка" id="4"/>
+			</Button>
+			<Button name="ФормаОстановитьИЗапретитьОбновлениеДоступа" id="275">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОстановитьИЗапретитьОбновлениеДоступа</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Остановить и запретить обновление доступа</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаОстановитьИЗапретитьОбновлениеДоступаРасширеннаяПодсказка" id="276"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ВерхняяПанельФормы" id="148">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Верхняя панель формы</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AutoScreenTypeSensitive</Group>
+			<VerticalAlign>Center</VerticalAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ВерхняяПанельФормыРасширеннаяПодсказка" id="149"/>
+			<ChildItems>
+				<UsualGroup name="ОбновлениеДоступаНеВыполняется" id="215">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновление доступа не выполняется</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ОбновлениеДоступаНеВыполняетсяРасширеннаяПодсказка" id="216"/>
+					<ChildItems>
+						<PictureDecoration name="ОбновлениеДоступаНеВыполняетсяКартинка" id="245">
+							<Width>4</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновление доступа не выполняется (Картинка)</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Регламентное или фоновое задание</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ОбновлениеДоступаНеВыполняетсяКартинкаКонтекстноеМеню" id="246"/>
+							<ExtendedTooltip name="ОбновлениеДоступаНеВыполняетсяКартинкаРасширеннаяПодсказка" id="247"/>
+						</PictureDecoration>
+						<UsualGroup name="ГруппаКоличествоПотоковОбновленияДоступа1" id="309">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>1 поток</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<VerticalSpacing>Double</VerticalSpacing>
+							<Behavior>PopUp</Behavior>
+							<ControlRepresentation>Button</ControlRepresentation>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаКоличествоПотоковОбновленияДоступа1РасширеннаяПодсказка" id="310"/>
+							<ChildItems>
+								<InputField name="КоличествоПотоковОбновленияДоступа1" id="313">
+									<DataPath>КоличествоПотоковОбновленияДоступа</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество потоков обновления доступа</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ClearButton>true</ClearButton>
+									<SpinButton>true</SpinButton>
+									<MinValue xsi:type="xs:decimal">1</MinValue>
+									<ContextMenu name="КоличествоПотоковОбновленияДоступа1КонтекстноеМеню" id="314"/>
+									<ExtendedTooltip name="КоличествоПотоковОбновленияДоступа1РасширеннаяПодсказка" id="315"/>
+									<Events>
+										<Event name="OnChange">КоличествоПотоковОбновленияДоступаПриИзменении</Event>
+										<Event name="EditTextChange">КоличествоПотоковОбновленияДоступаИзменениеТекстаРедактирования</Event>
+									</Events>
+								</InputField>
+								<InputField name="БалансировкаНагрузкиНаДиск1" id="321">
+									<DataPath>БалансировкаНагрузкиНаДиск</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Оптимизировать для базы данных размещенной на устройстве</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ListChoiceMode>true</ListChoiceMode>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Быстрое устройство (SSD)</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:boolean">false</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Медленное устройство (HDD)</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:boolean">true</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="БалансировкаНагрузкиНаДиск1КонтекстноеМеню" id="322"/>
+									<ExtendedTooltip name="БалансировкаНагрузкиНаДиск1РасширеннаяПодсказка" id="323"/>
+									<Events>
+										<Event name="OnChange">БалансировкаНагрузкиНаДискПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ОбновлениеДоступаНеВыполняетсяНадпись" id="223">
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не выполняется</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пауза между запусками или выполнено 100% обновления</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ContextMenu name="ОбновлениеДоступаНеВыполняетсяНадписьКонтекстноеМеню" id="224"/>
+							<ExtendedTooltip name="ОбновлениеДоступаНеВыполняетсяНадписьРасширеннаяПодсказка" id="225"/>
+						</LabelDecoration>
+						<Button name="ЗапуститьОбновлениеДоступаСейчас" id="144">
+							<Type>Hyperlink</Type>
+							<Height>1</Height>
+							<CommandName>Form.Command.ЗапуститьОбновлениеДоступаСейчас</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запустить вручную</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ЗапуститьОбновлениеДоступаСейчасРасширеннаяПодсказка" id="145"/>
+						</Button>
+						<LabelDecoration name="ПоследнееЗавершениеОбновленияДоступа" id="260">
+							<Height>1</Height>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>(завершено в &lt;b&gt;09:05:03&lt;/&gt; за 1 мин 5 сек)</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПоследнееЗавершениеОбновленияДоступаКонтекстноеМеню" id="261"/>
+							<ExtendedTooltip name="ПоследнееЗавершениеОбновленияДоступаРасширеннаяПодсказка" id="262"/>
+							<Events>
+								<Event name="URLProcessing">ПоследнееЗавершениеОбновленияДоступаОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ОбновлениеДоступаВыполняется" id="179">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновление доступа выполняется</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ОбновлениеДоступаВыполняетсяРасширеннаяПодсказка" id="180"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаФоновоеЗаданиеВыполняется" id="181">
+							<Width>4</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка фоновое задание выполняется</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновление доступа выполняется</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="КартинкаФоновоеЗаданиеВыполняетсяКонтекстноеМеню" id="182"/>
+							<ExtendedTooltip name="КартинкаФоновоеЗаданиеВыполняетсяРасширеннаяПодсказка" id="183"/>
+						</PictureDecoration>
+						<PictureDecoration name="КартинкаФоновоеЗаданиеОжидаетВыполнения" id="187">
+							<Visible>false</Visible>
+							<Width>2</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка фоновое задание ожидает выполнения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновление доступа ожидает в очереди, а не выполняется
+(так происходит, когда очередь фоновых заданий слишком большая)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PictureSize>AutoSize</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.ОжидаемаяДлительнаяОперация48</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="КартинкаФоновоеЗаданиеОжидаетВыполненияКонтекстноеМеню" id="188"/>
+							<ExtendedTooltip name="КартинкаФоновоеЗаданиеОжидаетВыполненияРасширеннаяПодсказка" id="189"/>
+						</PictureDecoration>
+						<UsualGroup name="ГруппаКоличествоПотоковОбновленияДоступа2" id="324">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>1 поток</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<VerticalSpacing>Double</VerticalSpacing>
+							<Behavior>PopUp</Behavior>
+							<ControlRepresentation>Button</ControlRepresentation>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаКоличествоПотоковОбновленияДоступа2РасширеннаяПодсказка" id="325"/>
+							<ChildItems>
+								<InputField name="КоличествоПотоковОбновленияДоступа2" id="328">
+									<DataPath>КоличествоПотоковОбновленияДоступа</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество потоков обновления доступа</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ClearButton>true</ClearButton>
+									<SpinButton>true</SpinButton>
+									<MinValue xsi:type="xs:decimal">1</MinValue>
+									<ContextMenu name="КоличествоПотоковОбновленияДоступа2КонтекстноеМеню" id="329"/>
+									<ExtendedTooltip name="КоличествоПотоковОбновленияДоступа2РасширеннаяПодсказка" id="330"/>
+									<Events>
+										<Event name="OnChange">КоличествоПотоковОбновленияДоступаПриИзменении</Event>
+										<Event name="EditTextChange">КоличествоПотоковОбновленияДоступаИзменениеТекстаРедактирования</Event>
+									</Events>
+								</InputField>
+								<InputField name="БалансировкаНагрузкиНаДиск2" id="336">
+									<DataPath>БалансировкаНагрузкиНаДиск</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Оптимизировать для базы данных размещенной на устройстве</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ListChoiceMode>true</ListChoiceMode>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Быстрое устройство (SSD)</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:boolean">false</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Медленное устройство (HDD)</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:boolean">true</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="БалансировкаНагрузкиНаДиск2КонтекстноеМеню" id="337"/>
+									<ExtendedTooltip name="БалансировкаНагрузкиНаДиск2РасширеннаяПодсказка" id="338"/>
+									<Events>
+										<Event name="OnChange">БалансировкаНагрузкиНаДискПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ВремяВыполненияФоновогоЗадания1" id="226">
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполняется 2 мин 22 сек</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ВремяВыполненияФоновогоЗадания1КонтекстноеМеню" id="227"/>
+							<ExtendedTooltip name="ВремяВыполненияФоновогоЗадания1РасширеннаяПодсказка" id="228"/>
+						</LabelDecoration>
+						<LabelDecoration name="ВремяВыполненияФоновогоЗадания2" id="190">
+							<Visible>false</Visible>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполняется 3 мин 33 сек</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ВремяВыполненияФоновогоЗадания2КонтекстноеМеню" id="191"/>
+							<ExtendedTooltip name="ВремяВыполненияФоновогоЗадания2РасширеннаяПодсказка" id="192"/>
+						</LabelDecoration>
+						<Button name="ОстановитьИЗапретитьОбновлениеДоступа" id="195">
+							<Type>Hyperlink</Type>
+							<Height>1</Height>
+							<CommandName>Form.Command.ОстановитьИЗапретитьОбновлениеДоступа</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отменить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОстановитьИЗапретитьОбновлениеДоступаРасширеннаяПодсказка" id="196"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ОбновлениеДоступаЗапрещено" id="232">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновление доступа запрещено</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ОбновлениеДоступаЗапрещеноРасширеннаяПодсказка" id="233"/>
+					<ChildItems>
+						<PictureDecoration name="ОбновлениеДоступаЗапрещеноКартинка" id="237">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновление доступа запрещено (Картинка)</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запрещено обновление доступа и отключено
+регламентное задание "Обновление доступа на уровне записей"</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PictureSize>ByFontSize</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ОбновлениеДоступаЗапрещеноКартинкаКонтекстноеМеню" id="238"/>
+							<ExtendedTooltip name="ОбновлениеДоступаЗапрещеноКартинкаРасширеннаяПодсказка" id="239"/>
+						</PictureDecoration>
+						<LabelDecoration name="ОбновлениеДоступаЗапрещеноНадпись" id="240">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновление запрещено</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запрещено обновление доступа и отключено
+регламентное задание "Обновление доступа на уровне записей"</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ContextMenu name="ОбновлениеДоступаЗапрещеноНадписьКонтекстноеМеню" id="241"/>
+							<ExtendedTooltip name="ОбновлениеДоступаЗапрещеноНадписьРасширеннаяПодсказка" id="242"/>
+						</LabelDecoration>
+						<Button name="РазрешитьОбновлениеДоступа" id="243">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.РазрешитьОбновлениеДоступа</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Разрешить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="РазрешитьОбновлениеДоступаРасширеннаяПодсказка" id="244"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="РегламентноеЗаданиеОтключено" id="110">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регламентное задание отключено</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="РегламентноеЗаданиеОтключеноРасширеннаяПодсказка" id="111"/>
+					<ChildItems>
+						<PictureDecoration name="РегламентноеЗаданиеОтключеноКартинка" id="115">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Регламентное задание отключено (Картинка)</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отключено регламентное задание
+"Обновление доступа на уровне записей"</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PictureSize>ByFontSize</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="РегламентноеЗаданиеОтключеноКартинкаКонтекстноеМеню" id="116"/>
+							<ExtendedTooltip name="РегламентноеЗаданиеОтключеноКартинкаРасширеннаяПодсказка" id="117"/>
+						</PictureDecoration>
+						<LabelDecoration name="РегламентноеЗаданиеОтключеноНадпись" id="112">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задание отключено</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отключено регламентное задание
+"Обновление доступа на уровне записей"</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ContextMenu name="РегламентноеЗаданиеОтключеноНадписьКонтекстноеМеню" id="113"/>
+							<ExtendedTooltip name="РегламентноеЗаданиеОтключеноНадписьРасширеннаяПодсказка" id="114"/>
+						</LabelDecoration>
+						<Button name="ВключитьРегламентноеЗадание" id="118">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ВключитьРегламентноеЗадание</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Включить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ВключитьРегламентноеЗаданиеРасширеннаяПодсказка" id="119"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ОбщийИндикаторПрогрессаОбновления" id="91">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общий индикатор состояния обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AutoScreenTypeSensitive</Group>
+			<HorizontalSpacing>OneAndHalf</HorizontalSpacing>
+			<VerticalAlign>Center</VerticalAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщийИндикаторПрогрессаОбновленияРасширеннаяПодсказка" id="92"/>
+			<ChildItems>
+				<ProgressBarField name="ВсегоОбновлено" id="88">
+					<DataPath>ВсегоОбновлено</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновление доступа</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прогресс обновления доступа ко всем спискам</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<Width>1</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>40</MaxWidth>
+					<ShowPercent>true</ShowPercent>
+					<ContextMenu name="ВсегоОбновленоКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="ВсегоОбновленоРасширеннаяПодсказка" id="90"/>
+				</ProgressBarField>
+				<Pages name="ОбновлениеПрогресса" id="61">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновление состояния</v8:content>
+						</v8:item>
+					</Title>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="ОбновлениеПрогрессаРасширеннаяПодсказка" id="62"/>
+					<ChildItems>
+						<Page name="ОбновлениеПрогрессаЗавершено" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновление состояния завершено</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ОбновлениеПрогрессаЗавершеноРасширеннаяПодсказка" id="64"/>
+							<ChildItems>
+								<LabelDecoration name="ОбновитьПрогресс" id="410">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обновить состояние</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обновить состояние
+обновления доступа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ОбновитьПрогрессКонтекстноеМеню" id="411"/>
+									<ExtendedTooltip name="ОбновитьПрогрессРасширеннаяПодсказка" id="412"/>
+									<Events>
+										<Event name="Click">ОбновитьПрогрессНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</Page>
+						<Page name="ОбновлениеПрогрессаВыполняется" id="65">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновление состояния выполняется</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ОбновлениеПрогрессаВыполняетсяРасширеннаяПодсказка" id="66"/>
+							<ChildItems>
+								<PictureDecoration name="КартинкаОбновлениеПрогресса" id="70">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Картинка обновление состояния</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обновление состояния выполняется</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PictureSize>ByFontSize</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="КартинкаОбновлениеПрогрессаКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="КартинкаОбновлениеПрогрессаРасширеннаяПодсказка" id="72"/>
+								</PictureDecoration>
+								<PictureDecoration name="КартинкаОжиданиеОбновленияПрогресса" id="167">
+									<Visible>false</Visible>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Картинка обновление состояния</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обновление состояния ожидает в очереди, а не выполняется
+(так происходит, когда очередь фоновых заданий слишком большая)</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PictureSize>ByFontSize</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.ОжидаемаяДлительнаяОперация16</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="КартинкаОжиданиеОбновленияПрогрессаКонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="КартинкаОжиданиеОбновленияПрогрессаРасширеннаяПодсказка" id="169"/>
+								</PictureDecoration>
+								<LabelDecoration name="ОтменитьОбновлениеПрогресса" id="413">
+									<Font ref="style:TextLevel3" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отменить</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отменить обновление состояния</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ОтменитьОбновлениеПрогрессаКонтекстноеМеню" id="414"/>
+									<ExtendedTooltip name="ОтменитьОбновлениеПрогрессаРасширеннаяПодсказка" id="415"/>
+									<Events>
+										<Event name="Click">ОтменитьОбновлениеПрогрессаНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+				<UsualGroup name="Автообновление" id="106">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автообновление, сек: 3</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автообновление состояния
+обновления доступа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>PopUp</Behavior>
+					<ControlRepresentation>Button</ControlRepresentation>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="АвтообновлениеРасширеннаяПодсказка" id="107"/>
+					<ChildItems>
+						<CheckBoxField name="АвтообновлениеПрогресса" id="79">
+							<DataPath>АвтообновлениеПрогресса</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автообновление, сек:</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автообновление состояния
+обновления доступа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="АвтообновлениеПрогрессаКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="АвтообновлениеПрогрессаРасширеннаяПодсказка" id="81"/>
+							<Events>
+								<Event name="OnChange">АвтообновлениеПрогрессаПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ПериодОбновленияПрогресса" id="48">
+							<DataPath>ПериодОбновленияПрогресса</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>сек</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<HorizontalStretch>false</HorizontalStretch>
+							<SpinButton>true</SpinButton>
+							<MinValue xsi:type="xs:decimal">1</MinValue>
+							<ContextMenu name="ПериодОбновленияПрогрессаКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="ПериодОбновленияПрогрессаРасширеннаяПодсказка" id="50"/>
+							<Events>
+								<Event name="OnChange">ПериодОбновленияПрогрессаПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДополнительно" id="193">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительно</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Button</ControlRepresentation>
+			<Representation>None</Representation>
+			<ShowLeftMargin>false</ShowLeftMargin>
+			<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="194"/>
+			<ChildItems>
+				<CheckBoxField name="РассчитыватьПоКоличествуДанных" id="389">
+					<DataPath>РассчитыватьПоКоличествуДанных</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рассчитывать состояние по количеству данных</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рассчитывать состояние обновления доступа по количеству
+элементов данных и ключей доступа (медленно).
+
+Когда отключено, тогда состояние рассчитывается
+только по количеству обработанных списков.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="РассчитыватьПоКоличествуДанныхКонтекстноеМеню" id="390"/>
+					<ExtendedTooltip name="РассчитыватьПоКоличествуДанныхРасширеннаяПодсказка" id="391"/>
+					<Events>
+						<Event name="OnChange">РассчитыватьПоКоличествуДанныхПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<Table name="Списки" id="5">
+					<Representation>List</Representation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<HeightInTableRows>4</HeightInTableRows>
+					<SelectionMode>SingleRow</SelectionMode>
+					<RowSelectionMode>Cell</RowSelectionMode>
+					<HeaderHeight>3</HeaderHeight>
+					<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Списки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Списки</v8:content>
+						</v8:item>
+					</Title>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<ShowCommandBar>auto</ShowCommandBar>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СпискиКонтекстноеМеню" id="6">
+						<ChildItems>
+							<Button name="СпискиКонтекстноеМенюСортироватьСписокПоВозрастанию" id="375" DisplayImportance="High">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СпискиСортироватьСписокПоВозрастанию</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Сортировать список по возрастанию</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СпискиКонтекстноеМенюСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="376"/>
+							</Button>
+							<Button name="СпискиКонтекстноеМенюСортироватьСписокПоУбыванию" id="377" DisplayImportance="High">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СпискиСортироватьСписокПоУбыванию</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Сортировать список по убыванию</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СпискиКонтекстноеМенюСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="378"/>
+							</Button>
+							<Button name="СпискиКонтекстноеМенюНайти" id="402">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Списки.StandardCommand.Find</CommandName>
+								<ExtendedTooltip name="СпискиКонтекстноеМенюНайтиРасширеннаяПодсказка" id="403"/>
+							</Button>
+							<Button name="СпискиКонтекстноеМенюВывестиСписок" id="380">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Списки.StandardCommand.OutputList</CommandName>
+								<ExtendedTooltip name="СпискиКонтекстноеМенюВывестиСписокРасширеннаяПодсказка" id="381"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="СпискиКоманднаяПанель" id="7">
+						<ChildItems>
+							<Button name="СпискиПоказыватьОбработанныеСписки" id="406" DisplayImportance="VeryHigh">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СпискиПоказыватьОбработанныеСписки</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Показывать обработанные списки</v8:content>
+									</v8:item>
+								</Title>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="СпискиПоказыватьОбработанныеСпискиРасширеннаяПодсказка" id="407"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СпискиРасширеннаяПодсказка" id="8"/>
+					<SearchStringAddition name="СпискиСтрокаПоиска" id="9">
+						<AdditionSource>
+							<Item>Списки</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СпискиСтрокаПоискаКонтекстноеМеню" id="10"/>
+						<ExtendedTooltip name="СпискиСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СпискиСостояниеПросмотра" id="12">
+						<AdditionSource>
+							<Item>Списки</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СпискиСостояниеПросмотраКонтекстноеМеню" id="13"/>
+						<ExtendedTooltip name="СпискиСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СпискиУправлениеПоиском" id="15">
+						<AdditionSource>
+							<Item>Списки</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СпискиУправлениеПоискомКонтекстноеМеню" id="16"/>
+						<ExtendedTooltip name="СпискиУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="СпискиСписокПредставление" id="18">
+							<DataPath>Списки.СписокПредставление</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя списка элементов данных</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя списка документов, элементов справочников, записей регистров и др.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="СпискиСписокПредставлениеКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="СпискиСписокПредставлениеРасширеннаяПодсказка" id="20"/>
+						</InputField>
+						<InputField name="СпискиОбработаноЭлементов" id="27">
+							<DataPath>Списки.ОбработаноЭлементов</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обработано
+элементов
+данных, %</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверка и обновление ключей доступа к
+объектам и группам записей регистров</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<AutoWidthInTable>None</AutoWidthInTable>
+							<Width>6</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧН=0</v8:content>
+								</v8:item>
+							</Format>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧН=0</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="СпискиОбработаноЭлементовКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="СпискиОбработаноЭлементовРасширеннаяПодсказка" id="29"/>
+						</InputField>
+						<InputField name="СпискиОбработаноКлючейДоступа" id="30">
+							<DataPath>Списки.ОбработаноКлючейДоступа</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обработано
+ключей
+доступа, %</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверка и обновление разрешенности ключей доступа
+пользователям, внешним пользователям и группам доступа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<AutoWidthInTable>None</AutoWidthInTable>
+							<Width>6</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧН=0</v8:content>
+								</v8:item>
+							</Format>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧН=0</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="СпискиОбработаноКлючейДоступаКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="СпискиОбработаноКлючейДоступаРасширеннаяПодсказка" id="32"/>
+						</InputField>
+						<InputField name="СпискиЗадержкаОбработкиСписка" id="303">
+							<DataPath>Списки.ЗадержкаОбработкиСписка</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задержка
+обработки
+списка, сек</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество секунд, которое прошло с момента завершения
+последнего задания обновления доступа для списка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<AutoWidthInTable>None</AutoWidthInTable>
+							<Width>7</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СпискиЗадержкаОбработкиСпискаКонтекстноеМеню" id="304"/>
+							<ExtendedTooltip name="СпискиЗадержкаОбработкиСпискаРасширеннаяПодсказка" id="305"/>
+						</InputField>
+						<InputField name="СпискиКоличествоЭлементов" id="33">
+							<DataPath>Списки.КоличествоЭлементов</DataPath>
+							<Visible>false</Visible>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество
+элементов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество объектов или
+групп записей регистров</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<AutoWidthInTable>None</AutoWidthInTable>
+							<Width>8</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СпискиКоличествоЭлементовКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="СпискиКоличествоЭлементовРасширеннаяПодсказка" id="35"/>
+						</InputField>
+						<InputField name="СпискиКоличествоОбработанныхЭлементов" id="36">
+							<DataPath>Списки.КоличествоОбработанныхЭлементов</DataPath>
+							<Visible>false</Visible>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество
+обработанных
+элементов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество обработанных объектов или
+групп записей регистров</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<AutoWidthInTable>None</AutoWidthInTable>
+							<Width>8</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СпискиКоличествоОбработанныхЭлементовКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="СпискиКоличествоОбработанныхЭлементовРасширеннаяПодсказка" id="38"/>
+						</InputField>
+						<InputField name="СпискиКоличествоКлючейДоступа" id="39">
+							<DataPath>Списки.КоличествоКлючейДоступа</DataPath>
+							<Visible>false</Visible>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество
+ключей
+доступа</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<AutoWidthInTable>None</AutoWidthInTable>
+							<Width>8</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СпискиКоличествоКлючейДоступаКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="СпискиКоличествоКлючейДоступаРасширеннаяПодсказка" id="41"/>
+						</InputField>
+						<InputField name="СпискиКоличествоОбработанныхКлючейДоступа" id="42">
+							<DataPath>Списки.КоличествоОбработанныхКлючейДоступа</DataPath>
+							<Visible>false</Visible>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество
+обработанных
+ключей доступа</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<AutoWidthInTable>None</AutoWidthInTable>
+							<Width>8</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СпискиКоличествоОбработанныхКлючейДоступаКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="СпискиКоличествоОбработанныхКлючейДоступаРасширеннаяПодсказка" id="44"/>
+						</InputField>
+						<InputField name="СпискиИмяТаблицы" id="21">
+							<DataPath>Списки.ИмяТаблицы</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя таблицы</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="СпискиИмяТаблицыКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="СпискиИмяТаблицыРасширеннаяПодсказка" id="23"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Списки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Список" id="1">
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовРасширений</v8:Type>
+						<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовМетаданных</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИмяТаблицы" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя таблицы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбработаноЭлементов" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработано элементов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбработаноКлючейДоступа" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработано ключей доступа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоЭлементов" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество элементов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоОбработанныхЭлементов" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество обработанных элементов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоКлючейДоступа" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество ключей доступа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоОбработанныхКлючейДоступа" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество обработанных ключей доступа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПоследнегоОбновленногоЭлемента" id="11">
+					<Type/>
+				</Column>
+				<Column name="ПоследнийОбновленныйЭлемент" id="12">
+					<Type/>
+				</Column>
+				<Column name="СписокПредставление" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗадержкаОбработкиСписка" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задержка обработки списка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>6</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПоследнееОбновление" id="14">
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПервоеПланированиеОбновления" id="3">
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПериодОбновленияПрогресса" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период обновления состояния, сек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказыватьОбработанныеСписки" id="5">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АвтообновлениеПрогресса" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автообновление состояния</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоПовторноеОбновлениеПрогресса" id="7">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсегоОбновлено" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего обновлено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РассчитыватьПоКоличествуДанных" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитывать по количеству данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоляСортировки" id="10">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ПоследнееЗавершениеОбновленияДоступа" id="13">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбновлениеПрогрессаВыполняется" id="17">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоследнееВыполнениеПродолжительность" id="18">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПотоковОбновленияДоступа" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество потоков обновления доступа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МаксимальнаяДата" id="22">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="БалансировкаНагрузкиНаДиск" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оптимизировать для базы данных размещенной на устройстве</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ФормаРучноеУправление" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ручное управление ...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить объект или запланировать обновление доступа к указанным спискам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ФормаРучноеУправление</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СпискиСортироватьСписокПоВозрастанию" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать список по возрастанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать список по возрастанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SortListAsc</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СпискиСортироватьСписокПоВозрастанию</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Списки</AssociatedTableElementId>
+			<SelectedRowsUse>DontUse</SelectedRowsUse>
+		</Command>
+		<Command name="СпискиСортироватьСписокПоУбыванию" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать список по убыванию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать список по убыванию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SortListDesc</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СпискиСортироватьСписокПоУбыванию</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Списки</AssociatedTableElementId>
+			<SelectedRowsUse>DontUse</SelectedRowsUse>
+		</Command>
+		<Command name="ВключитьРегламентноеЗадание" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить регламентное задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить регламентное задание
+"Обновление доступа на уровне записей"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВключитьОбновлениеДоступа</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗапуститьОбновлениеДоступаСейчас" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить обновление доступа вручную</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить обновление доступа вручную и
+выполнять до полного завершения или отмены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьОбновлениеДоступаСейчас</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОстановитьИЗапретитьОбновлениеДоступа" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить и запретить обновление доступа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить и запретить обновление доступа и отключить
+регламентное задание "Обновление доступа на уровне записей"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОстановитьИЗапретитьОбновлениеДоступа</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РазрешитьОбновлениеДоступа" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить обновление доступа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить обновление доступа и включить
+регламентное задание "Обновление доступа на уровне записей"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВключитьОбновлениеДоступа</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СпискиПоказыватьОбработанныеСписки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать обработанные списки</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СпискиПоказыватьОбработанныеСписки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Списки</AssociatedTableElementId>
+			<SelectedRowsUse>DontUse</SelectedRowsUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ПоказатьПрогрессПоОтдельнымСпискам">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ВыключитьАвтообновлениеПрогресса">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

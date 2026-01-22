@@ -1,0 +1,821 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<Group>Vertical</Group>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<ShowCommandBar>true</ShowCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<ChildItems>
+			<Button name="Готово" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Готово</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сохранить</v8:content>
+					</v8:item>
+				</Title>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ГотовоРасширеннаяПодсказка" id="266"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="СтраницыПомощника" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы помощника</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыПомощникаРасширеннаяПодсказка" id="268"/>
+			<ChildItems>
+				<Page name="СтраницаНастройкиПараметровРезервногоКопирования" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница настройки параметров резервного копирования</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="СтраницаНастройкиПараметровРезервногоКопированияРасширеннаяПодсказка" id="283"/>
+					<ChildItems>
+						<Pages name="РежимыРаботы" id="434">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Режимы работы</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="РежимыРаботыРасширеннаяПодсказка" id="435"/>
+							<ChildItems>
+								<Page name="Обычный" id="436">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обычный</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="ОбычныйРасширеннаяПодсказка" id="437"/>
+									<ChildItems>
+										<CheckBoxField name="ВыполнятьАвтоматическоеРезервноеКопирование" id="405">
+											<DataPath>Объект.ВыполнятьАвтоматическоеРезервноеКопирование</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<CheckBoxType>Switcher</CheckBoxType>
+											<ContextMenu name="ВыполнятьАвтоматическоеРезервноеКопированиеКонтекстноеМеню" id="406"/>
+											<ExtendedTooltip name="ВыполнятьАвтоматическоеРезервноеКопированиеРасширеннаяПодсказка" id="407">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Рекомендуется отключать выполнение резервного копирования только
+в том случае, если оно выполняется сторонними средствами.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+											<Events>
+												<Event name="OnChange">ВыполнятьАвтоматическоеРезервноеКопированиеПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</Page>
+								<Page name="Базовый" id="438">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Базовый</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="БазовыйРасширеннаяПодсказка" id="439"/>
+									<ChildItems>
+										<CheckBoxField name="ВыполнятьАвтоматическоеРезервноеКопирование1" id="440">
+											<DataPath>Объект.ВыполнятьАвтоматическоеРезервноеКопирование</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Предлагать резервное копирование при завершении работы</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<CheckBoxType>Switcher</CheckBoxType>
+											<ContextMenu name="ВыполнятьАвтоматическоеРезервноеКопирование1КонтекстноеМеню" id="441"/>
+											<ExtendedTooltip name="ВыполнятьАвтоматическоеРезервноеКопирование1РасширеннаяПодсказка" id="442">
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Рекомендуется отключать выполнение резервного копирования только
+в том случае, если оно выполняется сторонними средствами.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+											<Events>
+												<Event name="OnChange">ВыполнятьАвтоматическоеРезервноеКопированиеПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+						<UsualGroup name="ГруппаПараметры" id="377">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ShowAsCard>true</ShowAsCard>
+							<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="378"/>
+							<ChildItems>
+								<UsualGroup name="ВыборВариантаАвтоматическогоРезервногоКопирования" id="47">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбор варианта автоматического резервного копирования</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ВыборВариантаАвтоматическогоРезервногоКопированияРасширеннаяПодсказка" id="284"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаВыборВариантаАвтоматическогоРезервногоКопирования" id="424">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выбор варианта автоматического резервного копирования</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВыборВариантаАвтоматическогоРезервногоКопированияРасширеннаяПодсказка" id="425"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаВариантПоРасписанию" id="432">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вариант по расписанию</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+													<Group>HorizontalIfPossible</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВариантПоРасписаниюРасширеннаяПодсказка" id="433">
+														<AutoMaxWidth>false</AutoMaxWidth>
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Необходимо учитывать, что если к моменту запуска резервного копирования по расписанию приложение не запущено, то резервное копирование не выполнится. </v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+													<ChildItems>
+														<RadioButtonField name="ВариантПоРасписанию" id="421">
+															<DataPath>Объект.ВариантВыполнения</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<EditMode>EnterOnInput</EditMode>
+															<AutoEditMode>true</AutoEditMode>
+															<RadioButtonType>Auto</RadioButtonType>
+															<ColumnsCount>1</ColumnsCount>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Регулярно по расписанию:</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xs:string">ПоРасписанию</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
+															<ContextMenu name="ВариантПоРасписаниюКонтекстноеМеню" id="422"/>
+															<ExtendedTooltip name="ВариантПоРасписаниюРасширеннаяПодсказка" id="423"/>
+															<Events>
+																<Event name="OnChange">ВариантПроведенияРезервногоКопированияПриИзменении</Event>
+															</Events>
+														</RadioButtonField>
+														<Button name="ИзменитьРасписание" id="238">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.ИзменитьРасписание</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Не задано</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ИзменитьРасписаниеРасширеннаяПодсказка" id="289"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<RadioButtonField name="ВариантПриЗавершенииРаботы" id="245">
+													<DataPath>Объект.ВариантВыполнения</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>При завершении работы</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">ПриЗавершенииРаботы</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ВариантПриЗавершенииРаботыКонтекстноеМеню" id="246"/>
+													<ExtendedTooltip name="ВариантПриЗавершенииРаботыРасширеннаяПодсказка" id="285">
+														<AutoMaxWidth>false</AutoMaxWidth>
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Каждый раз при закрытии приложения администратору предлагается выполнить резервное копирование.</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+													<Events>
+														<Event name="OnChange">ВариантПроведенияРезервногоКопированияПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаКаталогАвторизация" id="52">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заведения пути копирования</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКаталогАвторизацияРасширеннаяПодсказка" id="290"/>
+									<ChildItems>
+										<InputField name="ПутьККаталогуАрхивов" id="55">
+											<DataPath>Объект.КаталогСРезервнымиКопиями</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Каталог для сохранения резервных копий</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Top</TitleLocation>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ChoiceButton>true</ChoiceButton>
+											<ContextMenu name="ПутьККаталогуАрхивовКонтекстноеМеню" id="56"/>
+											<ExtendedTooltip name="ПутьККаталогуАрхивовРасширеннаяПодсказка" id="292">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Рекомендуется выполнять резервное копирование на другой компьютер или внешний носитель.  При резервном копировании работа всех пользователей в приложении будет завершена.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+											<Events>
+												<Event name="StartChoice">ПутьККаталогуАрхивовНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="ГруппаАвторизации" id="254">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Авторизации</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AutoScreenTypeSensitive</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>NormalSeparation</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаАвторизацииРасширеннаяПодсказка" id="294"/>
+											<ChildItems>
+												<InputField name="АдминистраторИБ1" id="255">
+													<DataPath>АдминистраторИБ</DataPath>
+													<Enabled>false</Enabled>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Имя администратора</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<ContextMenu name="АдминистраторИБ1КонтекстноеМеню" id="256"/>
+													<ExtendedTooltip name="АдминистраторИБ1РасширеннаяПодсказка" id="295"/>
+												</InputField>
+												<InputField name="ПарольАдминистратораИБ1" id="257">
+													<DataPath>ПарольАдминистратораИБ</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Пароль</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<PasswordMode>true</PasswordMode>
+													<ContextMenu name="ПарольАдминистратораИБ1КонтекстноеМеню" id="258"/>
+													<ExtendedTooltip name="ПарольАдминистратораИБ1РасширеннаяПодсказка" id="296"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<RadioButtonField name="ТипОграничения" id="474">
+									<DataPath>Объект.ТипОграничения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Хранение резервных копий</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<RadioButtonType>Tumbler</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:string">Все</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>За период</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПоПериоду</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Количество</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПоКоличеству</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ТипОграниченияКонтекстноеМеню" id="475"/>
+									<ExtendedTooltip name="ТипОграниченияРасширеннаяПодсказка" id="476"/>
+									<Events>
+										<Event name="OnChange">ТипОграниченияКаталогаСРезервнымиКопиямиПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<UsualGroup name="ГруппаОграничения" id="478">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ограничения</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОграниченияРасширеннаяПодсказка" id="479"/>
+								</UsualGroup>
+								<Pages name="СтраницыОграничения" id="484">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы ограничения</v8:content>
+										</v8:item>
+									</Title>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыОграниченияРасширеннаяПодсказка" id="485"/>
+									<ChildItems>
+										<Page name="ГруппаПериод" id="480">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Период</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AutoScreenTypeSensitive</Group>
+											<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="481"/>
+											<ChildItems>
+												<InputField name="ДатаПоследнегоАктуальногоАрхива" id="70">
+													<DataPath>Объект.ЗначениеВЕдиницахИзмерения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Хранить резервные копии за последние</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<SpinButton>true</SpinButton>
+													<MinValue xsi:type="xs:decimal">1</MinValue>
+													<ContextMenu name="ДатаПоследнегоАктуальногоАрхиваКонтекстноеМеню" id="71"/>
+													<ExtendedTooltip name="ДатаПоследнегоАктуальногоАрхиваРасширеннаяПодсказка" id="303"/>
+												</InputField>
+												<InputField name="ЕдиницаИзмеренияПериодаХраненияРезервныхКопий" id="72">
+													<DataPath>Объект.ЕдиницаИзмеренияПериода</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<ExtendedEdit>false</ExtendedEdit>
+													<ListChoiceMode>true</ListChoiceMode>
+													<ChooseType>false</ChooseType>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>дн.</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">День</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>нед.</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">Неделя</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>мес.</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">Месяц</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>лет</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">Год</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<DropListWidth>7</DropListWidth>
+													<ContextMenu name="ЕдиницаИзмеренияПериодаХраненияРезервныхКопийКонтекстноеМеню" id="73"/>
+													<ExtendedTooltip name="ЕдиницаИзмеренияПериодаХраненияРезервныхКопийРасширеннаяПодсказка" id="304"/>
+													<Events>
+														<Event name="Clearing">ЕдиницаИзмеренияПериодаХраненияРезервныхКопийОчистка</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</Page>
+										<Page name="ГруппаКоличество" id="482">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Количество</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ГруппаКоличествоРасширеннаяПодсказка" id="483"/>
+											<ChildItems>
+												<InputField name="КоличествоКопийВКаталоге" id="74">
+													<DataPath>Объект.КоличествоКопий</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Максимальное количество копий (шт.)</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<SpinButton>true</SpinButton>
+													<EditFormat>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧФ='Ч шт.'</v8:content>
+														</v8:item>
+													</EditFormat>
+													<MinValue xsi:type="xs:decimal">2</MinValue>
+													<ContextMenu name="КоличествоКопийВКаталогеКонтекстноеМеню" id="75"/>
+													<ExtendedTooltip name="КоличествоКопийВКаталогеРасширеннаяПодсказка" id="305"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ДополнительныеНастройки" id="204">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ДополнительныеНастройкиРасширеннаяПодсказка" id="330"/>
+					<ChildItems>
+						<UsualGroup name="ГоризонтальнаяГруппаОшибкаПодключения" id="207">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Горизонтальная группа ошибка подключения</v8:content>
+								</v8:item>
+							</Title>
+							<Group>HorizontalIfPossible</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГоризонтальнаяГруппаОшибкаПодключенияРасширеннаяПодсказка" id="332"/>
+							<ChildItems>
+								<PictureDecoration name="Картинка12" id="208">
+									<SkipOnInput>false</SkipOnInput>
+									<Picture>
+										<xr:Ref>StdPicture.DialogExclamation</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Картинка12КонтекстноеМеню" id="209"/>
+									<ExtendedTooltip name="Картинка12РасширеннаяПодсказка" id="333"/>
+								</PictureDecoration>
+								<UsualGroup name="ГруппаОшибки" id="259">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ошибки</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОшибкиРасширеннаяПодсказка" id="334"/>
+									<ChildItems>
+										<InputField name="ОбнаруженнаяОшибкаПодключения" id="210">
+											<DataPath>ОбнаруженнаяОшибкаПодключения</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ошибка проверки подключения</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<VerticalAlign>Center</VerticalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>5</Height>
+											<VerticalStretch>false</VerticalStretch>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="ОбнаруженнаяОшибкаПодключенияКонтекстноеМеню" id="211"/>
+											<ExtendedTooltip name="ОбнаруженнаяОшибкаПодключенияРасширеннаяПодсказка" id="335"/>
+										</InputField>
+										<LabelDecoration name="НадписьПерейтиВЖурналРегистрации" id="234">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Техническая информация об ошибке</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="НадписьПерейтиВЖурналРегистрацииКонтекстноеМеню" id="235"/>
+											<ExtendedTooltip name="НадписьПерейтиВЖурналРегистрацииРасширеннаяПодсказка" id="336"/>
+											<Events>
+												<Event name="Click">НадписьПерейтиВЖурналРегистрацииНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="НадписьОбновитьВерсиюКомпоненты" id="455">
+											<Width>60</Width>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>При ошибках версии компоненты comcntr, "не найдена указанная процедура", "класс не зарегистрирован" и аналогичных, рекомендуется выполнить &lt;link Перерегистрация&gt;регистрацию компоненты comcntr&lt;/&gt; (потребуется перезапуск сеанса).</v8:content>
+												</v8:item>
+											</Title>
+											<TitleHeight>2</TitleHeight>
+											<ContextMenu name="НадписьОбновитьВерсиюКомпонентыКонтекстноеМеню" id="456"/>
+											<ExtendedTooltip name="НадписьОбновитьВерсиюКомпонентыРасширеннаяПодсказка" id="457"/>
+											<Events>
+												<Event name="URLProcessing">НадписьОбновитьВерсиюКомпонентыОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="АвторизацияАдминистратораИнформационнойБазы" id="249">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Если задан неправильный пароль администратора, введите его еще раз</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AutoScreenTypeSensitive</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="АвторизацияАдминистратораИнформационнойБазыРасширеннаяПодсказка" id="337"/>
+							<ChildItems>
+								<InputField name="АдминистраторИБ" id="250">
+									<DataPath>АдминистраторИБ</DataPath>
+									<Enabled>false</Enabled>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="АдминистраторИБКонтекстноеМеню" id="251"/>
+									<ExtendedTooltip name="АдминистраторИБРасширеннаяПодсказка" id="338"/>
+								</InputField>
+								<InputField name="ПарольАдминистратораИБ" id="252">
+									<DataPath>ПарольАдминистратораИБ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<PasswordMode>true</PasswordMode>
+									<ContextMenu name="ПарольАдминистратораИБКонтекстноеМеню" id="253"/>
+									<ExtendedTooltip name="ПарольАдминистратораИБРасширеннаяПодсказка" id="339"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.НастройкаРезервногоКопированияИБ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="АдминистраторИБ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя администратора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбнаруженнаяОшибкаПодключения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обнаруженная ошибка подключения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольАдминистратораИБ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ТребуетсяВводПароля" id="5">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Расписание" id="6">
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Готово" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Готово</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+		<Command name="ИзменитьРасписание" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ИзменитьРасписание</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
