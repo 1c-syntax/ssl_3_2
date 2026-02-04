@@ -179,7 +179,7 @@
 										<Presentation>
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>в информационной базе</v8:content>
+												<v8:content>в базе данных</v8:content>
 											</v8:item>
 										</Presentation>
 										<Value xsi:type="xs:string">ВИнформационнойБазе</Value>
@@ -192,7 +192,7 @@
 										<Presentation>
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>в томах на сервере</v8:content>
+												<v8:content>в томах (в сетевых каталогах)</v8:content>
 											</v8:item>
 										</Presentation>
 										<Value xsi:type="xs:string">ВТомахНаДиске</Value>
@@ -205,7 +205,7 @@
 										<Presentation>
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>в информационной базе и томах на сервере</v8:content>
+												<v8:content>в базе данных или в томах</v8:content>
 											</v8:item>
 										</Presentation>
 										<Value xsi:type="xs:string">ВИнформационнойБазеИТомахНаДиске</Value>

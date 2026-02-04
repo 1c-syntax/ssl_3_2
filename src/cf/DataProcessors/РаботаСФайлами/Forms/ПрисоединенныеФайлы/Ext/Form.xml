@@ -198,6 +198,7 @@
 					<ViewStatusLocation>None</ViewStatusLocation>
 					<SearchControlLocation>None</SearchControlLocation>
 					<ShowCommandBar>auto</ShowCommandBar>
+					<CellHyperlinksRepresentation>DontShow</CellHyperlinksRepresentation>
 					<AutoRefresh>false</AutoRefresh>
 					<AutoRefreshPeriod>60</AutoRefreshPeriod>
 					<Period>
@@ -653,7 +654,6 @@
 												<v8:content>Занять</v8:content>
 											</v8:item>
 										</Title>
-										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="ЗанятьРасширеннаяПодсказка" id="333"/>
 									</Button>
 									<Button name="ФормаРедактировать" id="34">
@@ -665,7 +665,6 @@
 												<v8:content>Редактировать</v8:content>
 											</v8:item>
 										</Title>
-										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="ФормаРедактироватьРасширеннаяПодсказка" id="107"/>
 									</Button>
 									<Button name="ФормаЗакончитьРедактирование" id="43">
@@ -677,8 +676,18 @@
 												<v8:content>Закончить</v8:content>
 											</v8:item>
 										</Title>
-										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="ФормаЗакончитьРедактированиеРасширеннаяПодсказка" id="108"/>
+									</Button>
+									<Button name="ФормаОсвободить" id="49">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Освободить</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Отменить редактирование</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ФормаОсвободитьРасширеннаяПодсказка" id="109"/>
 									</Button>
 									<Popup name="ПодменюПечать" id="334">
 										<Title>
@@ -929,19 +938,6 @@
 										</Title>
 										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="ПеренестиВГруппуРасширеннаяПодсказка" id="339"/>
-									</Button>
-									<Button name="ФормаОсвободить" id="49">
-										<Type>CommandBarButton</Type>
-										<Representation>Text</Representation>
-										<CommandName>Form.Command.Освободить</CommandName>
-										<Title>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Отменить редактирование</v8:content>
-											</v8:item>
-										</Title>
-										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-										<ExtendedTooltip name="ФормаОсвободитьРасширеннаяПодсказка" id="109"/>
 									</Button>
 									<Button name="ФормаОбновитьИзФайлаНаДиске" id="51">
 										<Type>CommandBarButton</Type>
@@ -2196,10 +2192,10 @@
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ЗакончитьРедактирование</Action>
-			<Representation>Text</Representation>
+			<Representation>TextPicture</Representation>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
-			<SelectedRowsUse>DontUse</SelectedRowsUse>
+			<SelectedRowsUse>Use</SelectedRowsUse>
 		</Command>
 		<Command name="Освободить" id="13">
 			<Title>
@@ -2630,6 +2626,7 @@
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>Занять</Action>
+			<Representation>TextPicture</Representation>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
 			<SelectedRowsUse>Use</SelectedRowsUse>

@@ -18,6 +18,11 @@
 				<ButtonImportance>Main</ButtonImportance>
 				<ExtendedTooltip name="ЗарегистрироватьРасширеннаяПодсказка" id="33"/>
 			</Button>
+			<Button name="Справка" id="56">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="57"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<ChildItems>

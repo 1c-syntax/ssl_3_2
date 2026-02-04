@@ -512,6 +512,7 @@
 									<ToolTipRepresentation>None</ToolTipRepresentation>
 									<ViewStatusLocation>None</ViewStatusLocation>
 									<ShowCommandBar>auto</ShowCommandBar>
+									<CellHyperlinksRepresentation>DontShow</CellHyperlinksRepresentation>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>60</AutoRefreshPeriod>
 									<Period>
@@ -948,7 +949,6 @@
 												<ChildItems>
 													<Button name="ФормаОткрыть" id="73" DisplayImportance="VeryHigh">
 														<Type>CommandBarButton</Type>
-														<Representation>Text</Representation>
 														<SkipOnInput>false</SkipOnInput>
 														<CommandName>Form.Command.ОткрытьФайл</CommandName>
 														<Title>
@@ -977,7 +977,6 @@
 													</Button>
 													<Button name="ФормаРедактировать" id="75">
 														<Type>CommandBarButton</Type>
-														<Representation>Text</Representation>
 														<SkipOnInput>false</SkipOnInput>
 														<CommandName>Form.Command.Редактировать</CommandName>
 														<Title>
@@ -1005,19 +1004,6 @@
 														<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 														<ExtendedTooltip name="ФормаСохранитьИзмененияРасширеннаяПодсказка" id="157"/>
 													</Button>
-													<Button name="ФормаОсвободить" id="78">
-														<Type>CommandBarButton</Type>
-														<SkipOnInput>false</SkipOnInput>
-														<CommandName>Form.Command.Освободить</CommandName>
-														<Title>
-															<v8:item>
-																<v8:lang>ru</v8:lang>
-																<v8:content>Отменить редактирование</v8:content>
-															</v8:item>
-														</Title>
-														<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-														<ExtendedTooltip name="ФормаОсвободитьРасширеннаяПодсказка" id="156"/>
-													</Button>
 													<Button name="ФормаЗакончитьРедактирование" id="76">
 														<Type>CommandBarButton</Type>
 														<SkipOnInput>false</SkipOnInput>
@@ -1030,6 +1016,18 @@
 														</Title>
 														<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 														<ExtendedTooltip name="ФормаЗакончитьРедактированиеРасширеннаяПодсказка" id="153"/>
+													</Button>
+													<Button name="ФормаОсвободить" id="78">
+														<Type>CommandBarButton</Type>
+														<SkipOnInput>false</SkipOnInput>
+														<CommandName>Form.Command.Освободить</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Отменить редактирование</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ФормаОсвободитьРасширеннаяПодсказка" id="156"/>
 													</Button>
 													<Popup name="ПодменюПечать" id="452">
 														<Title>
@@ -2358,10 +2356,10 @@
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ЗакончитьРедактирование</Action>
-			<Representation>Text</Representation>
+			<Representation>TextPicture</Representation>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
-			<SelectedRowsUse>DontUse</SelectedRowsUse>
+			<SelectedRowsUse>Use</SelectedRowsUse>
 		</Command>
 		<Command name="Занять" id="6">
 			<Title>
@@ -2384,7 +2382,7 @@
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
-			<SelectedRowsUse>DontUse</SelectedRowsUse>
+			<SelectedRowsUse>Use</SelectedRowsUse>
 		</Command>
 		<Command name="Освободить" id="8">
 			<Title>
@@ -2407,6 +2405,7 @@
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
+			<SelectedRowsUse>Use</SelectedRowsUse>
 		</Command>
 		<Command name="ОткрытьКаталогФайла" id="9">
 			<Title>
