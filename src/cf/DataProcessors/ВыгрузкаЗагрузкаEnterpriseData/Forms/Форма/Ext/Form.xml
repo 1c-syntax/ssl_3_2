@@ -88,6 +88,11 @@
 					</Button>
 				</ChildItems>
 			</Popup>
+			<Button name="ФормаСправка" id="408">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="409"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -284,8 +289,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<RadioButtonType>Tumbler</RadioButtonType>
 											<ChoiceList>
 												<xr:Item>
@@ -329,8 +332,6 @@
 													<v8:content>Путь к файлу загрузки</v8:content>
 												</v8:item>
 											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ChoiceButton>true</ChoiceButton>
 											<OpenButton>false</OpenButton>
 											<ContextMenu name="ПутьКФайлуЗагрузкиКонтекстноеМеню" id="187"/>
@@ -361,8 +362,6 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>None</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<Width>2</Width>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<Height>2</Height>
@@ -651,8 +650,6 @@
 																	<v8:content>Результат выгрузки</v8:content>
 																</v8:item>
 															</Title>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<RadioButtonType>Tumbler</RadioButtonType>
 															<ChoiceList>
 																<xr:Item>
@@ -696,8 +693,6 @@
 																	<v8:content>Файл выгрузки</v8:content>
 																</v8:item>
 															</Title>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ChoiceButton>true</ChoiceButton>
 															<ContextMenu name="ПутьКФайлуВыгрузкиКонтекстноеМеню" id="190"/>
 															<ExtendedTooltip name="ПутьКФайлуВыгрузкиРасширеннаяПодсказка" id="191"/>
@@ -746,8 +741,6 @@
 															<v8:content>Данные для выгрузки</v8:content>
 														</v8:item>
 													</Title>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<RadioButtonType>Tumbler</RadioButtonType>
 													<ChoiceList>
 														<xr:Item>
@@ -818,8 +811,6 @@
 																		</v8:item>
 																	</ToolTip>
 																	<ToolTipRepresentation>Balloon</ToolTipRepresentation>
-																	<EditMode>EnterOnInput</EditMode>
-																	<AutoEditMode>true</AutoEditMode>
 																	<ContextMenu name="УзелОбменаКонтекстноеМеню" id="50"/>
 																	<ExtendedTooltip name="УзелОбменаРасширеннаяПодсказка" id="51"/>
 																</InputField>
@@ -861,8 +852,6 @@
 																	<ChildItems>
 																		<InputField name="ПериодОтбораВсехДокументов" id="140">
 																			<DataPath>Объект.ПериодОтбораВсехДокументов</DataPath>
-																			<EditMode>EnterOnInput</EditMode>
-																			<AutoEditMode>true</AutoEditMode>
 																			<ContextMenu name="ПериодОтбораВсехДокументовКонтекстноеМеню" id="141"/>
 																			<ExtendedTooltip name="ПериодОтбораВсехДокументовРасширеннаяПодсказка" id="142"/>
 																		</InputField>
@@ -1000,6 +989,7 @@
 																	</AutoCommandBar>
 																	<ExtendedTooltip name="ТаблицаПравилВыгрузкиРасширеннаяПодсказка" id="118"/>
 																	<SearchStringAddition name="ТаблицаПравилВыгрузкиСтрокаПоиска" id="119">
+																		<Enabled>false</Enabled>
 																		<AdditionSource>
 																			<Item>ТаблицаПравилВыгрузки</Item>
 																			<Type>SearchStringRepresentation</Type>
@@ -1008,6 +998,7 @@
 																		<ExtendedTooltip name="ТаблицаПравилВыгрузкиСтрокаПоискаРасширеннаяПодсказка" id="121"/>
 																	</SearchStringAddition>
 																	<ViewStatusAddition name="ТаблицаПравилВыгрузкиСостояниеПросмотра" id="122">
+																		<Enabled>false</Enabled>
 																		<AdditionSource>
 																			<Item>ТаблицаПравилВыгрузки</Item>
 																			<Type>ViewStatusRepresentation</Type>
@@ -1016,6 +1007,7 @@
 																		<ExtendedTooltip name="ТаблицаПравилВыгрузкиСостояниеПросмотраРасширеннаяПодсказка" id="124"/>
 																	</ViewStatusAddition>
 																	<SearchControlAddition name="ТаблицаПравилВыгрузкиУправлениеПоиском" id="125">
+																		<Enabled>false</Enabled>
 																		<AdditionSource>
 																			<Item>ТаблицаПравилВыгрузки</Item>
 																			<Type>SearchControl</Type>
@@ -1154,8 +1146,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>None</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="РезультатВыгрузкиXDTOКонтекстноеМеню" id="11"/>
 									<ExtendedTooltip name="РезультатВыгрузкиXDTOРасширеннаяПодсказка" id="12"/>
 								</TextDocumentField>

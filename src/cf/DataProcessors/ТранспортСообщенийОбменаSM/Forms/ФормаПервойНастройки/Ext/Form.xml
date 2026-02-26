@@ -288,8 +288,6 @@
 			<DataPath>Объект.ВнутренняяПубликация</DataPath>
 			<Visible>false</Visible>
 			<TitleLocation>Right</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="ВнутренняяПубликацияКонтекстноеМеню" id="60"/>
 			<ExtendedTooltip name="ВнутренняяПубликацияРасширеннаяПодсказка" id="61"/>
 		</CheckBoxField>

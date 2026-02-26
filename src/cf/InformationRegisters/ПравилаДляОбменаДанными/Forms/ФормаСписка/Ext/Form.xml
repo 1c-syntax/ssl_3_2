@@ -94,6 +94,7 @@
 			</AutoCommandBar>
 			<ExtendedTooltip name="СписокExtendedTooltip" id="36"/>
 			<SearchStringAddition name="СписокСтрокаПоиска" id="46">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>SearchStringRepresentation</Type>
@@ -102,6 +103,7 @@
 				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="48"/>
 			</SearchStringAddition>
 			<ViewStatusAddition name="СписокСостояниеПросмотра" id="49">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>ViewStatusRepresentation</Type>
@@ -110,6 +112,7 @@
 				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="51"/>
 			</ViewStatusAddition>
 			<SearchControlAddition name="СписокУправлениеПоиском" id="52">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>SearchControl</Type>
@@ -130,24 +133,18 @@
 							<v8:content>Приложение</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ИмяПланаОбменаКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="ИмяПланаОбменаExtendedTooltip" id="37"/>
 				</LabelField>
 				<LabelField name="ВидПравил" id="6">
 					<DataPath>Список.ВидПравил</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ВидПравилКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="ВидПравилExtendedTooltip" id="38"/>
 				</LabelField>
 				<LabelField name="ИсточникПравил" id="12">
 					<DataPath>Список.ИсточникПравил</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ИсточникПравилКонтекстноеМеню" id="13"/>
 					<ExtendedTooltip name="ИсточникПравилExtendedTooltip" id="39"/>
 				</LabelField>

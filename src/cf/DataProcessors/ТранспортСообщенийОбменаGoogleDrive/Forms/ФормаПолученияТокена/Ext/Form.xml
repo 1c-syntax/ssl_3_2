@@ -26,8 +26,6 @@
 				</v8:item>
 			</Title>
 			<TitleLocation>None</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<AutoMaxHeight>false</AutoMaxHeight>
 			<ContextMenu name="ПолеHTMLКонтекстноеМеню" id="2"/>
@@ -58,8 +56,6 @@
 							<v8:content>Client ID</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ClientIDКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="ClientIDРасширеннаяПодсказка" id="6"/>
 				</InputField>
@@ -71,8 +67,6 @@
 							<v8:content>Client secret</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ClientSecretКонтекстноеМеню" id="10"/>
 					<ExtendedTooltip name="ClientSecretРасширеннаяПодсказка" id="11"/>
 				</InputField>

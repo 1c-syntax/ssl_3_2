@@ -32,8 +32,6 @@
 	<ChildItems>
 		<InputField name="СписокДанныхКомпоновщикНастроекНастройкиОтбор" id="96">
 			<DataPath>СписокДанных.SettingsComposer.Settings.Filter</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="СписокДанныхКомпоновщикНастроекНастройкиОтборКонтекстноеМеню" id="97"/>

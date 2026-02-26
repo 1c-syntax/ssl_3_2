@@ -54,6 +54,11 @@
 					</Button>
 				</ChildItems>
 			</Popup>
+			<Button name="ФормаСправка" id="795">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="796"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -130,8 +135,6 @@
 													<v8:content>Файл загрузки (на сервере):</v8:content>
 												</v8:item>
 											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<ChoiceButton>true</ChoiceButton>
 											<OpenButton>true</OpenButton>
@@ -170,16 +173,12 @@
 												<LabelField name="ВерсияПравилОбмена" id="168">
 													<DataPath>Объект.ВерсияПравилОбмена</DataPath>
 													<TitleLocation>Left</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<ContextMenu name="ВерсияПравилОбменаКонтекстноеМеню" id="169"/>
 													<ExtendedTooltip name="ВерсияПравилОбменаExtendedTooltip" id="315"/>
 												</LabelField>
 												<LabelField name="ДатаВыгрузкиДанных" id="170">
 													<DataPath>Объект.ДатаВыгрузкиДанных</DataPath>
 													<TitleLocation>Left</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<ContextMenu name="ДатаВыгрузкиДанныхКонтекстноеМеню" id="171"/>
 													<ExtendedTooltip name="ДатаВыгрузкиДанныхExtendedTooltip" id="317"/>
 												</LabelField>
@@ -192,8 +191,6 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>Left</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<HorizontalStretch>false</HorizontalStretch>
 													<ContextMenu name="ПериодВыгрузкиДанныхКонтекстноеМеню" id="165"/>
 													<ExtendedTooltip name="ПериодВыгрузкиДанныхExtendedTooltip" id="318"/>
@@ -228,8 +225,6 @@
 												</v8:item>
 											</ToolTip>
 											<ToolTipRepresentation>Button</ToolTipRepresentation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<MaxWidth>25</MaxWidth>
 											<PasswordMode>true</PasswordMode>
@@ -292,8 +287,6 @@
 												<CheckBoxField name="БезопаснаяЗагрузка" id="393">
 													<DataPath>Объект.БезопаснаяЗагрузка</DataPath>
 													<TitleLocation>Right</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<CheckBoxType>Switcher</CheckBoxType>
 													<ContextMenu name="БезопаснаяЗагрузкаКонтекстноеМеню" id="394"/>
 													<ExtendedTooltip name="БезопаснаяЗагрузкаРасширеннаяПодсказка" id="395"/>
@@ -323,8 +316,6 @@
 																	<v8:content>Имя файла правил</v8:content>
 																</v8:item>
 															</Title>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ChoiceButton>true</ChoiceButton>
 															<OpenButton>true</OpenButton>
 															<ContextMenu name="ИмяФайлаПравилЗагрузкиКонтекстноеМеню" id="399"/>
@@ -361,8 +352,6 @@
 												<CheckBoxField name="ИспользоватьТранзакции" id="72">
 													<DataPath>Объект.ИспользоватьТранзакции</DataPath>
 													<TitleLocation>Right</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<CheckBoxType>Switcher</CheckBoxType>
 													<ContextMenu name="ИспользоватьТранзакцииКонтекстноеМеню" id="73"/>
 													<ExtendedTooltip name="ИспользоватьТранзакцииExtendedTooltip" id="304"/>
@@ -395,8 +384,6 @@
 																	<v8:content>Количество элементов в транзакции</v8:content>
 																</v8:item>
 															</ToolTip>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<Width>10</Width>
 															<ChoiceButton>true</ChoiceButton>
 															<SpinButton>true</SpinButton>
@@ -429,8 +416,6 @@
 															<v8:content>Автоматически загружать данные</v8:content>
 														</v8:item>
 													</Title>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<CheckBoxType>Switcher</CheckBoxType>
 													<ContextMenu name="АвтоматическиЗагружатьДанныеКонтекстноеМеню" id="539"/>
 													<ExtendedTooltip name="АвтоматическиЗагружатьДанныеРасширеннаяПодсказка" id="540"/>
@@ -448,8 +433,6 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>None</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<CheckBoxType>Tumbler</CheckBoxType>
 													<EditFormat>
 														<v8:item>
@@ -489,8 +472,6 @@
 											<DataPath>Объект.ЗагружатьДанныеВРежимеОбмена</DataPath>
 											<TitleLocation>Right</TitleLocation>
 											<ToolTipRepresentation>Button</ToolTipRepresentation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ContextMenu name="ЗагружатьДанныеВРежимеОбменаКонтекстноеМеню" id="77"/>
 											<ExtendedTooltip name="ЗагружатьДанныеВРежимеОбменаExtendedTooltip" id="306">
 												<Title formatted="false">
@@ -505,8 +486,6 @@
 											<DataPath>Объект.ОптимизированнаяЗаписьОбъектов</DataPath>
 											<TitleLocation>Right</TitleLocation>
 											<ToolTipRepresentation>Button</ToolTipRepresentation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ContextMenu name="ОптимизированнаяЗаписьОбъектовКонтекстноеМеню" id="83"/>
 											<ExtendedTooltip name="ОптимизированнаяЗаписьОбъектовExtendedTooltip" id="309">
 												<Title formatted="false">
@@ -520,24 +499,18 @@
 										<CheckBoxField name="ОбъектыПоСсылкеЗагружатьБезПометкиУдаления" id="80">
 											<DataPath>Объект.ОбъектыПоСсылкеЗагружатьБезПометкиУдаления</DataPath>
 											<TitleLocation>Right</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ContextMenu name="ОбъектыПоСсылкеЗагружатьБезПометкиУдаленияКонтекстноеМеню" id="81"/>
 											<ExtendedTooltip name="ОбъектыПоСсылкеЗагружатьБезПометкиУдаленияExtendedTooltip" id="308"/>
 										</CheckBoxField>
 										<CheckBoxField name="ЗаписыватьВИнформационнуюБазуТолькоИзмененныеОбъекты" id="78">
 											<DataPath>Объект.ЗаписыватьВИнформационнуюБазуТолькоИзмененныеОбъекты</DataPath>
 											<TitleLocation>Right</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ContextMenu name="ЗаписыватьВИнформационнуюБазуТолькоИзмененныеОбъектыКонтекстноеМеню" id="79"/>
 											<ExtendedTooltip name="ЗаписыватьВИнформационнуюБазуТолькоИзмененныеОбъектыExtendedTooltip" id="307"/>
 										</CheckBoxField>
 										<CheckBoxField name="ЗаписыватьРегистрыНаборамиЗаписей" id="84">
 											<DataPath>Объект.ЗаписыватьРегистрыНаборамиЗаписей</DataPath>
 											<TitleLocation>Right</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ContextMenu name="ЗаписыватьРегистрыНаборамиЗаписейКонтекстноеМеню" id="85"/>
 											<ExtendedTooltip name="ЗаписыватьРегистрыНаборамиЗаписейExtendedTooltip" id="310"/>
 										</CheckBoxField>
@@ -545,8 +518,6 @@
 											<DataPath>Объект.ОбрезатьСтрокиСправа</DataPath>
 											<TitleLocation>Right</TitleLocation>
 											<ToolTipRepresentation>Button</ToolTipRepresentation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ContextMenu name="ОбрезатьСтрокиСправаКонтекстноеМеню" id="87"/>
 											<ExtendedTooltip name="ОбрезатьСтрокиСправаExtendedTooltip" id="311">
 												<Title formatted="false">
@@ -585,8 +556,6 @@
 															<DataPath>Объект.БезопасныйРежим</DataPath>
 															<TitleLocation>Right</TitleLocation>
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ContextMenu name="БезопасныйРежимКонтекстноеМеню" id="405"/>
 															<ExtendedTooltip name="БезопасныйРежимРасширеннаяПодсказка" id="406">
 																<Title formatted="true">
@@ -600,8 +569,6 @@
 														<CheckBoxField name="ФлагРежимОтладки" id="94">
 															<DataPath>Объект.ФлагРежимОтладки</DataPath>
 															<TitleLocation>Right</TitleLocation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ContextMenu name="ФлагРежимОтладкиКонтекстноеМеню" id="95"/>
 															<ExtendedTooltip name="ФлагРежимОтладкиExtendedTooltip" id="328"/>
 															<Events>
@@ -624,8 +591,6 @@
 																</v8:item>
 															</ToolTip>
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ContextMenu name="ВыводВОкноСообщенийИнформационныхСообщенийКонтекстноеМеню" id="97"/>
 															<ExtendedTooltip name="ВыводВОкноСообщенийИнформационныхСообщенийExtendedTooltip" id="329"/>
 														</CheckBoxField>
@@ -637,8 +602,6 @@
 																	<v8:content>Общий комментарий к обработке (не связан с конвертируемыми файлами)</v8:content>
 																</v8:item>
 															</ToolTip>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<Height>4</Height>
 															<VerticalStretch>false</VerticalStretch>
 															<MultiLine>true</MultiLine>
@@ -668,8 +631,6 @@
 																	<v8:content>Имя файла протокола обмена на сервере</v8:content>
 																</v8:item>
 															</Title>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ChoiceButton>true</ChoiceButton>
 															<OpenButton>true</OpenButton>
 															<ContextMenu name="ИмяФайлаПротоколаОбменаКонтекстноеМеню" id="115"/>
@@ -687,8 +648,6 @@
 																	<v8:content>Протокол загрузки (для COM - соединения) на сервере</v8:content>
 																</v8:item>
 															</Title>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ChoiceButton>true</ChoiceButton>
 															<OpenButton>true</OpenButton>
 															<ContextMenu name="ИмяФайлаПротоколаОбменаЗагрузкаКонтекстноеМеню" id="117"/>
@@ -718,8 +677,6 @@
 																			<v8:content>Кодировка файла</v8:content>
 																		</v8:item>
 																	</Title>
-																	<EditMode>EnterOnInput</EditMode>
-																	<AutoEditMode>true</AutoEditMode>
 																	<AutoMaxWidth>false</AutoMaxWidth>
 																	<MaxWidth>18</MaxWidth>
 																	<ListChoiceMode>true</ListChoiceMode>
@@ -808,8 +765,6 @@
 																		</v8:item>
 																	</ToolTip>
 																	<ToolTipRepresentation>Button</ToolTipRepresentation>
-																	<EditMode>EnterOnInput</EditMode>
-																	<AutoEditMode>true</AutoEditMode>
 																	<AutoMaxWidth>false</AutoMaxWidth>
 																	<MaxWidth>18</MaxWidth>
 																	<SpinButton>true</SpinButton>
@@ -824,8 +779,6 @@
 														<CheckBoxField name="ДописыватьДанныеВПротоколОбмена" id="118">
 															<DataPath>Объект.ДописыватьДанныеВПротоколОбмена</DataPath>
 															<TitleLocation>Right</TitleLocation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ContextMenu name="ДописыватьДанныеВПротоколОбменаКонтекстноеМеню" id="119"/>
 															<ExtendedTooltip name="ДописыватьДанныеВПротоколОбменаExtendedTooltip" id="341"/>
 														</CheckBoxField>
@@ -845,8 +798,6 @@
 																</v8:item>
 															</ToolTip>
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<CheckBoxType>CheckBox</CheckBoxType>
 															<ContextMenu name="ВыводВПротоколИнформационныхСообщенийКонтекстноеМеню" id="121"/>
 															<ExtendedTooltip name="ВыводВПротоколИнформационныхСообщенийExtendedTooltip" id="342"/>
@@ -867,8 +818,6 @@
 																</v8:item>
 															</ToolTip>
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ContextMenu name="ОткрыватьПротоколыОбменаПослеВыполненияОперацийКонтекстноеМеню" id="123"/>
 															<ExtendedTooltip name="ОткрыватьПротоколыОбменаПослеВыполненияОперацийExtendedTooltip" id="343"/>
 														</CheckBoxField>
@@ -911,8 +860,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>Right</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<CheckBoxType>Switcher</CheckBoxType>
 											<ContextMenu name="ФлагРежимОтладкиОбработчиковКонтекстноеМеню" id="91"/>
 											<ExtendedTooltip name="ФлагРежимОтладкиОбработчиковРасширеннаяПодсказка" id="322"/>
@@ -1072,8 +1019,6 @@
 															<v8:content>Имя файла правил обмена на сервере</v8:content>
 														</v8:item>
 													</Title>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<MaxWidth>29</MaxWidth>
 													<ChoiceButton>true</ChoiceButton>
 													<OpenButton>true</OpenButton>
@@ -1107,8 +1052,6 @@
 													<v8:content>Выгружать:</v8:content>
 												</v8:item>
 											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<CheckBoxType>Tumbler</CheckBoxType>
 											<EditFormat>
 												<v8:item>
@@ -1220,8 +1163,6 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>Right</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<CheckBoxType>CheckBox</CheckBoxType>
 													<ContextMenu name="ВыполнитьОбменДаннымиВОптимизированномФорматеКонтекстноеМеню" id="102"/>
 													<ExtendedTooltip name="ВыполнитьОбменДаннымиВОптимизированномФорматеExtendedTooltip" id="332"/>
@@ -1229,8 +1170,6 @@
 												<CheckBoxField name="ИспользоватьТранзакцииПриВыгрузкеДляПлановОбмена" id="103">
 													<DataPath>Объект.ИспользоватьТранзакцииПриВыгрузкеДляПлановОбмена</DataPath>
 													<TitleLocation>Right</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<CheckBoxType>Switcher</CheckBoxType>
 													<ContextMenu name="ИспользоватьТранзакцииПриВыгрузкеДляПлановОбменаКонтекстноеМеню" id="104"/>
 													<ExtendedTooltip name="ИспользоватьТранзакцииПриВыгрузкеДляПлановОбменаExtendedTooltip" id="333"/>
@@ -1263,8 +1202,6 @@
 																</v8:item>
 															</Title>
 															<TitleLocation>None</TitleLocation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<EditFormat>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -1285,8 +1222,6 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>Right</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<ContextMenu name="ВыгружатьТолькоРазрешенныеКонтекстноеМеню" id="108"/>
 													<ExtendedTooltip name="ВыгружатьТолькоРазрешенныеExtendedTooltip" id="335"/>
 												</CheckBoxField>
@@ -1299,8 +1234,6 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>Right</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<ContextMenu name="ВестиДополнительныйКонтрольЗаписиВXMLКонтекстноеМеню" id="110"/>
 													<ExtendedTooltip name="ВестиДополнительныйКонтрольЗаписиВXMLExtendedTooltip" id="336"/>
 												</CheckBoxField>
@@ -1312,8 +1245,6 @@
 															<v8:content>Удалять регистрацию для узлов обмена после выгрузки</v8:content>
 														</v8:item>
 													</Title>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<ListChoiceMode>true</ListChoiceMode>
 													<TextEdit>false</TextEdit>
 													<ChoiceList>
@@ -1393,8 +1324,6 @@
 															<DataPath>Объект.БезопасныйРежим</DataPath>
 															<TitleLocation>Right</TitleLocation>
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ContextMenu name="БезопасныйРежимВыгрузкаКонтекстноеМеню" id="726"/>
 															<ExtendedTooltip name="БезопасныйРежимВыгрузкаРасширеннаяПодсказка" id="727">
 																<Title formatted="true">
@@ -1408,8 +1337,6 @@
 														<CheckBoxField name="ФлагРежимОтладкиВыгрузка" id="729">
 															<DataPath>Объект.ФлагРежимОтладки</DataPath>
 															<TitleLocation>Right</TitleLocation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ContextMenu name="ФлагРежимОтладкиВыгрузкаКонтекстноеМеню" id="730"/>
 															<ExtendedTooltip name="ФлагРежимОтладкиВыгрузкаРасширеннаяПодсказка" id="731"/>
 															<Events>
@@ -1432,8 +1359,6 @@
 																</v8:item>
 															</ToolTip>
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ContextMenu name="ВыводВОкноСообщенийИнформационныхСообщенийВыгрузкаКонтекстноеМеню" id="734"/>
 															<ExtendedTooltip name="ВыводВОкноСообщенийИнформационныхСообщенийВыгрузкаРасширеннаяПодсказка" id="735"/>
 														</CheckBoxField>
@@ -1445,8 +1370,6 @@
 																	<v8:content>Общий комментарий к обработке (не связан с конвертируемыми файлами)</v8:content>
 																</v8:item>
 															</ToolTip>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<Height>4</Height>
 															<VerticalStretch>false</VerticalStretch>
 															<MultiLine>true</MultiLine>
@@ -1475,8 +1398,6 @@
 																	<v8:content>Имя файла протокола обмена на сервере</v8:content>
 																</v8:item>
 															</Title>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ChoiceButton>true</ChoiceButton>
 															<OpenButton>true</OpenButton>
 															<ContextMenu name="ИмяФайлаПротоколаОбменаВыгрузкаКонтекстноеМеню" id="744"/>
@@ -1494,8 +1415,6 @@
 																	<v8:content>Протокол загрузки (для COM - соединения) на сервере</v8:content>
 																</v8:item>
 															</Title>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ChoiceButton>true</ChoiceButton>
 															<OpenButton>true</OpenButton>
 															<ContextMenu name="ИмяФайлаПротоколаОбменаЗагрузкаВыгрузкаКонтекстноеМеню" id="748"/>
@@ -1525,8 +1444,6 @@
 																			<v8:content>Кодировка файла</v8:content>
 																		</v8:item>
 																	</Title>
-																	<EditMode>EnterOnInput</EditMode>
-																	<AutoEditMode>true</AutoEditMode>
 																	<AutoMaxWidth>false</AutoMaxWidth>
 																	<MaxWidth>18</MaxWidth>
 																	<ListChoiceMode>true</ListChoiceMode>
@@ -1615,8 +1532,6 @@
 																		</v8:item>
 																	</ToolTip>
 																	<ToolTipRepresentation>Button</ToolTipRepresentation>
-																	<EditMode>EnterOnInput</EditMode>
-																	<AutoEditMode>true</AutoEditMode>
 																	<AutoMaxWidth>false</AutoMaxWidth>
 																	<MaxWidth>18</MaxWidth>
 																	<SpinButton>true</SpinButton>
@@ -1631,8 +1546,6 @@
 														<CheckBoxField name="ДописыватьДанныеВПротоколОбменаВыгрузка" id="755">
 															<DataPath>Объект.ДописыватьДанныеВПротоколОбмена</DataPath>
 															<TitleLocation>Right</TitleLocation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ContextMenu name="ДописыватьДанныеВПротоколОбменаВыгрузкаКонтекстноеМеню" id="756"/>
 															<ExtendedTooltip name="ДописыватьДанныеВПротоколОбменаВыгрузкаРасширеннаяПодсказка" id="757"/>
 														</CheckBoxField>
@@ -1652,8 +1565,6 @@
 																</v8:item>
 															</ToolTip>
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<CheckBoxType>CheckBox</CheckBoxType>
 															<ContextMenu name="ВыводВПротоколИнформационныхСообщенийВыгрузкаКонтекстноеМеню" id="760"/>
 															<ExtendedTooltip name="ВыводВПротоколИнформационныхСообщенийВыгрузкаРасширеннаяПодсказка" id="761"/>
@@ -1674,8 +1585,6 @@
 																</v8:item>
 															</ToolTip>
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ContextMenu name="ОткрыватьПротоколыОбменаПослеВыполненияОперацийВыгрузкаКонтекстноеМеню" id="764"/>
 															<ExtendedTooltip name="ОткрыватьПротоколыОбменаПослеВыполненияОперацийВыгрузкаРасширеннаяПодсказка" id="765"/>
 														</CheckBoxField>
@@ -1737,8 +1646,6 @@
 																			<v8:content>Период выгрузки</v8:content>
 																		</v8:item>
 																	</Title>
-																	<EditMode>EnterOnInput</EditMode>
-																	<AutoEditMode>true</AutoEditMode>
 																	<ContextMenu name="ПериодВыгрузкиКонтекстноеМеню" id="213"/>
 																	<ExtendedTooltip name="ПериодВыгрузкиExtendedTooltip" id="272"/>
 																	<Events>
@@ -2124,8 +2031,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>Right</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<CheckBoxType>Switcher</CheckBoxType>
 											<ContextMenu name="ФлагРежимОтладкиОбработчиковВыгрузкаКонтекстноеМеню" id="679"/>
 											<ExtendedTooltip name="ФлагРежимОтладкиОбработчиковВыгрузкаРасширеннаяПодсказка" id="680"/>
@@ -2287,8 +2192,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>Right</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<CheckBoxType>Switcher</CheckBoxType>
 							<ContextMenu name="УдалятьОбъектыНаКоторыеЕстьПраваДоступаКонтекстноеМеню" id="127"/>
 							<ExtendedTooltip name="УдалятьОбъектыНаКоторыеЕстьПраваДоступаExtendedTooltip" id="346"/>
@@ -2308,8 +2211,6 @@
 								</v8:item>
 							</ToolTip>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ContextMenu name="ПериодУдаленияКонтекстноеМеню" id="215"/>
 							<ExtendedTooltip name="ПериодУдаленияExtendedTooltip" id="347"/>
 							<Events>

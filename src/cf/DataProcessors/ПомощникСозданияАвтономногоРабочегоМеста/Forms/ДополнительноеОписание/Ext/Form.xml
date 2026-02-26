@@ -40,8 +40,6 @@
 				</v8:item>
 			</Title>
 			<TitleLocation>None</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<ContextMenu name="ПолеHTMLДокументаКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="ПолеHTMLДокументаExtendedTooltip" id="5"/>

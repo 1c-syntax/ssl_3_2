@@ -156,8 +156,7 @@
 													<Title formatted="true">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>&lt;color #000000&gt;Внимание!&lt;/&gt;
-
+															<v8:content>&lt;color #a11810&gt;Внимание!&lt;/&gt;
 Будут перенумерованы элементы справочников и документов (в разрезе организаций) с максимальным номером, которые поддерживают механизм префиксации.</v8:content>
 														</v8:item>
 													</Title>
@@ -173,8 +172,6 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>Left</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<HorizontalStretch>false</HorizontalStretch>
 													<Mask>NN</Mask>
 													<ContextMenu name="НовыйПрефиксИБКонтекстноеМеню" id="168"/>

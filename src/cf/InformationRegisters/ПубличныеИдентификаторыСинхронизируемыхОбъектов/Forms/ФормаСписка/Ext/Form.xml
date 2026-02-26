@@ -90,8 +90,6 @@
 				<LabelField name="Идентификатор" id="17">
 					<DataPath>Список.Идентификатор</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ИдентификаторКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="19"/>
 				</LabelField>
@@ -104,8 +102,6 @@
 				</LabelField>
 				<LabelField name="УзелИнформационнойБазы" id="21">
 					<DataPath>Список.УзелИнформационнойБазы</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="22"/>
 					<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="23"/>
 				</LabelField>

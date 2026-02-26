@@ -468,7 +468,13 @@
 				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
 #ДляОбъекта("")
 #Иначе
-ГДЕ ИСТИНА
+#ПоЗначениямРасширенный("Справочник.ПодписантыСервисаМобильнойПодписи", "", "",
+"ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ПодписантыСервисаМобильнойПодписи.Пользователи КАК Т1
+ПО Т1.Ссылка = Т.Ссылка",
+"",
+"Условие", "Т.Добавил = &amp;ТекущийПользователь","ИЛИ",
+"Условие", "Т1.Пользователь = &amp;ТекущийПользователь", "",
+"","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","")
 #КонецЕсли</condition>
 			</restrictionByCondition>
 		</right>
@@ -478,33 +484,6 @@
 		</right>
 		<right>
 			<name>InputByString</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Configuration.БиблиотекаСтандартныхПодсистем</name>
-		<right>
-			<name>MainWindowModeNormal</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeEmbeddedWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeFullscreenWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeKiosk</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>AnalyticsSystemClient</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -542,6 +521,24 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.СервисМобильнойПодписиСтатусы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляРегистра("ИдентификаторыОбъектовМетаданных.РегистрСведенийСервисМобильнойПодписиСтатусы", "Отправитель", "", "", "", "")
+#Иначе
+ГДЕ Отправитель = &amp;ТекущийПользователь
+#КонецЕсли</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>View</name>
@@ -603,6 +600,34 @@
 		<name>InformationRegister.ИспользованиеПоставляемыхДополнительныхОтчетовИОбработокВОбластяхДанных</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.НастройкиОтправкиВГосключ</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("")
+#Иначе
+#ПоЗначениямРасширенный("Справочник.НастройкиОтправкиВГосключ", "", "",
+"ЛЕВОЕ СОЕДИНЕНИЕ Справочник.НастройкиОтправкиВГосключ.Пользователи КАК Т1
+ПО Т1.Ссылка = Т.Ссылка",
+"",
+"Условие", "Т.Ответственный = &amp;ТекущийПользователь","ИЛИ",
+"Условие", "Т1.Пользователь = &amp;ТекущийПользователь", "",
+"","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","")
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -1274,6 +1299,33 @@
 		</right>
 	</object>
 	<object>
+		<name>Configuration.БиблиотекаСтандартныхПодсистем</name>
+		<right>
+			<name>MainWindowModeNormal</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeEmbeddedWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeFullscreenWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>AnalyticsSystemClient</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ИспользоватьАнкетирование</name>
 		<right>
 			<name>Read</name>
@@ -1487,6 +1539,13 @@
 			<name>Read</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ПодписантыСервисаМобильнойПодписи.Command.ПодписантыСервисаМобильнойПодписи</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

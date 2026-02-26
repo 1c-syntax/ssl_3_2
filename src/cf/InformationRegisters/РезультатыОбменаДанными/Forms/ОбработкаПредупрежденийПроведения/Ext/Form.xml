@@ -93,6 +93,7 @@
 			</AutoCommandBar>
 			<ExtendedTooltip name="ТаблицаОбъектовИсправленияРасширеннаяПодсказка" id="4"/>
 			<SearchStringAddition name="ТаблицаОбъектовИсправленияСтрокаПоиска" id="5">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>ТаблицаОбъектовИсправления</Item>
 					<Type>SearchStringRepresentation</Type>
@@ -101,6 +102,7 @@
 				<ExtendedTooltip name="ТаблицаОбъектовИсправленияСтрокаПоискаРасширеннаяПодсказка" id="7"/>
 			</SearchStringAddition>
 			<ViewStatusAddition name="ТаблицаОбъектовИсправленияСостояниеПросмотра" id="8">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>ТаблицаОбъектовИсправления</Item>
 					<Type>ViewStatusRepresentation</Type>
@@ -109,6 +111,7 @@
 				<ExtendedTooltip name="ТаблицаОбъектовИсправленияСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
 			</ViewStatusAddition>
 			<SearchControlAddition name="ТаблицаОбъектовИсправленияУправлениеПоиском" id="11">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>ТаблицаОбъектовИсправления</Item>
 					<Type>SearchControl</Type>
@@ -166,8 +169,6 @@
 			<Visible>false</Visible>
 			<ReadOnly>true</ReadOnly>
 			<TitleLocation>Top</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<MultiLine>true</MultiLine>
 			<ContextMenu name="РезультатИсправленияПроведенияИзСтрокиКонтекстноеМеню" id="37"/>

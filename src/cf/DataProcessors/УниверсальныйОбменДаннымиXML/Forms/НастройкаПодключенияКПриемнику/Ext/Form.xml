@@ -103,8 +103,6 @@
 															<v8:content>Платформа</v8:content>
 														</v8:item>
 													</Title>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<ListChoiceMode>true</ListChoiceMode>
 													<TextEdit>false</TextEdit>
 													<ChoiceList>
@@ -162,8 +160,6 @@
 															<v8:content>Тип информационной базы</v8:content>
 														</v8:item>
 													</Title>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<ListChoiceMode>true</ListChoiceMode>
 													<EditFormat>
 														<v8:item>
@@ -231,8 +227,6 @@
 													<ChildItems>
 														<InputField name="КаталогИнформационнойБазыДляПодключения" id="23">
 															<DataPath>Объект.КаталогИнформационнойБазыДляПодключения</DataPath>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ChoiceButton>true</ChoiceButton>
 															<OpenButton>true</OpenButton>
 															<ContextMenu name="КаталогИнформационнойБазыДляПодключенияКонтекстноеМеню" id="24"/>
@@ -263,8 +257,6 @@
 																	<v8:content>Имя сервера 1С:Предприятия</v8:content>
 																</v8:item>
 															</Title>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ContextMenu name="ИмяСервераИнформационнойБазыДляПодключенияКонтекстноеМеню" id="30"/>
 															<ExtendedTooltip name="ИмяСервераИнформационнойБазыДляПодключенияExtendedTooltip" id="31"/>
 														</InputField>
@@ -276,8 +268,6 @@
 																	<v8:content>Информационная база</v8:content>
 																</v8:item>
 															</Title>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<ContextMenu name="ИмяИнформационнойБазыНаСервереДляПодключенияКонтекстноеМеню" id="34"/>
 															<ExtendedTooltip name="ИмяИнформационнойБазыНаСервереДляПодключенияExtendedTooltip" id="35"/>
 														</InputField>
@@ -307,8 +297,6 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>Right</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<ContextMenu name="АутентификацияWindowsИнформационнойБазыДляПодключенияКонтекстноеМеню" id="40"/>
 													<ExtendedTooltip name="АутентификацияWindowsИнформационнойБазыДляПодключенияExtendedTooltip" id="41"/>
 													<Events>
@@ -338,8 +326,6 @@
 															<v8:content>Пользователь</v8:content>
 														</v8:item>
 													</Title>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<ContextMenu name="ПользовательИнформационнойБазыДляПодключенияКонтекстноеМеню" id="48"/>
 													<ExtendedTooltip name="ПользовательИнформационнойБазыДляПодключенияExtendedTooltip" id="49"/>
 												</InputField>
@@ -351,8 +337,6 @@
 															<v8:content>Пароль</v8:content>
 														</v8:item>
 													</Title>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<PasswordMode>true</PasswordMode>
 													<ContextMenu name="ПарольИнформационнойБазыДляПодключенияКонтекстноеМеню" id="52"/>
 													<ExtendedTooltip name="ПарольИнформационнойБазыДляПодключенияExtendedTooltip" id="53"/>

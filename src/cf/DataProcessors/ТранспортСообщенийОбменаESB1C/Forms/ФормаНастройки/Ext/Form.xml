@@ -96,8 +96,6 @@
 					<v8:content>Сервис интеграции</v8:content>
 				</v8:item>
 			</Title>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<DropListButton>true</DropListButton>
 			<ClearButton>true</ClearButton>
@@ -111,8 +109,6 @@
 		</InputField>
 		<InputField name="КаналПолучения" id="60">
 			<DataPath>Объект.КаналПолучения</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<DropListButton>true</DropListButton>
 			<ClearButton>true</ClearButton>
@@ -123,8 +119,6 @@
 		</InputField>
 		<InputField name="КаналОтправки" id="63">
 			<DataPath>Объект.КаналОтправки</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<DropListButton>true</DropListButton>
 			<ClearButton>true</ClearButton>
@@ -141,8 +135,6 @@
 					<v8:content>Код получателя в шине</v8:content>
 				</v8:item>
 			</Title>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="КодПолучателяКонтекстноеМеню" id="67"/>

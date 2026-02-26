@@ -112,18 +112,6 @@
 						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 						<ExtendedTooltip name="СписокКонтекстноеМенюВыполнитьСценарийРежимОтладкиРасширеннаяПодсказка" id="96"/>
 					</Button>
-					<Button name="СписокКонтекстноеМенюВыполнитьСценарийДляТакси" id="90">
-						<Type>CommandBarButton</Type>
-						<Visible>false</Visible>
-						<CommandName>Form.Command.ВыполнитьСценарийРежимОтладки</CommandName>
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Выполнить сценарий (режим отладки)</v8:content>
-							</v8:item>
-						</Title>
-						<ExtendedTooltip name="СписокКонтекстноеМенюВыполнитьСценарийДляТаксиРасширеннаяПодсказка" id="91"/>
-					</Button>
 					<Button name="СписокКонтекстноеМенюИзменитьРегламентноеЗадание" id="99">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ИзменитьРегламентноеЗадание</CommandName>
@@ -174,8 +162,6 @@
 			<ChildItems>
 				<LabelField name="Наименование" id="4">
 					<DataPath>Список.Наименование</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="55"/>
 				</LabelField>
@@ -188,12 +174,10 @@
 							<v8:content>Включить/отключить синхронизацию по расписанию</v8:content>
 						</v8:item>
 					</ToolTip>
-					<EditMode>EnterOnInput</EditMode>
 					<HeaderPicture>
 						<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</HeaderPicture>
-					<AutoEditMode>true</AutoEditMode>
 					<AutoWidthInTable>None</AutoWidthInTable>
 					<CheckBoxType>Switcher</CheckBoxType>
 					<ContextMenu name="ИспользоватьРегламентноеЗаданиеКонтекстноеМеню" id="70"/>
@@ -213,8 +197,6 @@
 							<v8:content>Включить/отключить получение данных (загрузка)</v8:content>
 						</v8:item>
 					</ToolTip>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<CheckBoxType>Switcher</CheckBoxType>
 					<ContextMenu name="ФлагИспользованияЗагрузкиКонтекстноеМеню" id="24"/>
 					<ExtendedTooltip name="ФлагИспользованияЗагрузкиExtendedTooltip" id="53"/>
@@ -233,8 +215,6 @@
 							<v8:content>Включить/отключить отправку данных (выгрузка)</v8:content>
 						</v8:item>
 					</ToolTip>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<CheckBoxType>Switcher</CheckBoxType>
 					<ContextMenu name="ФлагИспользованияВыгрузкиКонтекстноеМеню" id="22"/>
 					<ExtendedTooltip name="ФлагИспользованияВыгрузкиExtendedTooltip" id="54"/>
@@ -244,8 +224,6 @@
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="84"/>
 					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="85"/>
 				</LabelField>
@@ -254,8 +232,6 @@
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="СсылкаКонтекстноеМеню" id="67"/>
 					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="68"/>
 				</LabelField>

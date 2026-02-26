@@ -148,8 +148,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>Top</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<ContextMenu name="НаименованиеКонтекстноеМеню" id="14"/>
 									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="15"/>
@@ -157,8 +155,6 @@
 								<InputField name="Префикс" id="16">
 									<DataPath>Объект.ПрефиксИнформационнойБазыИсточника</DataPath>
 									<TitleLocation>Top</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<Width>6</Width>
 									<ContextMenu name="ПрефиксКонтекстноеМеню" id="17"/>
 									<ExtendedTooltip name="ПрефиксРасширеннаяПодсказка" id="18"/>
@@ -188,8 +184,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>Top</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<ContextMenu name="НаименованиеКорреспондентаКонтекстноеМеню" id="22"/>
 									<ExtendedTooltip name="НаименованиеКорреспондентаРасширеннаяПодсказка" id="23"/>
@@ -203,8 +197,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>Top</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<Width>6</Width>
 									<ContextMenu name="ПрефиксКорреспондентаКонтекстноеМеню" id="25"/>
 									<ExtendedTooltip name="ПрефиксКорреспондентаРасширеннаяПодсказка" id="26"/>
@@ -239,8 +231,6 @@
 									</Title>
 									<TitleLocation>Top</TitleLocation>
 									<ToolTipRepresentation>Button</ToolTipRepresentation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="ИмяКаталогаСохраненияНастроекКонтекстноеМеню" id="115"/>
@@ -320,8 +310,6 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>Right</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<CheckBoxType>Switcher</CheckBoxType>
 													<ContextMenu name="ИсправитьДублированиеНастроекСинхронизацииКонтекстноеМеню" id="153"/>
 													<ExtendedTooltip name="ИсправитьДублированиеНастроекСинхронизацииРасширеннаяПодсказка" id="154"/>
@@ -426,7 +414,7 @@
 													<Title formatted="true">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>&lt;b&gt;&lt;fontsize 10&gt;&lt;color #000000&gt;Внимание!&lt;/&gt;&lt;/&gt;&lt;/&gt;
+															<v8:content>&lt;fontsize 12&gt;&lt;b&gt;&lt;colorpalette 2&gt;Внимание!&lt;/&gt;&lt;/&gt;&lt;/&gt;
 Данная операция необратима и предназначена только для устранения ошибки синхронизации, связанной с дублированием настроек обмена в информационных базах, которые были получены путем копирования.
 Не рекомендуется применять для работающих синхронизаций.</v8:content>
 														</v8:item>
@@ -633,8 +621,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<HorizontalStretch>true</HorizontalStretch>
 							<VerticalStretch>true</VerticalStretch>

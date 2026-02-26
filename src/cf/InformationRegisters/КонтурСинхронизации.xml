@@ -463,7 +463,7 @@
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
-					<TypeReductionMode>TransformValues</TypeReductionMode>
+					<TypeReductionMode>DeleteData</TypeReductionMode>
 				</Properties>
 			</Dimension>
 			<Dimension uuid="a4cc0476-99a7-4b61-a382-2a6bb8d2043e">

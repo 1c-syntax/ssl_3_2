@@ -111,8 +111,6 @@
 													<v8:content>Пароль</v8:content>
 												</v8:item>
 											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<PasswordMode>true</PasswordMode>
 											<ChoiceButton>true</ChoiceButton>
 											<AutoMarkIncomplete>true</AutoMarkIncomplete>

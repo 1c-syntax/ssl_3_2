@@ -136,8 +136,6 @@
 			<ChildItems>
 				<InputField name="Наименование" id="3">
 					<DataPath>Объект.Description</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<Wrap>false</Wrap>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
@@ -167,8 +165,6 @@
 						</v8:item>
 					</Title>
 					<TitleLocation>Right</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ИспользоватьРегламентноеЗаданиеКонтекстноеМеню" id="25"/>
 					<ExtendedTooltip name="ИспользоватьРегламентноеЗаданиеExtendedTooltip" id="132"/>
 					<Events>
@@ -445,8 +441,6 @@
 			<ChildItems>
 				<InputField name="КомментарийСтрока" id="30">
 					<DataPath>Объект.Комментарий</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<Height>2</Height>
 					<VerticalStretch>false</VerticalStretch>

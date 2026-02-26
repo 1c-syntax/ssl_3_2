@@ -314,7 +314,7 @@
 							<Title formatted="true">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>&lt;b&gt;&lt;color #000000&gt;Внимание!&lt;/&gt;&lt;/&gt; Включение регистрации при зацикливании может привести к избыточности отправляемых и получаемых данных, а также к увеличению времени обмена.</v8:content>
+									<v8:content>&lt;b&gt;&lt;colorpalette 2&gt;Внимание!&lt;/&gt;&lt;/&gt; Включение регистрации при зацикливании может привести к избыточности отправляемых и получаемых данных, а также к увеличению времени обмена.</v8:content>
 								</v8:item>
 							</Title>
 							<ContextMenu name="ИнформацияВозобновлениеРегистрацииКонтекстноеМеню" id="101"/>
@@ -340,7 +340,7 @@
 							<Title formatted="true">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>&lt;b&gt;&lt;color #000000&gt;Внимание!&lt;/&gt;&lt;/&gt;</v8:content>
+									<v8:content>&lt;b&gt;&lt;colorpalette 2&gt;Внимание!&lt;/&gt;&lt;/&gt;</v8:content>
 								</v8:item>
 							</Title>
 							<ContextMenu name="ИнформацияДругаяБазаВниманиеКонтекстноеМеню" id="141"/>

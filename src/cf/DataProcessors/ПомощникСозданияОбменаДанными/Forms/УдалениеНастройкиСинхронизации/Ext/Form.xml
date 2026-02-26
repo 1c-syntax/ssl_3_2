@@ -180,8 +180,6 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>Right</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<ContextMenu name="УдалитьНастройкуВКорреспондентеКонтекстноеМеню" id="58"/>
 													<ExtendedTooltip name="УдалитьНастройкуВКорреспондентеРасширеннаяПодсказка" id="59"/>
 												</CheckBoxField>

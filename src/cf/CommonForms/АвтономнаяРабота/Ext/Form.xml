@@ -206,8 +206,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>Right</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<CheckBoxType>Switcher</CheckBoxType>
 											<ContextMenu name="СинхронизироватьДанныеПриНачалеРаботыПрограммыКонтекстноеМеню" id="14"/>
 											<ExtendedTooltip name="СинхронизироватьДанныеПриНачалеРаботыПрограммыExtendedTooltip" id="82"/>
@@ -224,8 +222,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>Right</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<CheckBoxType>Switcher</CheckBoxType>
 											<ContextMenu name="СинхронизироватьДанныеПриЗавершенииРаботыПрограммыКонтекстноеМеню" id="19"/>
 											<ExtendedTooltip name="СинхронизироватьДанныеПриЗавершенииРаботыПрограммыExtendedTooltip" id="83"/>
@@ -290,8 +286,6 @@
 																</v8:item>
 															</Title>
 															<TitleLocation>Right</TitleLocation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<CheckBoxType>Switcher</CheckBoxType>
 															<ContextMenu name="СинхронизироватьДанныеПоРасписаниюКонтекстноеМеню" id="24"/>
 															<ExtendedTooltip name="СинхронизироватьДанныеПоРасписаниюExtendedTooltip" id="88"/>
@@ -308,8 +302,6 @@
 																</v8:item>
 															</Title>
 															<TitleLocation>None</TitleLocation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<Width>30</Width>
 															<ListChoiceMode>true</ListChoiceMode>
 															<TextEdit>false</TextEdit>
@@ -380,8 +372,6 @@
 																</v8:item>
 															</Title>
 															<TitleLocation>Right</TitleLocation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<CheckBoxType>Switcher</CheckBoxType>
 															<ContextMenu name="ПоказыватьПредупреждениеОДолгойСинхронизацииКонтекстноеМеню" id="110"/>
 															<ExtendedTooltip name="ПоказыватьПредупреждениеОДолгойСинхронизацииРасширеннаяПодсказка" id="111"/>

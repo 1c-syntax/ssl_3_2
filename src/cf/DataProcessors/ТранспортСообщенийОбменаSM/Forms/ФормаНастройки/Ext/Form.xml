@@ -32,8 +32,6 @@
 		<LabelField name="ОбластьДанныхКорреспондента" id="24">
 			<DataPath>Объект.ОбластьДанныхКорреспондента</DataPath>
 			<TitleLocation>Left</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="ОбластьДанныхКорреспондентаКонтекстноеМеню" id="25"/>
 			<ExtendedTooltip name="ОбластьДанныхКорреспондентаРасширеннаяПодсказка" id="26"/>
 		</LabelField>
@@ -41,8 +39,6 @@
 			<DataPath>Объект.НаименованиеКорреспондента</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<TitleLocation>Left</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<UseCopy>true</UseCopy>
 			<ContextMenu name="НаименованиеКорреспондентаКонтекстноеМеню" id="28"/>
 			<ExtendedTooltip name="НаименованиеКорреспондентаРасширеннаяПодсказка" id="29"/>
@@ -56,8 +52,6 @@
 				</v8:item>
 			</Title>
 			<TitleLocation>Left</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<HorizontalStretch>true</HorizontalStretch>
 			<UseCopy>true</UseCopy>
 			<ContextMenu name="КонечнаяТочкаКорреспондентаПредставлениеКонтекстноеМеню" id="37"/>
@@ -67,8 +61,6 @@
 			<DataPath>Объект.ВнутренняяПубликация</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<TitleLocation>Right</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<CheckBoxType>Switcher</CheckBoxType>
 			<ContextMenu name="ВнутренняяПубликацияКонтекстноеМеню" id="31"/>
 			<ExtendedTooltip name="ВнутренняяПубликацияРасширеннаяПодсказка" id="32"/>

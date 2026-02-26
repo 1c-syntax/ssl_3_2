@@ -99,8 +99,6 @@
 				<LabelField name="Корреспондент" id="16">
 					<DataPath>Список.Корреспондент</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="КорреспондентКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="КорреспондентРасширеннаяПодсказка" id="18"/>
 				</LabelField>

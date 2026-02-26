@@ -111,8 +111,6 @@
 							<v8:content>Синхронизация с приложением</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ListChoiceMode>true</ListChoiceMode>
 					<ContextMenu name="ИмяПланаОбменаКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="ИмяПланаОбменаExtendedTooltip" id="54"/>
@@ -158,8 +156,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<RadioButtonType>Auto</RadioButtonType>
 							<ColumnsCount>1</ColumnsCount>
 							<ChoiceList>
@@ -214,8 +210,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ListChoiceMode>true</ListChoiceMode>
 											<TextEdit>false</TextEdit>
 											<ChoiceListButton>false</ChoiceListButton>
@@ -272,8 +266,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<RadioButtonType>RadioButtons</RadioButtonType>
 							<ChoiceList>
 								<xr:Item>
@@ -299,8 +291,6 @@
 						<InputField name="ИмяФайлаПравил" id="5">
 							<DataPath>Запись.ИмяФайлаПравил</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ChoiceButton>true</ChoiceButton>
 							<ChoiceButtonPicture>
 								<xr:Ref>StdPicture.OpenFile</xr:Ref>
@@ -343,8 +333,6 @@
 							<v8:content>Информация о правилах: "%1"</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<Height>6</Height>
 					<MultiLine>true</MultiLine>

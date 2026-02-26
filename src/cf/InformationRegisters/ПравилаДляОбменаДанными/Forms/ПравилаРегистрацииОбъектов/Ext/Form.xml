@@ -99,8 +99,6 @@
 							<v8:content>Синхронизация с приложением</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ListChoiceMode>true</ListChoiceMode>
 					<ContextMenu name="ИмяПланаОбменаКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="ИмяПланаОбменаExtendedTooltip" id="35"/>
@@ -146,8 +144,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<RadioButtonType>Auto</RadioButtonType>
 							<ColumnsCount>1</ColumnsCount>
 							<ChoiceList>
@@ -195,8 +191,6 @@
 										<InputField name="ИмяМакетаПравил" id="7">
 											<DataPath>Запись.ИмяМакетаПравил</DataPath>
 											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ListChoiceMode>true</ListChoiceMode>
 											<TextEdit>false</TextEdit>
 											<ChoiceListButton>false</ChoiceListButton>
@@ -251,8 +245,6 @@
 							</Title>
 							<TitleLocation>None</TitleLocation>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<RadioButtonType>Auto</RadioButtonType>
 							<ColumnsCount>1</ColumnsCount>
 							<ChoiceList>
@@ -287,8 +279,6 @@
 							</Title>
 							<TitleLocation>None</TitleLocation>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ContextMenu name="ИмяТиповогоМенеджераРегистрацииКонтекстноеМеню" id="123"/>
 							<ExtendedTooltip name="ИмяТиповогоМенеджераРегистрацииРасширеннаяПодсказка" id="124">
 								<Title formatted="false">
@@ -337,8 +327,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<RadioButtonType>Auto</RadioButtonType>
 							<ColumnsCount>1</ColumnsCount>
 							<ChoiceList>
@@ -365,8 +353,6 @@
 						<InputField name="ИмяМенеджераРегистрации" id="111">
 							<DataPath>Запись.ИмяМенеджераРегистрации</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ContextMenu name="ИмяМенеджераРегистрацииКонтекстноеМеню" id="112"/>
 							<ExtendedTooltip name="ИмяМенеджераРегистрацииРасширеннаяПодсказка" id="113"/>
 							<Events>
@@ -398,8 +384,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<RadioButtonType>Auto</RadioButtonType>
 							<ColumnsCount>1</ColumnsCount>
 							<ChoiceList>
@@ -426,8 +410,6 @@
 						<InputField name="ИмяФайлаПравил" id="5">
 							<DataPath>Запись.ИмяФайлаПравил</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ChoiceButton>true</ChoiceButton>
 							<TextEdit>false</TextEdit>
 							<ChoiceButtonPicture>
@@ -459,8 +441,6 @@
 					<v8:content>Информация о правилах: "%1"</v8:content>
 				</v8:item>
 			</Title>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<Height>6</Height>
 			<MultiLine>true</MultiLine>

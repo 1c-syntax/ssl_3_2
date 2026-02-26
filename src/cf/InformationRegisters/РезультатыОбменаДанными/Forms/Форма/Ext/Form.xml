@@ -42,8 +42,6 @@
 							<v8:content>Период</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ClearButton>true</ClearButton>
 					<ContextMenu name="ПериодКонтекстноеМеню" id="35">
@@ -62,8 +60,6 @@
 							<v8:content>Отправитель</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ClearButton>true</ClearButton>
 					<OpenButton>false</OpenButton>
@@ -87,8 +83,6 @@
 							<v8:content>Причина</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ClearButton>true</ClearButton>
 					<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="56">
@@ -370,6 +364,7 @@
 							</AutoCommandBar>
 							<ExtendedTooltip name="ОшибкиОбъектаXDTOРасширеннаяПодсказка" id="675"/>
 							<SearchStringAddition name="ОшибкиОбъектаXDTOСтрокаПоиска" id="676">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ОшибкиОбъектаXDTO</Item>
 									<Type>SearchStringRepresentation</Type>
@@ -378,6 +373,7 @@
 								<ExtendedTooltip name="ОшибкиОбъектаXDTOСтрокаПоискаРасширеннаяПодсказка" id="678"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="ОшибкиОбъектаXDTOСостояниеПросмотра" id="679">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ОшибкиОбъектаXDTO</Item>
 									<Type>ViewStatusRepresentation</Type>
@@ -386,6 +382,7 @@
 								<ExtendedTooltip name="ОшибкиОбъектаXDTOСостояниеПросмотраРасширеннаяПодсказка" id="681"/>
 							</ViewStatusAddition>
 							<SearchControlAddition name="ОшибкиОбъектаXDTOУправлениеПоиском" id="682">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ОшибкиОбъектаXDTO</Item>
 									<Type>SearchControl</Type>
@@ -417,8 +414,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.ПиктограммыЭлементов</xr:Ref>
 												<xr:LoadTransparent>false</xr:LoadTransparent>
@@ -434,8 +429,6 @@
 													<v8:content>Вид данных</v8:content>
 												</v8:item>
 											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ContextMenu name="ОшибкиОбъектаXDTOПредставлениеОбъектаКонтекстноеМеню" id="747"/>
 											<ExtendedTooltip name="ОшибкиОбъектаXDTOПредставлениеОбъектаРасширеннаяПодсказка" id="748"/>
 										</LabelField>
@@ -449,22 +442,16 @@
 											<v8:content>Данные</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиОбъектаXDTOСсылкаКонтекстноеМеню" id="750"/>
 									<ExtendedTooltip name="ОшибкиОбъектаXDTOСсылкаРасширеннаяПодсказка" id="751"/>
 								</InputField>
 								<InputField name="ОшибкиОбъектаXDTOДатаВозникновения" id="752">
 									<DataPath>ОшибкиОбъектаXDTO.ДатаВозникновения</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиОбъектаXDTOДатаВозникновенияКонтекстноеМеню" id="753"/>
 									<ExtendedTooltip name="ОшибкиОбъектаXDTOДатаВозникновенияРасширеннаяПодсказка" id="754"/>
 								</InputField>
 								<InputField name="ОшибкиОбъектаXDTOУзелИнформационнойБазы" id="755">
 									<DataPath>ОшибкиОбъектаXDTO.УзелИнформационнойБазы</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиОбъектаXDTOУзелИнформационнойБазыКонтекстноеМеню" id="756"/>
 									<ExtendedTooltip name="ОшибкиОбъектаXDTOУзелИнформационнойБазыРасширеннаяПодсказка" id="757"/>
 								</InputField>
@@ -732,6 +719,7 @@
 							</AutoCommandBar>
 							<ExtendedTooltip name="НепроведенныеДокументыExtendedTooltip" id="392"/>
 							<SearchStringAddition name="НепроведенныеДокументыСтрокаПоиска" id="499">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>НепроведенныеДокументы</Item>
 									<Type>SearchStringRepresentation</Type>
@@ -740,6 +728,7 @@
 								<ExtendedTooltip name="НепроведенныеДокументыСтрокаПоискаРасширеннаяПодсказка" id="501"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="НепроведенныеДокументыСостояниеПросмотра" id="502">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>НепроведенныеДокументы</Item>
 									<Type>ViewStatusRepresentation</Type>
@@ -748,6 +737,7 @@
 								<ExtendedTooltip name="НепроведенныеДокументыСостояниеПросмотраРасширеннаяПодсказка" id="504"/>
 							</ViewStatusAddition>
 							<SearchControlAddition name="НепроведенныеДокументыУправлениеПоиском" id="505">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>НепроведенныеДокументы</Item>
 									<Type>SearchControl</Type>
@@ -777,8 +767,6 @@
 											<v8:content>Ссылка на документ</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="НепроведенныеДокументыСсылкаКонтекстноеМеню" id="256"/>
 									<ExtendedTooltip name="НепроведенныеДокументыСсылкаExtendedTooltip" id="396"/>
 								</LabelField>
@@ -801,8 +789,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<Width>9</Width>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.СтатусыДокумента</xr:Ref>
@@ -826,8 +812,6 @@
 													<v8:content>Тип документа</v8:content>
 												</v8:item>
 											</ToolTip>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ContextMenu name="НепроведенныеДокументыТипСтрокойКонтекстноеМеню" id="20"/>
 											<ExtendedTooltip name="НепроведенныеДокументыТипСтрокойExtendedTooltip" id="395"/>
 										</LabelField>
@@ -847,8 +831,6 @@
 											<v8:content>Номер документа</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<Width>14</Width>
 									<ContextMenu name="НепроведенныеДокументыНомерДокументаКонтекстноеМеню" id="252"/>
 									<ExtendedTooltip name="НепроведенныеДокументыНомерДокументаExtendedTooltip" id="397"/>
@@ -867,8 +849,6 @@
 											<v8:content>Дата документа</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<Width>9</Width>
 									<ContextMenu name="НепроведенныеДокументыДатаДокументаКонтекстноеМеню" id="254"/>
 									<ExtendedTooltip name="НепроведенныеДокументыДатаДокументаExtendedTooltip" id="398"/>
@@ -881,8 +861,6 @@
 											<v8:content>Причина, по которой не провелся документ</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<Width>10</Width>
 									<ContextMenu name="НепроведенныеДокументыПричинаКонтекстноеМеню" id="16"/>
 									<ExtendedTooltip name="НепроведенныеДокументыПричинаExtendedTooltip" id="399"/>
@@ -901,8 +879,6 @@
 											<v8:content>Дата получения непроведенного документа</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<Width>15</Width>
 									<ContextMenu name="НепроведенныеДокументыДатаВозникновенияКонтекстноеМеню" id="14"/>
 									<ExtendedTooltip name="НепроведенныеДокументыДатаВозникновенияExtendedTooltip" id="400"/>
@@ -921,8 +897,6 @@
 											<v8:content>Информационная база или приложение из которого получен документ</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<Width>15</Width>
 									<ContextMenu name="НепроведенныеДокументыУзелИнформационнойБазыКонтекстноеМеню" id="12"/>
 									<ExtendedTooltip name="НепроведенныеДокументыУзелИнформационнойБазыExtendedTooltip" id="401"/>
@@ -1170,6 +1144,7 @@
 							</AutoCommandBar>
 							<ExtendedTooltip name="НезаполненныеРеквизитыExtendedTooltip" id="424"/>
 							<SearchStringAddition name="НезаполненныеРеквизитыСтрокаПоиска" id="508">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>НезаполненныеРеквизиты</Item>
 									<Type>SearchStringRepresentation</Type>
@@ -1178,6 +1153,7 @@
 								<ExtendedTooltip name="НезаполненныеРеквизитыСтрокаПоискаРасширеннаяПодсказка" id="510"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="НезаполненныеРеквизитыСостояниеПросмотра" id="511">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>НезаполненныеРеквизиты</Item>
 									<Type>ViewStatusRepresentation</Type>
@@ -1186,6 +1162,7 @@
 								<ExtendedTooltip name="НезаполненныеРеквизитыСостояниеПросмотраРасширеннаяПодсказка" id="513"/>
 							</ViewStatusAddition>
 							<SearchControlAddition name="НезаполненныеРеквизитыУправлениеПоиском" id="514">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>НезаполненныеРеквизиты</Item>
 									<Type>SearchControl</Type>
@@ -1223,8 +1200,6 @@
 													<v8:content>Тип данных</v8:content>
 												</v8:item>
 											</ToolTip>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.ПиктограммыЭлементов</xr:Ref>
 												<xr:LoadTransparent>false</xr:LoadTransparent>
@@ -1241,8 +1216,6 @@
 													<v8:content>Вид данных</v8:content>
 												</v8:item>
 											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ContextMenu name="НезаполненныеРеквизитыТипСтрокойКонтекстноеМеню" id="83"/>
 											<ExtendedTooltip name="НезаполненныеРеквизитыТипСтрокойExtendedTooltip" id="427"/>
 										</LabelField>
@@ -1262,8 +1235,6 @@
 											<v8:content>Данные с незаполненными реквизитами</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="НезаполненныеРеквизитыСсылкаКонтекстноеМеню" id="85"/>
 									<ExtendedTooltip name="НезаполненныеРеквизитыСсылкаExtendedTooltip" id="428"/>
 								</LabelField>
@@ -1281,8 +1252,6 @@
 											<v8:content>Дата получения</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="НезаполненныеРеквизитыДатаВозникновенияКонтекстноеМеню" id="77"/>
 									<ExtendedTooltip name="НезаполненныеРеквизитыДатаВозникновенияExtendedTooltip" id="429"/>
 								</LabelField>
@@ -1294,8 +1263,6 @@
 											<v8:content>Причина, по которой данные не удалось корректно записать</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="НезаполненныеРеквизитыПричинаКонтекстноеМеню" id="79"/>
 									<ExtendedTooltip name="НезаполненныеРеквизитыПричинаExtendedTooltip" id="430"/>
 								</LabelField>
@@ -1313,8 +1280,6 @@
 											<v8:content>Информационная база или приложение из которого получены данные</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="НезаполненныеРеквизитыУзелИнформационнойБазыКонтекстноеМеню" id="75"/>
 									<ExtendedTooltip name="НезаполненныеРеквизитыУзелИнформационнойБазыExtendedTooltip" id="431"/>
 								</LabelField>
@@ -1624,6 +1589,7 @@
 							</AutoCommandBar>
 							<ExtendedTooltip name="КоллизииExtendedTooltip" id="459"/>
 							<SearchStringAddition name="КоллизииСтрокаПоиска" id="517">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>Коллизии</Item>
 									<Type>SearchStringRepresentation</Type>
@@ -1632,6 +1598,7 @@
 								<ExtendedTooltip name="КоллизииСтрокаПоискаРасширеннаяПодсказка" id="519"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="КоллизииСостояниеПросмотра" id="520">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>Коллизии</Item>
 									<Type>ViewStatusRepresentation</Type>
@@ -1640,6 +1607,7 @@
 								<ExtendedTooltip name="КоллизииСостояниеПросмотраРасширеннаяПодсказка" id="522"/>
 							</ViewStatusAddition>
 							<SearchControlAddition name="КоллизииУправлениеПоиском" id="523">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>Коллизии</Item>
 									<Type>SearchControl</Type>
@@ -1666,8 +1634,6 @@
 											<v8:content>Дата возникновения конфликта</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="КоллизииДатаКонтекстноеМеню" id="333"/>
 									<ExtendedTooltip name="КоллизииДатаExtendedTooltip" id="460"/>
 								</LabelField>
@@ -1685,8 +1651,6 @@
 											<v8:content>Элемент справочника (документа) для которого возник конфликт</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="КоллизииСсылкаКонтекстноеМеню" id="331"/>
 									<ExtendedTooltip name="КоллизииСсылкаExtendedTooltip" id="461"/>
 								</LabelField>
@@ -1704,8 +1668,6 @@
 											<v8:content>Вид справочника (документа)</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="КоллизииТипСтрокойКонтекстноеМеню" id="302"/>
 									<ExtendedTooltip name="КоллизииТипСтрокойExtendedTooltip" id="462"/>
 								</LabelField>
@@ -1723,8 +1685,6 @@
 											<v8:content>Информационная база или приложение из которого получена версия</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="КоллизииАвторДругойВерсииКонтекстноеМеню" id="292"/>
 									<ExtendedTooltip name="КоллизииАвторДругойВерсииExtendedTooltip" id="463"/>
 								</LabelField>
@@ -1742,8 +1702,6 @@
 											<v8:content>Статус версии, полученной из другого приложения</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<Format>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -2062,6 +2020,7 @@
 							</AutoCommandBar>
 							<ExtendedTooltip name="НепринятыеПоДатеExtendedTooltip" id="493"/>
 							<SearchStringAddition name="НепринятыеПоДатеСтрокаПоиска" id="526">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>НепринятыеПоДате</Item>
 									<Type>SearchStringRepresentation</Type>
@@ -2070,6 +2029,7 @@
 								<ExtendedTooltip name="НепринятыеПоДатеСтрокаПоискаРасширеннаяПодсказка" id="528"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="НепринятыеПоДатеСостояниеПросмотра" id="529">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>НепринятыеПоДате</Item>
 									<Type>ViewStatusRepresentation</Type>
@@ -2078,6 +2038,7 @@
 								<ExtendedTooltip name="НепринятыеПоДатеСостояниеПросмотраРасширеннаяПодсказка" id="531"/>
 							</ViewStatusAddition>
 							<SearchControlAddition name="НепринятыеПоДатеУправлениеПоиском" id="532">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>НепринятыеПоДате</Item>
 									<Type>SearchControl</Type>
@@ -2098,8 +2059,6 @@
 											<v8:content>Дата</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="НепринятыеПоДатеДатаКонтекстноеМеню" id="335"/>
 									<ExtendedTooltip name="НепринятыеПоДатеДатаРасширеннаяПодсказка" id="494"/>
 								</LabelField>
@@ -2117,8 +2076,6 @@
 											<v8:content>Непринятые по дате запрета данные</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="НепринятыеПоДатеСсылкаКонтекстноеМеню" id="221"/>
 									<ExtendedTooltip name="НепринятыеПоДатеСсылкаExtendedTooltip" id="495"/>
 								</LabelField>
@@ -2136,8 +2093,6 @@
 											<v8:content>Тип данных</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="НепринятыеПоДатеТипСтрокойКонтекстноеМеню" id="304"/>
 									<ExtendedTooltip name="НепринятыеПоДатеТипСтрокойExtendedTooltip" id="496"/>
 								</LabelField>
@@ -2155,8 +2110,6 @@
 											<v8:content>Информационная база или приложение из которого получена версия</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="НепринятыеПоДатеАвторДругойВерсииКонтекстноеМеню" id="248"/>
 									<ExtendedTooltip name="НепринятыеПоДатеАвторДругойВерсииExtendedTooltip" id="497"/>
 								</LabelField>
@@ -2222,6 +2175,7 @@
 							</AutoCommandBar>
 							<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковОтправкиРасширеннаяПодсказка" id="557"/>
 							<SearchStringAddition name="ОшибкиПриВыполненииКодаОбработчиковОтправкиСтрокаПоиска" id="558">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ОшибкиПриВыполненииКодаОбработчиковОтправки</Item>
 									<Type>SearchStringRepresentation</Type>
@@ -2230,6 +2184,7 @@
 								<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковОтправкиСтрокаПоискаРасширеннаяПодсказка" id="560"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="ОшибкиПриВыполненииКодаОбработчиковОтправкиСостояниеПросмотра" id="561">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ОшибкиПриВыполненииКодаОбработчиковОтправки</Item>
 									<Type>ViewStatusRepresentation</Type>
@@ -2238,6 +2193,7 @@
 								<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковОтправкиСостояниеПросмотраРасширеннаяПодсказка" id="563"/>
 							</ViewStatusAddition>
 							<SearchControlAddition name="ОшибкиПриВыполненииКодаОбработчиковОтправкиУправлениеПоиском" id="564">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ОшибкиПриВыполненииКодаОбработчиковОтправки</Item>
 									<Type>SearchControl</Type>
@@ -2251,29 +2207,21 @@
 							<ChildItems>
 								<LabelField name="ОшибкиПриВыполненииКодаОбработчиковОтправкиДатаВозникновения" id="773">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковОтправки.ДатаВозникновения</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковОтправкиДатаВозникновенияКонтекстноеМеню" id="774"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковОтправкиДатаВозникновенияРасширеннаяПодсказка" id="775"/>
 								</LabelField>
 								<LabelField name="ОшибкиПриВыполненииКодаОбработчиковОтправкиПредставлениеОбъекта" id="779">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковОтправки.ПредставлениеОбъекта</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковОтправкиПредставлениеОбъектаКонтекстноеМеню" id="780"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковОтправкиПредставлениеОбъектаРасширеннаяПодсказка" id="781"/>
 								</LabelField>
 								<LabelField name="ОшибкиПриВыполненииКодаОбработчиковОтправкиПричина" id="782">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковОтправки.Причина</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковОтправкиПричинаКонтекстноеМеню" id="783"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковОтправкиПричинаРасширеннаяПодсказка" id="784"/>
 								</LabelField>
 								<CheckBoxField name="ОшибкиПриВыполненииКодаОбработчиковОтправкиПропущена" id="785">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковОтправки.Пропущена</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковОтправкиПропущенаКонтекстноеМеню" id="786"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковОтправкиПропущенаРасширеннаяПодсказка" id="787"/>
 								</CheckBoxField>
@@ -2285,22 +2233,16 @@
 											<v8:content>Данные</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковОтправкиСсылкаКонтекстноеМеню" id="789"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковОтправкиСсылкаРасширеннаяПодсказка" id="790"/>
 								</LabelField>
 								<LabelField name="ОшибкиПриВыполненииКодаОбработчиковОтправкиУзелИнформационнойБазы" id="791">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковОтправки.УзелИнформационнойБазы</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковОтправкиУзелИнформационнойБазыКонтекстноеМеню" id="792"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковОтправкиУзелИнформационнойБазыРасширеннаяПодсказка" id="793"/>
 								</LabelField>
 								<LabelField name="ОшибкиПриВыполненииКодаОбработчиковОтправкиСтандартнаяКартинка" id="794">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковОтправки.DefaultPicture</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковОтправкиСтандартнаяКартинкаКонтекстноеМеню" id="795"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковОтправкиСтандартнаяКартинкаРасширеннаяПодсказка" id="796"/>
 								</LabelField>
@@ -2366,6 +2308,7 @@
 							</AutoCommandBar>
 							<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковПолученияРасширеннаяПодсказка" id="570"/>
 							<SearchStringAddition name="ОшибкиПриВыполненииКодаОбработчиковПолученияСтрокаПоиска" id="571">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ОшибкиПриВыполненииКодаОбработчиковПолучения</Item>
 									<Type>SearchStringRepresentation</Type>
@@ -2374,6 +2317,7 @@
 								<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковПолученияСтрокаПоискаРасширеннаяПодсказка" id="573"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="ОшибкиПриВыполненииКодаОбработчиковПолученияСостояниеПросмотра" id="574">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ОшибкиПриВыполненииКодаОбработчиковПолучения</Item>
 									<Type>ViewStatusRepresentation</Type>
@@ -2382,6 +2326,7 @@
 								<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковПолученияСостояниеПросмотраРасширеннаяПодсказка" id="576"/>
 							</ViewStatusAddition>
 							<SearchControlAddition name="ОшибкиПриВыполненииКодаОбработчиковПолученияУправлениеПоиском" id="577">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ОшибкиПриВыполненииКодаОбработчиковПолучения</Item>
 									<Type>SearchControl</Type>
@@ -2395,29 +2340,21 @@
 							<ChildItems>
 								<LabelField name="ОшибкиПриВыполненииКодаОбработчиковПолученияДатаВозникновения" id="797">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковПолучения.ДатаВозникновения</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковПолученияДатаВозникновенияКонтекстноеМеню" id="798"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковПолученияДатаВозникновенияРасширеннаяПодсказка" id="799"/>
 								</LabelField>
 								<LabelField name="ОшибкиПриВыполненииКодаОбработчиковПолученияПредставлениеОбъекта" id="803">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковПолучения.ПредставлениеОбъекта</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковПолученияПредставлениеОбъектаКонтекстноеМеню" id="804"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковПолученияПредставлениеОбъектаРасширеннаяПодсказка" id="805"/>
 								</LabelField>
 								<LabelField name="ОшибкиПриВыполненииКодаОбработчиковПолученияПричина" id="806">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковПолучения.Причина</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковПолученияПричинаКонтекстноеМеню" id="807"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковПолученияПричинаРасширеннаяПодсказка" id="808"/>
 								</LabelField>
 								<CheckBoxField name="ОшибкиПриВыполненииКодаОбработчиковПолученияПропущена" id="809">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковПолучения.Пропущена</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковПолученияПропущенаКонтекстноеМеню" id="810"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковПолученияПропущенаРасширеннаяПодсказка" id="811"/>
 								</CheckBoxField>
@@ -2429,22 +2366,16 @@
 											<v8:content>Данные</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковПолученияСсылкаКонтекстноеМеню" id="813"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковПолученияСсылкаРасширеннаяПодсказка" id="814"/>
 								</LabelField>
 								<LabelField name="ОшибкиПриВыполненииКодаОбработчиковПолученияУзелИнформационнойБазы" id="815">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковПолучения.УзелИнформационнойБазы</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковПолученияУзелИнформационнойБазыКонтекстноеМеню" id="816"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковПолученияУзелИнформационнойБазыРасширеннаяПодсказка" id="817"/>
 								</LabelField>
 								<LabelField name="ОшибкиПриВыполненииКодаОбработчиковПолученияСтандартнаяКартинка" id="818">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковПолучения.DefaultPicture</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковПолученияСтандартнаяКартинкаКонтекстноеМеню" id="819"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковПолученияСтандартнаяКартинкаРасширеннаяПодсказка" id="820"/>
 								</LabelField>
@@ -2484,8 +2415,6 @@
 									<v8:content>Данные не удалось отправить по причине</v8:content>
 								</v8:item>
 							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MultiLine>true</MultiLine>
 							<ContextMenu name="ОшибкиОбъектаXDTOПричинаПодробноКонтекстноеМеню" id="759"/>
@@ -2513,8 +2442,6 @@
 									<v8:content>Документ не удалось провести автоматически по причине</v8:content>
 								</v8:item>
 							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MultiLine>true</MultiLine>
 							<ContextMenu name="НепроведенныеДокументыПричинаПодробноКонтекстноеМеню" id="171"/>
@@ -2542,8 +2469,6 @@
 									<v8:content>Данные не удалось записать по причине</v8:content>
 								</v8:item>
 							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MultiLine>true</MultiLine>
 							<ContextMenu name="НезаполненныеРеквизитыПричинаПодробноКонтекстноеМеню" id="175"/>
@@ -2572,8 +2497,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>Top</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MultiLine>true</MultiLine>
 							<ContextMenu name="ПричинаКонфликтаКонтекстноеМеню" id="354"/>
@@ -2601,8 +2524,6 @@
 									<v8:content>Данные были отклонены из-за запрета</v8:content>
 								</v8:item>
 							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MultiLine>true</MultiLine>
 							<ContextMenu name="НепринятыеПоДатеПричинаЗапретаПодробноКонтекстноеМеню" id="226"/>
@@ -2630,8 +2551,6 @@
 									<v8:content>Данные не удалось отправить по причине</v8:content>
 								</v8:item>
 							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MultiLine>true</MultiLine>
 							<ContextMenu name="ОшибкиКодаОтправкаПричинаПодробноКонтекстноеМеню" id="768"/>
@@ -2659,8 +2578,6 @@
 									<v8:content>Данные не удалось получить по причине</v8:content>
 								</v8:item>
 							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MultiLine>true</MultiLine>
 							<ContextMenu name="ОшибкиКодаПолучениеПричинаПодробноКонтекстноеМеню" id="771"/>

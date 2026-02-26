@@ -122,6 +122,7 @@
 							</AutoCommandBar>
 							<ExtendedTooltip name="ТаблицаАвтоматическиСопоставленныхОбъектовExtendedTooltip" id="156"/>
 							<SearchStringAddition name="ТаблицаАвтоматическиСопоставленныхОбъектовСтрокаПоиска" id="206">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ТаблицаАвтоматическиСопоставленныхОбъектов</Item>
 									<Type>SearchStringRepresentation</Type>
@@ -130,6 +131,7 @@
 								<ExtendedTooltip name="ТаблицаАвтоматическиСопоставленныхОбъектовСтрокаПоискаРасширеннаяПодсказка" id="208"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="ТаблицаАвтоматическиСопоставленныхОбъектовСостояниеПросмотра" id="209">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ТаблицаАвтоматическиСопоставленныхОбъектов</Item>
 									<Type>ViewStatusRepresentation</Type>
@@ -138,6 +140,7 @@
 								<ExtendedTooltip name="ТаблицаАвтоматическиСопоставленныхОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="211"/>
 							</ViewStatusAddition>
 							<SearchControlAddition name="ТаблицаАвтоматическиСопоставленныхОбъектовУправлениеПоиском" id="212">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ТаблицаАвтоматическиСопоставленныхОбъектов</Item>
 									<Type>SearchControl</Type>

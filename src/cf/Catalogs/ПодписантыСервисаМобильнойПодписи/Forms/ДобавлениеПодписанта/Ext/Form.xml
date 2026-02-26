@@ -24,58 +24,10 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="ГруппаВыборИзСправочника" id="62">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выбор из справочника</v8:content>
-				</v8:item>
-			</Title>
-			<Group>AutoScreenTypeSensitive</Group>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаВыборИзСправочникаРасширеннаяПодсказка" id="63"/>
-			<ChildItems>
-				<InputField name="Организация" id="9">
-					<DataPath>Организация</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Организация</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<TextSize>Enlarged</TextSize>
-					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="10"/>
-					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="11"/>
-					<Events>
-						<Event name="OnChange">ОрганизацияПриИзменении</Event>
-					</Events>
-				</InputField>
-				<InputField name="ФизическоеЛицо" id="18">
-					<DataPath>ФизическоеЛицо</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Физическое лицо</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<TextSize>Enlarged</TextSize>
-					<ContextMenu name="ФизическоеЛицоКонтекстноеМеню" id="19"/>
-					<ExtendedTooltip name="ФизическоеЛицоРасширеннаяПодсказка" id="20"/>
-					<Events>
-						<Event name="OnChange">ФизическоеЛицоПриИзменении</Event>
-					</Events>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
 		<RadioButtonField name="ВидПодписанта" id="6">
 			<DataPath>ВидПодписанта</DataPath>
 			<Title>
@@ -97,10 +49,10 @@
 						<Presentation>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
-								<v8:content>Юридическое лицо</v8:content>
+								<v8:content>Руководитель организации</v8:content>
 							</v8:item>
 						</Presentation>
-						<Value xsi:type="xs:string">ЮридическоеЛицо</Value>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ВидыПодписантовМобильногоСервиса.EnumValue.РуководительЮЛ</Value>
 					</xr:Value>
 				</xr:Item>
 				<xr:Item>
@@ -113,7 +65,20 @@
 								<v8:content>Индивидуальный предприниматель</v8:content>
 							</v8:item>
 						</Presentation>
-						<Value xsi:type="xs:string">ИндивидуальныйПредприниматель</Value>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ВидыПодписантовМобильногоСервиса.EnumValue.ИндивидуальныйПредприниматель</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Физическое лицо</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ВидыПодписантовМобильногоСервиса.EnumValue.ФизическоеЛицо</Value>
 					</xr:Value>
 				</xr:Item>
 			</ChoiceList>
@@ -123,60 +88,129 @@
 				<Event name="OnChange">ВидПодписантаПриИзменении</Event>
 			</Events>
 		</RadioButtonField>
-		<UsualGroup name="ГруппаТелефон" id="64">
+		<UsualGroup name="ГруппаВыборИзСправочника" id="75">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Телефон</v8:content>
+					<v8:content>Выбор из справочника</v8:content>
 				</v8:item>
 			</Title>
+			<Group>AutoScreenTypeSensitive</Group>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаТелефонРасширеннаяПодсказка" id="65"/>
+			<ExtendedTooltip name="ГруппаВыборИзСправочникаРасширеннаяПодсказка" id="78"/>
 			<ChildItems>
-				<InputField name="НомерТелефона" id="30">
-					<DataPath>НомерТелефона</DataPath>
+				<InputField name="ФизическоеЛицо" id="18">
+					<DataPath>ФизическоеЛицо</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Номер телефона</v8:content>
+							<v8:content>Физическое лицо</v8:content>
 						</v8:item>
 					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<AutoEditMode>true</AutoEditMode>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<MaxWidth>16</MaxWidth>
-					<Mask>+7(999)999-99-99</Mask>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<AutoMarkIncomplete>true</AutoMarkIncomplete>
-					<InputHint>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>+7(999)999-99-99</v8:content>
-						</v8:item>
-					</InputHint>
 					<TextSize>Enlarged</TextSize>
-					<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="31"/>
-					<ExtendedTooltip name="НомерТелефонаРасширеннаяПодсказка" id="32"/>
+					<ContextMenu name="ФизическоеЛицоКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ФизическоеЛицоРасширеннаяПодсказка" id="20"/>
+					<Events>
+						<Event name="OnChange">ФизическоеЛицоПриИзменении</Event>
+					</Events>
 				</InputField>
-				<InputField name="ИННФЛ" id="33">
-					<DataPath>ИННФЛ</DataPath>
+				<InputField name="Организация" id="9">
+					<DataPath>Организация</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИНН физ. лица</v8:content>
+							<v8:content>Организация</v8:content>
 						</v8:item>
 					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<AutoMarkIncomplete>true</AutoMarkIncomplete>
 					<TextSize>Enlarged</TextSize>
-					<ContextMenu name="ИННФЛКонтекстноеМеню" id="34"/>
-					<ExtendedTooltip name="ИННФЛРасширеннаяПодсказка" id="35"/>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="11"/>
+					<Events>
+						<Event name="OnChange">ОрганизацияПриИзменении</Event>
+					</Events>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаОбщая" id="60">
+		<UsualGroup name="ГруппаСервис" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервис</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AutoScreenTypeSensitive</Group>
+			<Representation>WeakSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСервисРасширеннаяПодсказка" id="55"/>
+			<ChildItems>
+				<CheckBoxField name="МояПодпись" id="51">
+					<DataPath>МояПодпись</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Моя подпись (ФНС)</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<ContextMenu name="МояПодписьКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="МояПодписьРасширеннаяПодсказка" id="53"/>
+					<Events>
+						<Event name="OnChange">МояПодписьПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="ГруппаГосключ" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Госключ</v8:content>
+						</v8:item>
+					</Title>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>WeakSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаГосключРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<CheckBoxField name="ГосключУНЭП" id="59">
+							<DataPath>ГосключУНЭП</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Госключ УНЭП</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="ГосключУНЭПКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="ГосключУНЭПРасширеннаяПодсказка" id="61"/>
+							<Events>
+								<Event name="OnChange">УНЭППриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ГосключУКЭП" id="56">
+							<DataPath>ГосключУКЭП</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Госключ УКЭП</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="ГосключУКЭПКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ГосключУКЭПРасширеннаяПодсказка" id="58"/>
+							<Events>
+								<Event name="OnChange">УКЭППриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОбщая" id="77">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -185,84 +219,8 @@
 			</Title>
 			<Group>AutoScreenTypeSensitive</Group>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаОбщаяРасширеннаяПодсказка" id="61"/>
+			<ExtendedTooltip name="ГруппаОбщаяРасширеннаяПодсказка" id="80"/>
 			<ChildItems>
-				<UsualGroup name="ГруппаОрганизация" id="36">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Организация</v8:content>
-						</v8:item>
-					</Title>
-					<Group>Vertical</Group>
-					<Representation>WeakSeparation</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаОрганизацияРасширеннаяПодсказка" id="37"/>
-					<ChildItems>
-						<InputField name="НаименованиеОрганизации" id="42">
-							<DataPath>НаименованиеОрганизации</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Организация</v8:content>
-								</v8:item>
-							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
-							<TextSize>Enlarged</TextSize>
-							<ContextMenu name="НаименованиеОрганизацииКонтекстноеМеню" id="43"/>
-							<ExtendedTooltip name="НаименованиеОрганизацииРасширеннаяПодсказка" id="44"/>
-						</InputField>
-						<InputField name="ИНН" id="12">
-							<DataPath>ИНН</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>ИНН</v8:content>
-								</v8:item>
-							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<AutoMarkIncomplete>true</AutoMarkIncomplete>
-							<TextSize>Enlarged</TextSize>
-							<ContextMenu name="ИННКонтекстноеМеню" id="13"/>
-							<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="14"/>
-						</InputField>
-						<InputField name="ОГРН" id="45">
-							<DataPath>ОГРН</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>ОГРН</v8:content>
-								</v8:item>
-							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<MarkRequiredComplete>true</MarkRequiredComplete>
-							<AutoEditMode>true</AutoEditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<AutoMarkIncomplete>true</AutoMarkIncomplete>
-							<TextSize>Enlarged</TextSize>
-							<ContextMenu name="ОГРНКонтекстноеМеню" id="46"/>
-							<ExtendedTooltip name="ОГРНРасширеннаяПодсказка" id="47"/>
-						</InputField>
-						<InputField name="Должность" id="15">
-							<DataPath>Должность</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Должность</v8:content>
-								</v8:item>
-							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<TextSize>Enlarged</TextSize>
-							<ContextMenu name="ДолжностьКонтекстноеМеню" id="16"/>
-							<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="17"/>
-						</InputField>
-					</ChildItems>
-				</UsualGroup>
 				<UsualGroup name="ГруппаФизлицо" id="40">
 					<Title>
 						<v8:item>
@@ -275,6 +233,67 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаФизлицоРасширеннаяПодсказка" id="41"/>
 					<ChildItems>
+						<InputField name="НомерТелефона" id="30">
+							<DataPath>НомерТелефона</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер телефона</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>16</MaxWidth>
+							<Mask>+7(999)999-99-99</Mask>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>+7(999)999-99-99</v8:content>
+								</v8:item>
+							</InputHint>
+							<TextSize>Enlarged</TextSize>
+							<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="НомерТелефонаРасширеннаяПодсказка" id="32"/>
+						</InputField>
+						<InputField name="ИННФЛ" id="33">
+							<DataPath>ИННФЛ</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ИНН физ. лица</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<TextSize>Enlarged</TextSize>
+							<ContextMenu name="ИННФЛКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ИННФЛРасширеннаяПодсказка" id="35"/>
+						</InputField>
+						<InputField name="СНИЛС" id="64">
+							<DataPath>СНИЛС</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СНИЛС</v8:content>
+								</v8:item>
+							</Title>
+							<Mask>999-999-999 99</Mask>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>999-999-999 99</v8:content>
+								</v8:item>
+							</InputHint>
+							<TextSize>Enlarged</TextSize>
+							<ContextMenu name="СНИЛСКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="СНИЛСРасширеннаяПодсказка" id="66"/>
+						</InputField>
 						<InputField name="Фамилия" id="21">
 							<DataPath>Фамилия</DataPath>
 							<Title>
@@ -319,6 +338,99 @@
 							<TextSize>Enlarged</TextSize>
 							<ContextMenu name="ОтчествоКонтекстноеМеню" id="28"/>
 							<ExtendedTooltip name="ОтчествоРасширеннаяПодсказка" id="29"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОрганизация" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>WeakSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОрганизацияРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<InputField name="ИНН" id="12">
+							<DataPath>ИНН</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ИНН</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<TextSize>Enlarged</TextSize>
+							<ContextMenu name="ИННКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="14"/>
+							<Events>
+								<Event name="OnChange">ИННПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОГРН" id="45">
+							<DataPath>ОГРН</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ОГРН</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<MarkRequiredComplete>true</MarkRequiredComplete>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<TextSize>Enlarged</TextSize>
+							<ContextMenu name="ОГРНКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ОГРНРасширеннаяПодсказка" id="47"/>
+						</InputField>
+						<InputField name="НомерЗаписиОбАккредитации" id="72">
+							<DataPath>НомерЗаписиОбАккредитации</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер записи в реестре аккредитации</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<TextSize>Enlarged</TextSize>
+							<ContextMenu name="НомерЗаписиОбАккредитацииКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="НомерЗаписиОбАккредитацииРасширеннаяПодсказка" id="74"/>
+						</InputField>
+						<InputField name="НаименованиеОрганизации" id="42">
+							<DataPath>НаименованиеОрганизации</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование организации</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<TextSize>Enlarged</TextSize>
+							<ContextMenu name="НаименованиеОрганизацииКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="НаименованиеОрганизацииРасширеннаяПодсказка" id="44"/>
+						</InputField>
+						<InputField name="Должность" id="15">
+							<DataPath>Должность</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Должность</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<TextSize>Enlarged</TextSize>
+							<ContextMenu name="ДолжностьКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="17"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -464,11 +576,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>cfg:EnumRef.ВидыПодписантовМобильногоСервиса</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="НаименованиеОрганизации" id="14">
@@ -502,6 +610,84 @@
 			</Type>
 			<FillCheck>ShowError</FillCheck>
 		</Attribute>
+		<Attribute name="МояПодпись" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Моя подпись (ФНС)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ГосключУНЭП" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Госключ УНЭП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ГосключУКЭП" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Госключ УКЭП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СНИЛС" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СНИЛС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>14</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НомерЗаписиОбАккредитации" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер записи в реестре аккредитации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>15</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьГосключ" id="4">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьСервисМобильнойПодписи" id="18">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОрганизацияИспользуется" id="20">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Добавить" id="1">
@@ -516,4 +702,51 @@
 			<SelectedRowsUse>Use</SelectedRowsUse>
 		</Command>
 	</Commands>
+	<Parameters>
+		<Parameter name="ИННФЛ">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ИНН">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="НомерТелефона">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="СНИЛС">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ОГРН">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
 </Form>

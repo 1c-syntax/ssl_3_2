@@ -2446,7 +2446,6 @@
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
-			<SelectedRowsUse>DontUse</SelectedRowsUse>
 		</Command>
 		<Command name="Редактировать" id="11">
 			<Title>
@@ -2470,7 +2469,6 @@
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
-			<SelectedRowsUse>DontUse</SelectedRowsUse>
 		</Command>
 		<Command name="СохранитьИзменения" id="12">
 			<Title>

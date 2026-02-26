@@ -230,8 +230,6 @@
 			<Visible>false</Visible>
 			<ReadOnly>true</ReadOnly>
 			<TitleLocation>Top</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<MultiLine>true</MultiLine>
 			<ContextMenu name="ОписаниеОшибкиПроведенияИзСтрокиКонтекстноеМеню" id="37"/>

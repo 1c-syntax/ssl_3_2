@@ -107,8 +107,6 @@
 							<v8:content>Выводить</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<Width>35</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ListChoiceMode>true</ListChoiceMode>
@@ -373,8 +371,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>None</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ValuesPicture>
 										<xr:Ref>StdPicture.GetURL</xr:Ref>
@@ -908,8 +904,6 @@
 						</v8:item>
 					</Title>
 					<TitleLocation>Left</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<Width>6</Width>
 					<Format>
 						<v8:item>
@@ -941,8 +935,6 @@
 						</v8:item>
 					</Title>
 					<TitleLocation>Left</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<Width>6</Width>
 					<Format>
 						<v8:item>

@@ -68,8 +68,6 @@
 							<v8:content>Общий отбор по периоду, применяется для всех документов</v8:content>
 						</v8:item>
 					</ToolTip>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ПериодДанныхКонтекстноеМеню" id="10"/>
 					<ExtendedTooltip name="ПериодДанныхExtendedTooltip" id="21"/>
@@ -129,6 +127,7 @@
 			</AutoCommandBar>
 			<ExtendedTooltip name="КомпоновщикНастроекОтборExtendedTooltip" id="24"/>
 			<SearchStringAddition name="КомпоновщикНастроекОтборSearchString" id="25">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>КомпоновщикНастроекОтбор</Item>
 					<Type>SearchStringRepresentation</Type>
@@ -137,6 +136,7 @@
 				<ExtendedTooltip name="КомпоновщикНастроекОтборSearchStringExtendedTooltip" id="27"/>
 			</SearchStringAddition>
 			<ViewStatusAddition name="КомпоновщикНастроекОтборViewStatus" id="28">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>КомпоновщикНастроекОтбор</Item>
 					<Type>ViewStatusRepresentation</Type>
@@ -145,6 +145,7 @@
 				<ExtendedTooltip name="КомпоновщикНастроекОтборViewStatusExtendedTooltip" id="30"/>
 			</ViewStatusAddition>
 			<SearchControlAddition name="КомпоновщикНастроекОтборSearchControl" id="31">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>КомпоновщикНастроекОтбор</Item>
 					<Type>SearchControl</Type>

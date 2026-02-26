@@ -107,8 +107,6 @@
 						<CheckBoxField name="АутентификацияОперационнойСистемы" id="73">
 							<DataPath>Объект.АутентификацияОперационнойСистемы</DataPath>
 							<TitleLocation>Right</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<CheckBoxType>Switcher</CheckBoxType>
 							<ContextMenu name="АутентификацияОперационнойСистемыКонтекстноеМеню" id="74"/>
 							<ExtendedTooltip name="АутентификацияОперационнойСистемыРасширеннаяПодсказка" id="75"/>
@@ -118,15 +116,11 @@
 						</CheckBoxField>
 						<InputField name="ИмяПользователя" id="67">
 							<DataPath>Объект.ИмяПользователя</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ContextMenu name="ИмяПользователяКонтекстноеМеню" id="68"/>
 							<ExtendedTooltip name="ИмяПользователяРасширеннаяПодсказка" id="69"/>
 						</InputField>
 						<InputField name="ПарольПользователя" id="70">
 							<DataPath>Объект.ПарольПользователя</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<PasswordMode>true</PasswordMode>
 							<ContextMenu name="ПарольПользователяКонтекстноеМеню" id="71"/>
 							<ExtendedTooltip name="ПарольПользователяРасширеннаяПодсказка" id="72"/>

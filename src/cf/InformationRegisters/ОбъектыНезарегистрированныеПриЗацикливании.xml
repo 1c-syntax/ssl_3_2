@@ -344,7 +344,7 @@
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
-					<TypeReductionMode>TransformValues</TypeReductionMode>
+					<TypeReductionMode>DeleteData</TypeReductionMode>
 				</Properties>
 			</Dimension>
 			<Dimension uuid="9d5b351e-5533-4e9f-a23f-d0f7b03d72ca">
@@ -387,7 +387,7 @@
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
-					<TypeReductionMode>TransformValues</TypeReductionMode>
+					<TypeReductionMode>DeleteData</TypeReductionMode>
 				</Properties>
 			</Dimension>
 			<Dimension uuid="d5775cec-e600-4259-82fc-f313cee1cd6f">

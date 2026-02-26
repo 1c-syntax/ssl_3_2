@@ -10,15 +10,11 @@
 	<ChildItems>
 		<InputField name="УзелИнформационнойБазы" id="1">
 			<DataPath>Запись.УзелИнформационнойБазы</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="3"/>
 		</InputField>
 		<InputField name="Ссылка" id="4">
 			<DataPath>Запись.Ссылка</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="СсылкаКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="6"/>
 		</InputField>
@@ -30,8 +26,6 @@
 					<v8:content>Идентификатор строкой</v8:content>
 				</v8:item>
 			</Title>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="ИдентификаторКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="9"/>
 		</InputField>

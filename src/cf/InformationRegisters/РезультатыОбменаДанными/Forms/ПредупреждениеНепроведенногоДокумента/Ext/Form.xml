@@ -114,8 +114,6 @@
 									<v8:content>Дата возникновения</v8:content>
 								</v8:item>
 							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<HorizontalStretch>true</HorizontalStretch>
 							<Format>
 								<v8:item>
@@ -134,8 +132,6 @@
 									<v8:content>Синхронизация</v8:content>
 								</v8:item>
 							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<Hiperlink>true</Hiperlink>
 							<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="14"/>
 							<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="15"/>
@@ -162,8 +158,6 @@
 											<v8:content>Объект</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<Hiperlink>true</Hiperlink>
 									<ContextMenu name="ПроблемныйОбъектКонтекстноеМеню" id="11"/>
 									<ExtendedTooltip name="ПроблемныйОбъектРасширеннаяПодсказка" id="12"/>
@@ -188,8 +182,6 @@
 							</Title>
 							<TitleLocation>Right</TitleLocation>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<CheckBoxType>Switcher</CheckBoxType>
 							<ContextMenu name="СкрытьПредупреждениеКонтекстноеМеню" id="33"/>
 							<ExtendedTooltip name="СкрытьПредупреждениеРасширеннаяПодсказка" id="34">
@@ -227,8 +219,6 @@
 									<v8:content>Предупреждение непроведенного документа</v8:content>
 								</v8:item>
 							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<Height>9</Height>
 							<MultiLine>true</MultiLine>
@@ -243,8 +233,6 @@
 									<v8:content>Комментарий администратора к предупреждению синхронизации</v8:content>
 								</v8:item>
 							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<Height>2</Height>
 							<VerticalStretch>false</VerticalStretch>

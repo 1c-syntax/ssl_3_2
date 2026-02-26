@@ -11,8 +11,6 @@
 	<ChildItems>
 		<InputField name="КаталогОбменаИнформацией" id="55">
 			<DataPath>Запись.КаталогОбменаИнформацией</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="КаталогОбменаИнформациейКонтекстноеМеню" id="56"/>
 			<ExtendedTooltip name="КаталогОбменаИнформациейРасширеннаяПодсказка" id="57"/>
 		</InputField>

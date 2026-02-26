@@ -117,8 +117,6 @@
 										</v8:item>
 									</ToolTip>
 									<ToolTipRepresentation>Button</ToolTipRepresentation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ChoiceButton>true</ChoiceButton>
 									<TextEdit>false</TextEdit>
 									<ContextMenu name="ПредставлениеОтбораПоПериодуКонтекстноеМеню" id="58"/>
@@ -143,8 +141,6 @@
 										</v8:item>
 									</ToolTip>
 									<ToolTipRepresentation>Button</ToolTipRepresentation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ChoiceButton>true</ChoiceButton>
@@ -171,8 +167,6 @@
 										</v8:item>
 									</ToolTip>
 									<ToolTipRepresentation>Button</ToolTipRepresentation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ChoiceButton>true</ChoiceButton>
@@ -202,8 +196,6 @@
 								</v8:item>
 							</ToolTip>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<CheckBoxType>Switcher</CheckBoxType>
 							<ContextMenu name="ТолькоСкрытыеЗаписиКонтекстноеМеню" id="17"/>
 							<ExtendedTooltip name="ТолькоСкрытыеЗаписиРасширеннаяПодсказка" id="18"/>
@@ -259,8 +251,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<MaxValue>99</MaxValue>
 							<ShowPercent>true</ShowPercent>
 							<ContextMenu name="ИндикацияКонтекстноеМеню" id="34"/>
@@ -314,8 +304,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>Top</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MultiLine>true</MultiLine>
 							<ContextMenu name="ОписаниеОшибкиКонтекстноеМеню" id="43"/>

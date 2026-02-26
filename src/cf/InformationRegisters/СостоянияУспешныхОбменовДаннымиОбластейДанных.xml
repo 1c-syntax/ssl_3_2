@@ -271,7 +271,7 @@
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
-					<TypeReductionMode>TransformValues</TypeReductionMode>
+					<TypeReductionMode>DeleteData</TypeReductionMode>
 				</Properties>
 			</Dimension>
 			<Dimension uuid="2d9d2319-68fb-436d-b431-98858b88a75a">

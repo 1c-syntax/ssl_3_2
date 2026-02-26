@@ -42,8 +42,6 @@
 						</v8:item>
 					</Title>
 					<TitleLocation>Right</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<CheckBoxType>Switcher</CheckBoxType>
 					<ContextMenu name="ВключитьРежимОтладкиКонтекстноеМеню" id="4"/>
 					<ExtendedTooltip name="ВключитьРежимОтладкиРасширеннаяПодсказка" id="5"/>
@@ -104,8 +102,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>Right</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<CheckBoxType>Switcher</CheckBoxType>
 											<ContextMenu name="ВключитьОтладкуВыгрузкиКонтекстноеМеню" id="17"/>
 											<ExtendedTooltip name="ВключитьОтладкуВыгрузкиExtendedTooltip" id="18"/>
@@ -123,8 +119,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ChoiceButton>true</ChoiceButton>
 											<ContextMenu name="ВнешняяОбработкаДляОтладкиВыгрузкиКонтекстноеМеню" id="21"/>
 											<ExtendedTooltip name="ВнешняяОбработкаДляОтладкиВыгрузкиExtendedTooltip" id="22"/>
@@ -157,8 +151,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>Right</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<CheckBoxType>Switcher</CheckBoxType>
 											<ContextMenu name="ВключитьОтладкуЗагрузкиКонтекстноеМеню" id="27"/>
 											<ExtendedTooltip name="ВключитьОтладкуЗагрузкиExtendedTooltip" id="28"/>
@@ -176,8 +168,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ChoiceButton>true</ChoiceButton>
 											<ContextMenu name="ВнешняяОбработкаДляОтладкиЗагрузкиКонтекстноеМеню" id="31"/>
 											<ExtendedTooltip name="ВнешняяОбработкаДляОтладкиЗагрузкиExtendedTooltip" id="32"/>
@@ -210,8 +200,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>Right</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<CheckBoxType>Switcher</CheckBoxType>
 											<ContextMenu name="ВключитьПротоколированиеОбменаДаннымиКонтекстноеМеню" id="37"/>
 											<ExtendedTooltip name="ВключитьПротоколированиеОбменаДаннымиExtendedTooltip" id="38"/>
@@ -229,8 +217,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ChoiceButton>true</ChoiceButton>
 											<OpenButton>true</OpenButton>
 											<ContextMenu name="ФайлПротоколаОбменаКонтекстноеМеню" id="41"/>
@@ -252,8 +238,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>Right</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Switcher</CheckBoxType>
 									<ContextMenu name="НеОстанавливатьПоОшибкеКонтекстноеМеню" id="45"/>
 									<ExtendedTooltip name="НеОстанавливатьПоОшибкеExtendedTooltip" id="46"/>

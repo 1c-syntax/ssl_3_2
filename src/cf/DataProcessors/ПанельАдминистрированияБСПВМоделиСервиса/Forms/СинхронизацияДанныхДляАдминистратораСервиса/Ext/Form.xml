@@ -21,6 +21,13 @@
 	<ShowCommandBar>false</ShowCommandBar>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСправка" id="2124">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="2125"/>
+			</Button>
+		</ChildItems>
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -133,8 +140,6 @@
 											</Title>
 											<TitleLocation>Right</TitleLocation>
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<CheckBoxType>Switcher</CheckBoxType>
 											<ContextMenu name="ИспользоватьСинхронизациюДанныхКонтекстноеМеню" id="2030"/>
 											<ExtendedTooltip name="ИспользоватьСинхронизациюДанныхExtendedTooltip" id="2056"/>
@@ -205,8 +210,6 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>Right</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<CheckBoxType>Switcher</CheckBoxType>
 													<ContextMenu name="ИспользоватьСинхронизациюДанныхВМоделиСервисаСПриложениемВИнтернетеКонтекстноеМеню" id="2017"/>
 													<ExtendedTooltip name="ИспользоватьСинхронизациюДанныхВМоделиСервисаСПриложениемВИнтернетеExtendedTooltip" id="2062"/>
@@ -245,8 +248,6 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>Right</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<CheckBoxType>Switcher</CheckBoxType>
 													<ContextMenu name="ИспользоватьСинхронизациюДанныхВМоделиСервисаСЛокальнойПрограммойКонтекстноеМеню" id="2015"/>
 													<ExtendedTooltip name="ИспользоватьСинхронизациюДанныхВМоделиСервисаСЛокальнойПрограммойExtendedTooltip" id="2065"/>
@@ -285,8 +286,6 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>Right</TitleLocation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<CheckBoxType>Switcher</CheckBoxType>
 													<ContextMenu name="ИспользоватьАвтономнуюРаботуВМоделиСервисаКонтекстноеМеню" id="2010"/>
 													<ExtendedTooltip name="ИспользоватьАвтономнуюРаботуВМоделиСервисаExtendedTooltip" id="2068"/>
@@ -325,8 +324,6 @@
 													</Title>
 													<TitleLocation>Right</TitleLocation>
 													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<CheckBoxType>Switcher</CheckBoxType>
 													<ContextMenu name="ИспользоватьОценкуПроизводительностиКонтекстноеМеню" id="2113"/>
 													<ExtendedTooltip name="ИспользоватьОценкуПроизводительностиРасширеннаяПодсказка" id="2114"/>
@@ -456,8 +453,6 @@
 							<v8:content>Под управлением ОС Windows</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<ContextMenu name="КаталогСообщенийОбменаДаннымиДляWindowsКонтекстноеМеню" id="2097"/>
 					<ExtendedTooltip name="КаталогСообщенийОбменаДаннымиДляWindowsРасширеннаяПодсказка" id="2098"/>
@@ -473,8 +468,6 @@
 							<v8:content>Под управлением ОС Linux</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<ContextMenu name="КаталогСообщенийОбменаДаннымиДляLinuxКонтекстноеМеню" id="2100"/>
 					<ExtendedTooltip name="КаталогСообщенийОбменаДаннымиДляLinuxРасширеннаяПодсказка" id="2101"/>

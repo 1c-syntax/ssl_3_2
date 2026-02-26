@@ -1,9 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Разрешение редактирования реквизитов</v8:content>
+		</v8:item>
+	</Title>
 	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
 	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<HorizontalAlign>Right</HorizontalAlign>
 		<Autofill>false</Autofill>
 		<ChildItems>
 			<Button name="ФормаРазрешитьРедактирование" id="1">
@@ -13,7 +19,7 @@
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
-						<v8:content>Разрешить редактирование</v8:content>
+						<v8:content>Разрешить</v8:content>
 					</v8:item>
 				</Title>
 				<ButtonImportance>Main</ButtonImportance>
@@ -47,36 +53,6 @@
 					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГлавноеРасширеннаяПодсказка" id="36"/>
 					<ChildItems>
-						<UsualGroup name="Надпись" id="51">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Надпись</v8:content>
-								</v8:item>
-							</Title>
-							<HorizontalStretch>true</HorizontalStretch>
-							<Group>AlwaysHorizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<BackColor>pal:Yellow</BackColor>
-							<ShowAsCard>true</ShowAsCard>
-							<ExtendedTooltip name="НадписьРасширеннаяПодсказка" id="52"/>
-							<ChildItems>
-								<Button name="ФормаПроверитьИспользование" id="25">
-									<Type>UsualButton</Type>
-									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-									<CommandName>Form.Command.ПроверитьИспользование</CommandName>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Проверить использование</v8:content>
-										</v8:item>
-									</Title>
-									<ButtonImportance>Supplementary</ButtonImportance>
-									<ExtendedTooltip name="ФормаПроверитьИспользованиеРасширеннаяПодсказка" id="26"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
 						<CommandBar name="Команды" id="49">
 							<Title>
 								<v8:item>
@@ -84,16 +60,17 @@
 									<v8:content>Команды</v8:content>
 								</v8:item>
 							</Title>
-							<AppearanceMode>UsualGroup</AppearanceMode>
+							<AppearanceMode>CommandBar</AppearanceMode>
 							<ExtendedTooltip name="КомандыРасширеннаяПодсказка" id="50"/>
 							<ChildItems>
 								<Button name="ФормаУстановитьФлажки" id="27">
 									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
 									<CommandName>Form.Command.УстановитьФлажки</CommandName>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Установить флажки</v8:content>
+											<v8:content>Включить все</v8:content>
 										</v8:item>
 									</Title>
 									<ButtonImportance>Supplementary</ButtonImportance>
@@ -101,11 +78,12 @@
 								</Button>
 								<Button name="ФормаСнятьФлажки" id="29">
 									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
 									<CommandName>Form.Command.СнятьФлажки</CommandName>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Снять флажки</v8:content>
+											<v8:content>Выключить все</v8:content>
 										</v8:item>
 									</Title>
 									<ButtonImportance>Supplementary</ButtonImportance>
@@ -189,6 +167,15 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ЗаголовокНадписи" id="1">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="РазрешитьРедактирование" id="1">
@@ -214,7 +201,7 @@
 					<v8:content>Проверить использование объекта в базе данных и убедится, что не будет рассогласования данных при изменении реквизитов</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Проверить</Action>
+			<Action>ПроверитьИспользование</Action>
 		</Command>
 		<Command name="УстановитьФлажки" id="3">
 			<Title>

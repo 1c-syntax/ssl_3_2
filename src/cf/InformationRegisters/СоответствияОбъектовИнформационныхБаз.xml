@@ -375,7 +375,7 @@
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>DontUse</FullTextSearch>
 					<DataHistory>Use</DataHistory>
-					<TypeReductionMode>TransformValues</TypeReductionMode>
+					<TypeReductionMode>DeleteData</TypeReductionMode>
 				</Properties>
 			</Dimension>
 			<Dimension uuid="af02f534-8508-4f9f-bcc1-0c6f3d696971">
@@ -527,7 +527,7 @@
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
-					<TypeReductionMode>TransformValues</TypeReductionMode>
+					<TypeReductionMode>DeleteData</TypeReductionMode>
 				</Properties>
 			</Dimension>
 			<Form>ФормаСписка</Form>

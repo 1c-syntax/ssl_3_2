@@ -820,8 +820,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>Right</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Switcher</CheckBoxType>
 									<ContextMenu name="ЗакончитьСопоставлениеДанныхКонтекстноеМеню" id="989"/>
 									<ExtendedTooltip name="ЗакончитьСопоставлениеДанныхРасширеннаяПодсказка" id="990"/>
@@ -838,8 +836,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>Right</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Switcher</CheckBoxType>
 									<ContextMenu name="ЗагрузитьСообщениеПослеСопоставленияКонтекстноеМеню" id="994"/>
 									<ExtendedTooltip name="ЗагрузитьСообщениеПослеСопоставленияРасширеннаяПодсказка" id="995"/>
@@ -870,8 +866,6 @@
 									<v8:content>Дополнить данными</v8:content>
 								</v8:item>
 							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<CheckBoxType>Switcher</CheckBoxType>
 							<ContextMenu name="ДополнитьДаннымиКонтекстноеМеню" id="1104"/>
 							<ExtendedTooltip name="ДополнитьДаннымиРасширеннаяПодсказка" id="1105"/>
@@ -888,8 +882,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<RadioButtonType>Tumbler</RadioButtonType>
 							<ChoiceList>
 								<xr:Item>
@@ -1066,8 +1058,6 @@
 																</v8:item>
 															</Title>
 															<TitleLocation>Top</TitleLocation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<Width>29</Width>
 															<HorizontalStretch>false</HorizontalStretch>
 															<ClearButton>false</ClearButton>
@@ -1705,8 +1695,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>None</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ShowPercent>true</ShowPercent>
 									<ContextMenu name="ПроцентВыполненияКонтекстноеМеню" id="950"/>
 									<ExtendedTooltip name="ПроцентВыполненияРасширеннаяПодсказка" id="951"/>
@@ -1720,8 +1708,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>None</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<ContextMenu name="ДопИнформацияВыполнениеЗагрузкаКонтекстноеМеню" id="953"/>
 									<ExtendedTooltip name="ДопИнформацияВыполнениеЗагрузкаРасширеннаяПодсказка" id="954"/>
@@ -1786,8 +1772,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>None</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ShowPercent>true</ShowPercent>
 									<ContextMenu name="ПроцентВыполненияВыгрузкаКонтекстноеМеню" id="963"/>
 									<ExtendedTooltip name="ПроцентВыполненияВыгрузкаРасширеннаяПодсказка" id="964"/>
@@ -1801,8 +1785,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>None</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<ContextMenu name="ДопИнформацияВыполнениеВыгрузкаКонтекстноеМеню" id="966"/>
 									<ExtendedTooltip name="ДопИнформацияВыполнениеВыгрузкаРасширеннаяПодсказка" id="967"/>
@@ -2322,8 +2304,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>Right</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<CheckBoxType>CheckBox</CheckBoxType>
 											<ContextMenu name="УдалитьСообщениеДляСопоставленияКонтекстноеМеню" id="1009"/>
 											<ExtendedTooltip name="УдалитьСообщениеДляСопоставленияРасширеннаяПодсказка" id="1010"/>
@@ -2783,11 +2763,6 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ОбменЧерезВебСервис" id="25">
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
 		<Attribute name="ДлительнаяОперацияЗавершена" id="26">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
@@ -3005,11 +2980,6 @@
 			</Type>
 		</Attribute>
 		<Attribute name="РежимДополненияВыгрузки" id="63">
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="ОбменЧерезВнешнееСоединение" id="64">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -3339,7 +3309,7 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>StdPicture.InputFieldClear</xr:Ref>
+				<xr:Ref>StdPicture.Stop</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ДополнениеВыгрузкиОчисткаОбщегоОтбора</Action>

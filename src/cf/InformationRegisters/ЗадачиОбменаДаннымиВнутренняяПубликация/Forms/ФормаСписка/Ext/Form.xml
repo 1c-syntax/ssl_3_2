@@ -78,8 +78,6 @@
 			<ChildItems>
 				<LabelField name="ДатаСоздания" id="43">
 					<DataPath>Список.ДатаСоздания</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<Width>10</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="44"/>
@@ -94,8 +92,6 @@
 							<v8:content>N</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<Width>3</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="НомерЗадачиКонтекстноеМеню" id="26"/>
@@ -104,39 +100,29 @@
 				<LabelField name="Узел" id="22">
 					<DataPath>Список.УзелИнформационнойБазы</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="УзелКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="УзелРасширеннаяПодсказка" id="24"/>
 				</LabelField>
 				<LabelField name="ИдентификаторОбмена" id="46">
 					<DataPath>Список.ИдентификаторОбмена</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ИдентификаторОбменаКонтекстноеМеню" id="47"/>
 					<ExtendedTooltip name="ИдентификаторОбменаРасширеннаяПодсказка" id="48"/>
 				</LabelField>
 				<LabelField name="ИдентификаторЗадачи" id="28">
 					<DataPath>Список.ИдентификаторЗадачи</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ИдентификаторЗадачиКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="ИдентификаторЗадачиРасширеннаяПодсказка" id="30"/>
 				</LabelField>
 				<LabelField name="Действие" id="31">
 					<DataPath>Список.Действие</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ДействиеКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="ДействиеРасширеннаяПодсказка" id="33"/>
 				</LabelField>
 				<LabelField name="Сценарий" id="19">
 					<DataPath>Список.Сценарий</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="СценарийКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="СценарийРасширеннаяПодсказка" id="21"/>
 				</LabelField>
@@ -149,8 +135,6 @@
 							<v8:content>Успешно</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ЗавершенаУспешноКонтекстноеМеню" id="35"/>
 					<ExtendedTooltip name="ЗавершенаУспешноРасширеннаяПодсказка" id="36"/>
 				</CheckBoxField>
@@ -163,8 +147,6 @@
 							<v8:content>С ошибкой</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ЗавершенаСОшибкойКонтекстноеМеню" id="38"/>
 					<ExtendedTooltip name="ЗавершенаСОшибкойРасширеннаяПодсказка" id="39"/>
 				</CheckBoxField>
@@ -176,8 +158,6 @@
 							<v8:content>Время проверки</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ВремяПроверкиЗадачиКонтекстноеМеню" id="50"/>
 					<ExtendedTooltip name="ВремяПроверкиЗадачиРасширеннаяПодсказка" id="51"/>
 				</LabelField>
@@ -189,15 +169,11 @@
 							<v8:content>Область данных</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ОбластьДанныхКорреспондентаКонтекстноеМеню" id="53"/>
 					<ExtendedTooltip name="ОбластьДанныхКорреспондентаРасширеннаяПодсказка" id="54"/>
 				</LabelField>
 				<LabelField name="Режим" id="55">
 					<DataPath>Список.Режим</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="РежимКонтекстноеМеню" id="56"/>
 					<ExtendedTooltip name="РежимРасширеннаяПодсказка" id="57"/>
 				</LabelField>

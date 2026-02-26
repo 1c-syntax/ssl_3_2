@@ -87,8 +87,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>Right</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="АвторегистрацияДвиженийКонтекстноеМеню" id="2"/>
 									<ExtendedTooltip name="АвторегистрацияДвиженийExtendedTooltip" id="39"/>
 								</CheckBoxField>
@@ -101,8 +99,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>Right</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="АвторегистрацияПоследовательностейКонтекстноеМеню" id="4"/>
 									<ExtendedTooltip name="АвторегистрацияПоследовательностейExtendedTooltip" id="40"/>
 								</CheckBoxField>
@@ -163,8 +159,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>None</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<RadioButtonType>Auto</RadioButtonType>
 									<ColumnsCount>1</ColumnsCount>
 									<ChoiceList>
@@ -222,8 +216,6 @@
 				<RadioButtonField name="НомераСообщенийРегистрации" id="30">
 					<DataPath>Объект.НастройкаВариантНомераСообщения</DataPath>
 					<TitleLocation>None</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<RadioButtonType>Auto</RadioButtonType>
 					<ColumnsCount>1</ColumnsCount>
 					<ChoiceList>
@@ -283,8 +275,6 @@
 						</v8:item>
 					</Title>
 					<TitleLocation>Right</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="НастройкаКонтрольВыгрузкиОбъектовКонтекстноеМеню" id="28"/>
 					<ExtendedTooltip name="НастройкаКонтрольВыгрузкиОбъектовExtendedTooltip" id="51"/>
 				</CheckBoxField>

@@ -124,16 +124,12 @@
 				<LabelField name="УзелИнформационнойБазы" id="16">
 					<DataPath>Список.УзелИнформационнойБазы</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="18"/>
 				</LabelField>
 				<LabelField name="ПредставлениеОбъекта" id="28">
 					<DataPath>Список.ПредставлениеОбъекта</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ПредставлениеОбъектаКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="ПредставлениеОбъектаРасширеннаяПодсказка" id="30"/>
 				</LabelField>

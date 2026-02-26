@@ -118,7 +118,7 @@
 			<ThroughAlign>Use</ThroughAlign>
 			<ExtendedTooltip name="ГруппаПодписаниеИКомментарийРасширеннаяПодсказка" id="379"/>
 			<ChildItems>
-				<RadioButtonField name="ТипПодписанта" id="540">
+				<RadioButtonField name="ТипПодписанта" id="554">
 					<DataPath>ТипПодписанта</DataPath>
 					<Visible>false</Visible>
 					<Title>
@@ -147,8 +147,8 @@
 							</xr:Value>
 						</xr:Item>
 					</ChoiceList>
-					<ContextMenu name="ТипПодписантаКонтекстноеМеню" id="541"/>
-					<ExtendedTooltip name="ТипПодписантаРасширеннаяПодсказка" id="542"/>
+					<ContextMenu name="ТипПодписантаКонтекстноеМеню" id="555"/>
+					<ExtendedTooltip name="ТипПодписантаРасширеннаяПодсказка" id="556"/>
 					<Events>
 						<Event name="OnChange">ТипПодписантаПриИзменении</Event>
 					</Events>
@@ -172,7 +172,7 @@
 							</Title>
 							<ExtendedTooltip name="СтраницаПодписаниеРасширеннаяПодсказка" id="535"/>
 							<ChildItems>
-								<UsualGroup name="ГруппаПодписание" id="538">
+								<UsualGroup name="ГруппаПодписание" id="557">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -180,7 +180,7 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
-									<ExtendedTooltip name="ГруппаПодписаниеРасширеннаяПодсказка" id="539"/>
+									<ExtendedTooltip name="ГруппаПодписаниеРасширеннаяПодсказка" id="558"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаПоля" id="433">
 											<Title>
@@ -394,18 +394,50 @@
 									<ContextMenu name="ПодписантКонтекстноеМеню" id="545"/>
 									<ExtendedTooltip name="ПодписантРасширеннаяПодсказка" id="546">
 										<AutoMaxWidth>false</AutoMaxWidth>
-										<Title formatted="false">
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Документы будут отправлены в сервис мобильной подписи</v8:content>
-											</v8:item>
-										</Title>
 									</ExtendedTooltip>
 									<Events>
 										<Event name="OnChange">ПодписантПриИзменении</Event>
 										<Event name="Opening">ПодписантОткрытие</Event>
 										<Event name="Creating">ПодписантСоздание</Event>
 										<Event name="Clearing">ПодписантОчистка</Event>
+									</Events>
+								</InputField>
+								<InputField name="ВидМобильнойПодписи" id="538">
+									<DataPath>ВидМобильнойПодписи</DataPath>
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отправить в</v8:content>
+										</v8:item>
+									</Title>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChooseType>false</ChooseType>
+									<TextSize>Enlarged</TextSize>
+									<ContextMenu name="ВидМобильнойПодписиКонтекстноеМеню" id="539"/>
+									<ExtendedTooltip name="ВидМобильнойПодписиРасширеннаяПодсказка" id="540"/>
+									<Events>
+										<Event name="OnChange">ВидПодписиПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="НастройкаОтправки" id="541">
+									<DataPath>НастройкаОтправки</DataPath>
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка отправки</v8:content>
+										</v8:item>
+									</Title>
+									<ChoiceButton>false</ChoiceButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChooseType>false</ChooseType>
+									<TextSize>Enlarged</TextSize>
+									<ContextMenu name="НастройкаОтправкиКонтекстноеМеню" id="542"/>
+									<ExtendedTooltip name="НастройкаОтправкиРасширеннаяПодсказка" id="543"/>
+									<Events>
+										<Event name="OnChange">НастройкаОтправкиПриИзменении</Event>
 									</Events>
 								</InputField>
 								<CheckBoxField name="ПакетнаяОтправка" id="548">
@@ -844,6 +876,29 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="ВидМобильнойПодписи" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид мобильной подписи</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="НастройкаОтправки" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка отправки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыОтправителя" id="40">
+			<Type/>
 		</Attribute>
 	</Attributes>
 	<Commands>

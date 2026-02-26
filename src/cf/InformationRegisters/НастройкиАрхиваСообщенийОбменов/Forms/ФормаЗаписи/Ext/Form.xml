@@ -31,16 +31,12 @@
 						<InputField name="УзелИнформационнойБазы" id="1">
 							<DataPath>Запись.УзелИнформационнойБазы</DataPath>
 							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="2"/>
 							<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="3"/>
 						</InputField>
 						<InputField name="КоличествоФайлов" id="4">
 							<DataPath>Запись.КоличествоФайлов</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<SpinButton>true</SpinButton>
 							<ContextMenu name="КоличествоФайловКонтекстноеМеню" id="5"/>
 							<ExtendedTooltip name="КоличествоФайловРасширеннаяПодсказка" id="6"/>
@@ -50,8 +46,6 @@
 						</InputField>
 						<CheckBoxField name="СжиматьФайлы" id="58">
 							<DataPath>Запись.СжиматьФайлы</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ContextMenu name="СжиматьФайлыКонтекстноеМеню" id="59"/>
 							<ExtendedTooltip name="СжиматьФайлыРасширеннаяПодсказка" id="60"/>
 						</CheckBoxField>
@@ -85,8 +79,6 @@
 										</v8:item>
 									</ToolTip>
 									<ToolTipRepresentation>Button</ToolTipRepresentation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<RadioButtonType>Tumbler</RadioButtonType>
 									<HorizontalStretch>true</HorizontalStretch>
 									<ChoiceList>
@@ -148,8 +140,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>Top</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="ПолныйПутьКонтекстноеМеню" id="11"/>
@@ -253,6 +243,7 @@
 							</AutoCommandBar>
 							<ExtendedTooltip name="АрхивСообщенийОбменовРасширеннаяПодсказка" id="36"/>
 							<SearchStringAddition name="АрхивСообщенийОбменовСтрокаПоиска" id="37">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>АрхивСообщенийОбменов</Item>
 									<Type>SearchStringRepresentation</Type>
@@ -261,6 +252,7 @@
 								<ExtendedTooltip name="АрхивСообщенийОбменовСтрокаПоискаРасширеннаяПодсказка" id="39"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="АрхивСообщенийОбменовСостояниеПросмотра" id="40">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>АрхивСообщенийОбменов</Item>
 									<Type>ViewStatusRepresentation</Type>
@@ -269,6 +261,7 @@
 								<ExtendedTooltip name="АрхивСообщенийОбменовСостояниеПросмотраРасширеннаяПодсказка" id="42"/>
 							</ViewStatusAddition>
 							<SearchControlAddition name="АрхивСообщенийОбменовУправлениеПоиском" id="43">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>АрхивСообщенийОбменов</Item>
 									<Type>SearchControl</Type>
@@ -285,26 +278,20 @@
 											<v8:content>Дата создания</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
 									<FixingInTable>Left</FixingInTable>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="АрхивСообщенийОбменовПериодКонтекстноеМеню" id="62"/>
 									<ExtendedTooltip name="АрхивСообщенийОбменовПериодРасширеннаяПодсказка" id="63"/>
 								</LabelField>
 								<LabelField name="АрхивСообщенийОбменовНомерПринятогоСообщения" id="66">
 									<DataPath>АрхивСообщенийОбменов.НомерПринятогоСообщения</DataPath>
-									<EditMode>EnterOnInput</EditMode>
 									<FixingInTable>Left</FixingInTable>
-									<AutoEditMode>true</AutoEditMode>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<ContextMenu name="АрхивСообщенийОбменовНомерПринятогоСообщенияКонтекстноеМеню" id="67"/>
 									<ExtendedTooltip name="АрхивСообщенийОбменовНомерПринятогоСообщенияРасширеннаяПодсказка" id="68"/>
 								</LabelField>
 								<LabelField name="АрхивСообщенийОбменовРазмерФайла" id="72">
 									<DataPath>АрхивСообщенийОбменов.РазмерФайла</DataPath>
-									<EditMode>EnterOnInput</EditMode>
 									<FixingInTable>Left</FixingInTable>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="АрхивСообщенийОбменовРазмерФайлаКонтекстноеМеню" id="73"/>
 									<ExtendedTooltip name="АрхивСообщенийОбменовРазмерФайлаРасширеннаяПодсказка" id="74"/>
 								</LabelField>
@@ -313,8 +300,6 @@
 									<UserVisible>
 										<xr:Common>false</xr:Common>
 									</UserVisible>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="АрхивСообщенийОбменовФайлБольше100МбКонтекстноеМеню" id="80"/>
 									<ExtendedTooltip name="АрхивСообщенийОбменовФайлБольше100МбРасширеннаяПодсказка" id="81"/>
 								</CheckBoxField>

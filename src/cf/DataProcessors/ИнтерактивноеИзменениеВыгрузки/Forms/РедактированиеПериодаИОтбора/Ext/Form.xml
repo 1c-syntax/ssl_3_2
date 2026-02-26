@@ -68,8 +68,6 @@
 							<v8:content>Общий отбор по периоду, применяется для всех документов</v8:content>
 						</v8:item>
 					</ToolTip>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ПериодДанныхКонтекстноеМеню" id="10"/>
 					<ExtendedTooltip name="ПериодДанныхExtendedTooltip" id="21"/>

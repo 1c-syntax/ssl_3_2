@@ -6,14 +6,10 @@
 	<ChildItems>
 		<InputField name="Узел" id="7">
 			<DataPath>Запись.УзелИнформационнойБазы</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="УзелКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="УзелРасширеннаяПодсказка" id="9"/>
 		</InputField>
 		<InputField name="Сценарий" id="4">
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="СценарийКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="СценарийРасширеннаяПодсказка" id="6"/>
 		</InputField>
@@ -50,8 +46,6 @@
 							<ChildItems>
 								<InputField name="ДатаСоздания" id="28">
 									<DataPath>Запись.ДатаСоздания</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<MaxWidth>13</MaxWidth>
 									<HorizontalStretch>false</HorizontalStretch>
@@ -60,8 +54,6 @@
 								</InputField>
 								<InputField name="ВремяПроверкиЗадачи" id="34">
 									<DataPath>Запись.ВремяПроверкиЗадачи</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<MaxWidth>13</MaxWidth>
 									<HorizontalStretch>false</HorizontalStretch>
@@ -96,22 +88,16 @@
 									<ChildItems>
 										<InputField name="НомерЗадачи" id="10">
 											<DataPath>Запись.НомерЗадачи</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ContextMenu name="НомерЗадачиКонтекстноеМеню" id="11"/>
 											<ExtendedTooltip name="НомерЗадачиРасширеннаяПодсказка" id="12"/>
 										</InputField>
 										<InputField name="ИдентификаторОбмена" id="31">
 											<DataPath>Запись.ИдентификаторОбмена</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ContextMenu name="ИдентификаторОбменаКонтекстноеМеню" id="32"/>
 											<ExtendedTooltip name="ИдентификаторОбменаРасширеннаяПодсказка" id="33"/>
 										</InputField>
 										<InputField name="ИдентификаторЗадачи" id="13">
 											<DataPath>Запись.ИдентификаторЗадачи</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ContextMenu name="ИдентификаторЗадачиКонтекстноеМеню" id="14"/>
 											<ExtendedTooltip name="ИдентификаторЗадачиРасширеннаяПодсказка" id="15"/>
 										</InputField>
@@ -130,23 +116,17 @@
 									<ChildItems>
 										<InputField name="Действие" id="16">
 											<DataPath>Запись.Действие</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ContextMenu name="ДействиеКонтекстноеМеню" id="17"/>
 											<ExtendedTooltip name="ДействиеРасширеннаяПодсказка" id="18"/>
 										</InputField>
 										<InputField name="Режим" id="37">
 											<DataPath>Запись.Режим</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="РежимКонтекстноеМеню" id="38"/>
 											<ExtendedTooltip name="РежимРасширеннаяПодсказка" id="39"/>
 										</InputField>
 										<InputField name="ОбластьДанныхКорреспондента" id="40">
 											<DataPath>Запись.ОбластьДанныхКорреспондента</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="ОбластьДанныхКорреспондентаКонтекстноеМеню" id="41"/>
 											<ExtendedTooltip name="ОбластьДанныхКорреспондентаРасширеннаяПодсказка" id="42"/>
@@ -169,15 +149,11 @@
 							<ChildItems>
 								<CheckBoxField name="ЗавершенаУспешно" id="19">
 									<DataPath>Запись.ЗавершенаУспешно</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ЗавершенаУспешноКонтекстноеМеню" id="20"/>
 									<ExtendedTooltip name="ЗавершенаУспешноРасширеннаяПодсказка" id="21"/>
 								</CheckBoxField>
 								<CheckBoxField name="ЗавершенаСОшибкой" id="22">
 									<DataPath>Запись.ЗавершенаСОшибкой</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ЗавершенаСОшибкойКонтекстноеМеню" id="23"/>
 									<ExtendedTooltip name="ЗавершенаСОшибкойРасширеннаяПодсказка" id="24"/>
 								</CheckBoxField>
@@ -197,8 +173,6 @@
 						<InputField name="Ошибка" id="25">
 							<DataPath>Запись.Ошибка</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<HorizontalStretch>true</HorizontalStretch>
 							<MultiLine>true</MultiLine>

@@ -5,21 +5,17 @@
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<RadioButtonField name="ВидПодписанта" id="65">
-			<DataPath>ВидПодписанта</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Вид подписанта</v8:content>
-				</v8:item>
-			</Title>
+		<RadioButtonField name="ВидПодписанта" id="104">
+			<DataPath>Объект.ВидПодписанта</DataPath>
 			<TitleLocation>None</TitleLocation>
 			<EditMode>EnterOnInput</EditMode>
 			<AutoEditMode>true</AutoEditMode>
@@ -33,10 +29,10 @@
 						<Presentation>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
-								<v8:content>Юридическое лицо</v8:content>
+								<v8:content>Руководитель организации</v8:content>
 							</v8:item>
 						</Presentation>
-						<Value xsi:type="xs:string">ЮридическоеЛицо</Value>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ВидыПодписантовМобильногоСервиса.EnumValue.РуководительЮЛ</Value>
 					</xr:Value>
 				</xr:Item>
 				<xr:Item>
@@ -49,16 +45,77 @@
 								<v8:content>Индивидуальный предприниматель</v8:content>
 							</v8:item>
 						</Presentation>
-						<Value xsi:type="xs:string">ИндивидуальныйПредприниматель</Value>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ВидыПодписантовМобильногоСервиса.EnumValue.ИндивидуальныйПредприниматель</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Физическое лицо</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ВидыПодписантовМобильногоСервиса.EnumValue.ФизическоеЛицо</Value>
 					</xr:Value>
 				</xr:Item>
 			</ChoiceList>
-			<ContextMenu name="ВидПодписантаКонтекстноеМеню" id="66"/>
-			<ExtendedTooltip name="ВидПодписантаРасширеннаяПодсказка" id="67"/>
+			<ContextMenu name="ВидПодписантаКонтекстноеМеню" id="105"/>
+			<ExtendedTooltip name="ВидПодписантаРасширеннаяПодсказка" id="106"/>
 			<Events>
 				<Event name="OnChange">ВидПодписантаПриИзменении</Event>
 			</Events>
 		</RadioButtonField>
+		<UsualGroup name="ГруппаСервис" id="113">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервис</v8:content>
+				</v8:item>
+			</Title>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСервисРасширеннаяПодсказка" id="114"/>
+			<ChildItems>
+				<CheckBoxField name="МояПодпись" id="117">
+					<DataPath>Объект.МояПодпись</DataPath>
+					<ContextMenu name="МояПодписьКонтекстноеМеню" id="118"/>
+					<ExtendedTooltip name="МояПодписьРасширеннаяПодсказка" id="119"/>
+					<Events>
+						<Event name="OnChange">МояПодписьПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="ГруппаГосключ" id="115">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Госключ</v8:content>
+						</v8:item>
+					</Title>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаГосключРасширеннаяПодсказка" id="116"/>
+					<ChildItems>
+						<CheckBoxField name="ГосключУНЭП" id="120">
+							<DataPath>Объект.ГосключУНЭП</DataPath>
+							<ContextMenu name="ГосключУНЭПКонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="ГосключУНЭПРасширеннаяПодсказка" id="122"/>
+							<Events>
+								<Event name="OnChange">ГосключУНЭППриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ГосключУКЭП" id="123">
+							<DataPath>Объект.ГосключУКЭП</DataPath>
+							<ContextMenu name="ГосключУКЭПКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="ГосключУКЭПРасширеннаяПодсказка" id="125"/>
+							<Events>
+								<Event name="OnChange">ГосключУКЭППриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаОбщая" id="101">
 			<Title>
 				<v8:item>
@@ -83,6 +140,14 @@
 					<ThroughAlign>Use</ThroughAlign>
 					<ExtendedTooltip name="ГруппаФизЛицоРасширеннаяПодсказка" id="32"/>
 					<ChildItems>
+						<InputField name="ФизическоеЛицо" id="28">
+							<DataPath>Объект.ФизическоеЛицо</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<TextSize>Enlarged</TextSize>
+							<ContextMenu name="ФизическоеЛицоКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ФизическоеЛицоРасширеннаяПодсказка" id="30"/>
+						</InputField>
 						<InputField name="НомерТелефона" id="40">
 							<DataPath>НомерТелефона</DataPath>
 							<Title>
@@ -117,6 +182,16 @@
 							<ContextMenu name="ИННФЛКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="ИННФЛРасширеннаяПодсказка" id="9"/>
 						</InputField>
+						<InputField name="СНИЛС" id="92">
+							<DataPath>Объект.СНИЛС</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>15</MaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<TextSize>Enlarged</TextSize>
+							<ContextMenu name="СНИЛСКонтекстноеМеню" id="93"/>
+							<ExtendedTooltip name="СНИЛСРасширеннаяПодсказка" id="94"/>
+						</InputField>
 						<InputField name="Фамилия" id="16">
 							<DataPath>Объект.Фамилия</DataPath>
 							<EditMode>EnterOnInput</EditMode>
@@ -141,14 +216,6 @@
 							<ContextMenu name="ОтчествоКонтекстноеМеню" id="14"/>
 							<ExtendedTooltip name="ОтчествоРасширеннаяПодсказка" id="15"/>
 						</InputField>
-						<InputField name="ФизическоеЛицо" id="28">
-							<DataPath>Объект.ФизическоеЛицо</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<TextSize>Enlarged</TextSize>
-							<ContextMenu name="ФизическоеЛицоКонтекстноеМеню" id="29"/>
-							<ExtendedTooltip name="ФизическоеЛицоРасширеннаяПодсказка" id="30"/>
-						</InputField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаДополнительно" id="111">
@@ -161,6 +228,16 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="112"/>
 					<ChildItems>
+						<InputField name="Добавил" id="62">
+							<DataPath>Объект.Добавил</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<TextSize>Enlarged</TextSize>
+							<ContextMenu name="ДобавилКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="ДобавилРасширеннаяПодсказка" id="64"/>
+						</InputField>
 						<UsualGroup name="ГруппаОрганизация" id="35">
 							<Title>
 								<v8:item>
@@ -170,6 +247,7 @@
 							</Title>
 							<Group>Vertical</Group>
 							<Representation>WeakSeparation</Representation>
+							<United>false</United>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОрганизацияРасширеннаяПодсказка" id="36"/>
 							<ChildItems>
@@ -188,6 +266,9 @@
 									<TextSize>Enlarged</TextSize>
 									<ContextMenu name="ИННКонтекстноеМеню" id="5"/>
 									<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="6"/>
+									<Events>
+										<Event name="OnChange">ИННПриИзменении</Event>
+									</Events>
 								</InputField>
 								<InputField name="ОГРН" id="74">
 									<DataPath>Объект.ОГРН</DataPath>
@@ -195,9 +276,16 @@
 									<AutoEditMode>true</AutoEditMode>
 									<MaxWidth>15</MaxWidth>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
 									<TextSize>Enlarged</TextSize>
 									<ContextMenu name="ОГРНКонтекстноеМеню" id="75"/>
 									<ExtendedTooltip name="ОГРНРасширеннаяПодсказка" id="76"/>
+								</InputField>
+								<InputField name="НомерЗаписиОбАккредитации" id="145">
+									<DataPath>Объект.НомерЗаписиОбАккредитации</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НомерЗаписиОбАккредитацииКонтекстноеМеню" id="146"/>
+									<ExtendedTooltip name="НомерЗаписиОбАккредитацииРасширеннаяПодсказка" id="147"/>
 								</InputField>
 								<InputField name="НаименованиеОрганизации" id="37">
 									<DataPath>Объект.НаименованиеОрганизации</DataPath>
@@ -231,7 +319,7 @@
 							<ContextMenu name="СписокПользователейКонтекстноеМеню" id="108"/>
 							<ExtendedTooltip name="СписокПользователейРасширеннаяПодсказка" id="109"/>
 							<Events>
-								<Event name="OnChange">СписокПользователейПриИзменении</Event>
+								<Event name="StartChoice">СписокПользователейНачалоВыбора</Event>
 							</Events>
 						</InputField>
 						<InputField name="Организация" id="25">
@@ -241,16 +329,6 @@
 							<TextSize>Enlarged</TextSize>
 							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="26"/>
 							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="27"/>
-						</InputField>
-						<InputField name="Добавил" id="62">
-							<DataPath>Объект.Добавил</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<TextSize>Enlarged</TextSize>
-							<ContextMenu name="ДобавилКонтекстноеМеню" id="63"/>
-							<ExtendedTooltip name="ДобавилРасширеннаяПодсказка" id="64"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -305,27 +383,7 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ВидПодписанта" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Вид подписанта</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="ЕстьОтправленныеДокументы" id="5">
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="СписокПользователей" id="6">
+		<Attribute name="СписокПользователей" id="9">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -340,5 +398,43 @@
 				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 			</Settings>
 		</Attribute>
+		<Attribute name="ЕстьОтправленныеДокументыВСервис" id="5">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьГосключ" id="4">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьСервисМобильнойПодписи" id="6">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьОтправленныеДокументыВГосуслуги" id="7">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьПраваНаПросмотр" id="8">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
 </Form>

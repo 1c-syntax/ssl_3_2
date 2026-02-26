@@ -329,6 +329,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Catalog.НастройкиОтправкиВГосключ</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>InformationRegister.РазрешенияНаИспользованиеВнешнихРесурсов</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -762,6 +766,10 @@
 	</Item>
 	<Item>
 		<Metadata>Constant.ИспользоватьДатуИВремяВСрокахЗадач</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Constant.ИспользоватьГосключ</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>

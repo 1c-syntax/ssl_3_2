@@ -43,8 +43,6 @@
 			<DataPath>Объект.КаталогОбменаИнформацией</DataPath>
 			<TitleLocation>Top</TitleLocation>
 			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<Width>40</Width>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<ChoiceButton>true</ChoiceButton>
@@ -94,8 +92,6 @@
 						<CheckBoxField name="СжиматьФайлИсходящегоСообщения" id="39">
 							<DataPath>Объект.СжиматьФайлИсходящегоСообщения</DataPath>
 							<TitleLocation>Right</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<CheckBoxType>Switcher</CheckBoxType>
 							<ContextMenu name="СжиматьФайлИсходящегоСообщенияКонтекстноеМеню" id="40"/>
 							<ExtendedTooltip name="СжиматьФайлИсходящегоСообщенияРасширеннаяПодсказка" id="41"/>
@@ -106,8 +102,6 @@
 						<InputField name="ПарольАрхиваСообщенияОбмена" id="43">
 							<DataPath>Объект.ПарольАрхиваСообщенияОбмена</DataPath>
 							<TitleLocation>Top</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<Width>20</Width>
 							<HorizontalStretch>true</HorizontalStretch>
 							<PasswordMode>true</PasswordMode>
@@ -141,8 +135,6 @@
 						</v8:item>
 					</ToolTip>
 					<ToolTipRepresentation>Button</ToolTipRepresentation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ТранслитерацияКонтекстноеМеню" id="48"/>
 					<ExtendedTooltip name="ТранслитерацияРасширеннаяПодсказка" id="49"/>
 				</CheckBoxField>

@@ -30,6 +30,7 @@
 				<v8:Type>cfg:CatalogObject.ПользовательскиеНастройкиОтчетов</v8:Type>
 				<v8:Type>cfg:CatalogObject.Заметки</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПравилаОбработкиЭлектроннойПочты</v8:Type>
+				<v8:Type>cfg:CatalogObject.НастройкиОтправкиВГосключ</v8:Type>
 				<v8:Type>cfg:CatalogObject.ШаблоныСообщенийПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.ГруппыВнешнихПользователей</v8:Type>
 				<v8:Type>cfg:ChartOfCharacteristicTypesObject.ДополнительныеРеквизитыИСведения</v8:Type>

@@ -1127,6 +1127,21 @@
 											<ContextMenu name="ПрограммыНаименованиеКонтекстноеМеню" id="214"/>
 											<ExtendedTooltip name="ПрограммыНаименованиеРасширеннаяПодсказка" id="215"/>
 										</InputField>
+										<InputField name="ПрограммыРезультатПроверки" id="223">
+											<DataPath>Программы.РезультатПроверки</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Результат проверки на устройстве</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoCellHeight>true</AutoCellHeight>
+											<AutoEditMode>true</AutoEditMode>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="ПрограммыРезультатПроверкиКонтекстноеМеню" id="224"/>
+											<ExtendedTooltip name="ПрограммыРезультатПроверкиРасширеннаяПодсказка" id="225"/>
+										</InputField>
 										<PictureField name="ПрограммыРежимИспользованияКартинка" id="452">
 											<DataPath>Программы.РежимИспользованияКартинка</DataPath>
 											<Title>
@@ -1150,21 +1165,6 @@
 											<ContextMenu name="ПрограммыРежимИспользованияКартинкаКонтекстноеМеню" id="453"/>
 											<ExtendedTooltip name="ПрограммыРежимИспользованияКартинкаРасширеннаяПодсказка" id="454"/>
 										</PictureField>
-										<InputField name="ПрограммыРезультатПроверки" id="223">
-											<DataPath>Программы.РезультатПроверки</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Результат проверки на устройстве</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoCellHeight>true</AutoCellHeight>
-											<AutoEditMode>true</AutoEditMode>
-											<MultiLine>true</MultiLine>
-											<ContextMenu name="ПрограммыРезультатПроверкиКонтекстноеМеню" id="224"/>
-											<ExtendedTooltip name="ПрограммыРезультатПроверкиРасширеннаяПодсказка" id="225"/>
-										</InputField>
 										<InputField name="ПрограммыРезультатПроверкиНаСервере" id="442">
 											<DataPath>Программы.РезультатПроверкиНаСервере</DataPath>
 											<Title>
@@ -1257,6 +1257,21 @@
 							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="СтраницаНастройкиРасширеннаяПодсказка" id="45"/>
 							<ChildItems>
+								<Button name="ПодписантыСервисаМобильнойПодписи" id="507">
+									<Type>Hyperlink</Type>
+									<Visible>false</Visible>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Catalog.ПодписантыСервисаМобильнойПодписи.Command.ПодписантыСервисаМобильнойПодписи</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подписанты в мобильном приложении</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+									<ButtonImportance>Main</ButtonImportance>
+									<ExtendedTooltip name="ПодписантыСервисаМобильнойПодписиРасширеннаяПодсказка" id="508"/>
+								</Button>
 								<InputField name="РасширениеДляЗашифрованныхФайлов" id="9">
 									<DataPath>РасширениеДляЗашифрованныхФайлов</DataPath>
 									<Title>

@@ -118,8 +118,6 @@
 													<v8:content>Пароль</v8:content>
 												</v8:item>
 											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<PasswordMode>true</PasswordMode>
 											<ChoiceButton>true</ChoiceButton>
 											<AutoMarkIncomplete>true</AutoMarkIncomplete>
@@ -212,8 +210,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>Right</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<CheckBoxType>CheckBox</CheckBoxType>
 											<ContextMenu name="НеНапоминатьОДолгойСинхронизацииКонтекстноеМеню" id="30"/>
 											<ExtendedTooltip name="НеНапоминатьОДолгойСинхронизацииРасширеннаяПодсказка" id="31"/>

@@ -192,8 +192,6 @@
 													</Title>
 													<TitleLocation>None</TitleLocation>
 													<GroupVerticalAlign>Center</GroupVerticalAlign>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<RadioButtonType>RadioButtons</RadioButtonType>
 													<ChoiceList>
 														<xr:Item>
@@ -262,8 +260,6 @@
 																		</v8:item>
 																	</Title>
 																	<TitleLocation>Left</TitleLocation>
-																	<EditMode>EnterOnInput</EditMode>
-																	<AutoEditMode>true</AutoEditMode>
 																	<PasswordMode>true</PasswordMode>
 																	<ContextMenu name="ПарольКонтекстноеМеню" id="66"/>
 																	<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="67"/>
@@ -309,8 +305,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<RadioButtonType>Auto</RadioButtonType>
 											<ChoiceList>
 												<xr:Item>

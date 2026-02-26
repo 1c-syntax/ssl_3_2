@@ -19,10 +19,21 @@
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
-						<v8:content>Перейти в журнал регистрации</v8:content>
+						<v8:content>Журнал регистрации</v8:content>
 					</v8:item>
 				</Title>
 				<ExtendedTooltip name="ЖурналРегистрацииРасширеннаяПодсказка" id="83"/>
+			</Button>
+			<Button name="ФормаУдалениеУстаревшихЗаписей" id="270">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.УдалениеУстаревшихЗаписей</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Удаление записей</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаУдалениеУстаревшихЗаписейРасширеннаяПодсказка" id="271"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -61,8 +72,6 @@
 							<v8:content>Период</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<MaxWidth>20</MaxWidth>
 					<ChoiceButton>true</ChoiceButton>
@@ -82,8 +91,6 @@
 							<v8:content>Синхронизация</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ChoiceButton>true</ChoiceButton>
 					<TextEdit>false</TextEdit>
 					<ContextMenu name="ПредставлениеОтбораСинхронизацийКонтекстноеМеню" id="136"/>
@@ -101,8 +108,6 @@
 							<v8:content>Тип</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ChoiceButton>true</ChoiceButton>
 					<TextEdit>false</TextEdit>
 					<ContextMenu name="ПредставлениеОтбораТиповПредупрежденийКонтекстноеМеню" id="80"/>
@@ -159,7 +164,6 @@
 								<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 								<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
 							</CommandSet>
-							<SearchStringLocation>CommandBar</SearchStringLocation>
 							<ShowCommandBar>true</ShowCommandBar>
 							<AutoRefresh>false</AutoRefresh>
 							<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -490,13 +494,11 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>None</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
 									<FixingInTable>Left</FixingInTable>
 									<HeaderPicture>
 										<xr:Ref>StdPicture.Conversations</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</HeaderPicture>
-									<AutoEditMode>true</AutoEditMode>
 									<Width>3</Width>
 									<ValuesPicture>
 										<xr:Ref>StdPicture.Conversations</xr:Ref>
@@ -513,8 +515,6 @@
 											<v8:content>Дата возникновения</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ДатаВозникновенияКонтекстноеМеню" id="18"/>
 									<ExtendedTooltip name="ДатаВозникновенияРасширеннаяПодсказка" id="19"/>
 								</LabelField>
@@ -530,8 +530,6 @@
 											<v8:content>Объект</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ПроблемныйОбъектКонтекстноеМеню" id="54"/>
 									<ExtendedTooltip name="ПроблемныйОбъектРасширеннаяПодсказка" id="55"/>
 								</LabelField>
@@ -543,8 +541,6 @@
 											<v8:content>Описание</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<Hiperlink>true</Hiperlink>
 									<ContextMenu name="ОписаниеКонтекстноеМеню" id="51"/>
 									<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="52"/>
@@ -557,8 +553,6 @@
 											<v8:content>Тип</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ПредставлениеТипаПредупрежденияКонтекстноеМеню" id="194"/>
 									<ExtendedTooltip name="ПредставлениеТипаПредупрежденияРасширеннаяПодсказка" id="195"/>
 								</LabelField>
@@ -573,8 +567,6 @@
 											<v8:content>Синхронизация</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="66"/>
 									<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="67"/>
 								</LabelField>
@@ -589,8 +581,6 @@
 											<v8:content>Ключ уникальности</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="КлючУникальностиКонтекстноеМеню" id="210"/>
 									<ExtendedTooltip name="КлючУникальностиРасширеннаяПодсказка" id="211"/>
 								</LabelField>
@@ -605,8 +595,6 @@
 											<v8:content>Версия из другого приложения</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ВерсияИзДругойПрограммыКонтекстноеМеню" id="188"/>
 									<ExtendedTooltip name="ВерсияИзДругойПрограммыРасширеннаяПодсказка" id="189"/>
 								</LabelField>
@@ -621,8 +609,6 @@
 											<v8:content>Версия этого приложения</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ВерсияЭтойПрограммыКонтекстноеМеню" id="191"/>
 									<ExtendedTooltip name="ВерсияЭтойПрограммыРасширеннаяПодсказка" id="192"/>
 								</LabelField>
@@ -638,12 +624,10 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>None</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
 									<HeaderPicture>
 										<xr:Ref>StdPicture.HidePassword</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</HeaderPicture>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="СкрытьПредупреждениеКонтекстноеМеню" id="57"/>
 									<ExtendedTooltip name="СкрытьПредупреждениеРасширеннаяПодсказка" id="58"/>
 								</CheckBoxField>

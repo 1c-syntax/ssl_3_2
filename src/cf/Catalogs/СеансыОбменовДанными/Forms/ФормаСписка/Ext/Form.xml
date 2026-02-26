@@ -60,6 +60,7 @@
 			<AutoCommandBar name="СписокКоманднаяПанель" id="5"/>
 			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
 			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>SearchStringRepresentation</Type>
@@ -68,6 +69,7 @@
 				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
 			</SearchStringAddition>
 			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>ViewStatusRepresentation</Type>
@@ -76,6 +78,7 @@
 				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
 			</ViewStatusAddition>
 			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>SearchControl</Type>
@@ -87,43 +90,31 @@
 				<LabelField name="Наименование" id="16">
 					<DataPath>Список.Description</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
 				</LabelField>
 				<LabelField name="Начало" id="19">
 					<DataPath>Список.Начало</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="НачалоКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="НачалоРасширеннаяПодсказка" id="21"/>
 				</LabelField>
 				<LabelField name="Окончание" id="22">
 					<DataPath>Список.Окончание</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ОкончаниеКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ОкончаниеРасширеннаяПодсказка" id="24"/>
 				</LabelField>
 				<CheckBoxField name="Отправка" id="25">
 					<DataPath>Список.Отправка</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ОтправкаКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="ОтправкаРасширеннаяПодсказка" id="27"/>
 				</CheckBoxField>
 				<CheckBoxField name="Получение" id="28">
 					<DataPath>Список.Получение</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ПолучениеКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="ПолучениеРасширеннаяПодсказка" id="30"/>
 				</CheckBoxField>
 				<LabelField name="ВремяВыполнения" id="31">
 					<DataPath>Список.ВремяВыполнения</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ВремяВыполненияКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="ВремяВыполненияРасширеннаяПодсказка" id="33"/>
 				</LabelField>
@@ -132,8 +123,6 @@
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="СсылкаКонтекстноеМеню" id="37"/>
 					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="38"/>
 				</InputField>

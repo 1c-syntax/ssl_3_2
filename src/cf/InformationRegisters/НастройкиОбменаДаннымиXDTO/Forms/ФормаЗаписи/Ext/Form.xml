@@ -9,8 +9,6 @@
 	<ChildItems>
 		<InputField name="УзелИнформационнойБазы" id="1">
 			<DataPath>Запись.УзелИнформационнойБазы</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="3"/>
 		</InputField>
@@ -298,16 +296,12 @@
 						<InputField name="ИмяПланаОбменаКорреспондента" id="7">
 							<DataPath>Запись.ИмяПланаОбменаКорреспондента</DataPath>
 							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ContextMenu name="ИмяПланаОбменаКорреспондентаКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="ИмяПланаОбменаКорреспондентаРасширеннаяПодсказка" id="9"/>
 						</InputField>
 						<CheckBoxField name="ПропускатьОбъектыСОшибкамиПроверкиПоСхеме" id="73">
 							<DataPath>Запись.ПропускатьОбъектыСОшибкамиПроверкиПоСхеме</DataPath>
 							<TitleLocation>Right</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ContextMenu name="ПропускатьОбъектыСОшибкамиПроверкиПоСхемеКонтекстноеМеню" id="74"/>
 							<ExtendedTooltip name="ПропускатьОбъектыСОшибкамиПроверкиПоСхемеРасширеннаяПодсказка" id="75"/>
 						</CheckBoxField>

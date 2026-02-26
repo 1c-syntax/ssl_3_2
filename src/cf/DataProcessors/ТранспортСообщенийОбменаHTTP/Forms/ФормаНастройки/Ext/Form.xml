@@ -41,8 +41,6 @@
 	<ChildItems>
 		<InputField name="АдресВебСервиса" id="24">
 			<DataPath>Объект.АдресВебСервиса</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="АдресВебСервисаКонтекстноеМеню" id="25"/>
 			<ExtendedTooltip name="АдресВебСервисаРасширеннаяПодсказка" id="26"/>
 		</InputField>
@@ -98,15 +96,11 @@
 			</ChildItems>
 		</UsualGroup>
 		<InputField name="ИмяПубликации" id="40">
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="ИмяПубликацииКонтекстноеМеню" id="41"/>
 			<ExtendedTooltip name="ИмяПубликацииРасширеннаяПодсказка" id="42"/>
 		</InputField>
 		<InputField name="ИмяПользователь" id="27">
 			<DataPath>Объект.ИмяПользователя</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="ИмяПользовательКонтекстноеМеню" id="28"/>
 			<ExtendedTooltip name="ИмяПользовательРасширеннаяПодсказка" id="29"/>
 		</InputField>
@@ -124,8 +118,6 @@
 			<ChildItems>
 				<InputField name="Пароль" id="30">
 					<DataPath>Объект.Пароль</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<PasswordMode>true</PasswordMode>
 					<ChoiceButton>true</ChoiceButton>
 					<ChoiceButtonPicture>
@@ -142,8 +134,6 @@
 				<CheckBoxField name="ЗапомнитьПароль" id="35">
 					<DataPath>Объект.ЗапомнитьПароль</DataPath>
 					<TitleLocation>Right</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ЗапомнитьПарольКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="ЗапомнитьПарольРасширеннаяПодсказка" id="37"/>
 				</CheckBoxField>

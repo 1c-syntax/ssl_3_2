@@ -48,8 +48,6 @@
 	<ChildItems>
 		<InputField name="УчетнаяЗапись" id="24">
 			<DataPath>Объект.УчетнаяЗапись</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="УчетнаяЗаписьКонтекстноеМеню" id="25"/>
 			<ExtendedTooltip name="УчетнаяЗаписьРасширеннаяПодсказка" id="26"/>
 		</InputField>
@@ -81,8 +79,6 @@
 							<v8:content>Если 0, то ограничения нет</v8:content>
 						</v8:item>
 					</ToolTip>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ChoiceButton>true</ChoiceButton>
 					<EditFormat>
 						<v8:item>
@@ -110,8 +106,6 @@
 						<CheckBoxField name="СжиматьФайлИсходящегоСообщения" id="51">
 							<DataPath>Объект.СжиматьФайлИсходящегоСообщения</DataPath>
 							<TitleLocation>Right</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<CheckBoxType>Switcher</CheckBoxType>
 							<ContextMenu name="СжиматьФайлИсходящегоСообщенияКонтекстноеМеню" id="52"/>
 							<ExtendedTooltip name="СжиматьФайлИсходящегоСообщенияРасширеннаяПодсказка" id="53"/>
@@ -122,8 +116,6 @@
 						<InputField name="ПарольАрхиваСообщенияОбмена" id="55">
 							<DataPath>Объект.ПарольАрхиваСообщенияОбмена</DataPath>
 							<TitleLocation>Top</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<Width>20</Width>
 							<HorizontalStretch>true</HorizontalStretch>
 							<PasswordMode>true</PasswordMode>
@@ -157,8 +149,6 @@
 						</v8:item>
 					</ToolTip>
 					<ToolTipRepresentation>Button</ToolTipRepresentation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ТранслитерацияКонтекстноеМеню" id="60"/>
 					<ExtendedTooltip name="ТранслитерацияРасширеннаяПодсказка" id="61"/>
 				</CheckBoxField>

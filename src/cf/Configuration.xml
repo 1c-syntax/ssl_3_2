@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<Configuration uuid="275879b3-c972-4eb0-8195-da6432bb4c56">
+	<Configuration uuid="6a624677-6f62-4805-8003-86f7aeec1937">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
-				<xr:ObjectId>1ea73fa2-756c-40e4-a3a5-f8e539dcf140</xr:ObjectId>
+				<xr:ObjectId>8aba46d7-d930-4257-9a7f-1c43f56e3da2</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
-				<xr:ObjectId>7137cb07-ef4b-4438-acc0-d4e86440b493</xr:ObjectId>
+				<xr:ObjectId>8e1cb305-aeee-42d0-b78e-737ea87f9ba7</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
-				<xr:ObjectId>da04c9e6-04e3-4d85-bab0-87326c0361e6</xr:ObjectId>
+				<xr:ObjectId>b93499fe-b367-4202-b385-f117588b2572</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
-				<xr:ObjectId>81f4c705-007d-457a-bb4e-b38e30cdbf3f</xr:ObjectId>
+				<xr:ObjectId>06a50232-ab09-4fce-9a72-30d17db82a70</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
-				<xr:ObjectId>c039217f-1400-4f9a-9bbc-04cdd457b3cf</xr:ObjectId>
+				<xr:ObjectId>30e17a88-4543-4e2e-a320-3355a3f25c46</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>c0add6f8-c1c7-427b-b44f-84773122d8be</xr:ObjectId>
+				<xr:ObjectId>c7ec9f02-75d3-40d0-855b-717828f5dec7</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
-				<xr:ObjectId>544bcf2c-d66f-4ae9-ba0c-020e8e2c215f</xr:ObjectId>
+				<xr:ObjectId>fb7fe491-0565-4b97-ad31-c8f636bdcff6</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -53,7 +53,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Фирма "1С"</Vendor>
-			<Version>3.2.1.319</Version>
+			<Version>3.2.1.342</Version>
 			<UpdateCatalogAddress>https://downloads.v8.1c.ru/tmplts/</UpdateCatalogAddress>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -1073,6 +1073,7 @@
 			<Role>ДобавлениеИзменениеЛичныхШаблоновСообщений</Role>
 			<Role>ДобавлениеИзменениеМашиночитаемыхДоверенностей</Role>
 			<Role>ДобавлениеИзменениеНапоминаний</Role>
+			<Role>ДобавлениеИзменениеНастроекОтправкиВГосключ</Role>
 			<Role>ДобавлениеИзменениеОпросов</Role>
 			<Role>ДобавлениеИзменениеОтветовНаВопросыАнкет</Role>
 			<Role>ДобавлениеИзменениеПапокИФайлов</Role>
@@ -1574,6 +1575,7 @@
 			<CommonModule>СервисМобильнойПодписиПереопределяемый</CommonModule>
 			<CommonModule>СервисМобильнойПодписиСлужебный</CommonModule>
 			<CommonModule>СервисМобильнойПодписиСлужебныйВызовСервера</CommonModule>
+			<CommonModule>СервисМобильнойПодписиСлужебныйКлиент</CommonModule>
 			<CommonModule>СклонениеПредставленийОбъектов</CommonModule>
 			<CommonModule>СклонениеПредставленийОбъектовВызовСервера</CommonModule>
 			<CommonModule>СклонениеПредставленийОбъектовКлиент</CommonModule>
@@ -1758,6 +1760,8 @@
 			<XDTOPackage>EnterpriseData_1_19_1</XDTOPackage>
 			<XDTOPackage>EnterpriseData_1_2_3</XDTOPackage>
 			<XDTOPackage>EnterpriseData_1_20_2</XDTOPackage>
+			<XDTOPackage>EnterpriseData_1_21_1</XDTOPackage>
+			<XDTOPackage>EnterpriseData_1_22_1</XDTOPackage>
 			<XDTOPackage>EnterpriseData_1_3_20</XDTOPackage>
 			<XDTOPackage>EnterpriseData_1_4_20</XDTOPackage>
 			<XDTOPackage>EnterpriseData_1_5_22</XDTOPackage>
@@ -1774,11 +1778,14 @@
 			<XDTOPackage>АдминистрированиеОбменаДаннымиУправление_3_0_1_1</XDTOPackage>
 			<XDTOPackage>Адрес</XDTOPackage>
 			<XDTOPackage>АдресныйКлассификатор</XDTOPackage>
+			<XDTOPackage>ГосключЗапросНаПодписание</XDTOPackage>
 			<XDTOPackage>КонтактнаяИнформация</XDTOPackage>
 			<XDTOPackage>МашиночитаемаяДоверенность_EMCHD_1</XDTOPackage>
 			<XDTOPackage>ОбменДаннымиКонтроль</XDTOPackage>
 			<XDTOPackage>ОбменДаннымиУправление</XDTOPackage>
 			<XDTOPackage>ОбменДаннымиУправление_3_0_1_1</XDTOPackage>
+			<XDTOPackage>ПодписаниеДокументовГосключ</XDTOPackage>
+			<XDTOPackage>ПодписаниеДокументовГосключЮЛ</XDTOPackage>
 			<XDTOPackage>Сообщения</XDTOPackage>
 			<WebService>EnterpriseDataExchange_1_0_1_1</WebService>
 			<WebService>EnterpriseDataUpload_1_0_1_1</WebService>
@@ -1949,6 +1956,7 @@
 			<FunctionalOption>ИспользоватьВерсионированиеОбъекта</FunctionalOption>
 			<FunctionalOption>ИспользоватьВерсионированиеОбъектов</FunctionalOption>
 			<FunctionalOption>ИспользоватьВнешнихПользователей</FunctionalOption>
+			<FunctionalOption>ИспользоватьГосключ</FunctionalOption>
 			<FunctionalOption>ИспользоватьГруппыВнешнихПользователей</FunctionalOption>
 			<FunctionalOption>ИспользоватьГруппыПользователей</FunctionalOption>
 			<FunctionalOption>ИспользоватьДатуИВремяВСрокахЗадач</FunctionalOption>
@@ -2195,6 +2203,7 @@
 			<Constant>ИспользоватьБизнесПроцессыИЗадачи</Constant>
 			<Constant>ИспользоватьВерсионированиеОбъектов</Constant>
 			<Constant>ИспользоватьВнешнихПользователей</Constant>
+			<Constant>ИспользоватьГосключ</Constant>
 			<Constant>ИспользоватьГруппыВнешнихПользователей</Constant>
 			<Constant>ИспользоватьГруппыПользователей</Constant>
 			<Constant>ИспользоватьДатуИВремяВСрокахЗадач</Constant>
@@ -2465,6 +2474,7 @@
 			<Catalog>НаборыГруппДоступа</Catalog>
 			<Catalog>НаборыДополнительныхРеквизитовИСведений</Catalog>
 			<Catalog>НастройкиАвторизацииИнтернетСервисов</Catalog>
+			<Catalog>НастройкиОтправкиВГосключ</Catalog>
 			<Catalog>НастройкиТранспортаСообщенийОбмена</Catalog>
 			<Catalog>ОбщиеВнешниеКомпоненты</Catalog>
 			<Catalog>ОбщиеНастройкиАвторизацииИнтернетСервисов</Catalog>
@@ -2531,8 +2541,10 @@
 			<Enum>ВариантыСжатияTIFF</Enum>
 			<Enum>ВидыДнейПроизводственногоКалендаря</Enum>
 			<Enum>ВидыДополнительныхОтчетовИОбработок</Enum>
+			<Enum>ВидыМобильныхПодписей</Enum>
 			<Enum>ВидыНазначенияДатЗапрета</Enum>
 			<Enum>ВидыПереключателяВАнкетах</Enum>
+			<Enum>ВидыПодписантовМобильногоСервиса</Enum>
 			<Enum>ВидыПравилДляОбменаДанными</Enum>
 			<Enum>ВидыРезервныхКопийВстроенногоХранилищаДвоичныхДанных</Enum>
 			<Enum>ВидыСвойств</Enum>

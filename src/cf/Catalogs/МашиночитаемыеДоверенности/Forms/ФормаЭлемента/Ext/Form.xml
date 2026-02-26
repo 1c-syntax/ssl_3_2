@@ -3576,22 +3576,6 @@
 			<Action>ДобавитьЛицаПредставителя</Action>
 			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
-		<Command name="ДобавитьПредставителяВТаблицу" id="19">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Добавить представителя в таблицу</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Добавить представителя в таблицу</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ДобавитьПредставителяВТаблицу</Action>
-			<ModifiesSavedData>true</ModifiesSavedData>
-		</Command>
 		<Command name="ДобавитьПодпись" id="7">
 			<Title>
 				<v8:item>

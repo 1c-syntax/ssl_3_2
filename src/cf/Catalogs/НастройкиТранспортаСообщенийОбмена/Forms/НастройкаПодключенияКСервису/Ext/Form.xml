@@ -79,8 +79,6 @@
 							<v8:content>Пользователь приложения в Интернете</v8:content>
 						</v8:item>
 					</ToolTip>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<OpenButton>false</OpenButton>
 					<CreateButton>false</CreateButton>
 					<ListChoiceMode>true</ListChoiceMode>
@@ -114,8 +112,6 @@
 									<v8:content>Пароль пользователя приложения в Интернете</v8:content>
 								</v8:item>
 							</ToolTip>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<PasswordMode>true</PasswordMode>
 							<ChoiceButton>true</ChoiceButton>
 							<ChoiceButtonPicture>

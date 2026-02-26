@@ -430,8 +430,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ShowPercent>true</ShowPercent>
 							<ContextMenu name="ПроцентВыполненияКонтекстноеМеню" id="176"/>
 							<ExtendedTooltip name="ПроцентВыполненияРасширеннаяПодсказка" id="177"/>
@@ -445,8 +443,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<ContextMenu name="ДопИнформацияВыполнениеЗагрузкаКонтекстноеМеню" id="179"/>
 							<ExtendedTooltip name="ДопИнформацияВыполнениеЗагрузкаРасширеннаяПодсказка" id="180"/>
@@ -485,8 +481,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ShowPercent>true</ShowPercent>
 							<ContextMenu name="ПроцентВыполненияВыгрузкиКонтекстноеМеню" id="187"/>
 							<ExtendedTooltip name="ПроцентВыполненияВыгрузкиРасширеннаяПодсказка" id="188"/>
@@ -500,8 +494,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<ContextMenu name="ДопИнформацияВыполнениеВыгрузкаКонтекстноеМеню" id="190"/>
 							<ExtendedTooltip name="ДопИнформацияВыполнениеВыгрузкаРасширеннаяПодсказка" id="191"/>
@@ -715,8 +707,6 @@
 											<DataPath>СообщениеОбОшибкеПользователю</DataPath>
 											<ReadOnly>true</ReadOnly>
 											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="СообщениеОбОшибкеПользователюКонтекстноеМеню" id="87"/>

@@ -60,8 +60,6 @@
 							<v8:content>Имя файла данных на сервере</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<ChoiceButton>true</ChoiceButton>
 					<OpenButton>true</OpenButton>
@@ -82,8 +80,6 @@
 						</v8:item>
 					</Title>
 					<TitleLocation>Right</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<CheckBoxType>Switcher</CheckBoxType>
 					<ContextMenu name="АрхивироватьФайлКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="АрхивироватьФайлExtendedTooltip" id="18"/>
@@ -93,8 +89,6 @@
 				</CheckBoxField>
 				<InputField name="ПарольДляСжатияФайлаОбмена" id="20">
 					<DataPath>Объект.ПарольДляСжатияФайлаОбмена</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<MaxWidth>27</MaxWidth>
 					<HorizontalStretch>true</HorizontalStretch>

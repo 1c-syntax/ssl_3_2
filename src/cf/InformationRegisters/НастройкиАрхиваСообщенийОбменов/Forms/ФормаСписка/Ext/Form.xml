@@ -98,32 +98,24 @@
 				<LabelField name="УзелИнформационнойБазы" id="16">
 					<DataPath>Список.УзелИнформационнойБазы</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="18"/>
 				</LabelField>
 				<LabelField name="КоличествоФайлов" id="19">
 					<DataPath>Список.КоличествоФайлов</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="КоличествоФайловКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="КоличествоФайловРасширеннаяПодсказка" id="21"/>
 				</LabelField>
 				<CheckBoxField name="ХранитьНаДиске" id="22">
 					<DataPath>Список.ХранитьНаДиске</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ХранитьНаДискеКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ХранитьНаДискеРасширеннаяПодсказка" id="24"/>
 				</CheckBoxField>
 				<CheckBoxField name="СжиматьФайлы" id="31">
 					<DataPath>Список.СжиматьФайлы</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="СжиматьФайлыКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="СжиматьФайлыРасширеннаяПодсказка" id="33"/>
 				</CheckBoxField>

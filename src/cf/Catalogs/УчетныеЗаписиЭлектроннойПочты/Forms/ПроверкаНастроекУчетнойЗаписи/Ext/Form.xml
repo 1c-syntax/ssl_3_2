@@ -353,7 +353,6 @@
 							<AutoMaxHeight>false</AutoMaxHeight>
 							<MultiLine>true</MultiLine>
 							<BackColor>style:FormBackColor</BackColor>
-							<BorderColor>pal:Gray</BorderColor>
 							<ContextMenu name="ИнформацияДляПоддержкиКонтекстноеМеню" id="450"/>
 							<ExtendedTooltip name="ИнформацияДляПоддержкиРасширеннаяПодсказка" id="451"/>
 						</InputField>
@@ -543,6 +542,11 @@
 				<v8:DateQualifiers>
 					<v8:DateFractions>DateTime</v8:DateFractions>
 				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УчетнаяЗапись" id="10">
+			<Type>
+				<v8:Type>cfg:CatalogRef.УчетныеЗаписиЭлектроннойПочты</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

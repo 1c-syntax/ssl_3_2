@@ -53,8 +53,6 @@
 				<RadioButtonField name="ВариантРаботыИнформационнойБазы" id="26">
 					<DataPath>Объект.ВариантРаботыИнформационнойБазы</DataPath>
 					<TitleLocation>None</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<RadioButtonType>Tumbler</RadioButtonType>
 					<ColumnsCount>1</ColumnsCount>
 					<ChoiceList>
@@ -115,8 +113,6 @@
 								<InputField name="КаталогИнформационнойБазы" id="55">
 									<DataPath>Объект.КаталогИнформационнойБазы</DataPath>
 									<TitleLocation>Top</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ChoiceButton>true</ChoiceButton>
 									<OpenButton>true</OpenButton>
 									<ContextMenu name="КаталогИнформационнойБазыКонтекстноеМеню" id="56"/>
@@ -147,8 +143,6 @@
 											<v8:content>Имя сервера</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ИмяСервера1СПредприятияКонтекстноеМеню" id="39"/>
 									<ExtendedTooltip name="ИмяСервера1СПредприятияРасширеннаяПодсказка" id="40"/>
 								</InputField>
@@ -160,8 +154,6 @@
 											<v8:content>Имя информационной базы на сервере</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ИмяИнформационнойБазыНаСервере1СПредприятияКонтекстноеМеню" id="42"/>
 									<ExtendedTooltip name="ИмяИнформационнойБазыНаСервере1СПредприятияРасширеннаяПодсказка" id="43"/>
 								</InputField>
@@ -184,8 +176,6 @@
 				<CheckBoxField name="АутентификацияОперационнойСистемы" id="44">
 					<DataPath>Объект.АутентификацияОперационнойСистемы</DataPath>
 					<TitleLocation>Right</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<CheckBoxType>Switcher</CheckBoxType>
 					<ContextMenu name="АутентификацияОперационнойСистемыКонтекстноеМеню" id="45"/>
 					<ExtendedTooltip name="АутентификацияОперационнойСистемыРасширеннаяПодсказка" id="46"/>
@@ -207,8 +197,6 @@
 					<ChildItems>
 						<InputField name="Пользователь" id="49">
 							<DataPath>Объект.ИмяПользователя</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ContextMenu name="ПользовательКонтекстноеМеню" id="50"/>
 							<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="51"/>
 						</InputField>
@@ -220,8 +208,6 @@
 									<v8:content>Пароль</v8:content>
 								</v8:item>
 							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<PasswordMode>true</PasswordMode>
 							<ChoiceButton>true</ChoiceButton>
 							<ChoiceButtonPicture>

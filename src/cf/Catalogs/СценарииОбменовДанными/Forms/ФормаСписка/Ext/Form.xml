@@ -4,17 +4,6 @@
 	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="ФормаВключитьОтключитьРегламентноеЗадание" id="12">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ВключитьОтключитьРегламентноеЗадание</CommandName>
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Изменить выполнение по расписанию</v8:content>
-					</v8:item>
-				</Title>
-				<ExtendedTooltip name="ФормаВключитьОтключитьРегламентноеЗаданиеExtendedTooltip" id="14"/>
-			</Button>
 			<Button name="ФормаВключитьРасписание" id="42">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ВключитьРаботуПоРасписанию</CommandName>
@@ -67,6 +56,12 @@
 					<v8:content>Список</v8:content>
 				</v8:item>
 			</Title>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>CommandBar</SearchStringLocation>
+			<ViewStatusLocation>Top</ViewStatusLocation>
+			<SearchControlLocation>CommandBar</SearchControlLocation>
 			<ShowCommandBar>auto</ShowCommandBar>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -98,7 +93,20 @@
 					</Button>
 				</ChildItems>
 			</ContextMenu>
-			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="СписокОбновить" id="46">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Refresh</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="СписокОбновитьРасширеннаяПодсказка" id="47"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
 			<ExtendedTooltip name="СписокExtendedTooltip" id="16"/>
 			<SearchStringAddition name="СписокСтрокаПоиска" id="26">
 				<AdditionSource>
@@ -109,6 +117,7 @@
 				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="28"/>
 			</SearchStringAddition>
 			<ViewStatusAddition name="СписокСостояниеПросмотра" id="29">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>ViewStatusRepresentation</Type>
@@ -137,17 +146,21 @@
 							<v8:content>Наименование</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<Wrap>false</Wrap>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="18"/>
 				</InputField>
 				<CheckBoxField name="ИспользоватьРегламентноеЗадание" id="8">
 					<DataPath>Список.ИспользоватьРегламентноеЗадание</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включить / отключить выполнение синхронизации по расписанию</v8:content>
+						</v8:item>
+					</ToolTip>
 					<EditMode>EnterOnInput</EditMode>
 					<CellHyperlink>true</CellHyperlink>
-					<ShowInHeader>false</ShowInHeader>
 					<HeaderPicture>
 						<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -163,8 +176,6 @@
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="СсылкаКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="21"/>
 				</LabelField>
@@ -306,6 +317,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ВключитьОтключитьРегламентноеЗадание</Action>
+			<Representation>Picture</Representation>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
 			<SelectedRowsUse>DontUse</SelectedRowsUse>

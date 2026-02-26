@@ -43,8 +43,6 @@
 				</v8:item>
 			</Title>
 			<TitleLocation>Top</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<ContextMenu name="ОбъектДляСопоставленияКонтекстноеМеню" id="26"/>
 			<ExtendedTooltip name="ОбъектДляСопоставленияExtendedTooltip" id="39"/>

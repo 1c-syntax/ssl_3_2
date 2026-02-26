@@ -101,8 +101,6 @@
 						</v8:item>
 					</Title>
 					<TitleLocation>None</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<RadioButtonType>RadioButtons</RadioButtonType>
 					<ChoiceList>
 						<xr:Item>
@@ -146,8 +144,6 @@
 							</Title>
 							<TitleLocation>None</TitleLocation>
 							<GroupVerticalAlign>Center</GroupVerticalAlign>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<RadioButtonType>RadioButtons</RadioButtonType>
 							<ChoiceList>
 								<xr:Item>
@@ -174,8 +170,6 @@
 							<DataPath>ИмяФайлаПравилКонвертации</DataPath>
 							<TitleLocation>None</TitleLocation>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<ChoiceButton>true</ChoiceButton>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<TextEdit>false</TextEdit>
@@ -216,8 +210,6 @@
 						</v8:item>
 					</Title>
 					<TitleLocation>Top</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<Height>5</Height>
 					<MultiLine>true</MultiLine>

@@ -45,8 +45,6 @@
 			</Title>
 			<TitleTextColor>style:ПоясняющийТекст</TitleTextColor>
 			<TitleLocation>None</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<Height>2</Height>
 			<Font ref="style:TextLevel3" kind="StyleItem" scale="100"/>

@@ -38,8 +38,6 @@
 						</v8:item>
 					</Title>
 					<TitleLocation>Right</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<CheckBoxType>Switcher</CheckBoxType>
 					<ContextMenu name="ИспользоватьРегламентноеЗаданиеКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="ИспользоватьРегламентноеЗаданиеРасширеннаяПодсказка" id="3"/>

@@ -90,8 +90,6 @@
 				<LabelField name="УникальныйИдентификаторПриемника" id="17">
 					<DataPath>Список.УникальныйИдентификаторПриемника</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="УникальныйИдентификаторПриемникаКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="УникальныйИдентификаторПриемникаРасширеннаяПодсказка" id="19"/>
 				</LabelField>
@@ -104,36 +102,26 @@
 				</LabelField>
 				<LabelField name="ТипПриемника" id="21">
 					<DataPath>Список.ТипПриемника</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ТипПриемникаКонтекстноеМеню" id="22"/>
 					<ExtendedTooltip name="ТипПриемникаРасширеннаяПодсказка" id="23"/>
 				</LabelField>
 				<LabelField name="ТипИсточника" id="25">
 					<DataPath>Список.ТипИсточника</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ТипИсточникаКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="ТипИсточникаРасширеннаяПодсказка" id="27"/>
 				</LabelField>
 				<LabelField name="УзелИнформационнойБазы" id="29">
 					<DataPath>Список.УзелИнформационнойБазы</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="31"/>
 				</LabelField>
 				<LabelField name="УникальныйИдентификаторИсточникаСтрокой" id="33">
 					<DataPath>Список.УникальныйИдентификаторИсточникаСтрокой</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="УникальныйИдентификаторИсточникаСтрокойКонтекстноеМеню" id="34"/>
 					<ExtendedTooltip name="УникальныйИдентификаторИсточникаСтрокойРасширеннаяПодсказка" id="35"/>
 				</LabelField>
 				<CheckBoxField name="ОбъектВыгруженПоСсылке" id="37">
 					<DataPath>Список.ОбъектВыгруженПоСсылке</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ОбъектВыгруженПоСсылкеКонтекстноеМеню" id="38"/>
 					<ExtendedTooltip name="ОбъектВыгруженПоСсылкеРасширеннаяПодсказка" id="39"/>
 				</CheckBoxField>

@@ -42,8 +42,6 @@
 		<InputField name="КаталогВОблаке" id="23">
 			<DataPath>Объект.КаталогВОблаке</DataPath>
 			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<ContextMenu name="КаталогВОблакеКонтекстноеМеню" id="24"/>
 			<ExtendedTooltip name="КаталогВОблакеРасширеннаяПодсказка" id="25">
@@ -86,8 +84,6 @@
 							<v8:content>Client ID</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ClearButton>true</ClearButton>
 					<ContextMenu name="ClientIDКонтекстноеМеню" id="64"/>
 					<ExtendedTooltip name="ClientIDРасширеннаяПодсказка" id="65"/>
@@ -100,8 +96,6 @@
 							<v8:content>Client secret</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ClearButton>true</ClearButton>
 					<ContextMenu name="ClientSecretКонтекстноеМеню" id="67"/>
 					<ExtendedTooltip name="ClientSecretРасширеннаяПодсказка" id="68"/>
@@ -114,8 +108,6 @@
 							<v8:content>Access token</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ClearButton>true</ClearButton>
 					<ContextMenu name="AccessTokenКонтекстноеМеню" id="61"/>
 					<ExtendedTooltip name="AccessTokenРасширеннаяПодсказка" id="62"/>
@@ -128,8 +120,6 @@
 							<v8:content>Refresh token</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ClearButton>true</ClearButton>
 					<ContextMenu name="RefreshTokenКонтекстноеМеню" id="80"/>
 					<ExtendedTooltip name="RefreshTokenРасширеннаяПодсказка" id="81"/>
@@ -144,8 +134,6 @@
 						</v8:item>
 					</Title>
 					<TitleLocation>Left</TitleLocation>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<UseCopy>true</UseCopy>
 					<ContextMenu name="ExpiresInКонтекстноеМеню" id="70"/>
@@ -156,8 +144,6 @@
 		<CheckBoxField name="СжиматьФайлИсходящегоСообщения" id="11">
 			<DataPath>Объект.СжиматьФайлИсходящегоСообщения</DataPath>
 			<TitleLocation>Right</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<CheckBoxType>Switcher</CheckBoxType>
 			<ContextMenu name="СжиматьФайлИсходящегоСообщенияКонтекстноеМеню" id="12"/>
 			<ExtendedTooltip name="СжиматьФайлИсходящегоСообщенияРасширеннаяПодсказка" id="13"/>
@@ -168,8 +154,6 @@
 		<InputField name="ПарольАрхиваСообщенияОбмена" id="14">
 			<DataPath>Объект.ПарольАрхиваСообщенияОбмена</DataPath>
 			<TitleLocation>Top</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<PasswordMode>true</PasswordMode>
 			<ChoiceButton>true</ChoiceButton>
 			<ChoiceButtonPicture>
@@ -192,8 +176,6 @@
 				</v8:item>
 			</Title>
 			<TitleLocation>Right</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ContextMenu name="ТранслитерацияКонтекстноеМеню" id="18"/>
 			<ExtendedTooltip name="ТранслитерацияРасширеннаяПодсказка" id="19"/>
 		</CheckBoxField>

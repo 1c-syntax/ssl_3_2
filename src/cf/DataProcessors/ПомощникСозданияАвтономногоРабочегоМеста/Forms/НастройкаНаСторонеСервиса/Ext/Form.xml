@@ -314,6 +314,53 @@
 										</LabelDecoration>
 									</ChildItems>
 								</UsualGroup>
+								<UsualGroup name="ГруппаУстановкаМонопольногоРежима" id="398">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установка монопольного режима</v8:content>
+										</v8:item>
+									</Title>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУстановкаМонопольногоРежимаРасширеннаяПодсказка" id="399"/>
+									<ChildItems>
+										<PictureDecoration name="КартинкаПредупреждение32" id="414">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка предупреждение32</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="КартинкаПредупреждение32КонтекстноеМеню" id="415"/>
+											<ExtendedTooltip name="КартинкаПредупреждение32РасширеннаяПодсказка" id="416"/>
+										</PictureDecoration>
+										<LabelDecoration name="ОписаниеПредупрежденияОМонопольномРежиме" id="417">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Перед созданием начального образа рекомендуется установить монопольный режим.</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>При изменении данных в информационной базе другими пользователями могут возникать конфликты между транзакциями. Для предотвращения конфликтов рекомендуется установить монопольный режим перед созданием начального образа.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<ContextMenu name="ОписаниеПредупрежденияОМонопольномРежимеКонтекстноеМеню" id="418"/>
+											<ExtendedTooltip name="ОписаниеПредупрежденияОМонопольномРежимеРасширеннаяПодсказка" id="419"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
 								<UsualGroup name="ГруппаУстановкаОбновленияПлатформы" id="173">
 									<Title>
 										<v8:item>
@@ -382,8 +429,6 @@
 									</Title>
 									<TitleLocation>Top</TitleLocation>
 									<ToolTipRepresentation>Button</ToolTipRepresentation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<AutoMarkIncomplete>true</AutoMarkIncomplete>
 									<ContextMenu name="НаименованиеАвтономногоРабочегоМестаКонтекстноеМеню" id="140"/>
 									<ExtendedTooltip name="НаименованиеАвтономногоРабочегоМестаExtendedTooltip" id="239">
@@ -765,8 +810,6 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>None</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ИнструкцияПоНастройкеАвтономногоРабочегоМестаКонтекстноеМеню" id="172"/>
 									<ExtendedTooltip name="ИнструкцияПоНастройкеАвтономногоРабочегоМестаExtendedTooltip" id="267"/>
 									<Events>
@@ -856,8 +899,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<AutoMaxHeight>false</AutoMaxHeight>
 							<MultiLine>true</MultiLine>

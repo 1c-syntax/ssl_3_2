@@ -142,8 +142,6 @@
 													<v8:content>Состав выгружаемых данных</v8:content>
 												</v8:item>
 											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<RadioButtonType>Auto</RadioButtonType>
 											<ColumnsCount>1</ColumnsCount>
 											<ChoiceList>
@@ -249,8 +247,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="СообщениеОбОшибке3КонтекстноеМеню" id="259"/>
 											<ExtendedTooltip name="СообщениеОбОшибке3РасширеннаяПодсказка" id="260"/>
@@ -327,8 +323,6 @@
 													<v8:content>Пароль</v8:content>
 												</v8:item>
 											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<Width>20</Width>
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<HorizontalStretch>false</HorizontalStretch>
@@ -551,8 +545,6 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<AutoEditMode>true</AutoEditMode>
 											<ShowPercent>true</ShowPercent>
 											<ContextMenu name="ПроцентВыполненияВыгрузкиКонтекстноеМеню" id="132"/>
 											<ExtendedTooltip name="ПроцентВыполненияВыгрузкиРасширеннаяПодсказка" id="133"/>
@@ -700,8 +692,6 @@
 																</v8:item>
 															</Title>
 															<TitleLocation>None</TitleLocation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<Width>50</Width>
 															<MultiLine>true</MultiLine>
 															<ContextMenu name="СообщениеОбОшибкеКонтекстноеМеню" id="276"/>
@@ -779,8 +769,6 @@
 																</v8:item>
 															</Title>
 															<TitleLocation>None</TitleLocation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<Width>50</Width>
 															<MultiLine>true</MultiLine>
 															<ContextMenu name="СообщениеОбОшибке1КонтекстноеМеню" id="213"/>
@@ -857,8 +845,6 @@
 																</v8:item>
 															</Title>
 															<TitleLocation>None</TitleLocation>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<MultiLine>true</MultiLine>
 															<ContextMenu name="СообщениеОбОшибке2КонтекстноеМеню" id="226"/>

@@ -39,8 +39,6 @@
 					<ChildItems>
 						<RadioButtonField name="ОтладкаАлгоритмов" id="5">
 							<DataPath>Объект.РежимОтладкиАлгоритмов</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<RadioButtonType>Auto</RadioButtonType>
 							<ColumnsCount>1</ColumnsCount>
 							<ChoiceList>
@@ -303,8 +301,6 @@
 								</v8:item>
 							</ToolTip>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<ChoiceButton>true</ChoiceButton>
 							<ContextMenu name="ИмяФайлаВнешнейОбработкиОбработчиковСобытийКонтекстноеМеню" id="16"/>

@@ -196,6 +196,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НастройкаЗаполнена</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СинхронизацияДанныхИнформация32</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СозданиеАвтономногоРабочегоМеста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.EnterpriseData_1_21_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.EnterpriseData_1_22_1</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

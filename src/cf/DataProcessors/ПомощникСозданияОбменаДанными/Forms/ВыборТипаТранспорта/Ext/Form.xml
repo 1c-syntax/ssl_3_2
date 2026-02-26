@@ -70,8 +70,6 @@
 				</v8:item>
 			</ToolTip>
 			<ToolTipRepresentation>Button</ToolTipRepresentation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<RadioButtonType>Tumbler</RadioButtonType>
 			<EqualColumnsWidth>true</EqualColumnsWidth>
 			<ChoiceList>
@@ -182,6 +180,7 @@
 							</AutoCommandBar>
 							<ExtendedTooltip name="ТаблицаНоваяНастройкаРасширеннаяПодсказка" id="108"/>
 							<SearchStringAddition name="ТаблицаНоваяНастройкаСтрокаПоиска" id="109">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ТаблицаНоваяНастройка</Item>
 									<Type>SearchStringRepresentation</Type>
@@ -190,6 +189,7 @@
 								<ExtendedTooltip name="ТаблицаНоваяНастройкаСтрокаПоискаРасширеннаяПодсказка" id="111"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="ТаблицаНоваяНастройкаСостояниеПросмотра" id="112">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ТаблицаНоваяНастройка</Item>
 									<Type>ViewStatusRepresentation</Type>
@@ -198,6 +198,7 @@
 								<ExtendedTooltip name="ТаблицаНоваяНастройкаСостояниеПросмотраРасширеннаяПодсказка" id="114"/>
 							</ViewStatusAddition>
 							<SearchControlAddition name="ТаблицаНоваяНастройкаУправлениеПоиском" id="115">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ТаблицаНоваяНастройка</Item>
 									<Type>SearchControl</Type>
@@ -288,6 +289,7 @@
 							</AutoCommandBar>
 							<ExtendedTooltip name="ТаблицаПродолжениеНастройкиРасширеннаяПодсказка" id="129"/>
 							<SearchStringAddition name="ТаблицаПродолжениеНастройкиСтрокаПоиска" id="130">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ТаблицаПродолжениеНастройки</Item>
 									<Type>SearchStringRepresentation</Type>
@@ -296,6 +298,7 @@
 								<ExtendedTooltip name="ТаблицаПродолжениеНастройкиСтрокаПоискаРасширеннаяПодсказка" id="132"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="ТаблицаПродолжениеНастройкиСостояниеПросмотра" id="133">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ТаблицаПродолжениеНастройки</Item>
 									<Type>ViewStatusRepresentation</Type>
@@ -304,6 +307,7 @@
 								<ExtendedTooltip name="ТаблицаПродолжениеНастройкиСостояниеПросмотраРасширеннаяПодсказка" id="135"/>
 							</ViewStatusAddition>
 							<SearchControlAddition name="ТаблицаПродолжениеНастройкиУправлениеПоиском" id="136">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>ТаблицаПродолжениеНастройки</Item>
 									<Type>SearchControl</Type>

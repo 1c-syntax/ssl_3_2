@@ -171,8 +171,6 @@
 																	<v8:content>Узел обмена</v8:content>
 																</v8:item>
 															</Title>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
 															<DropListButton>false</DropListButton>
 															<ChoiceButton>true</ChoiceButton>
 															<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
@@ -220,8 +218,6 @@
 																			<v8:content>№ отправленного сообщения</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<EditMode>EnterOnInput</EditMode>
-																	<AutoEditMode>true</AutoEditMode>
 																	<Width>7</Width>
 																	<HorizontalStretch>false</HorizontalStretch>
 																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
@@ -256,8 +252,6 @@
 																			<v8:content>№ принятого сообщения</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<EditMode>EnterOnInput</EditMode>
-																	<AutoEditMode>true</AutoEditMode>
 																	<Width>7</Width>
 																	<HorizontalStretch>false</HorizontalStretch>
 																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
@@ -799,8 +793,6 @@
 															<v8:content>Отображать</v8:content>
 														</v8:item>
 													</Title>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<MaxWidth>20</MaxWidth>
 													<ListChoiceMode>true</ListChoiceMode>
@@ -1161,8 +1153,6 @@
 																					<v8:content>Константа</v8:content>
 																				</v8:item>
 																			</Title>
-																			<EditMode>EnterOnInput</EditMode>
-																			<AutoEditMode>true</AutoEditMode>
 																			<HorizontalStretch>true</HorizontalStretch>
 																			<ContextMenu name="СписокКонстантНаименованиеКонтекстноеМеню" id="67"/>
 																			<ExtendedTooltip name="СписокКонстантНаименованиеExtendedTooltip" id="265"/>
@@ -1584,8 +1574,6 @@
 																					<v8:content>Данные</v8:content>
 																				</v8:item>
 																			</Title>
-																			<EditMode>EnterOnInput</EditMode>
-																			<AutoEditMode>true</AutoEditMode>
 																			<HorizontalStretch>true</HorizontalStretch>
 																			<ContextMenu name="СписокСсылокСсылкаПредставлениеКонтекстноеМеню" id="22"/>
 																			<ExtendedTooltip name="СписокСсылокСсылкаПредставлениеExtendedTooltip" id="288"/>
@@ -1598,8 +1586,6 @@
 																					<v8:content>№ отправленного</v8:content>
 																				</v8:item>
 																			</Title>
-																			<EditMode>EnterOnInput</EditMode>
-																			<AutoEditMode>true</AutoEditMode>
 																			<ContextMenu name="СписокСсылокНомерСообщенияКонтекстноеМеню" id="53"/>
 																			<ExtendedTooltip name="СписокСсылокНомерСообщенияExtendedTooltip" id="289"/>
 																		</LabelField>
@@ -1948,8 +1934,6 @@
 																					<v8:content>№ отправленного</v8:content>
 																				</v8:item>
 																			</Title>
-																			<EditMode>EnterOnInput</EditMode>
-																			<AutoEditMode>true</AutoEditMode>
 																			<ContextMenu name="СписокНаборовЗаписейНомерСообщенияКонтекстноеМеню" id="84"/>
 																			<ExtendedTooltip name="СписокНаборовЗаписейНомерСообщенияExtendedTooltip" id="308"/>
 																		</LabelField>

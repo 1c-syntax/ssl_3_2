@@ -9,9 +9,17 @@
 	<WindowOpeningMode>LockOwner</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<Group>Vertical</Group>
-	<CommandBarLocation>None</CommandBarLocation>
-	<ShowCommandBar>false</ShowCommandBar>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВыбрать" id="101">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Item.Классификатор.StandardCommand.Choose</CommandName>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаВыбратьРасширеннаяПодсказка" id="102"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -19,6 +27,7 @@
 		<Table name="Классификатор" id="17">
 			<Representation>List</Representation>
 			<CommandBarLocation>Top</CommandBarLocation>
+			<ChoiceMode>true</ChoiceMode>
 			<SelectionMode>SingleRow</SelectionMode>
 			<RowSelectionMode>Cell</RowSelectionMode>
 			<SearchOnInput>Use</SearchOnInput>
@@ -39,6 +48,7 @@
 			</Title>
 			<CommandSet>
 				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
 				<ExcludedCommand>Copy</ExcludedCommand>
 				<ExcludedCommand>Delete</ExcludedCommand>
 				<ExcludedCommand>EndEdit</ExcludedCommand>
@@ -48,10 +58,16 @@
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="КлассификаторКонтекстноеМеню" id="18">
 				<ChildItems>
-					<Button name="КлассификаторКонтекстноеМенюИзменить" id="35">
+					<Button name="КлассификаторКонтекстноеМенюОткрытьДанныеПоСтране" id="35">
 						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Классификатор.StandardCommand.Change</CommandName>
-						<ExtendedTooltip name="КлассификаторКонтекстноеМенюИзменитьРасширеннаяПодсказка" id="48"/>
+						<CommandName>Form.Command.ОткрытьДанныеПоСтране</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Открыть</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="КлассификаторКонтекстноеМенюОткрытьДанныеПоСтранеРасширеннаяПодсказка" id="48"/>
 					</Button>
 					<Button name="КлассификаторКонтекстноеМенюНайти" id="36">
 						<Type>CommandBarButton</Type>
@@ -86,11 +102,19 @@
 				</ChildItems>
 			</ContextMenu>
 			<AutoCommandBar name="КлассификаторКоманднаяПанель" id="19">
+				<Autofill>false</Autofill>
 				<ChildItems>
-					<Button name="КлассификаторИзменить" id="78">
+					<Button name="КлассификаторОткрытьДанныеПоСтране" id="78">
 						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Классификатор.StandardCommand.Change</CommandName>
-						<ExtendedTooltip name="КлассификаторИзменитьРасширеннаяПодсказка" id="79"/>
+						<CommandName>Form.Command.ОткрытьДанныеПоСтране</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Открыть</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="КлассификаторОткрытьДанныеПоСтранеРасширеннаяПодсказка" id="79"/>
 					</Button>
 					<ButtonGroup name="КлассификаторГруппаВывестиСписок" id="82">
 						<Title>
@@ -141,16 +165,20 @@
 						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 						<ExtendedTooltip name="КлассификаторСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="60"/>
 					</Button>
-					<Button name="КлассификаторИзменитьФорму" id="47">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
-						<ExtendedTooltip name="КлассификаторИзменитьФормуРасширеннаяПодсказка" id="61"/>
-					</Button>
-					<Button name="КлассификаторСправка" id="43">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.StandardCommand.Help</CommandName>
-						<ExtendedTooltip name="КлассификаторСправкаРасширеннаяПодсказка" id="62"/>
-					</Button>
+					<SearchStringAddition name="КлассификаторСтрокаПоиска" id="105">
+						<AdditionSource>
+							<Item>Классификатор</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Классификатор строка поиска</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="КлассификаторСтрокаПоискаКонтекстноеМеню" id="106"/>
+						<ExtendedTooltip name="КлассификаторСтрокаПоискаРасширеннаяПодсказка" id="107"/>
+					</SearchStringAddition>
 				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="КлассификаторРасширеннаяПодсказка" id="63"/>
@@ -430,6 +458,23 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ОткрытьДанныеПоСтране" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть данные по стране</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьДанныеПоСтране</Action>
+		</Command>
+	</Commands>
 	<Parameters>
 		<Parameter name="ТекущаяСтрока">
 			<Type>

@@ -87,6 +87,7 @@
 			</AutoCommandBar>
 			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
 			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>SearchStringRepresentation</Type>
@@ -95,6 +96,7 @@
 				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
 			</SearchStringAddition>
 			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>ViewStatusRepresentation</Type>
@@ -103,6 +105,7 @@
 				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
 			</ViewStatusAddition>
 			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>SearchControl</Type>
@@ -114,15 +117,11 @@
 				<LabelField name="Период" id="16">
 					<DataPath>Список.Period</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ПериодКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="18"/>
 				</LabelField>
 				<LabelField name="УзелИнформационнойБазы" id="19">
 					<DataPath>Список.УзелИнформационнойБазы</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="21"/>
 				</LabelField>
@@ -137,8 +136,6 @@
 							<v8:content>Путь</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ПолноеИмяФайлаКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ПолноеИмяФайлаРасширеннаяПодсказка" id="24"/>
 				</LabelField>
@@ -150,8 +147,6 @@
 							<v8:content>Сообщение (№)</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="НомерПринятогоСообщенияКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="НомерПринятогоСообщенияРасширеннаяПодсказка" id="27"/>
 				</LabelField>
@@ -163,8 +158,6 @@
 							<v8:content>Файл</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ИмяФайлаКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="ИмяФайлаРасширеннаяПодсказка" id="30"/>
 				</LabelField>
@@ -179,8 +172,6 @@
 							<v8:content>Расширение</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="РасширениеФайлаКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="РасширениеФайлаРасширеннаяПодсказка" id="33"/>
 				</LabelField>
@@ -192,8 +183,6 @@
 							<v8:content>Мб</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="РазмерФайлаКонтекстноеМеню" id="35"/>
 					<ExtendedTooltip name="РазмерФайлаРасширеннаяПодсказка" id="36"/>
 				</LabelField>
@@ -208,8 +197,6 @@
 							<v8:content>Больше 100 Мб</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ФайлБольше100МбКонтекстноеМеню" id="38"/>
 					<ExtendedTooltip name="ФайлБольше100МбРасширеннаяПодсказка" id="39"/>
 				</CheckBoxField>
@@ -218,8 +205,6 @@
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ХешСуммаФайлаКонтекстноеМеню" id="62"/>
 					<ExtendedTooltip name="ХешСуммаФайлаРасширеннаяПодсказка" id="63"/>
 				</LabelField>

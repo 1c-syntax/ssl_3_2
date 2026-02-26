@@ -56,8 +56,6 @@
 					<v8:content>Имя, под которым будут сохранены текущие настройки</v8:content>
 				</v8:item>
 			</ToolTip>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<HorizontalStretch>true</HorizontalStretch>
 			<AutoMarkIncomplete>true</AutoMarkIncomplete>
 			<ContextMenu name="ПредставлениеНастройкиКонтекстноеМеню" id="12"/>
@@ -114,6 +112,7 @@
 			</AutoCommandBar>
 			<ExtendedTooltip name="ВариантыНастроекExtendedTooltip" id="17"/>
 			<SearchStringAddition name="ВариантыНастроекSearchString" id="20">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>ВариантыНастроек</Item>
 					<Type>SearchStringRepresentation</Type>
@@ -122,6 +121,7 @@
 				<ExtendedTooltip name="ВариантыНастроекSearchStringExtendedTooltip" id="22"/>
 			</SearchStringAddition>
 			<ViewStatusAddition name="ВариантыНастроекViewStatus" id="23">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>ВариантыНастроек</Item>
 					<Type>ViewStatusRepresentation</Type>
@@ -130,6 +130,7 @@
 				<ExtendedTooltip name="ВариантыНастроекViewStatusExtendedTooltip" id="25"/>
 			</ViewStatusAddition>
 			<SearchControlAddition name="ВариантыНастроекSearchControl" id="26">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>ВариантыНастроек</Item>
 					<Type>SearchControl</Type>
