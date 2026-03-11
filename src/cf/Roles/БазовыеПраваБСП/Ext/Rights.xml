@@ -242,17 +242,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.РазмерПорцииПеремещаемыхФайлов</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Constant.ЗапрещатьЗагрузкуФайловПоРасширению</name>
 		<right>
 			<name>Read</name>
@@ -658,17 +647,6 @@
 	</object>
 	<object>
 		<name>CommonForm.ФормаВыбораЦвета</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ИсторияРезервногоКопированияВстроенногоХранилищаДвоичныхДанных</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -1223,6 +1201,13 @@
 		</right>
 	</object>
 	<object>
+		<name>CommonForm.ДополнительныеПараметрыПроксиСервера</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>CommonForm.РасширенноеПредставлениеОшибки</name>
 		<right>
 			<name>View</name>
@@ -1295,33 +1280,6 @@
 		</right>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Configuration.БиблиотекаСтандартныхПодсистем</name>
-		<right>
-			<name>MainWindowModeNormal</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeEmbeddedWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeFullscreenWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeKiosk</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>AnalyticsSystemClient</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -2028,17 +1986,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.КаталогРезервныхКопийВстроенногоХранилищаДвоичныхДанныхДляWindows</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>CommonForm.НастройкаРабочегоКаталога</name>
 		<right>
 			<name>View</name>
@@ -2521,17 +2468,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.ИспользоватьФайловыйАрхив</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>CommonForm.СозданиеНачальногоОбразаСФайлами</name>
 		<right>
 			<name>View</name>
@@ -2870,17 +2806,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.КаталогРезервныхКопийВстроенногоХранилищаДвоичныхДанныхДляLinux</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>CommonCommand.ПерсональнаяНастройкаПроксиСервера</name>
 		<right>
 			<name>View</name>
@@ -3134,6 +3059,33 @@
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Configuration.БиблиотекаСтандартныхПодсистем</name>
+		<right>
+			<name>MainWindowModeNormal</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeEmbeddedWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeFullscreenWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>AnalyticsSystemClient</name>
 			<value>true</value>
 		</right>
 	</object>

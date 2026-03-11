@@ -435,6 +435,7 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
+				<Field>Список.Автор</Field>
 				<Field>Список.Владелец</Field>
 				<Field>Список.ДатаСоздания</Field>
 				<Field>Список.ИндексКартинки</Field>

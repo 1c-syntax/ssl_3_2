@@ -570,5 +570,11 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Parameter>
+		<Parameter name="НастройкаПроксиНаКлиенте">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
 	</Parameters>
 </Form>

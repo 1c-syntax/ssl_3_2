@@ -2032,6 +2032,7 @@
 				</v8:item>
 			</Title>
 			<Action>ВыбратьФотографию</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 	</Commands>
 	<Parameters>

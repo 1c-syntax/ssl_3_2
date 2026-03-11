@@ -2054,40 +2054,13 @@
 		"ЭлектроннаяПодписьСлужебныйКлиентСервер.АлгоритмПодписи");
 	
 	АнализДанных = НовыйАнализДанных(ДвоичныеДанные);
+	
+	ПропуститьБлокиПодписиДоИдентификатораАлгоритма(АнализДанных);
 		
-	// SEQUENCE (PKCS #7 ContentInfo).
-	ПропуститьНачалоБлока(АнализДанных, 0, 16);
-		// OBJECT IDENTIFIER (contentType).
-		ПропуститьНачалоБлока(АнализДанных, 0, 6);
-			// 1.2.840.113549.1.7.2 signedData (PKCS #7).
-			ПроверитьДанныеБлока(АнализДанных, "2A864886F70D010702");
-			ПропуститьРодительскийБлок(АнализДанных);
-		// [0]CS             (content [0] EXPLICIT ANY DEFINED BY contentType OPTIONAL).
-		ПропуститьНачалоБлока(АнализДанных, 2, 0);
-			// SEQUENCE (content SignedData).
-			ПропуститьНачалоБлока(АнализДанных, 0, 16);
-				// INTEGER  (version          Version).
-				ПропуститьБлок(АнализДанных, 0, 2);
-				// SET      (digestAlgorithms DigestAlgorithmIdentifiers).
-				ПропуститьБлок(АнализДанных, 0, 17);
-				// SEQUENCE (contentInfo      ContentInfo).
-				ПропуститьБлок(АнализДанных, 0, 16);
-				// [0]CS    (certificates     [0] IMPLICIT ExtendedCertificatesAndCertificates OPTIONAL).
-				ПропуститьБлок(АнализДанных, 2, 0, Ложь);
-				// [1]CS    (crls             [1] IMPLICIT CertificateRevocationLists OPTIONAL).
-				ПропуститьБлок(АнализДанных, 2, 1, Ложь);
-				// SET      (signerInfos      SET OF SignerInfo).
-				ПропуститьНачалоБлока(АнализДанных, 0, 17);
-					// SEQUENCE (signerInfo SignerInfo).
-					ПропуститьНачалоБлока(АнализДанных, 0, 16);
-						// INTEGER  (version                   Version).
-						ПропуститьБлок(АнализДанных, 0, 2);
-						// SEQUENCE (issuerAndSerialNumber     IssuerAndSerialNumber).
-						ПропуститьБлок(АнализДанных, 0, 16);
-						// SEQUENCE (digestAlgorithm           DigestAlgorithmIdentifier).
-						ПропуститьБлок(АнализДанных, 0, 16);
-						// [0]CS    (authenticatedAttributes   [0] IMPLICIT Attributes OPTIONAL).
-						ПропуститьНачалоБлока(АнализДанных, 2, 0);
+	// SEQUENCE (digestAlgorithm           DigestAlgorithmIdentifier).
+	ПропуститьБлок(АнализДанных, 0, 16);
+	// [0]CS    (authenticatedAttributes   [0] IMPLICIT Attributes OPTIONAL).
+	ПропуститьНачалоБлока(АнализДанных, 2, 0);
 
 	Если АнализДанных.ЕстьОшибка Тогда
 		Возврат Неопределено;
@@ -4364,48 +4337,20 @@
 						ПропуститьНачалоБлока(АнализДанных, 0, 6);
 	Иначе
 		
-		// SEQUENCE (PKCS #7 ContentInfo).
+		ПропуститьБлокиПодписиДоИдентификатораАлгоритма(АнализДанных);
+		// SEQUENCE (digestAlgorithm           DigestAlgorithmIdentifier).
 		ПропуститьНачалоБлока(АнализДанных, 0, 16);
-			// OBJECT IDENTIFIER (contentType).
+			// OBJECT IDENTIFIER (algorithm).
 			ПропуститьНачалоБлока(АнализДанных, 0, 6);
-				// 1.2.840.113549.1.7.2 signedData (PKCS #7).
-				ПроверитьДанныеБлока(АнализДанных, "2A864886F70D010702");
-				ПропуститьРодительскийБлок(АнализДанных);
-			// [0]CS             (content [0] EXPLICIT ANY DEFINED BY contentType OPTIONAL).
-			ПропуститьНачалоБлока(АнализДанных, 2, 0);
-				// SEQUENCE (content SignedData).
-				ПропуститьНачалоБлока(АнализДанных, 0, 16);
-					// INTEGER  (version          Version).
-					ПропуститьБлок(АнализДанных, 0, 2);
-					// SET      (digestAlgorithms DigestAlgorithmIdentifiers).
-					ПропуститьБлок(АнализДанных, 0, 17);
-					// SEQUENCE (contentInfo      ContentInfo).
-					ПропуститьБлок(АнализДанных, 0, 16);
-					// [0]CS    (certificates     [0] IMPLICIT ExtendedCertificatesAndCertificates OPTIONAL).
-					ПропуститьБлок(АнализДанных, 2, 0, Ложь);
-					// [1]CS    (crls             [1] IMPLICIT CertificateRevocationLists OPTIONAL).
-					ПропуститьБлок(АнализДанных, 2, 1, Ложь);
-					// SET      (signerInfos      SET OF SignerInfo).
-					ПропуститьНачалоБлока(АнализДанных, 0, 17);
-						// SEQUENCE (signerInfo SignerInfo).
-						ПропуститьНачалоБлока(АнализДанных, 0, 16);
-							// INTEGER  (version                   Version).
-							ПропуститьБлок(АнализДанных, 0, 2);
-							// SEQUENCE (issuerAndSerialNumber     IssuerAndSerialNumber).
-							ПропуститьБлок(АнализДанных, 0, 16);
-								// SEQUENCE (digestAlgorithm           DigestAlgorithmIdentifier).
-								ПропуститьНачалоБлока(АнализДанных, 0, 16);
-									// OBJECT IDENTIFIER (algorithm).
-									ПропуститьНачалоБлока(АнализДанных, 0, 6);
-									OIDАлгоритмаХеширования = ПрочитанныйOID(АнализДанных);
-									ПропуститьРодительскийБлок(АнализДанных); // OBJECT IDENTIFIER (algorithm)
-								ПропуститьРодительскийБлок(АнализДанных); // SEQUENCE (digestAlgorithm           DigestAlgorithmIdentifier).
-							// [0]CS    (authenticatedAttributes   [0] IMPLICIT Attributes OPTIONAL).
-							ПропуститьБлок(АнализДанных, 2, 0, Ложь);
-							// SEQUENCE (digestEncryptionAlgorithm AlgorithmIdentifier).
-							ПропуститьНачалоБлока(АнализДанных, 0, 16);
-								// OBJECT IDENTIFIER (algorithm).
-								ПропуститьНачалоБлока(АнализДанных, 0, 6);
+			OIDАлгоритмаХеширования = ПрочитанныйOID(АнализДанных);
+			ПропуститьРодительскийБлок(АнализДанных); // OBJECT IDENTIFIER (algorithm)
+		ПропуститьРодительскийБлок(АнализДанных); // SEQUENCE (digestAlgorithm           DigestAlgorithmIdentifier).
+		// [0]CS    (authenticatedAttributes   [0] IMPLICIT Attributes OPTIONAL).
+		ПропуститьБлок(АнализДанных, 2, 0, Ложь);
+		// SEQUENCE (digestEncryptionAlgorithm AlgorithmIdentifier).
+		ПропуститьНачалоБлока(АнализДанных, 0, 16);
+			// OBJECT IDENTIFIER (algorithm).
+			ПропуститьНачалоБлока(АнализДанных, 0, 6);
 	КонецЕсли;
 	
 	OIDАлгоритмаПодписи = ПрочитанныйOID(АнализДанных);
@@ -4451,39 +4396,11 @@
 	
 	АнализДанных = НовыйАнализДанных(ДвоичныеДанные);
 	
-	// SEQUENCE (PKCS #7 ContentInfo).
+	ПропуститьБлокиПодписиДоИдентификатораАлгоритма(АнализДанных);
+	// SEQUENCE (digestAlgorithm           DigestAlgorithmIdentifier).
 	ПропуститьНачалоБлока(АнализДанных, 0, 16);
-		// OBJECT IDENTIFIER (contentType).
+		// OBJECT IDENTIFIER (algorithm).
 		ПропуститьНачалоБлока(АнализДанных, 0, 6);
-			// 1.2.840.113549.1.7.2 signedData (PKCS #7).
-			ПроверитьДанныеБлока(АнализДанных, "2A864886F70D010702");
-			ПропуститьРодительскийБлок(АнализДанных);
-		// [0]CS             (content [0] EXPLICIT ANY DEFINED BY contentType OPTIONAL).
-		ПропуститьНачалоБлока(АнализДанных, 2, 0);
-			// SEQUENCE (content SignedData).
-			ПропуститьНачалоБлока(АнализДанных, 0, 16);
-				// INTEGER  (version          Version).
-				ПропуститьБлок(АнализДанных, 0, 2);
-				// SET      (digestAlgorithms DigestAlgorithmIdentifiers).
-				ПропуститьБлок(АнализДанных, 0, 17);
-				// SEQUENCE (contentInfo      ContentInfo).
-				ПропуститьБлок(АнализДанных, 0, 16);
-				// [0]CS    (certificates     [0] IMPLICIT ExtendedCertificatesAndCertificates OPTIONAL).
-				ПропуститьБлок(АнализДанных, 2, 0, Ложь);
-				// [1]CS    (crls             [1] IMPLICIT CertificateRevocationLists OPTIONAL).
-				ПропуститьБлок(АнализДанных, 2, 1, Ложь);
-				// SET      (signerInfos      SET OF SignerInfo).
-				ПропуститьНачалоБлока(АнализДанных, 0, 17);
-					// SEQUENCE (signerInfo SignerInfo).
-					ПропуститьНачалоБлока(АнализДанных, 0, 16);
-						// INTEGER  (version                   Version).
-						ПропуститьБлок(АнализДанных, 0, 2);
-						// SEQUENCE (issuerAndSerialNumber     IssuerAndSerialNumber).
-						ПропуститьБлок(АнализДанных, 0, 16);
-						// SEQUENCE (digestAlgorithm           DigestAlgorithmIdentifier).
-						ПропуститьНачалоБлока(АнализДанных, 0, 16);
-							// OBJECT IDENTIFIER (algorithm).
-							ПропуститьНачалоБлока(АнализДанных, 0, 6);
 	
 	OIDАлгоритмаХеширования = ПрочитанныйOID(АнализДанных);
 	Если АнализДанных.ЕстьОшибка Тогда
@@ -4800,6 +4717,41 @@
 	АнализДанных.Родители.Удалить(0);
 	
 КонецПроцедуры
+
+Процедура ПропуститьБлокиПодписиДоИдентификатораАлгоритма(АнализДанных)
+	
+	// SEQUENCE (PKCS #7 ContentInfo).
+	ПропуститьНачалоБлока(АнализДанных, 0, 16);
+		// OBJECT IDENTIFIER (contentType).
+		ПропуститьНачалоБлока(АнализДанных, 0, 6);
+			// 1.2.840.113549.1.7.2 signedData (PKCS #7).
+			ПроверитьДанныеБлока(АнализДанных, "2A864886F70D010702");
+			ПропуститьРодительскийБлок(АнализДанных);
+		// [0]CS             (content [0] EXPLICIT ANY DEFINED BY contentType OPTIONAL).
+		ПропуститьНачалоБлока(АнализДанных, 2, 0);
+			// SEQUENCE (content SignedData).
+			ПропуститьНачалоБлока(АнализДанных, 0, 16);
+				// INTEGER  (version          Version).
+				ПропуститьБлок(АнализДанных, 0, 2);
+				// SET      (digestAlgorithms DigestAlgorithmIdentifiers).
+				ПропуститьБлок(АнализДанных, 0, 17);
+				// SEQUENCE (contentInfo      ContentInfo).
+				ПропуститьБлок(АнализДанных, 0, 16);
+				// [0]CS    (certificates     [0] IMPLICIT ExtendedCertificatesAndCertificates OPTIONAL).
+				ПропуститьБлок(АнализДанных, 2, 0, Ложь);
+				// [1]CS    (crls             [1] IMPLICIT CertificateRevocationLists OPTIONAL).
+				ПропуститьБлок(АнализДанных, 2, 1, Ложь);
+				// SET      (signerInfos      SET OF SignerInfo).
+				ПропуститьНачалоБлока(АнализДанных, 0, 17);
+					// SEQUENCE (signerInfo SignerInfo).
+					ПропуститьНачалоБлока(АнализДанных, 0, 16);
+						// INTEGER  (version                   Version).
+						ПропуститьБлок(АнализДанных, 0, 2);
+						// SEQUENCE (issuerAndSerialNumber     IssuerAndSerialNumber).
+						ПропуститьБлок(АнализДанных, 0, 16);
+						
+КонецПроцедуры
+
 
 Процедура ПроверитьДанныеБлока(АнализДанных, СтрокаДанных)
 	

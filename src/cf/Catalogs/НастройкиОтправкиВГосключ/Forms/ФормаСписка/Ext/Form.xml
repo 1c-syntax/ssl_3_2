@@ -72,11 +72,12 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<LabelField name="Наименование" id="16">
-					<DataPath>Список.Description</DataPath>
-					<DefaultItem>true</DefaultItem>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
+				<LabelField name="Ссылка" id="28">
+					<DataPath>Список.Ref</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="30"/>
 				</LabelField>
 				<InputField name="СрокДействия" id="19">
 					<DataPath>Список.СрокДействия</DataPath>
@@ -96,6 +97,13 @@
 					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="24"/>
 				</InputField>
+				<LabelField name="Комментарий" id="31">
+					<DataPath>Список.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="33"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
