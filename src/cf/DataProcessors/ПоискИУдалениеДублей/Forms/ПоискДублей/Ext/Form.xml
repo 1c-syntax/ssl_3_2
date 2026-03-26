@@ -736,34 +736,23 @@
 									<v8:content>Состояние</v8:content>
 								</v8:item>
 							</Title>
-							<Height>2</Height>
-							<Group>HorizontalIfPossible</Group>
+							<Height>3</Height>
+							<Group>Vertical</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаСостояниеРасширеннаяПодсказка" id="158"/>
 							<ChildItems>
-								<LabelField name="ОписаниеСостоянияНайденныхДублей" id="202">
-									<DataPath>ОписаниеСостоянияНайденныхДублей</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Описание состояния найденных дублей</v8:content>
-										</v8:item>
-									</Title>
-									<TitleLocation>None</TitleLocation>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
+								<LabelDecoration name="ОписаниеСостоянияНайденныхДублей" id="788">
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<Height>3</Height>
 									<AutoMaxHeight>false</AutoMaxHeight>
-									<MaxHeight>3</MaxHeight>
-									<ContextMenu name="ОписаниеСостоянияНайденныхДублейКонтекстноеМеню" id="203"/>
-									<ExtendedTooltip name="ОписаниеСостоянияНайденныхДублейРасширеннаяПодсказка" id="204"/>
+									<ContextMenu name="ОписаниеСостоянияНайденныхДублейКонтекстноеМеню" id="789"/>
+									<ExtendedTooltip name="ОписаниеСостоянияНайденныхДублейРасширеннаяПодсказка" id="790"/>
 									<Events>
 										<Event name="URLProcessing">ОписаниеСостоянияНайденныхДублейОбработкаНавигационнойСсылки</Event>
 									</Events>
-								</LabelField>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -1954,12 +1943,6 @@
 			</Columns>
 		</Attribute>
 		<Attribute name="ОписаниеСостоянияНайденныхДублей" id="15">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Описание состояния найденных дублей</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>v8ui:FormattedString</v8:Type>
 			</Type>

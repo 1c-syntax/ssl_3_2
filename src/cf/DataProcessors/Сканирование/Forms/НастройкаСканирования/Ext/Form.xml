@@ -29,7 +29,13 @@
 			</Button>
 			<Button name="УстановитьСтандартныеНастройки" id="204">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.StandardCommand.RestoreValues</CommandName>
+				<CommandName>Form.Command.УстановитьСтандартныеНастройки</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Установить стандартные параметры</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="УстановитьСтандартныеНастройкиРасширеннаяПодсказка" id="205"/>
 			</Button>
 		</ChildItems>

@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<Configuration uuid="fba8e84d-7df3-4002-8d3e-91cbd5f2fa86">
+	<Configuration uuid="29dc4258-7dc1-4fea-b078-e7878750b500">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
-				<xr:ObjectId>6b5d7bc9-f9ae-45d1-8dca-769c657433a5</xr:ObjectId>
+				<xr:ObjectId>dcbd1edb-fc5e-4872-8629-41b3b40834be</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
-				<xr:ObjectId>276aac83-f938-4c7d-baac-93ad4244bf5d</xr:ObjectId>
+				<xr:ObjectId>9c9accd0-919a-4cb9-8b7d-aeab767ef64d</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
-				<xr:ObjectId>c8c165bf-737d-4a0a-ab3a-53137138a7f6</xr:ObjectId>
+				<xr:ObjectId>1e69418b-24d6-49d0-b840-e90023443953</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
-				<xr:ObjectId>3d84c1b9-091e-48f2-a57e-7e66bd44563c</xr:ObjectId>
+				<xr:ObjectId>ec1f92b7-0c8d-43a8-8875-a6cdad95a9e7</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
-				<xr:ObjectId>175b7027-4883-4ec3-80c4-8a9ffa26f88b</xr:ObjectId>
+				<xr:ObjectId>05b423a8-45a4-4815-a88d-d15fc795c0fc</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>2820cb2d-8a52-4519-ab1e-940addb9f8bc</xr:ObjectId>
+				<xr:ObjectId>482c537a-fe01-4afa-94c2-e78d47d7b78d</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
-				<xr:ObjectId>10fb87bc-d218-44cc-956a-a07a7c7a137a</xr:ObjectId>
+				<xr:ObjectId>0624ede7-1e8e-4b2c-9e0a-70deda16970c</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -53,7 +53,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Фирма "1С"</Vendor>
-			<Version>3.2.1.356</Version>
+			<Version>3.2.1.371</Version>
 			<UpdateCatalogAddress>https://downloads.v8.1c.ru/tmplts/</UpdateCatalogAddress>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -817,6 +817,7 @@
 			<CommonPicture>СкопироватьВБуферОбмена</CommonPicture>
 			<CommonPicture>Скрепка</CommonPicture>
 			<CommonPicture>СкрытьПодсказку</CommonPicture>
+			<CommonPicture>СнятьВсе</CommonPicture>
 			<CommonPicture>СнятьПризнакРассмотреноУВзаимодействия</CommonPicture>
 			<CommonPicture>СозданиеАвтономногоРабочегоМеста</CommonPicture>
 			<CommonPicture>СопоставитьПользователяИБСНовымПользователемВСправочнике</CommonPicture>
@@ -953,6 +954,7 @@
 			<CommonPicture>УровеньДоступаЧтениеБезПросмотра</CommonPicture>
 			<CommonPicture>Успешно</CommonPicture>
 			<CommonPicture>Успешно32</CommonPicture>
+			<CommonPicture>УстановитьВсе</CommonPicture>
 			<CommonPicture>УстановитьОтветственногоЗаВзаимодействие</CommonPicture>
 			<CommonPicture>УстановитьПредметВзаимодействия</CommonPicture>
 			<CommonPicture>УстановитьПризнакРассмотреноДляВзаимодействия</CommonPicture>

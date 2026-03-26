@@ -211,8 +211,8 @@
 				</v8:item>
 			</Title>
 			<Picture>
-				<xr:Ref>StdPicture.CheckAll</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:Ref>CommonPicture.УстановитьВсе</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>УстановитьФлажки</Action>
 			<Representation>Picture</Representation>
@@ -225,8 +225,8 @@
 				</v8:item>
 			</Title>
 			<Picture>
-				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:Ref>CommonPicture.СнятьВсе</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>СнятьФлажки</Action>
 			<Representation>Picture</Representation>

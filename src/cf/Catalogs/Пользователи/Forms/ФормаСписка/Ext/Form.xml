@@ -5,6 +5,13 @@
 	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
+			<Button name="ФормаВыбрать" id="547">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.Choose</CommandName>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаВыбратьРасширеннаяПодсказка" id="548"/>
+			</Button>
 			<Button name="ФормаВыбратьИЗакрыть" id="118" DisplayImportance="VeryHigh">
 				<Type>CommandBarButton</Type>
 				<Visible>false</Visible>
@@ -199,6 +206,7 @@
 						<Table name="Группы" id="15">
 							<Representation>Tree</Representation>
 							<SkipOnInput>false</SkipOnInput>
+							<ChoiceMode>true</ChoiceMode>
 							<RowSelectionMode>Row</RowSelectionMode>
 							<VerticalLinesBWA>false</VerticalLinesBWA>
 							<InitialTreeView>ExpandTopLevel</InitialTreeView>
@@ -281,6 +289,11 @@
 										</Title>
 										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="ГруппыИсключитьИзВыбранныхРасширеннаяПодсказка" id="249"/>
+									</Button>
+									<Button name="ГруппыВыбрать" id="549">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Группы.StandardCommand.Choose</CommandName>
+										<ExtendedTooltip name="ГруппыВыбратьРасширеннаяПодсказка" id="550"/>
 									</Button>
 									<Button name="ГруппыСоздать" id="488" DisplayImportance="High">
 										<Type>CommandBarButton</Type>
@@ -426,6 +439,7 @@
 						</UsualGroup>
 						<Table name="Список" id="42">
 							<Representation>List</Representation>
+							<ChoiceMode>true</ChoiceMode>
 							<RowSelectionMode>Cell</RowSelectionMode>
 							<VerticalLinesBWA>false</VerticalLinesBWA>
 							<EnableStartDrag>true</EnableStartDrag>
@@ -557,6 +571,12 @@
 										</Title>
 										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="СписокПоказатьНедействительныхПользователейРасширеннаяПодсказка" id="399"/>
+									</Button>
+									<Button name="СписокВыбрать" id="551">
+										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
+										<CommandName>Form.Item.Список.StandardCommand.Choose</CommandName>
+										<ExtendedTooltip name="СписокВыбратьРасширеннаяПодсказка" id="552"/>
 									</Button>
 									<Button name="СписокСоздать" id="454" DisplayImportance="High">
 										<Type>CommandBarButton</Type>
@@ -2002,6 +2022,11 @@
 		</Parameter>
 		<Parameter name="ТекущаяСтрока">
 			<Type/>
+		</Parameter>
+		<Parameter name="СкрытьКомандыПриВыбореПодборе">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Parameter>
 	</Parameters>
 	<CommandInterface>

@@ -504,6 +504,11 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="УжеДобавлен" id="19">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="СертификатОписаниеДанных" id="5">

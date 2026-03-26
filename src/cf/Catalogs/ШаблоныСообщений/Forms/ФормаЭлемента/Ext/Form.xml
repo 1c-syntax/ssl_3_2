@@ -509,6 +509,7 @@
 							<Events>
 								<Event name="OnChange">ПолноеИмяТипаПараметраВводаНаОснованииПриИзменении</Event>
 								<Event name="Clearing">ПолноеИмяТипаПараметраВводаНаОснованииОчистка</Event>
+								<Event name="ChoiceProcessing">ПолноеИмяТипаПараметраВводаНаОснованииОбработкаВыбора</Event>
 							</Events>
 						</InputField>
 						<Table name="Реквизиты" id="56">
