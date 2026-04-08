@@ -12,7 +12,11 @@
 	<AutoTitle>false</AutoTitle>
 	<Group>Vertical</Group>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Create</ExcludedCommand>
+	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
 		<ChildItems>
 			<Popup name="ГруппаСоздать" id="43">
 				<Title>
@@ -84,6 +88,26 @@
 					</Button>
 				</ChildItems>
 			</Popup>
+			<Button name="ФормаСохранитьЗначения" id="1238">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.SaveValues</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьЗначенияРасширеннаяПодсказка" id="1239"/>
+			</Button>
+			<Button name="ФормаВосстановитьЗначения" id="1240">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.RestoreValues</CommandName>
+				<ExtendedTooltip name="ФормаВосстановитьЗначенияРасширеннаяПодсказка" id="1241"/>
+			</Button>
+			<Button name="ФормаИзменитьФорму" id="1242">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+				<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="1243"/>
+			</Button>
+			<Button name="ФормаСправка" id="1244">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="1245"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -2203,6 +2227,8 @@
 										</v8:item>
 									</Title>
 									<CommandSet>
+										<ExcludedCommand>Create</ExcludedCommand>
+										<ExcludedCommand>CreateByParameter</ExcludedCommand>
 										<ExcludedCommand>Refresh</ExcludedCommand>
 									</CommandSet>
 									<ShowCommandBar>true</ShowCommandBar>

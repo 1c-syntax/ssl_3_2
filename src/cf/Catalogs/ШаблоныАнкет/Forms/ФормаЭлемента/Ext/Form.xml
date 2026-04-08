@@ -152,6 +152,7 @@
 									<RowSelectionMode>Row</RowSelectionMode>
 									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<InitialRowActivation>Activate</InitialRowActivation>
 									<EnableStartDrag>true</EnableStartDrag>
 									<EnableDrag>true</EnableDrag>
 									<FileDragMode>AsFile</FileDragMode>

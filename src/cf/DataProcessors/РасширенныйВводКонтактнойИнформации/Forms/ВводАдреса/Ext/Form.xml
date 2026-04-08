@@ -934,93 +934,6 @@
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИнформационныеСообщенияРасширеннаяПодсказка" id="529"/>
 									<ChildItems>
-										<UsualGroup name="СервисНедоступен" id="272">
-											<Visible>false</Visible>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Сервис недоступен</v8:content>
-												</v8:item>
-											</Title>
-											<Group>Horizontal</Group>
-											<Behavior>Usual</Behavior>
-											<Representation>None</Representation>
-											<ExtendedTooltip name="СервисНедоступенРасширеннаяПодсказка" id="273"/>
-											<ChildItems>
-												<PictureDecoration name="КартинкаСерверНедоступен" id="260">
-													<Title formatted="false">
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Картинка сервер недоступен</v8:content>
-														</v8:item>
-													</Title>
-													<Picture>
-														<xr:Ref>StdPicture.DialogExclamation</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
-													</Picture>
-													<FileDragMode>AsFile</FileDragMode>
-													<ContextMenu name="КартинкаСерверНедоступенКонтекстноеМеню" id="261"/>
-													<ExtendedTooltip name="КартинкаСерверНедоступенРасширеннаяПодсказка" id="262"/>
-												</PictureDecoration>
-												<UsualGroup name="ГруппаСообщенияСервиса" id="258">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Сообщения сервиса</v8:content>
-														</v8:item>
-													</Title>
-													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
-													<Representation>None</Representation>
-													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ГруппаСообщенияСервисаРасширеннаяПодсказка" id="259"/>
-													<ChildItems>
-														<InputField name="ТекстСообщенияСервиса" id="265">
-															<DataPath>ТекстСообщенияСервиса</DataPath>
-															<ReadOnly>true</ReadOnly>
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Текст сообщения сервиса</v8:content>
-																</v8:item>
-															</Title>
-															<TitleLocation>None</TitleLocation>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Сервис выбора и проверки адресных сведений недоступен</v8:content>
-																</v8:item>
-															</ToolTip>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
-															<Height>1</Height>
-															<MultiLine>true</MultiLine>
-															<ContextMenu name="ТекстСообщенияСервисаКонтекстноеМеню" id="266"/>
-															<ExtendedTooltip name="ТекстСообщенияСервисаРасширеннаяПодсказка" id="267"/>
-														</InputField>
-														<Button name="АвторизацияНаСайтеПоддержкиПользователей" id="268">
-															<Type>Hyperlink</Type>
-															<CommandName>Form.Command.ПодключитьИнтернетПоддержку</CommandName>
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Подключить интернет-поддержку</v8:content>
-																</v8:item>
-															</Title>
-															<ToolTipRepresentation>Button</ToolTipRepresentation>
-															<ExtendedTooltip name="АвторизацияНаСайтеПоддержкиПользователейРасширеннаяПодсказка" id="269">
-																<Title formatted="false">
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Для автоподбора и проверки корректности адресов необходимо произвести подключение к интернет-поддержке пользователей.</v8:content>
-																	</v8:item>
-																</Title>
-															</ExtendedTooltip>
-														</Button>
-													</ChildItems>
-												</UsualGroup>
-											</ChildItems>
-										</UsualGroup>
 										<Pages name="ГруппаОписаниеНедоступностиСервера" id="270">
 											<Title>
 												<v8:item>
@@ -1046,6 +959,90 @@
 															<ContextMenu name="СервисДоступенДекорацияКонтекстноеМеню" id="277"/>
 															<ExtendedTooltip name="СервисДоступенДекорацияРасширеннаяПодсказка" id="278"/>
 														</LabelDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="СервисНедоступен" id="272">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сервис недоступен</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="СервисНедоступенРасширеннаяПодсказка" id="273"/>
+													<ChildItems>
+														<PictureDecoration name="КартинкаСерверНедоступен" id="260">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Картинка сервер недоступен</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>StdPicture.DialogExclamation</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<FileDragMode>AsFile</FileDragMode>
+															<ContextMenu name="КартинкаСерверНедоступенКонтекстноеМеню" id="261"/>
+															<ExtendedTooltip name="КартинкаСерверНедоступенРасширеннаяПодсказка" id="262"/>
+														</PictureDecoration>
+														<UsualGroup name="ГруппаСообщенияСервиса" id="258">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сообщения сервиса</v8:content>
+																</v8:item>
+															</Title>
+															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаСообщенияСервисаРасширеннаяПодсказка" id="259"/>
+															<ChildItems>
+																<InputField name="ТекстСообщенияСервиса" id="265">
+																	<DataPath>ТекстСообщенияСервиса</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст сообщения сервиса</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Сервис выбора и проверки адресных сведений недоступен</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<EditMode>EnterOnInput</EditMode>
+																	<AutoEditMode>true</AutoEditMode>
+																	<Height>1</Height>
+																	<MultiLine>true</MultiLine>
+																	<ContextMenu name="ТекстСообщенияСервисаКонтекстноеМеню" id="266"/>
+																	<ExtendedTooltip name="ТекстСообщенияСервисаРасширеннаяПодсказка" id="267"/>
+																</InputField>
+																<Button name="АвторизацияНаСайтеПоддержкиПользователей" id="268">
+																	<Type>Hyperlink</Type>
+																	<CommandName>Form.Command.ПодключитьИнтернетПоддержку</CommandName>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подключить интернет-поддержку</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTipRepresentation>Button</ToolTipRepresentation>
+																	<ExtendedTooltip name="АвторизацияНаСайтеПоддержкиПользователейРасширеннаяПодсказка" id="269">
+																		<Title formatted="false">
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Для автоподбора и проверки корректности адресов необходимо произвести подключение к интернет-поддержке пользователей.</v8:content>
+																			</v8:item>
+																		</Title>
+																	</ExtendedTooltip>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
 													</ChildItems>
 												</Page>
 												<Page name="СообщениеОбОшибке" id="348">
