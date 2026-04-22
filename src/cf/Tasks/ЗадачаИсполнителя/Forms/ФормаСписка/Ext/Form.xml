@@ -325,7 +325,7 @@
 								<v8:content>Отменить принятие к исполнению</v8:content>
 							</v8:item>
 						</Title>
-						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 						<ExtendedTooltip name="ОтменитьПринятиеКИсполнениюРасширеннаяПодсказка" id="98"/>
 					</Button>
 					<Button name="ПринятьКИсполнению" id="61">
@@ -337,7 +337,7 @@
 								<v8:content>К исполнению</v8:content>
 							</v8:item>
 						</Title>
-						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 						<ExtendedTooltip name="ПринятьКИсполнениюРасширеннаяПодсказка" id="95"/>
 					</Button>
 					<Button name="ОткрытьБизнесПроцесс" id="147">

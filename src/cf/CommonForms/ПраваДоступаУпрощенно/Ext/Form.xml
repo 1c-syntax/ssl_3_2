@@ -30,6 +30,18 @@
 				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаОтчетПраваПользователяРасширеннаяПодсказка" id="143"/>
 			</Button>
+			<Button name="ФормаОтчетПраваРолейПользователя" id="223">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ФормаОтчетПраваРолейПользователя</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отчет Права ролей (пользователя)</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаОтчетПраваРолейПользователяРасширеннаяПодсказка" id="224"/>
+			</Button>
 			<Button name="ФормаОтчетПраваДоступа" id="68">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ФормаОтчетПоПравамДоступа</CommandName>
@@ -739,6 +751,22 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ПрочитанныеРоли" id="11">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Роль" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ФормаЗаписать" id="1">
@@ -820,6 +848,20 @@
 			<CurrentRowUse>DontUse</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">ЗначенияДоступа</AssociatedTableElementId>
 			<SelectedRowsUse>DontUse</SelectedRowsUse>
+		</Command>
+		<Command name="ФормаОтчетПраваРолейПользователя" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет Права ролей (пользователя)</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Report</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ФормаОтчетПраваРолейПользователя</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 	<Parameters>

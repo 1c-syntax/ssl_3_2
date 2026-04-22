@@ -296,6 +296,7 @@
 	<Item Calendar="05" Year="2026" DayType="Праздник" Date="20260319" SwapDate=""/>
 	<Item Calendar="05" Year="2026" DayType="Праздник" Date="20260320" SwapDate=""/>
 	<Item Calendar="05" Year="2026" DayType="Праздник" Date="20260413" SwapDate=""/>
+	<Item Calendar="05" Year="2026" DayType="Предпраздничный" Date="20260420" SwapDate=""/>
 	<Item Calendar="05" Year="2026" DayType="Праздник" Date="20260421" SwapDate=""/>
 	<Item Calendar="05" Year="2026" DayType="Предпраздничный" Date="20260526" SwapDate=""/>
 	<Item Calendar="05" Year="2026" DayType="Праздник" Date="20260527" SwapDate=""/>
@@ -1063,6 +1064,8 @@
 	<Item Calendar="38" Year="2025" DayType="Праздник" Date="20250429" SwapDate=""/>
 	<Item Calendar="38" Year="2026" DayType="Предпраздничный" Date="20260420" SwapDate=""/>
 	<Item Calendar="38" Year="2026" DayType="Праздник" Date="20260421" SwapDate=""/>
+	<Item Calendar="55" Year="2026" DayType="Предпраздничный" Date="20260420" SwapDate=""/>
+	<Item Calendar="55" Year="2026" DayType="Праздник" Date="20260421" SwapDate=""/>
 	<Item Calendar="58" Year="2016" DayType="Праздник" Date="20160510" SwapDate=""/>
 	<Item Calendar="58" Year="2017" DayType="Предпраздничный" Date="20170424" SwapDate=""/>
 	<Item Calendar="58" Year="2017" DayType="Праздник" Date="20170425" SwapDate=""/>

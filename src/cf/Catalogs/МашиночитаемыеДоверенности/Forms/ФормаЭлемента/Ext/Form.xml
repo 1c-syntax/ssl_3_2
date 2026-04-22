@@ -2425,6 +2425,12 @@
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="Ответственный" id="1235">
+							<DataPath>Объект.Ответственный</DataPath>
+							<TextSize>Enlarged</TextSize>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="1236"/>
+							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="1237"/>
+						</InputField>
 					</ChildItems>
 				</Page>
 			</ChildItems>

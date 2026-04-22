@@ -152,7 +152,7 @@
 										<Title formatted="true">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Информацию по использованию мобильного приложения можно прочитать перейдя по &lt;link http://1c.ru&gt;ссылке&lt;/&gt;</v8:content>
+												<v8:content>Информацию по использованию мобильного приложения можно прочитать перейдя по &lt;link https://1c.ru/&gt;ссылке&lt;/&gt;</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
@@ -212,7 +212,7 @@
 										<Title formatted="true">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Информацию по использованию мобильного приложения можно прочитать перейдя по &lt;link http://1c.ru&gt;ссылке&lt;/&gt;</v8:content>
+												<v8:content>Информацию по использованию мобильного приложения можно прочитать перейдя по &lt;link https://1c.ru/&gt;ссылке&lt;/&gt;</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
@@ -271,7 +271,7 @@
 										<Title formatted="true">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Информацию по использованию мобильного приложения на базе DSS SDK можно прочитать перейдя по &lt;link http://1c.ru&gt;ссылке&lt;/&gt;</v8:content>
+												<v8:content>Информацию по использованию мобильного приложения на базе DSS SDK можно прочитать перейдя по &lt;link https://1c.ru/&gt;ссылке&lt;/&gt;</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>

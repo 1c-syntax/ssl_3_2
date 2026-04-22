@@ -7,7 +7,7 @@
 		<ChildItems>
 			<Button name="ФормаОтчетПраваПользователя" id="158">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ФормаОтчетПраваДоступа</CommandName>
+				<CommandName>Form.Command.ФормаОтчетПраваПользователя</CommandName>
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -16,9 +16,9 @@
 				</Title>
 				<ExtendedTooltip name="ФормаОтчетПраваПользователяРасширеннаяПодсказка" id="159"/>
 			</Button>
-			<Button name="ФормаОтчетПраваДоступа" id="76">
+			<Button name="ФормаОтчетПраваДоступаСтарый" id="76">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ФормаОтчетПраваПользователя</CommandName>
+				<CommandName>Form.Command.ФормаОтчетПраваДоступаСтарый</CommandName>
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -26,7 +26,7 @@
 					</v8:item>
 				</Title>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-				<ExtendedTooltip name="ФормаОтчетПраваДоступаРасширеннаяПодсказка" id="112"/>
+				<ExtendedTooltip name="ФормаОтчетПраваДоступаСтарыйРасширеннаяПодсказка" id="112"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -309,6 +309,17 @@
 										</Title>
 										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="РолиПоказатьПодсистемыРасширеннаяПодсказка" id="133"/>
+									</Button>
+									<Button name="РолиОтчетПраваРолей" id="242">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.РолиОтчетПраваРолей</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Права ролей</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="РолиОтчетПраваРолейРасширеннаяПодсказка" id="243"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
@@ -650,7 +661,7 @@
 			<AssociatedTableElementId xsi:type="xs:string">ГруппыДоступа</AssociatedTableElementId>
 			<SelectedRowsUse>DontUse</SelectedRowsUse>
 		</Command>
-		<Command name="ФормаОтчетПраваПользователя" id="8">
+		<Command name="ФормаОтчетПраваДоступаСтарый" id="8">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -661,7 +672,7 @@
 				<xr:Ref>StdPicture.Report</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>ФормаОтчетПраваПользователя</Action>
+			<Action>ФормаОтчетПраваДоступаСтарый</Action>
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
@@ -688,7 +699,7 @@
 			<AssociatedTableElementId xsi:type="xs:string">Роли</AssociatedTableElementId>
 			<SelectedRowsUse>DontUse</SelectedRowsUse>
 		</Command>
-		<Command name="ФормаОтчетПраваДоступа" id="9">
+		<Command name="ФормаОтчетПраваПользователя" id="9">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -699,7 +710,7 @@
 				<xr:Ref>StdPicture.Report</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>ФормаОтчетПраваДоступа</Action>
+			<Action>ФормаОтчетПраваПользователя</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="ГруппыДоступаИзменить" id="5">
@@ -725,6 +736,20 @@
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">ГруппыДоступа</AssociatedTableElementId>
 			<SelectedRowsUse>DontUse</SelectedRowsUse>
+		</Command>
+		<Command name="РолиОтчетПраваРолей" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Права ролей</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Report</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РолиОтчетПраваРолей</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 	<Parameters>

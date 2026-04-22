@@ -288,30 +288,6 @@
 																			</Button>
 																		</ChildItems>
 																	</Popup>
-																	<Popup name="Алгоритмы" id="337">
-																		<Visible>false</Visible>
-																		<Title>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>Алгоритмы</v8:content>
-																			</v8:item>
-																		</Title>
-																		<ExtendedTooltip name="АлгоритмыРасширеннаяПодсказка" id="338"/>
-																		<ChildItems>
-																			<Button name="ЗаглушкаАлгоритмы" id="339">
-																				<Type>CommandBarButton</Type>
-																				<Enabled>false</Enabled>
-																				<CommandName>Form.Command.ЗаглушкаАлгоритмы</CommandName>
-																				<Title>
-																					<v8:item>
-																						<v8:lang>ru</v8:lang>
-																						<v8:content>&lt;Нет&gt;</v8:content>
-																					</v8:item>
-																				</Title>
-																				<ExtendedTooltip name="ЗаглушкаАлгоритмыРасширеннаяПодсказка" id="340"/>
-																			</Button>
-																		</ChildItems>
-																	</Popup>
 																</ChildItems>
 															</AutoCommandBar>
 															<ExtendedTooltip name="РеквизитыОбъектаРасширеннаяПодсказка" id="119"/>
@@ -478,30 +454,82 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<VerticalSpacing>Half</VerticalSpacing>
 													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаАлгоритмРасширеннаяПодсказка" id="284"/>
 													<ChildItems>
-														<InputField name="Алгоритм" id="278">
-															<DataPath>Алгоритм</DataPath>
+														<UsualGroup name="ГруппаАлгоритмы" id="415">
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Алгоритм</v8:content>
+																	<v8:content>Алгоритмы</v8:content>
 																</v8:item>
 															</Title>
-															<EditMode>EnterOnInput</EditMode>
-															<AutoEditMode>true</AutoEditMode>
-															<InputHint>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Наименование алгоритма</v8:content>
-																</v8:item>
-															</InputHint>
-															<ContextMenu name="АлгоритмКонтекстноеМеню" id="279"/>
-															<ExtendedTooltip name="АлгоритмРасширеннаяПодсказка" id="280"/>
-														</InputField>
+															<Group>AutoScreenTypeSensitive</Group>
+															<HorizontalSpacing>Half</HorizontalSpacing>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаАлгоритмыРасширеннаяПодсказка" id="416"/>
+															<ChildItems>
+																<InputField name="Алгоритм" id="278">
+																	<DataPath>Алгоритм</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Алгоритм</v8:content>
+																		</v8:item>
+																	</Title>
+																	<EditMode>EnterOnInput</EditMode>
+																	<AutoEditMode>true</AutoEditMode>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<InputHint>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Наименование алгоритма</v8:content>
+																		</v8:item>
+																	</InputHint>
+																	<ContextMenu name="АлгоритмКонтекстноеМеню" id="279"/>
+																	<ExtendedTooltip name="АлгоритмРасширеннаяПодсказка" id="280"/>
+																</InputField>
+																<CommandBar name="Алгоритмы" id="337">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Выбрать</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Выбрать из ранее примененных алгоритмов</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<VerticalStretch>false</VerticalStretch>
+																	<AppearanceMode>CommandBar</AppearanceMode>
+																	<ExtendedTooltip name="АлгоритмыРасширеннаяПодсказка" id="338"/>
+																	<ChildItems>
+																		<Button name="ЗаглушкаАлгоритмы" id="339">
+																			<Type>CommandBarButton</Type>
+																			<Enabled>false</Enabled>
+																			<CommandName>Form.Command.ЗаглушкаАлгоритмы</CommandName>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>&lt;Нет&gt;</v8:content>
+																				</v8:item>
+																			</Title>
+																			<RepresentationInContextMenu>None</RepresentationInContextMenu>
+																			<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+																			<ExtendedTooltip name="ЗаглушкаАлгоритмыРасширеннаяПодсказка" id="340"/>
+																		</Button>
+																	</ChildItems>
+																</CommandBar>
+															</ChildItems>
+														</UsualGroup>
 														<TextDocumentField name="КодАлгоритма" id="275">
 															<DataPath>КодАлгоритма</DataPath>
 															<Title>
@@ -729,15 +757,6 @@
 								</Page>
 							</ChildItems>
 						</Pages>
-						<CommandBar name="ПанельНастроек" id="187">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Панель настроек</v8:content>
-								</v8:item>
-							</Title>
-							<ExtendedTooltip name="ПанельНастроекРасширеннаяПодсказка" id="188"/>
-						</CommandBar>
 						<LabelDecoration name="ПояснениеОНастроенныхИзменениях" id="196">
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<Height>2</Height>

@@ -94,8 +94,8 @@
 			<Title formatted="true">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Анонимное использование сервиса имеет &lt;link http://www.morpher.ru/ws3/#limitations&gt;ограничения&lt;/&gt;.
-Получить токен можно в &lt;link http://www.morpher.ru/My/Token.aspx&gt;личном кабинете&lt;/&gt; после регистрации.
+					<v8:content>Анонимное использование сервиса имеет &lt;link https://www.morpher.ru/ws3/#limitations&gt;ограничения&lt;/&gt;.
+Получить токен можно в &lt;link https://www.morpher.ru/My/Token.aspx&gt;личном кабинете&lt;/&gt; после регистрации.
 </v8:content>
 				</v8:item>
 			</Title>

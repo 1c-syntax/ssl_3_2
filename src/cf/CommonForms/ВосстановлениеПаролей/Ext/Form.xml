@@ -434,6 +434,9 @@
 															<PasswordMode>true</PasswordMode>
 															<ContextMenu name="ПарольSMTPКонтекстноеМеню" id="80"/>
 															<ExtendedTooltip name="ПарольSMTPРасширеннаяПодсказка" id="81"/>
+															<Events>
+																<Event name="OnChange">ПарольSMTPПриИзменении</Event>
+															</Events>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
