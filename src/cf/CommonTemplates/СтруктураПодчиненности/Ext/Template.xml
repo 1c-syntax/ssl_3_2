@@ -2498,146 +2498,146 @@
 	</format>
 	<picture>
 		<index>0</index>
-		<picture ref="v8ui:КоннекторЛевоНизПраво"/>
+		<picture t="false" ref="v8ui:КоннекторЛевоНизПраво"/>
 	</picture>
 	<picture>
 		<index>1</index>
-		<picture ref="v8ui:ДокументПроведенКоннекторВерх"/>
+		<picture t="false" ref="v8ui:ДокументПроведенКоннекторВерх"/>
 	</picture>
 	<picture>
 		<index>2</index>
-		<picture ref="v8ui:ДокументЗаписанКоннекторЛево"/>
+		<picture t="false" ref="v8ui:ДокументЗаписанКоннекторЛево"/>
 	</picture>
 	<picture>
 		<index>3</index>
-		<picture ref="v8ui:ДокументПроведенКоннекторНиз"/>
+		<picture t="false" ref="v8ui:ДокументПроведенКоннекторНиз"/>
 	</picture>
 	<picture>
 		<index>4</index>
-		<picture ref="v8ui:ДокументПроведенКоннекторЛево"/>
+		<picture t="false" ref="v8ui:ДокументПроведенКоннекторЛево"/>
 	</picture>
 	<picture>
 		<index>5</index>
-		<picture ref="v8ui:ДокументПроведенКоннекторВерхНиз"/>
+		<picture t="false" ref="v8ui:ДокументПроведенКоннекторВерхНиз"/>
 	</picture>
 	<picture>
 		<index>6</index>
-		<picture ref="v8ui:ДокументПомеченНаУдалениеКоннекторЛево"/>
+		<picture t="false" ref="v8ui:ДокументПомеченНаУдалениеКоннекторЛево"/>
 	</picture>
 	<picture>
 		<index>7</index>
-		<picture ref="v8ui:ДокументПроведенКоннекторЛевоВерх"/>
+		<picture t="false" ref="v8ui:ДокументПроведенКоннекторЛевоВерх"/>
 	</picture>
 	<picture>
 		<index>8</index>
-		<picture ref="v8ui:КоннекторПравоНиз"/>
+		<picture t="false" ref="v8ui:КоннекторПравоНиз"/>
 	</picture>
 	<picture>
 		<index>9</index>
-		<picture ref="v8ui:ДокументПроведенКоннекторЛевоНиз"/>
+		<picture t="false" ref="v8ui:ДокументПроведенКоннекторЛевоНиз"/>
 	</picture>
 	<picture>
 		<index>10</index>
-		<picture ref="v8ui:КоннекторВерхПравоНиз"/>
+		<picture t="false" ref="v8ui:КоннекторВерхПравоНиз"/>
 	</picture>
 	<picture>
 		<index>11</index>
-		<picture ref="v8ui:СправочникПВХПомеченНаУдалениеКоннекторЛево"/>
+		<picture t="false" ref="v8ui:СправочникПВХПомеченНаУдалениеКоннекторЛево"/>
 	</picture>
 	<picture>
 		<index>12</index>
-		<picture ref="v8ui:КоннекторВерхПраво"/>
+		<picture t="false" ref="v8ui:КоннекторВерхПраво"/>
 	</picture>
 	<picture>
 		<index>13</index>
-		<picture ref="v8ui:ДокументПомеченНаУдалениеКоннекторВерх"/>
+		<picture t="false" ref="v8ui:ДокументПомеченНаУдалениеКоннекторВерх"/>
 	</picture>
 	<picture>
 		<index>14</index>
-		<picture ref="v8ui:СправочникПВХПомеченНаУдалениеКоннекторВерх"/>
+		<picture t="false" ref="v8ui:СправочникПВХПомеченНаУдалениеКоннекторВерх"/>
 	</picture>
 	<picture>
 		<index>15</index>
-		<picture ref="v8ui:ДокументПомеченНаУдалениеКоннекторНиз"/>
+		<picture t="false" ref="v8ui:ДокументПомеченНаУдалениеКоннекторНиз"/>
 	</picture>
 	<picture>
 		<index>16</index>
-		<picture ref="v8ui:СправочникПВХПомеченНаУдалениеКоннекторНиз"/>
+		<picture t="false" ref="v8ui:СправочникПВХПомеченНаУдалениеКоннекторНиз"/>
 	</picture>
 	<picture>
 		<index>17</index>
-		<picture ref="v8ui:КоннекторЛевоПраво"/>
+		<picture t="false" ref="v8ui:КоннекторЛевоПраво"/>
 	</picture>
 	<picture>
 		<index>18</index>
-		<picture ref="v8ui:ДокументПомеченНаУдалениеКоннекторВерхНиз"/>
+		<picture t="false" ref="v8ui:ДокументПомеченНаУдалениеКоннекторВерхНиз"/>
 	</picture>
 	<picture>
 		<index>19</index>
-		<picture ref="v8ui:СправочникПВХПомеченНаУдалениеКоннекторВерхНиз"/>
+		<picture t="false" ref="v8ui:СправочникПВХПомеченНаУдалениеКоннекторВерхНиз"/>
 	</picture>
 	<picture>
 		<index>20</index>
-		<picture ref="v8ui:КоннекторВерхНиз"/>
+		<picture t="false" ref="v8ui:КоннекторВерхНиз"/>
 	</picture>
 	<picture>
 		<index>21</index>
-		<picture ref="v8ui:ДокументПомеченНаУдалениеКоннекторЛевоНиз"/>
+		<picture t="false" ref="v8ui:ДокументПомеченНаУдалениеКоннекторЛевоНиз"/>
 	</picture>
 	<picture>
 		<index>22</index>
-		<picture ref="v8ui:СправочникПВХПомеченНаУдалениеКоннекторЛевоНиз"/>
+		<picture t="false" ref="v8ui:СправочникПВХПомеченНаУдалениеКоннекторЛевоНиз"/>
 	</picture>
 	<picture>
 		<index>23</index>
-		<picture ref="v8ui:ДокументПомеченНаУдалениеКоннекторЛевоВерх"/>
+		<picture t="false" ref="v8ui:ДокументПомеченНаУдалениеКоннекторЛевоВерх"/>
 	</picture>
 	<picture>
 		<index>24</index>
-		<picture ref="v8ui:СправочникПВХПомеченНаУдалениеКоннекторЛевоВерх"/>
+		<picture t="false" ref="v8ui:СправочникПВХПомеченНаУдалениеКоннекторЛевоВерх"/>
 	</picture>
 	<picture>
 		<index>25</index>
-		<picture ref="v8ui:СправочникПВХКоннекторЛево"/>
+		<picture t="false" ref="v8ui:СправочникПВХКоннекторЛево"/>
 	</picture>
 	<picture>
 		<index>26</index>
-		<picture ref="v8ui:СправочникПВХКоннекторВверх"/>
+		<picture t="false" ref="v8ui:СправочникПВХКоннекторВверх"/>
 	</picture>
 	<picture>
 		<index>27</index>
-		<picture ref="v8ui:ДокументЗаписанКоннекторВерх"/>
+		<picture t="false" ref="v8ui:ДокументЗаписанКоннекторВерх"/>
 	</picture>
 	<picture>
 		<index>28</index>
-		<picture ref="v8ui:СправочникПВХКоннекторНиз"/>
+		<picture t="false" ref="v8ui:СправочникПВХКоннекторНиз"/>
 	</picture>
 	<picture>
 		<index>29</index>
-		<picture ref="v8ui:ДокументЗаписанКоннекторНиз"/>
+		<picture t="false" ref="v8ui:ДокументЗаписанКоннекторНиз"/>
 	</picture>
 	<picture>
 		<index>30</index>
-		<picture ref="v8ui:СправочникПВХКоннекторВерхНиз"/>
+		<picture t="false" ref="v8ui:СправочникПВХКоннекторВерхНиз"/>
 	</picture>
 	<picture>
 		<index>31</index>
-		<picture ref="v8ui:ДокументЗаписанКоннекторВерхНиз"/>
+		<picture t="false" ref="v8ui:ДокументЗаписанКоннекторВерхНиз"/>
 	</picture>
 	<picture>
 		<index>32</index>
-		<picture ref="v8ui:СправочникПВХКоннекторЛевоНиз"/>
+		<picture t="false" ref="v8ui:СправочникПВХКоннекторЛевоНиз"/>
 	</picture>
 	<picture>
 		<index>33</index>
-		<picture ref="v8ui:ДокументЗаписанКоннекторЛевоНиз"/>
+		<picture t="false" ref="v8ui:ДокументЗаписанКоннекторЛевоНиз"/>
 	</picture>
 	<picture>
 		<index>34</index>
-		<picture ref="v8ui:СправочникПВХКоннекторЛевоВерх"/>
+		<picture t="false" ref="v8ui:СправочникПВХКоннекторЛевоВерх"/>
 	</picture>
 	<picture>
 		<index>35</index>
-		<picture ref="v8ui:ДокументЗаписанКоннекторЛевоВерх"/>
+		<picture t="false" ref="v8ui:ДокументЗаписанКоннекторЛевоВерх"/>
 	</picture>
 </document>

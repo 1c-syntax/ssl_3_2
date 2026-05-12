@@ -816,20 +816,6 @@
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
-			<Item>
-				<Command>0</Command>
-				<Type>Added</Type>
-				<CommandGroup>FormCommandBarImportant</CommandGroup>
-				<Index>1</Index>
-				<DefaultVisible>false</DefaultVisible>
-			</Item>
-			<Item>
-				<Command>0</Command>
-				<Type>Added</Type>
-				<CommandGroup>FormCommandBarImportant</CommandGroup>
-				<Index>2</Index>
-				<DefaultVisible>false</DefaultVisible>
-			</Item>
 		</CommandBar>
 	</CommandInterface>
 </Form>

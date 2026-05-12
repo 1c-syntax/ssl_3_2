@@ -38,6 +38,7 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -264,6 +265,17 @@
 												<Event name="OnChange">ВариантОтправкиПоПочтеПриИзменении</Event>
 											</Events>
 										</RadioButtonField>
+										<UsualGroup name="ПредупреждениеНедоступностиСтандартногоСервиса" id="170">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Предупреждение недоступности стандартного сервиса</v8:content>
+												</v8:item>
+											</Title>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ПредупреждениеНедоступностиСтандартногоСервисаРасширеннаяПодсказка" id="171"/>
+										</UsualGroup>
 										<UsualGroup name="ГруппаУчетнаяЗаписьПочты" id="168">
 											<Title>
 												<v8:item>
@@ -1104,6 +1116,26 @@
 			</Type>
 		</Attribute>
 		<Attribute name="ИспользоватьSSL" id="22">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьПодсистемаИнтернетПоддержкиПользователей" id="23">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеАутентификацииВСтандартномСервисе1СЗаполнены" id="24">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПлатформаПоддерживаетОтправкуЧерезСтандартныйСервис" id="25">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПриЧтенииИспользуетсяСтандартныйСервис" id="26">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>

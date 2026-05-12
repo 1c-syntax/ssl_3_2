@@ -2577,18 +2577,4 @@
 			<Type/>
 		</Parameter>
 	</Parameters>
-	<CommandInterface>
-		<NavigationPanel>
-			<Item>
-				<Command>0</Command>
-				<Type>Auto</Type>
-				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
-				<Index>2</Index>
-				<DefaultVisible>false</DefaultVisible>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
-			</Item>
-		</NavigationPanel>
-	</CommandInterface>
 </Form>

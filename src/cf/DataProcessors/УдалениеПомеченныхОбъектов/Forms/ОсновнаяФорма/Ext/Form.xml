@@ -589,6 +589,7 @@
 											<ShowInHeader>false</ShowInHeader>
 											<ShowInFooter>false</ShowInFooter>
 											<AutoEditMode>true</AutoEditMode>
+											<CheckBoxType>CheckBox</CheckBoxType>
 											<ThreeState>true</ThreeState>
 											<ContextMenu name="ДеревоПомеченныхНаУдалениеПометкаКонтекстноеМеню" id="31"/>
 											<ExtendedTooltip name="ДеревоПомеченныхНаУдалениеПометкаРасширеннаяПодсказка" id="99"/>
@@ -917,29 +918,29 @@
 																</ChildItems>
 															</AutoCommandBar>
 															<ExtendedTooltip name="МестаИспользованияНеудаленныхРасширеннаяПодсказка" id="238"/>
-															<SearchStringAddition name="СвязиНеУдаленныхСтрокаПоиска" id="427">
+															<SearchStringAddition name="МестаИспользованияНеудаленныхСтрокаПоиска" id="427">
 																<AdditionSource>
 																	<Item>МестаИспользованияНеудаленных</Item>
 																	<Type>SearchStringRepresentation</Type>
 																</AdditionSource>
-																<ContextMenu name="СвязиНеУдаленныхСтрокаПоискаКонтекстноеМеню" id="428"/>
-																<ExtendedTooltip name="СвязиНеУдаленныхСтрокаПоискаРасширеннаяПодсказка" id="429"/>
+																<ContextMenu name="МестаИспользованияНеудаленныхСтрокаПоискаКонтекстноеМеню" id="428"/>
+																<ExtendedTooltip name="МестаИспользованияНеудаленныхСтрокаПоискаРасширеннаяПодсказка" id="429"/>
 															</SearchStringAddition>
-															<ViewStatusAddition name="СвязиНеУдаленныхСостояниеПросмотра" id="430">
+															<ViewStatusAddition name="МестаИспользованияНеудаленныхСостояниеПросмотра" id="430">
 																<AdditionSource>
 																	<Item>МестаИспользованияНеудаленных</Item>
 																	<Type>ViewStatusRepresentation</Type>
 																</AdditionSource>
-																<ContextMenu name="СвязиНеУдаленныхСостояниеПросмотраКонтекстноеМеню" id="431"/>
-																<ExtendedTooltip name="СвязиНеУдаленныхСостояниеПросмотраРасширеннаяПодсказка" id="432"/>
+																<ContextMenu name="МестаИспользованияНеудаленныхСостояниеПросмотраКонтекстноеМеню" id="431"/>
+																<ExtendedTooltip name="МестаИспользованияНеудаленныхСостояниеПросмотраРасширеннаяПодсказка" id="432"/>
 															</ViewStatusAddition>
-															<SearchControlAddition name="СвязиНеУдаленныхУправлениеПоиском" id="433">
+															<SearchControlAddition name="МестаИспользованияНеудаленныхУправлениеПоиском" id="433">
 																<AdditionSource>
 																	<Item>МестаИспользованияНеудаленных</Item>
 																	<Type>SearchControl</Type>
 																</AdditionSource>
-																<ContextMenu name="СвязиНеУдаленныхУправлениеПоискомКонтекстноеМеню" id="434"/>
-																<ExtendedTooltip name="СвязиНеУдаленныхУправлениеПоискомРасширеннаяПодсказка" id="435"/>
+																<ContextMenu name="МестаИспользованияНеудаленныхУправлениеПоискомКонтекстноеМеню" id="434"/>
+																<ExtendedTooltip name="МестаИспользованияНеудаленныхУправлениеПоискомРасширеннаяПодсказка" id="435"/>
 															</SearchControlAddition>
 															<Events>
 																<Event name="Selection">СвязиНеУдаленныхВыбор</Event>

@@ -136,29 +136,29 @@
 				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="НастройкиОтображенияОбъектовРасширеннаяПодсказка" id="22"/>
-			<SearchStringAddition name="Addition" id="23">
+			<SearchStringAddition name="НастройкиОтображенияОбъектовСтрокаПоиска" id="23">
 				<AdditionSource>
 					<Item>НастройкиОтображенияОбъектов</Item>
 					<Type>SearchStringRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="ContextMenu" id="24"/>
-				<ExtendedTooltip name="ExtendedTooltip" id="25"/>
+				<ContextMenu name="НастройкиОтображенияОбъектовСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="НастройкиОтображенияОбъектовСтрокаПоискаРасширеннаяПодсказка" id="25"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="Addition" id="29">
+			<ViewStatusAddition name="НастройкиОтображенияОбъектовСостояниеПросмотра" id="29">
 				<AdditionSource>
 					<Item>НастройкиОтображенияОбъектов</Item>
 					<Type>ViewStatusRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="ContextMenu" id="30"/>
-				<ExtendedTooltip name="ExtendedTooltip" id="31"/>
+				<ContextMenu name="НастройкиОтображенияОбъектовСостояниеПросмотраКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="НастройкиОтображенияОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="Addition" id="26">
+			<SearchControlAddition name="НастройкиОтображенияОбъектовУправлениеПоиском" id="26">
 				<AdditionSource>
 					<Item>НастройкиОтображенияОбъектов</Item>
 					<Type>SearchControl</Type>
 				</AdditionSource>
-				<ContextMenu name="ContextMenu" id="27"/>
-				<ExtendedTooltip name="ExtendedTooltip" id="28"/>
+				<ContextMenu name="НастройкиОтображенияОбъектовУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="НастройкиОтображенияОбъектовУправлениеПоискомРасширеннаяПодсказка" id="28"/>
 			</SearchControlAddition>
 			<ChildItems>
 				<ColumnGroup name="НастройкиОтображенияОбъектовГруппа" id="40">
