@@ -123,6 +123,7 @@
 							<ContextMenu name="СервисКонтекстноеМеню" id="70"/>
 							<ExtendedTooltip name="СервисРасширеннаяПодсказка" id="71"/>
 							<Events>
+								<Event name="OnChange">СервисПриИзменении</Event>
 								<Event name="ChoiceProcessing">СервисОбработкаВыбора</Event>
 							</Events>
 						</InputField>

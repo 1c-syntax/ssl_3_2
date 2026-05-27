@@ -260,7 +260,6 @@
 							<HeightInTableRows>3</HeightInTableRows>
 							<SelectionMode>SingleRow</SelectionMode>
 							<RowSelectionMode>Cell</RowSelectionMode>
-							<Header>false</Header>
 							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<InitialTreeView>ExpandAllLevels</InitialTreeView>
@@ -281,15 +280,15 @@
 							</Title>
 							<CommandSet>
 								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
 								<ExcludedCommand>Copy</ExcludedCommand>
-								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
 								<ExcludedCommand>Delete</ExcludedCommand>
 								<ExcludedCommand>EndEdit</ExcludedCommand>
 								<ExcludedCommand>HierarchicalList</ExcludedCommand>
 								<ExcludedCommand>List</ExcludedCommand>
 								<ExcludedCommand>MoveDown</ExcludedCommand>
 								<ExcludedCommand>MoveUp</ExcludedCommand>
-								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 								<ExcludedCommand>SortListAsc</ExcludedCommand>
 								<ExcludedCommand>SortListDesc</ExcludedCommand>
 								<ExcludedCommand>Tree</ExcludedCommand>
@@ -389,6 +388,22 @@
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
+								<InputField name="РолиИмя" id="266">
+									<DataPath>Роли.Имя</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя роли</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РолиИмяКонтекстноеМеню" id="267"/>
+									<ExtendedTooltip name="РолиИмяРасширеннаяПодсказка" id="268"/>
+								</InputField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -547,6 +562,12 @@
 					</Type>
 				</Column>
 				<Column name="Имя" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя роли</v8:content>
+						</v8:item>
+					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
