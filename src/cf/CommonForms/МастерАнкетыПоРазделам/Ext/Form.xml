@@ -105,6 +105,7 @@
 					<v8:content>Дерево форма заполнения</v8:content>
 				</v8:item>
 			</Title>
+			<HorizontalStretch>false</HorizontalStretch>
 			<Group>AutoScreenTypeSensitive</Group>
 			<HorizontalSpacing>Double</HorizontalSpacing>
 			<Behavior>Usual</Behavior>
@@ -341,6 +342,7 @@
 					<ExtendedTooltip name="ГруппаТелоАнкетыРасширеннаяПодсказка" id="118"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьВступление" id="66">
+							<Width>80</Width>
 							<SkipOnInput>false</SkipOnInput>
 							<ContextMenu name="НадписьВступлениеКонтекстноеМеню" id="67"/>
 							<ExtendedTooltip name="НадписьВступлениеРасширеннаяПодсказка" id="119"/>

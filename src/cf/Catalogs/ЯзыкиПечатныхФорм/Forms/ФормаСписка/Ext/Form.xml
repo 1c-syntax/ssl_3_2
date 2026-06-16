@@ -139,12 +139,6 @@
 								<v8:content>Команды списка</v8:content>
 							</v8:item>
 						</Title>
-						<ToolTip>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Команды списка</v8:content>
-							</v8:item>
-						</ToolTip>
 						<CommandSource>Item.Список</CommandSource>
 						<ExtendedTooltip name="КомандыСпискаРасширеннаяПодсказка" id="70"/>
 					</ButtonGroup>

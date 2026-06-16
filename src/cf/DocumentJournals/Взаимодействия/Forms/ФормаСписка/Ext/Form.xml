@@ -570,12 +570,6 @@
 															<v8:content>Команды навигации</v8:content>
 														</v8:item>
 													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Группа команды навигации</v8:content>
-														</v8:item>
-													</ToolTip>
 													<ExtendedTooltip name="ГруппаКомандыНавигацииРасширеннаяПодсказка" id="1098"/>
 													<ChildItems>
 														<Popup name="ВыборВариантаНавигации" id="26">

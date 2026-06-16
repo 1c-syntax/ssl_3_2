@@ -405,7 +405,7 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ОбновлениеДоступаЭлементовСписка" id="2">
+		<Attribute name="ОбновлениеДоступаЭлементовСписка" id="11">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -415,6 +415,9 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="ВерсииОграниченийСписков" id="2">
+			<Type/>
 		</Attribute>
 	</Attributes>
 	<Commands>

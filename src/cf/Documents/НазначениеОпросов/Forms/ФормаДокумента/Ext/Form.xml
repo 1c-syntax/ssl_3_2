@@ -243,6 +243,7 @@
 							<ExtendedTooltip name="ТипРеспондентовРасширеннаяПодсказка" id="55"/>
 							<Events>
 								<Event name="OnChange">ТипРеспондентовПриИзменении</Event>
+								<Event name="ChoiceProcessing">ТипРеспондентовОбработкаВыбора</Event>
 							</Events>
 						</InputField>
 						<CheckBoxField name="ВозможностьПредварительногоСохранения" id="13">
