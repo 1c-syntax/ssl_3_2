@@ -79,7 +79,7 @@
 									</Title>
 									<Group>Vertical</Group>
 									<ShowTitle>false</ShowTitle>
-									<ScrollOnCompress>true</ScrollOnCompress>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="ГруппаПроверкиРасширеннаяПодсказка" id="480"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаШапка" id="333">

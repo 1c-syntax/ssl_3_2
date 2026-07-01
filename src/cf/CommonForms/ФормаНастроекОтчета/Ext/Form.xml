@@ -3589,7 +3589,6 @@
 							<TitleLocation>None</TitleLocation>
 							<EditMode>EnterOnInput</EditMode>
 							<AutoEditMode>true</AutoEditMode>
-							<Width>9</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ContextMenu name="Период1ДатаНачалаКонтекстноеМеню" id="1246"/>
 							<ExtendedTooltip name="Период1ДатаНачалаРасширеннаяПодсказка" id="1247"/>
@@ -3618,7 +3617,6 @@
 							<TitleLocation>None</TitleLocation>
 							<EditMode>EnterOnInput</EditMode>
 							<AutoEditMode>true</AutoEditMode>
-							<Width>9</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ContextMenu name="Период1ДатаОкончанияКонтекстноеМеню" id="1252"/>
 							<ExtendedTooltip name="Период1ДатаОкончанияРасширеннаяПодсказка" id="1253"/>
@@ -3711,7 +3709,6 @@
 							<TitleLocation>None</TitleLocation>
 							<EditMode>EnterOnInput</EditMode>
 							<AutoEditMode>true</AutoEditMode>
-							<Width>9</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ContextMenu name="Период2ДатаНачалаКонтекстноеМеню" id="1347"/>
 							<ExtendedTooltip name="Период2ДатаНачалаРасширеннаяПодсказка" id="1348"/>
@@ -3740,7 +3737,6 @@
 							<TitleLocation>None</TitleLocation>
 							<EditMode>EnterOnInput</EditMode>
 							<AutoEditMode>true</AutoEditMode>
-							<Width>9</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ContextMenu name="Период2ДатаОкончанияКонтекстноеМеню" id="1353"/>
 							<ExtendedTooltip name="Период2ДатаОкончанияРасширеннаяПодсказка" id="1354"/>

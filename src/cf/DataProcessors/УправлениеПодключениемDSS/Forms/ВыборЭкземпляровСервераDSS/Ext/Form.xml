@@ -9,7 +9,6 @@
 	</Events>
 	<ChildItems>
 		<Table name="Список" id="1">
-			<CommandBarLocation>Top</CommandBarLocation>
 			<ChoiceMode>true</ChoiceMode>
 			<RowSelectionMode>Cell</RowSelectionMode>
 			<EnableStartDrag>true</EnableStartDrag>
@@ -21,7 +20,11 @@
 					<v8:content>Список</v8:content>
 				</v8:item>
 			</Title>
-			<ShowCommandBar>true</ShowCommandBar>
+			<CommandSet>
+				<ExcludedCommand>Choose</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+			</CommandSet>
+			<ShowCommandBar>auto</ShowCommandBar>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>

@@ -8,7 +8,6 @@
 	</Events>
 	<ChildItems>
 		<Table name="Список" id="1">
-			<CommandBarLocation>Top</CommandBarLocation>
 			<RowSelectionMode>Cell</RowSelectionMode>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
@@ -19,7 +18,7 @@
 					<v8:content>Список</v8:content>
 				</v8:item>
 			</Title>
-			<ShowCommandBar>true</ShowCommandBar>
+			<ShowCommandBar>auto</ShowCommandBar>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>

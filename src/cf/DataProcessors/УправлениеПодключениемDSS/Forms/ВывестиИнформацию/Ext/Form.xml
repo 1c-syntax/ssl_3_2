@@ -12,7 +12,9 @@
 	<AutoURL>false</AutoURL>
 	<Group>Vertical</Group>
 	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
 	<ConversationsRepresentation>DontShow</ConversationsRepresentation>
+	<ShowCommandBar>true</ShowCommandBar>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<ButtonGroup name="ГруппаВопросы" id="34">

@@ -57,6 +57,13 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 		<ChildItems>
+			<Button name="Выбрать" id="84">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.Choose</CommandName>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="103"/>
+			</Button>
 			<Button name="ИзменитьФорму" id="15">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
@@ -355,6 +362,7 @@
 							</Title>
 							<CommandSet>
 								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Choose</ExcludedCommand>
 								<ExcludedCommand>Copy</ExcludedCommand>
 								<ExcludedCommand>Create</ExcludedCommand>
 								<ExcludedCommand>LevelDown</ExcludedCommand>
@@ -420,13 +428,6 @@
 							<AutoCommandBar name="СписокКоманднаяПанель" id="3">
 								<Autofill>false</Autofill>
 								<ChildItems>
-									<Button name="Выбрать" id="84">
-										<Type>CommandBarButton</Type>
-										<DefaultButton>true</DefaultButton>
-										<CommandName>Form.Item.Список.StandardCommand.Choose</CommandName>
-										<ButtonImportance>Main</ButtonImportance>
-										<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="103"/>
-									</Button>
 									<Button name="ПоказатьВариантыНижестоящихРазделов" id="229">
 										<Type>CommandBarButton</Type>
 										<Representation>Picture</Representation>

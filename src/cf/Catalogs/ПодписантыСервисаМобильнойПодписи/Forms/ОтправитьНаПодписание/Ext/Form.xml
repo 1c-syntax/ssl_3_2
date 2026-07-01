@@ -189,7 +189,6 @@
 			</Title>
 			<Group>HorizontalIfPossible</Group>
 			<Representation>WeakSeparation</Representation>
-			<United>false</United>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДоверенностьРасширеннаяПодсказка" id="13"/>
 			<ChildItems>

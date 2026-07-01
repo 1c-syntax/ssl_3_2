@@ -203,6 +203,7 @@
 									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<AutoEditMode>true</AutoEditMode>
+									<VerticalStretch>true</VerticalStretch>
 									<UseCopy>true</UseCopy>
 									<ContextMenu name="ОбоснованиеРучнойПроверкиДополнительныхАтрибутовКонтекстноеМеню" id="88"/>
 									<ExtendedTooltip name="ОбоснованиеРучнойПроверкиДополнительныхАтрибутовРасширеннаяПодсказка" id="89"/>
@@ -291,6 +292,7 @@
 									<ToolTipRepresentation>Button</ToolTipRepresentation>
 									<EditMode>EnterOnInput</EditMode>
 									<AutoEditMode>true</AutoEditMode>
+									<VerticalStretch>true</VerticalStretch>
 									<BackColor>style:ЦветФонаВнимание</BackColor>
 									<UseCopy>true</UseCopy>
 									<ContextMenu name="АлгоритмПодписиПредупреждениеКонтекстноеМеню" id="76"/>
@@ -377,6 +379,7 @@
 											<TitleLocation>Top</TitleLocation>
 											<EditMode>EnterOnInput</EditMode>
 											<AutoEditMode>true</AutoEditMode>
+											<VerticalStretch>true</VerticalStretch>
 											<UseCopy>true</UseCopy>
 											<ContextMenu name="ОшибкаМатематическойПроверкиПодписиКонтекстноеМеню" id="79"/>
 											<ExtendedTooltip name="ОшибкаМатематическойПроверкиПодписиРасширеннаяПодсказка" id="80"/>
@@ -418,6 +421,7 @@
 											<TitleLocation>Top</TitleLocation>
 											<EditMode>EnterOnInput</EditMode>
 											<AutoEditMode>true</AutoEditMode>
+											<VerticalStretch>true</VerticalStretch>
 											<UseCopy>true</UseCopy>
 											<ContextMenu name="ОшибкаПроверкиДополнительныхАтрибутовКонтекстноеМеню" id="82"/>
 											<ExtendedTooltip name="ОшибкаПроверкиДополнительныхАтрибутовРасширеннаяПодсказка" id="83"/>
@@ -447,6 +451,7 @@
 									<TitleLocation>None</TitleLocation>
 									<EditMode>EnterOnInput</EditMode>
 									<AutoEditMode>true</AutoEditMode>
+									<VerticalStretch>true</VerticalStretch>
 									<BackColor>style:ЦветФонаВнимание</BackColor>
 									<UseCopy>true</UseCopy>
 									<ContextMenu name="ОписаниеОшибкиКонтекстноеМеню" id="36"/>

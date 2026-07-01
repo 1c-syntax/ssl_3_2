@@ -1,59 +1,35 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta http-equiv="content-type" content="text/html;charset=utf-8"></meta></head><body>
 
+<p>Предназначена для хранения индивидуальных настроек подключения, привязанных к сервису DSS.</p>
 
+<p>Информация учетной записи позволяет хранить данные, необходимые для авторизации пользователя и настроек вторичного подтверждения. Техническая информация о подключении к сервису DSS хранится в данных связанного с этой учетной записью элемента сервера DSS.</p>
 
-<p style="background: white; margin-top: 0cm;"><span style="color: black; font-size: 7.5pt;">Предназначена для хранения индивидуальных
-настроек подключения, привязанных к сервису DSS.</span></p>
+<p>Форма создания учетной записи DSS содержит вкладки: <strong>Главное</strong> и <strong>Дополнительно</strong>. Доступны команды <strong>Проверить подключение</strong>, <strong>Отчеты</strong> и <strong>Обсуждение</strong>.</p>
 
-<p style="background: white; margin-top: 0cm;"><span style="color: black; font-size: 7.5pt;">Информация учетной записи позволяет хранить
-данные необходимые для авторизации пользователя и настроек вторичного
-подтверждения. Техническая информация о подключении к сервису DSS
-хранится в данных связанного с этой учетной записью элемента сервера <b style="mso-bidi-font-weight: normal;">DSS</b>.</span></p>
-
-<h3 style="background: white; margin: 12pt 0cm 0pt;"><span style="color: black; font-size: 9pt;">Настройка авторизации учетной записи</span></h3>
-
-<ul type="disc"><li style="background: white; margin: 0cm 0cm 6pt; color: black; font-size: 12pt; font-style: normal; font-weight: normal; mso-margin-top-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style="font-size: 7.5pt;">В поле <b style="mso-bidi-font-weight: normal;">сервер</b> указывается элемент справочника серверы DSS, к которой привязывается учетная запись.</span></li>
- 
-<li style="background: white; margin: 0cm 0cm 6pt; color: black; font-size: 12pt; font-style: normal; font-weight: normal; mso-margin-top-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style="font-size: 7.5pt;">В поле <b style="mso-bidi-font-weight: normal;">логин</b> указывается уникальное имя учетной записи, выданного провайдером
-     пользователю при регистрации.</span></li>
- 
-<li style="background: white; margin: 0cm 0cm 6pt; color: black; font-size: 12pt; font-style: normal; font-weight: normal; mso-margin-top-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style="font-size: 7.5pt;">В поле <b style="mso-bidi-font-weight: normal;">первичная авторизация</b> необходимо выбрать способ авторизации
-     пользователя, который допускается при работе с сервисом. Информацию о
-     способах авторизации предоставляет провайдер сервиса.</span></li>
- 
-<li style="background: white; margin: 0cm 0cm 6pt; color: black; font-size: 12pt; font-style: normal; font-weight: normal; mso-margin-top-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style="font-size: 7.5pt;">В поле <b style="mso-bidi-font-weight: normal;">пароль</b> можно опционально указать пароль при первичной
-     авторизации. Введенный пароль сохраняется в настройках текущего пользователя.</span></li>
- 
-<li style="background: white; margin: 0cm 0cm 6pt; color: black; font-size: 12pt; font-style: normal; font-weight: normal; mso-margin-top-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style="font-size: 7.5pt;">Поле <b style="mso-bidi-font-weight: normal;">сертификат</b> необходимо при авторизации по сертификату
-     авторизации, который выпустил провайдер сервиса при регистрации
-     пользователя. Сертификат авторизации это файл в формате </span><b style="mso-bidi-font-weight: normal;"><span lang="EN-US" style="font-size: 7.5pt; mso-ansi-language: EN-US;">pfx</span></b><span lang="EN-US" style="font-size: 7.5pt;"> </span><span style="font-size: 7.5pt;">содержащий закрытый ключ и
-     сертификат к нему. Поле доступно для заполнения при выборе способа
-     первичной авторизации: <b style="mso-bidi-font-weight: normal;">сертификат
-     авторизации</b>.</span></li>
- 
-<li style="background-color: white; margin: 0cm 0cm 6pt; color: black; font-size: 12pt; font-style: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-weight: normal; font-size: 7.5pt;">Поле <b style="mso-bidi-font-weight: normal;">пин-код</b> можно заполнить и сохранить в настройках текущего
-     пользователя, если используется способ первичной авторизации<b style="mso-bidi-font-weight: normal;">: сертификат авторизации</b>. Этот пин-код
-     должен совпадать с паролем, который был задан при создании файла </span><span lang="EN-US" style="font-size: 7.5pt;"><b style="font-weight: normal;">pfx</b>.</span></li>
- 
-<li style="background: white; margin: 0cm 0cm 6pt; color: black; font-size: 12pt; font-style: normal; font-weight: normal; mso-margin-top-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style="font-size: 7.5pt;">В поле <b style="mso-bidi-font-weight: normal;">подтверждение операций</b> задается способ, который будет
-     автоматически заполняться при процедуре подтверждения операций подписи,
-     расшифровки и прочих.</span></li>
- 
-<li style="background: white; margin: 0cm 0cm 6pt; color: black; font-size: 12pt; font-style: normal; font-weight: normal; mso-margin-top-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style="font-size: 7.5pt;">По ссылке <b style="mso-bidi-font-weight: normal;">личный кабинет</b> запускается браузер со страницей личного
-     кабинета учетной записи.</span></li>
- 
-<li style="background: white; margin: 0cm 0cm 6pt; color: black; font-size: 12pt; font-style: normal; font-weight: normal; mso-margin-top-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style="font-size: 7.5pt;">Комментарий содержит
-     произвольную текстовую информацию об учетной записи DSS.</span></li>
- 
-<li style="background-color: white; margin: 0cm 0cm 6pt; color: black; font-size: 12pt; font-style: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 7.5pt;">Также можно проверить
-     возможность подключения к серверу с помощью кнопки <b style="font-weight: normal;">Проверить подключение</b>.</span></li>
- 
-<li style="background: white; margin: 0cm 0cm 6pt; color: black; font-size: 12pt; font-style: normal; font-weight: normal; mso-margin-top-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style="font-size: 7.5pt;">С помощью кнопки <b style="mso-bidi-font-weight: normal;">Состояние учетной записи</b>
-     отображается детальная информация об учетной записи, полученная с сервиса
-     DSS.</span></li>
- 
-<li style="background: white; margin: 0cm 0cm 6pt; color: black; font-size: 12pt; font-style: normal; font-weight: normal; mso-margin-top-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style="font-size: 7.5pt;">Пункт меню <b style="mso-bidi-font-weight: normal;">Еще – Проверка работоспособности</b>
-     можно не только проверить возможность подключения к сервису, но
-     дополнительно проверить выполнения базовых операций выполняемых сервисом:
-     подписание, расшифрование, расшифрование и прочие операции.</span></li>
+<h3>Главное</h3>
+<ul><li>В поле <strong>Сервер</strong> указывается элемент справочника «Серверы DSS», к которому привязывается учетная запись (выбирается из выпадающего списка).</li>
+<li>В поле <strong>Логин</strong> указывается уникальное имя учетной записи, выданное провайдером пользователю при регистрации.</li>
+<li>В поле <strong>Пароль</strong> можно опционально указать пароль при первичной авторизации. Введенный пароль сохраняется в настройках текущего пользователя.</li>
+<li>В поле <strong>Первичная авторизация</strong> необходимо выбрать способ авторизации пользователя, который допускается при работе с сервисом. Доступны следующие способы:
+<ul><li><strong>Логин и пароль</strong> — стандартная авторизация с использованием учётной записи.</li>
+<li><strong>Логин и пароль с дополнительным подтверждением</strong> — двухфакторная авторизация.</li>
+<li><strong>Сертификат авторизации</strong> — авторизация с использованием сертификата электронной подписи.</li>
+<li><strong>Авторизация через Web-форму</strong> — авторизация через веб-интерфейс.</li>
+<li><strong>Сервисный клиент</strong> — авторизация для сервисных учётных записей.</li>
+</ul></li>
+<li>В поле <strong>Подтверждение операций</strong> задается способ, который будет автоматически заполняться при процедуре подтверждения операций подписи, расшифровки и прочих. Доступны следующие способы подтверждения:
+<ul><li><strong>Мобильное приложение myDSS</strong> — подтверждение через мобильное приложение myDSS.</li>
+<li><strong>Электронная почта</strong> — подтверждение через электронную почту.</li>
+<li><strong>SMS</strong> — подтверждение через SMS-сообщение.</li>
+<li><strong>Мобильное приложение AirKey DSS</strong> — подтверждение через мобильное приложение AirKey DSS.</li>
+<li><strong>Мобильное приложение myDSS 2.0 или другое</strong> — подтверждение через другие мобильные приложения.</li>
+</ul></li>
+</ul><h3>Дополнительно</h3>
+<ul><li>Поле <strong>Автор</strong> — указывается пользователь, создавший учетную запись (например, <em>Администратор</em>). Заполняется автоматически, может быть изменено.</li>
+<li>Поле <strong>Комментарий</strong> — содержит произвольную текстовую информацию об учетной записи DSS.</li></ul><ul></ul><h3>См. также:</h3>
+<ul><li><a href="DataProcessor.УправлениеПодключениемDSS.Form.СписокСертификатов/Help">Серверы DSS (список)</a>.</li>
+<li><a href="DataProcessor.УправлениеПодключениемDSS.Form.ФормаЭкземпляраСервераDSS/Help">Сервер DSS (настройка)</a>.</li>
+<li><a href="DataProcessor.УправлениеПодключениемDSS.Form.СписокУчетныхЗаписей/Help">Учетные записи DSS (список)</a>.</li>
+<li><a href="v8help://frame/form_common">Работа с формами</a>.</li>
+<li><a href="CommonForm.НастройкиЭлектроннойПодписиИШифрования/Help">Настройки электронной подписи и шифрования</a>.</li>
 </ul></body></html>

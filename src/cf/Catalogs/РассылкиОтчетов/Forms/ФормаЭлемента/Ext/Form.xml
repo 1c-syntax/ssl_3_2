@@ -406,11 +406,11 @@
 							<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
 							<SelectionMode>SingleRow</SelectionMode>
 							<RowSelectionMode>Cell</RowSelectionMode>
-							<Header>false</Header>
 							<HorizontalLinesBWA>false</HorizontalLinesBWA>
 							<VerticalLinesBWA>false</VerticalLinesBWA>
 							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialRowActivation>Activate</InitialRowActivation>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<FileDragMode>AsFile</FileDragMode>
@@ -579,6 +579,12 @@
 								<InputField name="ОтчетыПредставление" id="223">
 									<DataPath>Объект.Отчеты.Представление</DataPath>
 									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отчет</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<AutoEditMode>true</AutoEditMode>
 									<ChooseType>false</ChooseType>
@@ -1648,7 +1654,6 @@
 						</Pages>
 						<LabelDecoration name="ПредставлениеРасписания" id="1175">
 							<AutoMaxWidth>false</AutoMaxWidth>
-							<TextColor>style:ПоясняющийТекст</TextColor>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -2519,7 +2524,6 @@
 																	<EditMode>EnterOnInput</EditMode>
 																	<AutoEditMode>true</AutoEditMode>
 																	<Width>1</Width>
-																	<VerticalStretch>false</VerticalStretch>
 																	<ContextMenu name="ТекстПисьмаФорматированныйДокументКонтекстноеМеню" id="130">
 																		<ChildItems>
 																			<Popup name="ТекстПисьмаФорматированныйДокументКонтекстноеМенюПодменюПараметр" id="695">
@@ -2827,7 +2831,6 @@
 																	<EditMode>EnterOnInput</EditMode>
 																	<AutoEditMode>true</AutoEditMode>
 																	<Width>1</Width>
-																	<VerticalStretch>false</VerticalStretch>
 																	<ContextMenu name="ТекстПисьмаКонтекстноеМеню" id="22">
 																		<ChildItems>
 																			<Popup name="ТекстПисьмаКонтекстноеМенюПодменюПараметр" id="696">

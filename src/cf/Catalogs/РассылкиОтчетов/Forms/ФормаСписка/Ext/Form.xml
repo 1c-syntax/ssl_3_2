@@ -3,94 +3,7 @@
 	<WindowOpeningMode>DontBlock</WindowOpeningMode>
 	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<Autofill>false</Autofill>
 		<ChildItems>
-			<ButtonGroup name="ВажныеКоманды" id="89">
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Важные команды</v8:content>
-					</v8:item>
-				</Title>
-				<ExtendedTooltip name="ВажныеКомандыРасширеннаяПодсказка" id="90"/>
-				<ChildItems>
-					<Button name="ФормаСоздать" id="91">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.StandardCommand.Create</CommandName>
-						<ExtendedTooltip name="ФормаСоздатьРасширеннаяПодсказка" id="92"/>
-					</Button>
-					<Button name="ФормаСоздатьГруппу" id="93">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Список.StandardCommand.CreateFolder</CommandName>
-						<ExtendedTooltip name="ФормаСоздатьГруппуРасширеннаяПодсказка" id="94"/>
-					</Button>
-					<Button name="ФормаИзменить" id="97">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Список.StandardCommand.Change</CommandName>
-						<ExtendedTooltip name="ФормаИзменитьРасширеннаяПодсказка" id="98"/>
-					</Button>
-					<Button name="ФормаСкопировать" id="95">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Список.StandardCommand.Copy</CommandName>
-						<ExtendedTooltip name="ФормаСкопироватьРасширеннаяПодсказка" id="96"/>
-					</Button>
-					<Button name="ФормаВыбрать" id="152">
-						<Type>CommandBarButton</Type>
-						<DefaultButton>true</DefaultButton>
-						<CommandName>Form.Item.Список.StandardCommand.Choose</CommandName>
-						<ButtonImportance>Main</ButtonImportance>
-						<ExtendedTooltip name="ФормаВыбратьРасширеннаяПодсказка" id="153"/>
-					</Button>
-				</ChildItems>
-			</ButtonGroup>
-			<ButtonGroup name="КомандыПоиска" id="99">
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Команды поиска</v8:content>
-					</v8:item>
-				</Title>
-				<ExtendedTooltip name="КомандыПоискаРасширеннаяПодсказка" id="100"/>
-				<ChildItems>
-					<Button name="Найти" id="101">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Список.StandardCommand.Find</CommandName>
-						<ExtendedTooltip name="НайтиРасширеннаяПодсказка" id="102"/>
-					</Button>
-					<Button name="ОтменитьПоиск" id="103">
-						<Type>CommandBarButton</Type>
-						<Representation>Picture</Representation>
-						<CommandName>Form.Item.Список.StandardCommand.CancelSearch</CommandName>
-						<ExtendedTooltip name="ОтменитьПоискРасширеннаяПодсказка" id="104"/>
-					</Button>
-				</ChildItems>
-			</ButtonGroup>
-			<ButtonGroup name="ВторостепенныеКоманды" id="127">
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Второстепенные команды</v8:content>
-					</v8:item>
-				</Title>
-				<ExtendedTooltip name="ВторостепенныеКомандыРасширеннаяПодсказка" id="128"/>
-				<ChildItems>
-					<Button name="ФормаПеренестиЭлемент" id="135">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Список.StandardCommand.MoveItem</CommandName>
-						<ExtendedTooltip name="ФормаПеренестиЭлементРасширеннаяПодсказка" id="136"/>
-					</Button>
-					<Button name="ФормаУстановитьПометкуУдаления" id="129">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Список.StandardCommand.SetDeletionMark</CommandName>
-						<ExtendedTooltip name="ФормаУстановитьПометкуУдаленияРасширеннаяПодсказка" id="130"/>
-					</Button>
-					<Button name="ФормаУдалить" id="131">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Список.StandardCommand.Delete</CommandName>
-						<ExtendedTooltip name="ФормаУдалитьРасширеннаяПодсказка" id="132"/>
-					</Button>
-				</ChildItems>
-			</ButtonGroup>
 			<Button name="ИзменитьВыделенные" id="79">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ИзменитьВыделенные</CommandName>
@@ -103,33 +16,27 @@
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ИзменитьВыделенныеРасширеннаяПодсказка" id="80"/>
 			</Button>
-			<ButtonGroup name="ОсновныеКоманды" id="22">
+			<Popup name="ПодменюОтчеты" id="174">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
-						<v8:content>Основные команды</v8:content>
+						<v8:content>Отчеты</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="ОсновныеКомандыРасширеннаяПодсказка" id="55"/>
-			</ButtonGroup>
-			<Button name="ИзменитьФорму" id="49">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
-				<ExtendedTooltip name="ИзменитьФормуРасширеннаяПодсказка" id="56"/>
-			</Button>
-			<Button name="Справка" id="37">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.StandardCommand.Help</CommandName>
-				<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="59"/>
-			</Button>
-			<Button name="ВыполнитьСейчас" id="23" DisplayImportance="VeryHigh">
-				<Type>CommandBarButton</Type>
-				<CommandName>Catalog.РассылкиОтчетов.Command.ВыполнитьСейчас</CommandName>
-				<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
-				<RepresentationInContextMenu>AdditionalInContextMenu</RepresentationInContextMenu>
-				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
-				<ExtendedTooltip name="ВыполнитьСейчасРасширеннаяПодсказка" id="57"/>
-			</Button>
+				<Picture>
+					<xr:Ref>CommonPicture.Отчеты</xr:Ref>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ПодменюОтчетыРасширеннаяПодсказка" id="175"/>
+				<ChildItems>
+					<Button name="СобытияРассылки" id="30">
+						<Type>CommandBarButton</Type>
+						<CommandName>Catalog.РассылкиОтчетов.Command.СобытияРассылки</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<ExtendedTooltip name="СобытияРассылкиРасширеннаяПодсказка" id="58"/>
+					</Button>
+				</ChildItems>
+			</Popup>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -279,7 +186,6 @@
 			<ExtendedTooltip name="ГруппаПользовательскихНастроекРасширеннаяПодсказка" id="84"/>
 		</UsualGroup>
 		<Table name="Список" id="1">
-			<CommandBarLocation>Top</CommandBarLocation>
 			<ChoiceMode>true</ChoiceMode>
 			<RowSelectionMode>Cell</RowSelectionMode>
 			<InitialTreeView>ExpandAllLevels</InitialTreeView>
@@ -294,7 +200,7 @@
 					<v8:content>Список</v8:content>
 				</v8:item>
 			</Title>
-			<ShowCommandBar>true</ShowCommandBar>
+			<ShowCommandBar>auto</ShowCommandBar>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -337,113 +243,7 @@
 					</Button>
 				</ChildItems>
 			</ContextMenu>
-			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
-				<ChildItems>
-					<Button name="ФормаОбновить" id="133">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
-						<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="134"/>
-					</Button>
-					<Popup name="РежимПросмотраСписка" id="113">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Режим просмотра</v8:content>
-							</v8:item>
-						</Title>
-						<Picture>
-							<xr:Ref>StdPicture.ListViewMode</xr:Ref>
-							<xr:LoadTransparent>true</xr:LoadTransparent>
-						</Picture>
-						<ExtendedTooltip name="РежимПросмотраСпискаРасширеннаяПодсказка" id="114"/>
-						<ChildItems>
-							<Button name="ФормаИерархическийСписок" id="107">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Item.Список.StandardCommand.HierarchicalList</CommandName>
-								<ExtendedTooltip name="ФормаИерархическийСписокРасширеннаяПодсказка" id="108"/>
-							</Button>
-							<Button name="ФормаСписок" id="137">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Item.Список.StandardCommand.List</CommandName>
-								<ExtendedTooltip name="ФормаСписокРасширеннаяПодсказка" id="138"/>
-							</Button>
-							<Button name="ФормаДерево" id="111">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Item.Список.StandardCommand.Tree</CommandName>
-								<ExtendedTooltip name="ФормаДеревоРасширеннаяПодсказка" id="112"/>
-							</Button>
-						</ChildItems>
-					</Popup>
-					<Popup name="ПодменюОтчеты" id="174" DisplayImportance="VeryHigh">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Отчеты</v8:content>
-							</v8:item>
-						</Title>
-						<Picture>
-							<xr:Ref>CommonPicture.Отчеты</xr:Ref>
-							<xr:LoadTransparent>false</xr:LoadTransparent>
-						</Picture>
-						<ExtendedTooltip name="ПодменюОтчетыРасширеннаяПодсказка" id="175"/>
-						<ChildItems>
-							<Button name="СобытияРассылки" id="30" DisplayImportance="High">
-								<Type>CommandBarButton</Type>
-								<CommandName>Catalog.РассылкиОтчетов.Command.СобытияРассылки</CommandName>
-								<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
-								<ExtendedTooltip name="СобытияРассылкиРасширеннаяПодсказка" id="58"/>
-							</Button>
-						</ChildItems>
-					</Popup>
-					<Popup name="ИзменитьСписок" id="105">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Список</v8:content>
-							</v8:item>
-						</Title>
-						<ExtendedTooltip name="ИзменитьСписокРасширеннаяПодсказка" id="106"/>
-						<ChildItems>
-							<ButtonGroup name="НастройкаСписка" id="115">
-								<Title>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Настройка списка</v8:content>
-									</v8:item>
-								</Title>
-								<ExtendedTooltip name="НастройкаСпискаРасширеннаяПодсказка" id="116"/>
-								<ChildItems>
-									<Button name="ФормаНастройкаСписка" id="117">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Item.Список.StandardCommand.ListSettings</CommandName>
-										<ExtendedTooltip name="ФормаНастройкаСпискаРасширеннаяПодсказка" id="118"/>
-									</Button>
-									<Button name="ФормаЗагрузитьНастройки" id="119">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Item.Список.StandardCommand.LoadDynamicListSettings</CommandName>
-										<ExtendedTooltip name="ФормаЗагрузитьНастройкиРасширеннаяПодсказка" id="120"/>
-									</Button>
-									<Button name="ФормаСохранитьНастройки" id="121">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Item.Список.StandardCommand.SaveDynamicListSettings</CommandName>
-										<ExtendedTooltip name="ФормаСохранитьНастройкиРасширеннаяПодсказка" id="122"/>
-									</Button>
-									<Button name="ФормаСтандартныеНастройки" id="123">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Item.Список.StandardCommand.DynamicListStandardSettings</CommandName>
-										<ExtendedTooltip name="ФормаСтандартныеНастройкиРасширеннаяПодсказка" id="124"/>
-									</Button>
-								</ChildItems>
-							</ButtonGroup>
-							<Button name="ФормаВывестиСписок" id="125">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Item.Список.StandardCommand.OutputList</CommandName>
-								<ExtendedTooltip name="ФормаВывестиСписокРасширеннаяПодсказка" id="126"/>
-							</Button>
-						</ChildItems>
-					</Popup>
-				</ChildItems>
-			</AutoCommandBar>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
 			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="62"/>
 			<SearchStringAddition name="СписокСтрокаПоиска" id="139">
 				<AdditionSource>
@@ -1201,6 +1001,8 @@
 			</ToolTip>
 			<Action>ИзменитьВыделенные</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
+			<SelectedRowsUse>Use</SelectedRowsUse>
 		</Command>
 	</Commands>
 	<Parameters>
