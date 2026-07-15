@@ -1235,7 +1235,6 @@
 			<Form>ПроверкаСинхронизацииДанных</Form>
 			<Form>СообщениеОНеудачномОбновлении</Form>
 			<Form>ФормаСписка</Form>
-			<Form>НастройкаРежимаОтладки</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

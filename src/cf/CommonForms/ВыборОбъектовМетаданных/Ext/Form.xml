@@ -180,6 +180,7 @@
 							<TitleLocation>None</TitleLocation>
 							<EditMode>EnterOnInput</EditMode>
 							<AutoEditMode>true</AutoEditMode>
+							<CheckBoxType>CheckBox</CheckBoxType>
 							<ThreeState>true</ThreeState>
 							<ContextMenu name="ПометкаКонтекстноеМеню" id="9"/>
 							<ExtendedTooltip name="ПометкаРасширеннаяПодсказка" id="21"/>

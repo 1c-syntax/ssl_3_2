@@ -289,6 +289,7 @@
 										<Event name="AutoComplete">АдресатыАвтоПодбор</Event>
 										<Event name="StartChoice">АдресатыНачалоВыбора</Event>
 										<Event name="MultipleValuesAdd">КомуДобавлениеМножественныхЗначений</Event>
+										<Event name="ChoiceProcessing">АдресатыОбработкаВыбора</Event>
 									</Events>
 								</InputField>
 								<InputField name="Копия" id="536">
@@ -338,6 +339,7 @@
 										<Event name="AutoComplete">АдресатыАвтоПодбор</Event>
 										<Event name="StartChoice">АдресатыНачалоВыбора</Event>
 										<Event name="MultipleValuesAdd">КопияДобавлениеМножественныхЗначений</Event>
+										<Event name="ChoiceProcessing">АдресатыОбработкаВыбора</Event>
 									</Events>
 								</InputField>
 								<InputField name="СкрытаяКопия" id="542">

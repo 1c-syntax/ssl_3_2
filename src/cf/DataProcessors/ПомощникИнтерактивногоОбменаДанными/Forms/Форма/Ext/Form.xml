@@ -2039,6 +2039,19 @@
 													<ContextMenu name="ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанныхКонтекстноеМеню" id="578"/>
 													<ExtendedTooltip name="ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанныхExtendedTooltip" id="797"/>
 												</LabelDecoration>
+												<Button name="ПерейтиКПредупреждениямЗагрузки" id="1288">
+													<Type>Hyperlink</Type>
+													<SkipOnInput>false</SkipOnInput>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<CommandName>Form.Command.ПерейтиКПредупреждениямЗагрузки</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Предупреждения загрузки...</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПерейтиКПредупреждениямЗагрузкиРасширеннаяПодсказка" id="1289"/>
+												</Button>
 												<Button name="ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанныхПодробно" id="389">
 													<Type>Hyperlink</Type>
 													<SkipOnInput>false</SkipOnInput>
@@ -2048,7 +2061,7 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Подробно...</v8:content>
+															<v8:content>Журнал регистрации</v8:content>
 														</v8:item>
 													</Title>
 													<ExtendedTooltip name="ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанныхПодробноExtendedTooltip" id="810"/>
@@ -2230,6 +2243,17 @@
 													<ContextMenu name="ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанныхКонтекстноеМеню" id="582"/>
 													<ExtendedTooltip name="ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанныхExtendedTooltip" id="808"/>
 												</LabelDecoration>
+												<Button name="ПерейтиКПредупреждениямВыгрузки" id="1311">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ПерейтиКПредупреждениямВыгрузки</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Предупреждения выгрузки...</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПерейтиКПредупреждениямВыгрузкиРасширеннаяПодсказка" id="1312"/>
+												</Button>
 												<Button name="ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанныхПодробно" id="404">
 													<Type>Hyperlink</Type>
 													<SkipOnInput>false</SkipOnInput>
@@ -2237,7 +2261,7 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Подробно...</v8:content>
+															<v8:content>Журнал регистрации</v8:content>
 														</v8:item>
 													</Title>
 													<ExtendedTooltip name="ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанныхПодробноExtendedTooltip" id="811"/>
@@ -3085,6 +3109,16 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ЭтоУзелОбъектнойКонвертации" id="25">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодсистемаВерсионированияСуществует" id="64">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОбновитьИнформациюСопоставленияПолностью" id="20">
@@ -3157,7 +3191,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Перейти в журнал регистрации</v8:content>
+					<v8:content>Журнал регистрации</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -3173,7 +3207,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Перейти в журнал регистрации событий выгрузки данных</v8:content>
+					<v8:content>Журнал регистрации</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -3450,5 +3484,67 @@
 			</ToolTip>
 			<Action>ДополнениеВыгрузкиОтбор</Action>
 		</Command>
+		<Command name="ПерейтиКПредупреждениямВыгрузки" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предупреждения выгрузки...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к предупреждениям загрузки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерейтиКПредупреждениямВыгрузки</Action>
+		</Command>
+		<Command name="ПерейтиКПредупреждениямЗагрузки" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предупреждения загрузки...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к предупреждениям загрузки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерейтиКПредупреждениямЗагрузки</Action>
+		</Command>
 	</Commands>
+	<Parameters>
+		<Parameter name="ЗакрытьФормуБезусловно">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+				<v8:Type>v8:Null</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ИмяПланаОбмена">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="КодУзлаИнформационнойБазы">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ОбъектнаяКонвертацияXDTO">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
 </Form>

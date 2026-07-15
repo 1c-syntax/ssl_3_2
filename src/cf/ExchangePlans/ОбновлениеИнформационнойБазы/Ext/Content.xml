@@ -261,6 +261,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>InformationRegister.КоличествоБлокируемыхОбъектовКЗагрузке</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>InformationRegister.ЗадачиОбменаДаннымиВнутренняяПубликация</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -565,6 +569,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>InformationRegister.ОбъектыКЗагрузке</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Catalog.ПравилаПроверкиУчета</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -589,7 +597,15 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>InformationRegister.ОбъектыБлокирующиеЗагрузку</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Constant.ПровайдерSMS</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>InformationRegister.ПрочитанныеДанныеСообщенийОбмена</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
@@ -1030,6 +1046,10 @@
 	</Item>
 	<Item>
 		<Metadata>Constant.АдресСервисаМЧДРР</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>InformationRegister.ДействияПриПолученииДанныхОбмена</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>

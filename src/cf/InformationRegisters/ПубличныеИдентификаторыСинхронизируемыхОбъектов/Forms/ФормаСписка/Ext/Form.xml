@@ -20,7 +20,6 @@
 		</UsualGroup>
 		<Table name="Список" id="3">
 			<Representation>List</Representation>
-			<CommandBarLocation>None</CommandBarLocation>
 			<DefaultItem>true</DefaultItem>
 			<SearchOnInput>DontUse</SearchOnInput>
 			<InitialTreeView>ExpandTopLevel</InitialTreeView>
@@ -39,6 +38,7 @@
 			</CommandSet>
 			<SearchStringLocation>None</SearchStringLocation>
 			<SearchControlLocation>None</SearchControlLocation>
+			<ShowCommandBar>auto</ShowCommandBar>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -55,9 +55,7 @@
 			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
 			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
-			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
-				<Autofill>false</Autofill>
-			</AutoCommandBar>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5"/>
 			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
 			<SearchStringAddition name="СписокСтрокаПоиска" id="8">
 				<Enabled>false</Enabled>
@@ -86,7 +84,16 @@
 				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="15"/>
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="16"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокВыбор</Event>
+			</Events>
 			<ChildItems>
+				<CheckBoxField name="Основной" id="39">
+					<DataPath>Список.Основной</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ОсновнойКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ОсновнойРасширеннаяПодсказка" id="41"/>
+				</CheckBoxField>
 				<LabelField name="Идентификатор" id="17">
 					<DataPath>Список.Идентификатор</DataPath>
 					<DefaultItem>true</DefaultItem>
@@ -105,6 +112,22 @@
 					<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="22"/>
 					<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="23"/>
 				</LabelField>
+				<LabelField name="ОбъектФормата" id="43">
+					<DataPath>Список.ОбъектФормата</DataPath>
+					<ContextMenu name="ОбъектФорматаКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ОбъектФорматаРасширеннаяПодсказка" id="45"/>
+				</LabelField>
+				<InputField name="СсылкаВнешняяНавигационная" id="47">
+					<DataPath>Список.СсылкаВнешняяНавигационная</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>Directly</EditMode>
+					<CellHyperlink>true</CellHyperlink>
+					<CellHyperlinkRepresentation>Show</CellHyperlinkRepresentation>
+					<CellHyperlinkDisplayVariant>Always</CellHyperlinkDisplayVariant>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СсылкаВнешняяНавигационнаяКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СсылкаВнешняяНавигационнаяРасширеннаяПодсказка" id="49"/>
+				</InputField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -115,38 +138,8 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>true</ManualQuery>
+				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
-				<QueryText>ВЫБРАТЬ 
-       ПубличныеИдентификаторыСинхронизируемыхОбъектов.Идентификатор, 
-       ПубличныеИдентификаторыСинхронизируемыхОбъектов.Ссылка, 
-       ПубличныеИдентификаторыСинхронизируемыхОбъектов.УзелИнформационнойБазы
- ИЗ 
-       РегистрСведений.ПубличныеИдентификаторыСинхронизируемыхОбъектов
- КАК 
-       ПубличныеИдентификаторыСинхронизируемыхОбъектов</QueryText>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Идентификатор</dcssch:dataPath>
-					<dcssch:field>Идентификатор</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Ссылка</dcssch:dataPath>
-					<dcssch:field>Ссылка</dcssch:field>
-					<dcssch:attributeUseRestriction>
-						<dcssch:field>true</dcssch:field>
-						<dcssch:condition>true</dcssch:condition>
-					</dcssch:attributeUseRestriction>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>УзелИнформационнойБазы</dcssch:dataPath>
-					<dcssch:field>УзелИнформационнойБазы</dcssch:field>
-					<dcssch:attributeUseRestriction>
-						<dcssch:field>true</dcssch:field>
-						<dcssch:condition>true</dcssch:condition>
-						<dcssch:group>true</dcssch:group>
-						<dcssch:order>true</dcssch:order>
-					</dcssch:attributeUseRestriction>
-				</Field>
 				<MainTable>InformationRegister.ПубличныеИдентификаторыСинхронизируемыхОбъектов</MainTable>
 				<ListSettings>
 					<dcsset:filter>

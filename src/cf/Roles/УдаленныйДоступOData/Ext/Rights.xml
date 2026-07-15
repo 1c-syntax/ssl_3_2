@@ -768,33 +768,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Configuration.БиблиотекаСтандартныхПодсистем</name>
-		<right>
-			<name>MainWindowModeNormal</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeEmbeddedWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeFullscreenWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeKiosk</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>AnalyticsSystemClient</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ИерархияГруппПользователей</name>
 		<right>
 			<name>Read</name>
@@ -2513,17 +2486,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ДлительныеОперации</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>SessionParameter.ОсновнойЯзык</name>
 		<right>
 			<name>Get</name>
@@ -3188,6 +3150,33 @@
 		</right>
 	</object>
 	<object>
+		<name>Configuration.БиблиотекаСтандартныхПодсистем</name>
+		<right>
+			<name>MainWindowModeNormal</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeEmbeddedWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeFullscreenWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>AnalyticsSystemClient</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ИспользоватьНапоминанияПользователя</name>
 		<right>
 			<name>Read</name>
@@ -3423,6 +3412,13 @@
 		</right>
 		<right>
 			<name>Delete</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>SessionParameter.ПроблемыЗагруженныхОбъектовОбрабатываемыеПользователем</name>
+		<right>
+			<name>Get</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -3920,6 +3916,17 @@
 		<name>SessionParameter.ОбновлениеСправочниковПользователей</name>
 		<right>
 			<name>Get</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ПорядокОбрабатываемыхДанных</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 	</object>

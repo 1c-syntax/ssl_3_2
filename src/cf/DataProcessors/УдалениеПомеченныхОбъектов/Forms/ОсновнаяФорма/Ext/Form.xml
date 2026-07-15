@@ -943,7 +943,7 @@
 																<ExtendedTooltip name="МестаИспользованияНеудаленныхУправлениеПоискомРасширеннаяПодсказка" id="435"/>
 															</SearchControlAddition>
 															<Events>
-																<Event name="Selection">СвязиНеУдаленныхВыбор</Event>
+																<Event name="Selection">МестаИспользованияНеудаленныхВыбор</Event>
 																<Event name="OnActivateRow">МестаИСпользованияНЕудаленныхПриАктивизацииСтроки</Event>
 																<Event name="ChoiceProcessing">МестаИспользованияНеудаленныхОбработкаВыбора</Event>
 															</Events>
@@ -970,9 +970,7 @@
 																			<v8:content>Действие представление</v8:content>
 																		</v8:item>
 																	</Title>
-																	<EditMode>EnterOnInput</EditMode>
 																	<CellHyperlink>true</CellHyperlink>
-																	<AutoEditMode>true</AutoEditMode>
 																	<CellHyperlinkRepresentation>Show</CellHyperlinkRepresentation>
 																	<CellHyperlinkDisplayVariant>Always</CellHyperlinkDisplayVariant>
 																	<MultiLine>true</MultiLine>

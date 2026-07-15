@@ -216,6 +216,12 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ОтборПоВариантамНастроек" id="5">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОбновитьСписокНастроек" id="1">
@@ -254,4 +260,11 @@
 			<Action>ПодключитьИнтернетПоддержку</Action>
 		</Command>
 	</Commands>
+	<Parameters>
+		<Parameter name="ОтборПоВариантамНастроек">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
 </Form>

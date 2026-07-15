@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Что необходимо выгрузить?</v8:content>
+		</v8:item>
+	</Title>
 	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
 	<Group>Vertical</Group>
 	<CommandBarLocation>Top</CommandBarLocation>
 	<ShowCommandBar>true</ShowCommandBar>
@@ -94,13 +101,12 @@
 							</Title>
 							<Group>HorizontalIfPossible</Group>
 							<Behavior>Usual</Behavior>
-							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаНачалоРасширеннаяПодсказка" id="166"/>
 							<ChildItems>
 								<PictureDecoration name="Декорация14" id="179">
 									<Picture>
-										<xr:Ref>StdPicture.DialogExclamation</xr:Ref>
+										<xr:Ref>StdPicture.DialogInformation</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</Picture>
 									<FileDragMode>AsFile</FileDragMode>
@@ -120,20 +126,6 @@
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаРегистрацияДанныхРасширеннаяПодсказка" id="229"/>
 									<ChildItems>
-										<LabelDecoration name="Декорация15" id="182">
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Выгрузка данных может занять длительное время в случаях:
- - медленного канала связи;
- - большого объема данных в этом приложении.
-
-Если операция будет отменена, можно выполнить ее позднее из формы списка настроенных синхронизаций данных.</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="Декорация15КонтекстноеМеню" id="183"/>
-											<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="184"/>
-										</LabelDecoration>
 										<RadioButtonField name="РежимВыгрузкиДанных" id="233">
 											<DataPath>РежимВыгрузкиДанных</DataPath>
 											<Title>
@@ -142,6 +134,8 @@
 													<v8:content>Состав выгружаемых данных</v8:content>
 												</v8:item>
 											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 											<RadioButtonType>Auto</RadioButtonType>
 											<ColumnsCount>1</ColumnsCount>
 											<ChoiceList>
@@ -152,12 +146,41 @@
 														<Presentation>
 															<v8:item>
 																<v8:lang>ru</v8:lang>
-																<v8:content>Выгрузить все данные (начальная выгрузка данных)</v8:content>
+																<v8:content>Выгрузить все данные</v8:content>
 															</v8:item>
 														</Presentation>
 														<Value xsi:type="xs:string">НачальнаяВыгрузка</Value>
 													</xr:Value>
 												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="РежимВыгрузкиДанныхКонтекстноеМеню" id="234"/>
+											<ExtendedTooltip name="РежимВыгрузкиДанныхРасширеннаяПодсказка" id="235">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Рекомендуется выбирать в случаях, когда присутствует большая вероятность дублирования информации. При этом необходимо учитывать, что полная выгрузка данных с последующей загрузкой может происходить длительное время.
+Выгрузку всех данных можно выполнить позже, из формы списка настроенных синхронизаций данных.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</RadioButtonField>
+										<LabelDecoration name="Декорация4" id="304">
+											<ContextMenu name="Декорация4КонтекстноеМеню" id="305"/>
+											<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="306"/>
+										</LabelDecoration>
+										<RadioButtonField name="РежимВыгрузкиДанных1" id="300">
+											<DataPath>РежимВыгрузкиДанных</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Состав выгружаемых данных</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ColumnsCount>1</ColumnsCount>
+											<ChoiceList>
 												<xr:Item>
 													<xr:Presentation/>
 													<xr:CheckState>0</xr:CheckState>
@@ -165,15 +188,22 @@
 														<Presentation>
 															<v8:item>
 																<v8:lang>ru</v8:lang>
-																<v8:content>Выгрузить только зарегистрированные к обмену данные</v8:content>
+																<v8:content>Выгрузить только зарегистрированные данные</v8:content>
 															</v8:item>
 														</Presentation>
 														<Value xsi:type="xs:string">ОбычнаяВыгрузка</Value>
 													</xr:Value>
 												</xr:Item>
 											</ChoiceList>
-											<ContextMenu name="РежимВыгрузкиДанныхКонтекстноеМеню" id="234"/>
-											<ExtendedTooltip name="РежимВыгрузкиДанныхРасширеннаяПодсказка" id="235"/>
+											<ContextMenu name="РежимВыгрузкиДанных1КонтекстноеМеню" id="301"/>
+											<ExtendedTooltip name="РежимВыгрузкиДанных1РасширеннаяПодсказка" id="302">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Рекомендуется выбирать в сценариях, когда планируется точечно синхронизировать данные, с малой вероятностью привнесения дублей.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
 										</RadioButtonField>
 									</ChildItems>
 								</UsualGroup>

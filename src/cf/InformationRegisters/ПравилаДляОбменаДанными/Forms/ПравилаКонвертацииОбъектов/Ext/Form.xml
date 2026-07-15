@@ -68,20 +68,6 @@
 					</v8:item>
 				</ToolTip>
 				<ExtendedTooltip name="ФормаГруппаНастройкаРежимаОтладкиРасширеннаяПодсказка" id="152"/>
-				<ChildItems>
-					<Button name="ФормаНастройкаРежимаОтладки" id="149">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.НастройкаРежимаОтладки</CommandName>
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Настройка отладки</v8:content>
-							</v8:item>
-						</Title>
-						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-						<ExtendedTooltip name="ФормаНастройкаРежимаОтладкиРасширеннаяПодсказка" id="150"/>
-					</Button>
-				</ChildItems>
 			</ButtonGroup>
 		</ChildItems>
 	</AutoCommandBar>
@@ -90,6 +76,35 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаПредупреждениеОЗагрузкиПравил" id="165">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предупреждение о загрузки правил</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>pal:FirstBrand</BackColor>
+			<ExtendedTooltip name="ГруппаПредупреждениеОЗагрузкиПравилРасширеннаяПодсказка" id="166"/>
+			<ChildItems>
+				<LabelDecoration name="ПредупреждениеОЗагрузкиПравил" id="167">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>2</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;colorpalette 2&gt;ВАЖНО!&lt;/&gt;
+Функциональность по загрузке правил устарела и более не поддерживается.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Center</VerticalAlign>
+					<ContextMenu name="ПредупреждениеОЗагрузкиПравилКонтекстноеМеню" id="168"/>
+					<ExtendedTooltip name="ПредупреждениеОЗагрузкиПравилРасширеннаяПодсказка" id="169"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаПланаОбмена" id="26">
 			<Title>
 				<v8:item>
@@ -244,6 +259,7 @@
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаПравилаИзФайла" id="111">
+					<Enabled>false</Enabled>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -291,11 +307,6 @@
 						<InputField name="ИмяФайлаПравил" id="5">
 							<DataPath>Запись.ИмяФайлаПравил</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<ChoiceButton>true</ChoiceButton>
-							<ChoiceButtonPicture>
-								<xr:Ref>StdPicture.OpenFile</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</ChoiceButtonPicture>
 							<InputHint>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -304,9 +315,6 @@
 							</InputHint>
 							<ContextMenu name="ИмяФайлаПравилКонтекстноеМеню" id="6"/>
 							<ExtendedTooltip name="ИмяФайлаПравилExtendedTooltip" id="64"/>
-							<Events>
-								<Event name="StartChoice">ИмяФайлаПравилНачалоВыбора</Event>
-							</Events>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -446,26 +454,6 @@
 			</ToolTip>
 			<Action>ЗаписатьПравила</Action>
 			<ActionPurpose>Finish</ActionPurpose>
-		</Command>
-		<Command name="НастройкаРежимаОтладки" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройка отладки</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройка режима отладки</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Picture>
-				<xr:Ref>StdPicture.Setting</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</Picture>
-			<Action>НастройкаРежимаОтладки</Action>
-			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>

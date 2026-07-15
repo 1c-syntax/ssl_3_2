@@ -1739,6 +1739,21 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="ОбъектнаяКонвертацияXDTO" id="41">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоПредупрежденийПолучение" id="42">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ЕстьПраваНаАдминистрированиеОбменов" id="4">
@@ -1879,6 +1894,17 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоВариантамНастроек" id="13">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ЭтоПолноправныйПользователь" id="22">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
@@ -2230,4 +2256,11 @@
 			<AssociatedTableElementId xsi:type="xs:string">СписокПриложений</AssociatedTableElementId>
 		</Command>
 	</Commands>
+	<Parameters>
+		<Parameter name="ОтборПоВариантамНастроек">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
 </Form>

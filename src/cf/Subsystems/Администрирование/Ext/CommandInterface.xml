@@ -96,7 +96,7 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="DataProcessor.УниверсальныйОбменДаннымиXML.Command.УниверсальныйОбменДанными">
+		<Command name="0:f692ab21-a8de-4feb-914f-4beef350543a">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -471,7 +471,7 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="DataProcessor.УниверсальныйОбменДаннымиXML.StandardCommand.Open">
+		<Command name="0:c9035b0f-cfc4-4761-9ba0-a8aacfaa9c72">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -756,7 +756,7 @@
 		<Command name="Catalog.КлючевыеОперации.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
-		<Command name="DataProcessor.УниверсальныйОбменДаннымиXML.Command.УниверсальныйОбменДанными">
+		<Command name="0:f692ab21-a8de-4feb-914f-4beef350543a">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 		<Command name="DataProcessor.ЗагрузкаДанныхИзФайла.Command.ЗагрузкаДанныхИзФайла">
@@ -1002,7 +1002,7 @@
 		<Command name="DataProcessor.УдалениеПомеченныхОбъектов.StandardCommand.Open">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
-		<Command name="DataProcessor.УниверсальныйОбменДаннымиXML.StandardCommand.Open">
+		<Command name="0:c9035b0f-cfc4-4761-9ba0-a8aacfaa9c72">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
 		<Command name="DataProcessor.ВыгрузкаЗагрузкаEnterpriseData.StandardCommand.Open">

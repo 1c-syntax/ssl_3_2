@@ -78,6 +78,35 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаПредупреждениеОЗагрузкиПравил" id="140">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предупреждение о загрузки правил</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>pal:FirstBrand</BackColor>
+			<ExtendedTooltip name="ГруппаПредупреждениеОЗагрузкиПравилРасширеннаяПодсказка" id="141"/>
+			<ChildItems>
+				<LabelDecoration name="ПредупреждениеОЗагрузкиПравил" id="137">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>2</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;colorpalette 2&gt;ВАЖНО!&lt;/&gt;
+Функциональность по загрузке правил устарела и более не поддерживается.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Center</VerticalAlign>
+					<ContextMenu name="ПредупреждениеОЗагрузкиПравилКонтекстноеМеню" id="138"/>
+					<ExtendedTooltip name="ПредупреждениеОЗагрузкиПравилРасширеннаяПодсказка" id="139"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаПланаОбмена" id="26">
 			<Title>
 				<v8:item>
@@ -362,6 +391,7 @@
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаПравилаИзФайла" id="69">
+					<Enabled>false</Enabled>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -410,12 +440,7 @@
 						<InputField name="ИмяФайлаПравил" id="5">
 							<DataPath>Запись.ИмяФайлаПравил</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<ChoiceButton>true</ChoiceButton>
 							<TextEdit>false</TextEdit>
-							<ChoiceButtonPicture>
-								<xr:Ref>StdPicture.OpenFile</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</ChoiceButtonPicture>
 							<InputHint>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -424,9 +449,6 @@
 							</InputHint>
 							<ContextMenu name="ИмяФайлаПравилКонтекстноеМеню" id="6"/>
 							<ExtendedTooltip name="ИмяФайлаПравилExtendedTooltip" id="45"/>
-							<Events>
-								<Event name="StartChoice">ИмяФайлаПравилНачалоВыбора</Event>
-							</Events>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -509,28 +531,6 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="ЗагрузитьПравила" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузить</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузить правила</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Picture>
-				<xr:Ref>StdPicture.OpenFile</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</Picture>
-			<Action>ЗагрузитьПравила</Action>
-			<Representation>TextPicture</Representation>
-			<ModifiesSavedData>true</ModifiesSavedData>
-			<CurrentRowUse>DontUse</CurrentRowUse>
-		</Command>
 		<Command name="СохранитьПравилаРегистрацииВФайл" id="2">
 			<Title>
 				<v8:item>
