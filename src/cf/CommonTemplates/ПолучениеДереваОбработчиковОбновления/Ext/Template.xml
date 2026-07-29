@@ -975,6 +975,10 @@
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ОбщиеДанные</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>Приоритет</dcsset:field>
 							<dcsset:orderType>Desc</dcsset:orderType>
 						</dcsset:item>

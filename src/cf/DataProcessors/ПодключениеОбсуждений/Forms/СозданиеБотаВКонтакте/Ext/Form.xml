@@ -101,8 +101,8 @@
 											<v8:lang>ru</v8:lang>
 											<v8:content>Для получения сообщений из социальной сети ВКонтакте, необходимо создать сообщество.
 Затем укажите его ключи:
-1. Перейти в настройки сообщества ВКонтакте.
-2. На вкладке &lt;b&gt;Работа с API&lt;/&gt; создать ключ, разрешить доступ к управлению сообществом, к сообщениям и документам, ввести его в поле &lt;b&gt;Ключ&lt;/&gt;.
+1. На странице управления сообществом ВКонтакте перейти в &lt;b&gt;Дополнительно&lt;/&gt;-&gt;&gt;&lt;b&gt;Работа с API&lt;/&gt;.
+2. На вкладке &lt;b&gt;Ключи доступа&lt;/&gt; создать ключ, разрешить доступ к управлению сообществом, к сообщениям и документам, ввести его в поле &lt;b&gt;Ключ&lt;/&gt;.
 3. На вкладке &lt;b&gt;Callback API &lt;/&gt;найти строчку похожую на
 {"type":"Confirmation", "group_id": 346875149}
 и ввести цифры group_id в поле &lt;b&gt;Ключ группы&lt;/&gt;.</v8:content>
@@ -158,6 +158,12 @@
 									<EditMode>EnterOnInput</EditMode>
 									<AutoEditMode>true</AutoEditMode>
 									<AutoMaxWidth>false</AutoMaxWidth>
+									<PasswordMode>true</PasswordMode>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonPicture>
+										<xr:Ref>CommonPicture.ВводимыеСимволыВидны</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ChoiceButtonPicture>
 									<InputHint>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -166,6 +172,11 @@
 									</InputHint>
 									<ContextMenu name="ТокенКонтекстноеМеню" id="34"/>
 									<ExtendedTooltip name="ТокенРасширеннаяПодсказка" id="35"/>
+									<Events>
+										<Event name="OnChange">ТокенПриИзменении</Event>
+										<Event name="EditTextChange">ТокенИзменениеТекстаРедактирования</Event>
+										<Event name="StartChoice">ТокенНачалоВыбора</Event>
+									</Events>
 								</InputField>
 								<InputField name="ИдГруппы" id="36">
 									<DataPath>ИдГруппы</DataPath>
@@ -368,6 +379,11 @@
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТокенИзменен" id="6">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

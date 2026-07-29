@@ -172,6 +172,12 @@
 											<EditMode>EnterOnInput</EditMode>
 											<AutoEditMode>true</AutoEditMode>
 											<AutoMaxWidth>false</AutoMaxWidth>
+											<PasswordMode>true</PasswordMode>
+											<ChoiceButton>true</ChoiceButton>
+											<ChoiceButtonPicture>
+												<xr:Ref>CommonPicture.ВводимыеСимволыВидны</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</ChoiceButtonPicture>
 											<InputHint>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -180,6 +186,11 @@
 											</InputHint>
 											<ContextMenu name="ТокенКонтекстноеМеню" id="34"/>
 											<ExtendedTooltip name="ТокенРасширеннаяПодсказка" id="35"/>
+											<Events>
+												<Event name="OnChange">ТокенПриИзменении</Event>
+												<Event name="EditTextChange">ТокенИзменениеТекстаРедактирования</Event>
+												<Event name="StartChoice">ТокенНачалоВыбора</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -439,6 +450,11 @@
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТокенИзменен" id="8">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
