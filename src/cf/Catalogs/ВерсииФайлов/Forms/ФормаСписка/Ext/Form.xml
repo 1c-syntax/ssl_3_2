@@ -89,17 +89,6 @@
 						<CommandName>Form.Item.Список.StandardCommand.SetDeletionMark</CommandName>
 						<ExtendedTooltip name="СписокКонтекстноеМенюУстановитьПометкуУдаленияРасширеннаяПодсказка" id="36"/>
 					</Button>
-					<Button name="СписокКонтекстноеМенюУдалить" id="76">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.Удалить</CommandName>
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Удалить</v8:content>
-							</v8:item>
-						</Title>
-						<ExtendedTooltip name="СписокКонтекстноеМенюУдалитьРасширеннаяПодсказка" id="77"/>
-					</Button>
 				</ChildItems>
 			</ContextMenu>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
@@ -129,18 +118,6 @@
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.Item.Список.StandardCommand.SetDeletionMark</CommandName>
 								<ExtendedTooltip name="УстановитьПометкуУдаленияРасширеннаяПодсказка" id="71"/>
-							</Button>
-							<Button name="ФормаУдалить" id="72">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.Удалить</CommandName>
-								<Title>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Удалить</v8:content>
-									</v8:item>
-								</Title>
-								<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-								<ExtendedTooltip name="ФормаУдалитьРасширеннаяПодсказка" id="73"/>
 							</Button>
 						</ChildItems>
 					</ButtonGroup>
@@ -443,28 +420,6 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="Удалить" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Удалить</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Удалить данные версии файла</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Picture>
-				<xr:Ref>StdPicture.DeleteDirectly</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</Picture>
-			<Action>Удалить</Action>
-			<CurrentRowUse>Use</CurrentRowUse>
-			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
-			<SelectedRowsUse>DontUse</SelectedRowsUse>
-		</Command>
 		<Command name="ПоказыватьПомеченныеФайлы" id="2">
 			<Title>
 				<v8:item>

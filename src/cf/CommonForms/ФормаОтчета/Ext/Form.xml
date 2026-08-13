@@ -18,6 +18,7 @@
 	<CommandSet>
 		<ExcludedCommand>ReportSettings</ExcludedCommand>
 	</CommandSet>
+	<WindowViewMode xsi:type="lf:FormWindowViewMode">InDialogWindow</WindowViewMode>
 	<ShowCommandBar>true</ShowCommandBar>
 	<ReportResult>ОтчетТабличныйДокумент</ReportResult>
 	<DetailsData>ОтчетДанныеРасшифровки</DetailsData>
