@@ -108,6 +108,7 @@
 					<HorizontalLinesBWA>false</HorizontalLinesBWA>
 					<VerticalLinesBWA>false</VerticalLinesBWA>
 					<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+					<InitialRowActivation>Activate</InitialRowActivation>
 					<EnableStartDrag>true</EnableStartDrag>
 					<EnableDrag>true</EnableDrag>
 					<FileDragMode>AsFile</FileDragMode>

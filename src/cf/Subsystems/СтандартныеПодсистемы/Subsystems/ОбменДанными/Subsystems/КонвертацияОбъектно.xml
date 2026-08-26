@@ -67,10 +67,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЗаголовокКнопкиШрифт</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.КликабельнаяНадписьСпискаШрифт</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонвертацияОбъектноПриоритетыСлужебный</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КонвертироватьОбъектЗаново</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыДействийПриСопоставленииОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветТекстаНедоступногоЭлемента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЭлементИсторииВыбора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КонвертироватьОбъектЗаново</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -225,6 +225,7 @@
 							<v8:content>Дополнительно</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="112"/>
 					<ChildItems>

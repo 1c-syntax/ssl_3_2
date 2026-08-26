@@ -907,6 +907,159 @@
 						</InputField>
 					</ChildItems>
 				</Page>
+				<Page name="ОжиданиеУдаленияНачальногоОбраза" id="464">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ожидание удаления начального образа после неудачной попытки создания</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница 14</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ОжиданиеУдаленияНачальногоОбразаРасширеннаяПодсказка" id="465"/>
+					<ChildItems>
+						<UsualGroup name="ГруппировкаСообщенияУдаления" id="466">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Удаление данных, которые остались после ошибки</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппировкаСообщенияУдаленияРасширеннаяПодсказка" id="467"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКартинкиУдаления" id="468">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ожидание удаления</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКартинкиУдаленияРасширеннаяПодсказка" id="469"/>
+									<ChildItems>
+										<PictureDecoration name="ДекорацияДлительнаяОперацияУдаления" id="470">
+											<Width>8</Width>
+											<Height>2</Height>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация длительная операция удаления</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ДекорацияДлительнаяОперацияУдаленияКонтекстноеМеню" id="471"/>
+											<ExtendedTooltip name="ДекорацияДлительнаяОперацияУдаленияРасширеннаяПодсказка" id="472"/>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСообщенияУдаления" id="473">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сообщения</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСообщенияУдаленияРасширеннаяПодсказка" id="474"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияСообщениеУдаления" id="475">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>3</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполняется удаление автономного рабочего места, при создании которого возникли ошибки.
+Это может занять несколько минут.
+Пожалуйста, подождите...</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Center</VerticalAlign>
+											<ContextMenu name="ДекорацияСообщениеУдаленияКонтекстноеМеню" id="476"/>
+											<ExtendedTooltip name="ДекорацияСообщениеУдаленияРасширеннаяПодсказка" id="477"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ЗавершениеУдаленияНачальногоОбраза" id="478">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Завершение удаления начального образа</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ЗавершениеУдаленияНачальногоОбразаРасширеннаяПодсказка" id="479"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСодержание" id="480">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Содержание</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<VerticalAlign>Center</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСодержаниеРасширеннаяПодсказка" id="481"/>
+							<ChildItems>
+								<PictureDecoration name="КартинкаЗавершенияУдаленияНачальногоОбраза" id="482">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Картинка завершения удаления начального образа</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>StdPicture.DialogInformation</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="КартинкаЗавершенияУдаленияНачальногоОбразаКонтекстноеМеню" id="483"/>
+									<ExtendedTooltip name="КартинкаЗавершенияУдаленияНачальногоОбразаРасширеннаяПодсказка" id="484"/>
+								</PictureDecoration>
+								<LabelDecoration name="Декорация2" id="485">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Не удалось создать автономное рабочее место.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="486"/>
+									<ExtendedTooltip name="Декорация2ExtendedTooltip" id="487"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>

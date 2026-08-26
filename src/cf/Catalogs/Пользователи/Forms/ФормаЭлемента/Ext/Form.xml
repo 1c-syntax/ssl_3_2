@@ -1888,6 +1888,9 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="АутентификацияДляНовогоПользователя" id="62">
+			<Type/>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="РолиПоказатьТолькоВыбранные" id="1">
