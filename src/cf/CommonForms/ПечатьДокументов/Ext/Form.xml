@@ -625,6 +625,7 @@
 						<ExtendedTooltip name="НастройкиПечатныхФормУправлениеПоискомРасширеннаяПодсказка" id="208"/>
 					</SearchControlAddition>
 					<Events>
+						<Event name="OnEditEnd">НастройкиПечатныхФормПриОкончанииРедактирования</Event>
 						<Event name="BeforeAddRow">НастройкиПечатныхФормПередНачаломДобавления</Event>
 						<Event name="OnActivateRow">НастройкиПечатныхФормПриАктивизацииСтроки</Event>
 						<Event name="OnChange">НастройкиПечатныхФормПриИзменении</Event>
@@ -1359,6 +1360,21 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="35">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыбраннаяСтрокаКомплекта" id="36">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>

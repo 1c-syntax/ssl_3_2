@@ -2492,7 +2492,7 @@
 				</v8:item>
 			</Title>
 			<Action>ОтправитьНаПодписание</Action>
-			<SelectedRowsUse>Use</SelectedRowsUse>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 	<Parameters>

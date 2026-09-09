@@ -608,7 +608,9 @@
 											</SearchControlAddition>
 											<Events>
 												<Event name="BeforeAddRow">СертификатыПередНачаломДобавления</Event>
+												<Event name="OnActivateRow">СертификатыПриАктивизацииСтроки</Event>
 												<Event name="OnGetDataAtServer">СертификатыПриПолученииДанныхНаСервере</Event>
+												<Event name="OnHover">СертификатыПриНаведении</Event>
 											</Events>
 											<ChildItems>
 												<LabelField name="СертификатыНаименование" id="53">

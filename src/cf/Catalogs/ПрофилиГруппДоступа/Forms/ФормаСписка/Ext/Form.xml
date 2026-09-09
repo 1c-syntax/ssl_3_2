@@ -139,6 +139,7 @@
 		<Table name="Список" id="1">
 			<DefaultItem>true</DefaultItem>
 			<RowSelectionMode>Cell</RowSelectionMode>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
 			<FileDragMode>AsFile</FileDragMode>
