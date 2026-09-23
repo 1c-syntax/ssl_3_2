@@ -896,7 +896,6 @@
 										<Event name="OnEditEnd">ТаблицаСопоставленияДанныхПриОкончанииРедактирования</Event>
 										<Event name="Selection">ТаблицаСопоставленияДанныхВыбор</Event>
 										<Event name="BeforeRowChange">ТаблицаСопоставленияДанныхПередНачаломИзменения</Event>
-										<Event name="OnHover">ТаблицаСопоставленияДанныхПриНаведении</Event>
 										<Event name="OnActivateCell">ТаблицаСопоставленияДанныхПриАктивизацииЯчейки</Event>
 									</Events>
 								</Table>

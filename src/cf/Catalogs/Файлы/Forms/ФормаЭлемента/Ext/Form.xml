@@ -1121,6 +1121,7 @@
 									<ChildItems>
 										<Table name="ЭлектронныеПодписи" id="32">
 											<Representation>List</Representation>
+											<ChangeRowOrder>false</ChangeRowOrder>
 											<HeightInTableRows>1</HeightInTableRows>
 											<RowSelectionMode>Cell</RowSelectionMode>
 											<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
@@ -1280,6 +1281,8 @@
 											</SearchControlAddition>
 											<Events>
 												<Event name="Selection">ЭлектронныеПодписиВыбор</Event>
+												<Event name="BeforeAddRow">ЭлектронныеПодписиПередНачаломДобавления</Event>
+												<Event name="BeforeDeleteRow">ЭлектронныеПодписиПередУдалением</Event>
 											</Events>
 											<ChildItems>
 												<InputField name="ЭлектронныеПодписиКомуВыданСертификат" id="35">
