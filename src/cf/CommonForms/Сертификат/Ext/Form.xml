@@ -505,6 +505,7 @@
 						</UsualGroup>
 						<Table name="ПутьСертификации" id="200">
 							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
 							<Width>40</Width>
@@ -1345,6 +1346,8 @@
 				</v8:item>
 			</Title>
 			<Action>УстановитьСертификат</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">ПутьСертификации</AssociatedTableElementId>
 		</Command>
 	</Commands>
 	<Parameters>

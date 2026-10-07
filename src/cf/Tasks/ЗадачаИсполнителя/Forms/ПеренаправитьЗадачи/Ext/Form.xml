@@ -39,14 +39,19 @@
 		<LabelDecoration name="ДекорацияЗаголовок" id="5">
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<SkipOnInput>false</SkipOnInput>
+			<Font ref="style:TextLevel2" bold="true" kind="StyleItem"/>
 			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Выбранная задача</v8:content>
 				</v8:item>
 			</Title>
+			<Hyperlink>true</Hyperlink>
 			<ContextMenu name="ДекорацияЗаголовокКонтекстноеМеню" id="6"/>
 			<ExtendedTooltip name="ДекорацияЗаголовокРасширеннаяПодсказка" id="47"/>
+			<Events>
+				<Event name="Click">ДекорацияЗаголовокНажатие</Event>
+			</Events>
 		</LabelDecoration>
 		<UsualGroup name="Документ" id="72">
 			<Title>
@@ -446,6 +451,11 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Задача" id="12">
+			<Type>
+				<v8:Type>cfg:TaskRef.ЗадачаИсполнителя</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

@@ -26,6 +26,7 @@
 			</Title>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
+			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
 			<ExtendedTooltip name="ГруппаПользовательскихНастроекРасширеннаяПодсказка" id="233"/>
 		</UsualGroup>
 		<Table name="Список" id="9">
@@ -62,6 +63,7 @@
 			<ShowRoot>false</ShowRoot>
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>ГруппаПользовательскихНастроек</UserSettingsGroup>
 			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 			<ContextMenu name="СписокКонтекстноеМеню" id="10">
 				<ChildItems>

@@ -183,85 +183,6 @@
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ШапкаГруппаРасширеннаяПодсказка" id="326"/>
-			<ChildItems>
-				<UsualGroup name="СостояниеСертификатаГруппа" id="276">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Состояние сертификата группа</v8:content>
-						</v8:item>
-					</Title>
-					<HorizontalStretch>true</HorizontalStretch>
-					<Group>AutoScreenTypeSensitive</Group>
-					<Behavior>Usual</Behavior>
-					<Representation>WeakSeparation</Representation>
-					<ShowTitle>false</ShowTitle>
-					<BackColor>pal:Yellow</BackColor>
-					<ExtendedTooltip name="СостояниеСертификатаГруппаРасширеннаяПодсказка" id="277"/>
-					<ChildItems>
-						<PictureDecoration name="КартинкаСертификата" id="281">
-							<Title formatted="false">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Картинка сертификата</v8:content>
-								</v8:item>
-							</Title>
-							<GroupVerticalAlign>Center</GroupVerticalAlign>
-							<Picture>
-								<xr:Ref>CommonPicture.СертификатКлюча</xr:Ref>
-								<xr:LoadTransparent>false</xr:LoadTransparent>
-							</Picture>
-							<ContextMenu name="КартинкаСертификатаКонтекстноеМеню" id="282"/>
-							<ExtendedTooltip name="КартинкаСертификатаРасширеннаяПодсказка" id="283"/>
-						</PictureDecoration>
-						<LabelDecoration name="СостояниеСертификата" id="290">
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<HorizontalStretch>true</HorizontalStretch>
-							<Title formatted="false">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Состояние сертификата</v8:content>
-								</v8:item>
-							</Title>
-							<HorizontalAlign>Auto</HorizontalAlign>
-							<ContextMenu name="СостояниеСертификатаКонтекстноеМеню" id="291"/>
-							<ExtendedTooltip name="СостояниеСертификатаРасширеннаяПодсказка" id="292"/>
-						</LabelDecoration>
-						<LabelDecoration name="ДекорацияПеревыпущен" id="305">
-							<Visible>false</Visible>
-							<Title formatted="true">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>&lt;link СертификатПеревыпущен&gt;(перевыпущен)&lt;/&gt;</v8:content>
-								</v8:item>
-							</Title>
-							<ContextMenu name="ДекорацияПеревыпущенКонтекстноеМеню" id="306"/>
-							<ExtendedTooltip name="ДекорацияПеревыпущенРасширеннаяПодсказка" id="307"/>
-							<Events>
-								<Event name="URLProcessing">ДекорацияПеревыпущенОбработкаНавигационнойСсылки</Event>
-							</Events>
-						</LabelDecoration>
-						<CheckBoxField name="НапомнитьОПеревыпуске" id="278">
-							<DataPath>НапомнитьОПеревыпуске</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Напомнить о перевыпуске</v8:content>
-								</v8:item>
-							</Title>
-							<TitleLocation>Right</TitleLocation>
-							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
-							<ContextMenu name="НапомнитьОПеревыпускеКонтекстноеМеню" id="279"/>
-							<ExtendedTooltip name="НапомнитьОПеревыпускеРасширеннаяПодсказка" id="280"/>
-							<Events>
-								<Event name="OnChange">НапомнитьОПеревыпускеПриИзменении</Event>
-							</Events>
-						</CheckBoxField>
-					</ChildItems>
-				</UsualGroup>
-			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ДанныеСертификата" id="151">
 			<Title>
@@ -376,7 +297,7 @@
 					<ExtendedTooltip name="ГруппаОткрытияСвойствРасширеннаяПодсказка" id="328"/>
 					<ChildItems>
 						<Button name="ПоказатьДанныеСертификата" id="153">
-							<Type>Hyperlink</Type>
+							<Type>UsualButton</Type>
 							<Representation>PictureAndText</Representation>
 							<SkipOnInput>true</SkipOnInput>
 							<CommandName>Form.Command.ПоказатьДанныеСертификата</CommandName>
@@ -386,6 +307,7 @@
 									<v8:content>Показать сертификат</v8:content>
 								</v8:item>
 							</Title>
+							<ButtonImportance>Supplementary</ButtonImportance>
 							<ExtendedTooltip name="ПоказатьДанныеСертификатаРасширеннаяПодсказка" id="154"/>
 						</Button>
 						<Button name="ПоказатьЗаявлениеПоКоторомуБылПолученСертификат" id="263">
@@ -823,12 +745,6 @@
 			<Type/>
 		</Attribute>
 		<Attribute name="НапомнитьОПеревыпуске" id="13">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Напомнить о перевыпуске</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -867,6 +783,25 @@
 			<Settings xsi:type="v8:TypeDescription">
 				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 			</Settings>
+		</Attribute>
+		<Attribute name="ВидимостьСостоянияСертификата" id="12">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказатьКомандуНапомнитьОПеревыпуске" id="15">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительноеСообщение" id="19">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

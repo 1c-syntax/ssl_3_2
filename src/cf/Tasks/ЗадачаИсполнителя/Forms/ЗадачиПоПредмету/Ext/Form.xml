@@ -18,6 +18,24 @@
 		<Event name="BeforeLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<CheckBoxField name="ПоказыватьВыполненные" id="21">
+			<DataPath>ПоказыватьВыполненные</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать выполненные</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<CheckBoxType>CheckBox</CheckBoxType>
+			<ContextMenu name="ПоказыватьВыполненныеКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ПоказыватьВыполненныеРасширеннаяПодсказка" id="78"/>
+			<Events>
+				<Event name="OnChange">ПоказыватьВыполненныеПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
 		<UsualGroup name="ГруппаПользовательскихНастроек" id="181">
 			<Title>
 				<v8:item>
@@ -600,24 +618,6 @@
 				</InputField>
 			</ChildItems>
 		</Table>
-		<CheckBoxField name="ПоказыватьВыполненные" id="21">
-			<DataPath>ПоказыватьВыполненные</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Показывать выполненные задачи</v8:content>
-				</v8:item>
-			</Title>
-			<TitleLocation>Right</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
-			<CheckBoxType>Switcher</CheckBoxType>
-			<ContextMenu name="ПоказыватьВыполненныеКонтекстноеМеню" id="22"/>
-			<ExtendedTooltip name="ПоказыватьВыполненныеРасширеннаяПодсказка" id="78"/>
-			<Events>
-				<Event name="OnChange">ПоказыватьВыполненныеПриИзменении</Event>
-			</Events>
-		</CheckBoxField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Список" id="1">

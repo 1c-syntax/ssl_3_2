@@ -47,7 +47,7 @@
 			</Popup>
 			<Button name="ФормаСкопировать" id="56">
 				<Type>CommandBarButton</Type>
-				<CommandName>0</CommandName>
+				<CommandName>Form.Item.Список.StandardCommand.Copy</CommandName>
 				<ExtendedTooltip name="ФормаСкопироватьРасширеннаяПодсказка" id="57"/>
 			</Button>
 		</ChildItems>

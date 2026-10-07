@@ -32,6 +32,24 @@
 		<Event name="BeforeLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<CheckBoxField name="ПоказыватьВыполненные" id="21">
+			<DataPath>ПоказыватьВыполненные</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать выполненные</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<CheckBoxType>CheckBox</CheckBoxType>
+			<ContextMenu name="ПоказыватьВыполненныеКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ПоказыватьВыполненныеРасширеннаяПодсказка" id="81"/>
+			<Events>
+				<Event name="OnChange">ПоказыватьВыполненныеПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
 		<UsualGroup name="ГруппаПользовательскихНастроек" id="85">
 			<Title>
 				<v8:item>
@@ -138,6 +156,21 @@
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="60"/>
 				</InputField>
+				<InputField name="Исполнитель" id="18">
+					<DataPath>Список.Исполнитель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ИсполнительКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="62"/>
+				</InputField>
+				<LabelField name="СписокСрокИсполнения" id="131">
+					<DataPath>Список.СрокИсполнения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="СписокСрокИсполненияКонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="СписокСрокИсполненияРасширеннаяПодсказка" id="133"/>
+				</LabelField>
 				<InputField name="Номер" id="4">
 					<DataPath>Список.Number</DataPath>
 					<DefaultItem>true</DefaultItem>
@@ -167,14 +200,6 @@
 					<Wrap>false</Wrap>
 					<ContextMenu name="ДатаКонтекстноеМеню" id="9"/>
 					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="61"/>
-				</InputField>
-				<InputField name="Исполнитель" id="18">
-					<DataPath>Список.Исполнитель</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
-					<Wrap>false</Wrap>
-					<ContextMenu name="ИсполнительКонтекстноеМеню" id="19"/>
-					<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="62"/>
 				</InputField>
 				<LabelField name="Предмет" id="23">
 					<DataPath>Список.Предмет</DataPath>
@@ -453,24 +478,6 @@
 				</InputField>
 			</ChildItems>
 		</Table>
-		<CheckBoxField name="ПоказыватьВыполненные" id="21">
-			<DataPath>ПоказыватьВыполненные</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Показывать выполненные</v8:content>
-				</v8:item>
-			</Title>
-			<TitleLocation>Right</TitleLocation>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
-			<CheckBoxType>Switcher</CheckBoxType>
-			<ContextMenu name="ПоказыватьВыполненныеКонтекстноеМеню" id="22"/>
-			<ExtendedTooltip name="ПоказыватьВыполненныеРасширеннаяПодсказка" id="81"/>
-			<Events>
-				<Event name="OnChange">ПоказыватьВыполненныеПриИзменении</Event>
-			</Events>
-		</CheckBoxField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Список" id="1">

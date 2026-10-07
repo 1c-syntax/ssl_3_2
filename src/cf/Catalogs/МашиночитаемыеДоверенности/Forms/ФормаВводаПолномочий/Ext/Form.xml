@@ -54,6 +54,7 @@
 					<SelectionMode>SingleRow</SelectionMode>
 					<RowSelectionMode>Cell</RowSelectionMode>
 					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<InitialRowActivation>Activate</InitialRowActivation>
 					<RowActionsShowType>ShowOnHover</RowActionsShowType>
 					<EnableStartDrag>true</EnableStartDrag>
 					<EnableDrag>true</EnableDrag>
@@ -349,6 +350,7 @@
 					<SelectionMode>SingleRow</SelectionMode>
 					<RowSelectionMode>Cell</RowSelectionMode>
 					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<InitialRowActivation>Activate</InitialRowActivation>
 					<EnableStartDrag>true</EnableStartDrag>
 					<EnableDrag>true</EnableDrag>
 					<DataPath>ВыбранныеПолномочияТаблица</DataPath>
