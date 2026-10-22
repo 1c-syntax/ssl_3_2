@@ -151,6 +151,30 @@
 			<ContextMenu name="ТипТаблицыКонтекстноеМеню" id="14"/>
 			<ExtendedTooltip name="ТипТаблицыРасширеннаяПодсказка" id="29"/>
 		</InputField>
+		<CheckBoxField name="ОграничениеЧтенияОтключеноДляПользователей" id="63">
+			<DataPath>Запись.ОграничениеЧтенияОтключеноДляПользователей</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<ContextMenu name="ОграничениеЧтенияОтключеноДляПользователейКонтекстноеМеню" id="64"/>
+			<ExtendedTooltip name="ОграничениеЧтенияОтключеноДляПользователейРасширеннаяПодсказка" id="65"/>
+		</CheckBoxField>
+		<CheckBoxField name="ОграничениеОтключеноДляПользователей" id="67">
+			<DataPath>Запись.ОграничениеОтключеноДляПользователей</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<ContextMenu name="ОграничениеОтключеноДляПользователейКонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="ОграничениеОтключеноДляПользователейРасширеннаяПодсказка" id="69"/>
+		</CheckBoxField>
+		<CheckBoxField name="ОграничениеЧтенияОтключеноДляВнешнихПользователей" id="82">
+			<DataPath>Запись.ОграничениеЧтенияОтключеноДляВнешнихПользователей</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<ContextMenu name="ОграничениеЧтенияОтключеноДляВнешнихПользователейКонтекстноеМеню" id="83"/>
+			<ExtendedTooltip name="ОграничениеЧтенияОтключеноДляВнешнихПользователейРасширеннаяПодсказка" id="84"/>
+		</CheckBoxField>
+		<CheckBoxField name="ОграничениеОтключеноДляВнешнихПользователей" id="86">
+			<DataPath>Запись.ОграничениеОтключеноДляВнешнихПользователей</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<ContextMenu name="ОграничениеОтключеноДляВнешнихПользователейКонтекстноеМеню" id="87"/>
+			<ExtendedTooltip name="ОграничениеОтключеноДляВнешнихПользователейРасширеннаяПодсказка" id="88"/>
+		</CheckBoxField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Запись" id="1">

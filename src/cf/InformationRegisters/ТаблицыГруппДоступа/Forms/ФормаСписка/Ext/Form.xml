@@ -113,6 +113,7 @@
 					<DefaultItem>true</DefaultItem>
 					<EditMode>EnterOnInput</EditMode>
 					<AutoEditMode>true</AutoEditMode>
+					<Width>30</Width>
 					<ContextMenu name="СписокТаблицаКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="СписокТаблицаРасширеннаяПодсказка" id="29"/>
 				</LabelField>
@@ -121,6 +122,7 @@
 					<DefaultItem>true</DefaultItem>
 					<EditMode>EnterOnInput</EditMode>
 					<AutoEditMode>true</AutoEditMode>
+					<Width>30</Width>
 					<ContextMenu name="СписокГруппаДоступаКонтекстноеМеню" id="9"/>
 					<ExtendedTooltip name="СписокГруппаДоступаРасширеннаяПодсказка" id="30"/>
 				</LabelField>
@@ -245,6 +247,56 @@
 					<ContextMenu name="СписокТипТаблицыКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="СписокТипТаблицыРасширеннаяПодсказка" id="35"/>
 				</LabelField>
+				<ColumnGroup name="СписокГруппаВозможностьОтключенияОграниченияДляПользователей" id="84">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возможность отключения ограничения для пользователей</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СписокГруппаВозможностьОтключенияОграниченияДляПользователейРасширеннаяПодсказка" id="85"/>
+					<ChildItems>
+						<CheckBoxField name="СписокОграничениеЧтенияОтключеноДляПользователей" id="86">
+							<DataPath>Список.ОграничениеЧтенияОтключеноДляПользователей</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="СписокОграничениеЧтенияОтключеноДляПользователейКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="СписокОграничениеЧтенияОтключеноДляПользователейРасширеннаяПодсказка" id="88"/>
+						</CheckBoxField>
+						<CheckBoxField name="СписокОграничениеОтключеноДляПользователей" id="90">
+							<DataPath>Список.ОграничениеОтключеноДляПользователей</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="СписокОграничениеОтключеноДляПользователейКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="СписокОграничениеОтключеноДляПользователейРасширеннаяПодсказка" id="92"/>
+						</CheckBoxField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="СписокГруппаВозможностьОтключенияОграниченияДляВнешнихПользователей" id="124">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возможность отключения ограничения для внешних пользователей</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СписокГруппаВозможностьОтключенияОграниченияДляВнешнихПользователейРасширеннаяПодсказка" id="125"/>
+					<ChildItems>
+						<CheckBoxField name="СписокОграничениеЧтенияОтключеноДляВнешнихПользователей" id="126">
+							<DataPath>Список.ОграничениеЧтенияОтключеноДляВнешнихПользователей</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="СписокОграничениеЧтенияОтключеноДляВнешнихПользователейКонтекстноеМеню" id="127"/>
+							<ExtendedTooltip name="СписокОграничениеЧтенияОтключеноДляВнешнихПользователейРасширеннаяПодсказка" id="128"/>
+						</CheckBoxField>
+						<CheckBoxField name="СписокОграничениеОтключеноДляВнешнихПользователей" id="130">
+							<DataPath>Список.ОграничениеОтключеноДляВнешнихПользователей</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="СписокОграничениеОтключеноДляВнешнихПользователейКонтекстноеМеню" id="131"/>
+							<ExtendedTooltip name="СписокОграничениеОтключеноДляВнешнихПользователейРасширеннаяПодсказка" id="132"/>
+						</CheckBoxField>
+					</ChildItems>
+				</ColumnGroup>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -266,9 +318,71 @@
 	ТаблицыГруппДоступа.ПравоЧтениеБезОграничения КАК ПравоЧтениеБезОграничения,
 	ТаблицыГруппДоступа.ПравоИзменениеБезОграничения КАК ПравоИзменениеБезОграничения,
 	ТаблицыГруппДоступа.ПравоДобавлениеБезОграничения КАК ПравоДобавлениеБезОграничения,
-	ТаблицыГруппДоступа.ТипТаблицы КАК ТипТаблицы
+	ТаблицыГруппДоступа.ТипТаблицы КАК ТипТаблицы,
+	ТаблицыГруппДоступа.ОграничениеЧтенияОтключеноДляПользователей КАК ОграничениеЧтенияОтключеноДляПользователей,
+	ТаблицыГруппДоступа.ОграничениеОтключеноДляПользователей КАК ОграничениеОтключеноДляПользователей,
+	ТаблицыГруппДоступа.ОграничениеЧтенияОтключеноДляВнешнихПользователей КАК ОграничениеЧтенияОтключеноДляВнешнихПользователей,
+	ТаблицыГруппДоступа.ОграничениеОтключеноДляВнешнихПользователей КАК ОграничениеОтключеноДляВнешнихПользователей
 ИЗ
 	РегистрСведений.ТаблицыГруппДоступа КАК ТаблицыГруппДоступа</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипТаблицы</dcssch:dataPath>
+					<dcssch:field>ТипТаблицы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Таблица</dcssch:dataPath>
+					<dcssch:field>Таблица</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОграничениеЧтенияОтключеноДляВнешнихПользователей</dcssch:dataPath>
+					<dcssch:field>ОграничениеЧтенияОтключеноДляВнешнихПользователей</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПравоИзменение</dcssch:dataPath>
+					<dcssch:field>ПравоИзменение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГруппаДоступа</dcssch:dataPath>
+					<dcssch:field>ГруппаДоступа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПравоЧтение</dcssch:dataPath>
+					<dcssch:field>ПравоЧтение</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Право чтение</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПравоИзменениеБезОграничения</dcssch:dataPath>
+					<dcssch:field>ПравоИзменениеБезОграничения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПравоДобавление</dcssch:dataPath>
+					<dcssch:field>ПравоДобавление</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПравоЧтениеБезОграничения</dcssch:dataPath>
+					<dcssch:field>ПравоЧтениеБезОграничения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПравоДобавлениеБезОграничения</dcssch:dataPath>
+					<dcssch:field>ПравоДобавлениеБезОграничения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОграничениеОтключеноДляВнешнихПользователей</dcssch:dataPath>
+					<dcssch:field>ОграничениеОтключеноДляВнешнихПользователей</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОграничениеЧтенияОтключеноДляПользователей</dcssch:dataPath>
+					<dcssch:field>ОграничениеЧтенияОтключеноДляПользователей</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОграничениеОтключеноДляПользователей</dcssch:dataPath>
+					<dcssch:field>ОграничениеОтключеноДляПользователей</dcssch:field>
+				</Field>
 				<MainTable>InformationRegister.ТаблицыГруппДоступа</MainTable>
 				<ListSettings>
 					<dcsset:filter>
