@@ -130,7 +130,6 @@
 				<Event name="BeforeDeleteRow">ТаблицаЗначенийСвойствПередУдалением</Event>
 				<Event name="BeforeRowChange">ТаблицаЗначенийСвойствПередНачаломИзменения</Event>
 				<Event name="OnStartEdit">ТаблицаЗначенийСвойствПриНачалеРедактирования</Event>
-				<Event name="OnHover">ТаблицаЗначенийСвойствПриНаведении</Event>
 				<Event name="OnChange">ТаблицаЗначенийСвойствПриИзменении</Event>
 			</Events>
 			<ChildItems>
